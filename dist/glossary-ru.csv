@@ -1,0 +1,176 @@
+term,translation,definition,note,status,alternatives
+waveform,форма волны,The drawing of a sound's amplitude over time.,"Самый употребительный вариант в русских DAW и учебниках. «Осциллограмма» — строгий технический термин для документации, «волноформа» — вариант русской Audacity. «Форма волны» также означает форму колебания генератора (синус, пила); в Workbench различайте по контексту.",standard,волновая форма; осциллограмма; волноформа
+spectrogram,спектрограмма,"A picture of how a sound's frequency content changes over time: time across, frequency up, level as colour.",,standard,
+mel scale,мел-шкала,A frequency scale spaced as pitch is heard: roughly linear below 1 kHz and logarithmic above.,Мел — единица воспринимаемой высоты тона.,standard,шкала мелов
+playhead,указатель воспроизведения,The moving line that marks the current playback position.,"Как в русской Audacity («указатель проигрывания»). Согласно исходнику, в документации не называйте его «курсором»: это слово оставлено для курсора редактирования. Название приложения Playhead не переводится.",common,курсор воспроизведения; плейхед
+edit cursor,курсор редактирования,"The position where editing and playback start, set by clicking.",,common,курсор правки
+sample rate,частота дискретизации,"Samples per second of a digital sound, in Hz.",Sample как единица дискретизации — «отсчёт»; «сэмпл» в русской студийной речи означает звуковой фрагмент.,standard,
+bit depth,разрядность,Bits per sample of a digital sound; sets its resolution.,«Разрядность» — как в русской Audacity и технической литературе; калька «битовая глубина» встречается реже.,standard,битовая глубина
+channel,канал,One signal of a sound file; stereo has two.,,standard,
+mono,моно,One channel.,Полная форма прилагательного — «монофонический».,standard,
+stereo,стерео,"Two channels, left and right.",Полная форма прилагательного — «стереофонический».,standard,
+mid/side,мид/сайд,Stereo written as the sum (mid) and the difference (side) of the channels.,"В студийной речи — «мид/сайд», «M/S-обработка»; в технической литературе — «MS-стереофония», «суммарно-разностное представление».",standard,M/S; сумма/разность
+phase,фаза,Where in its cycle a wave is at a given moment.,,standard,
+polarity,полярность,Whether a signal is upright or inverted.,"Когда сигнал просто инвертирован, говорите «инверсия полярности», а не «переворот фазы».",standard,
+level,уровень,"How strong a signal is, usually in dB.","Измеряемая величина, в отличие от громкости (воспринимаемой). Не пишите «уровень громкости» в значении level: в акустике это loudness level (в фонах).",standard,
+gain,усиление,"A change of level, in dB.",Как в русской Audacity («Усиление»); усиление может быть отрицательным. «Гейн» — студийный жаргон.,standard,гейн
+peak,пик,The largest absolute sample value.,"Русская Audacity: «Пик», «пиковая амплитуда».",standard,пиковое значение
+true peak,истинный пик,"The peak of the signal between samples, as a DAC would reproduce it.",Русская версия Рекомендации МСЭ-R BS.1770: «истинный пиковый уровень». В интерфейсе короче — «истинный пик»; единица dBTP.,standard,истинный пиковый уровень
+loudness,громкость,"How loud a sound is heard, as opposed to its level.","Русская версия МСЭ-R BS.1770, ISO 532-1: «громкость». Не путать с «уровнем громкости» (loudness level, в фонах).",standard,
+LUFS,LUFS,Loudness units relative to full scale (ITU-R BS.1770); 1 LU is 1 dB.,"Пишется латиницей, как в EBU R 128 и русской Audacity («Громкость LUFS»). Русская версия BS.1770 использует равнозначное LKFS: «громкость, взвешенная по K, относительно номинальной полной шкалы».",standard,
+K-weighting,K-взвешивание,The frequency weighting that loudness meters apply before measuring.,Термин русской версии МСЭ-R BS.1770; буква K латинская.,standard,
+normalize,нормализовать,Set a sound's peak or loudness to a target.,Глагол — форма команды (русская Audacity: «Нормализовать пик амплитуды»); существительное «нормализация» — для документации и заголовков.,standard,
+fade,фейд,A gradual change of level at the start (fade-in) or end (fade-out).,"Студийная норма — «фейд», «фейд-ин», «фейд-аут» (русская Audacity: «фейд-подъём/фейд-спад»). Не переводите fade-out как «затухание»: это слово занято термином decay.",standard,плавное нарастание/затухание
+clipping,клиппинг,Distortion when a signal exceeds the largest value that can be stored.,Как в русской Audacity и студийной речи; «перегрузка» шире (overload).,standard,ограничение сигнала; срез пиков
+DC offset,DC-смещение,A constant shift of the signal away from zero.,«DC-смещение» — как в русской Audacity; в инженерной литературе — «постоянная составляющая» («удалить постоянную составляющую»).,standard,постоянная составляющая; смещение нуля
+noise floor,уровень фонового шума,The level of the background noise under a sound.,«Нижний порог шумов» — вариант русской Audacity; «шумовая полка» — жаргон измерений и студий. Не путать с порогом гейта.,standard,шумовая полка; нижний порог шумов
+silence,тишина,A stretch with no sound above the noise floor.,,standard,
+cut tail,обрезанный хвост,A sound that ends before its decay has died away.,,common,
+take,дубль,One recorded or rendered version of a sound.,,common,
+render,отрендерить,Compute a processed sound and write it as audio.,"Глагол — форма команды; существительное — «рендер», «рендеринг» (русская Audacity: «Микширование и рендеринг»). «Просчитать/просчёт» — вариант из видеомонтажа.",standard,просчитать
+loop,луп,A sound that repeats without an audible join.,Саунд-дизайнеры говорят «луп»; в русской Audacity «петля» — область циклического воспроизведения. Глагол — «зациклить».,standard,петля; зацикленный звук
+crossfade,кроссфейд,A fade-out of one sound overlapping a fade-in of another.,Как в русской Audacity («Кроссфейд клипов»).,standard,перекрёстное затухание
+slice,нарезать,Cut a sound into parts at chosen points.,"Глагол — форма команды; действие — «нарезка», отдельная часть — «слайс» или «фрагмент».",common,слайсить
+time stretch,растяжение по времени,Change a sound's duration without changing its pitch.,Русская Audacity: «растянутый по времени»; «тайм-стретч(инг)» — студийный жаргон.,standard,тайм-стретч
+pitch shift,сдвиг высоты тона,Change a sound's pitch without changing its duration.,"Русская Audacity: «Изменить высоту тона», «Смещение тона». «Транспонирование» — музыкальный синоним для сдвига на интервал.",standard,питч-шифт; транспонирование
+sone,сон,The unit of loudness as heard; 1 sone is the loudness of a 1 kHz tone at 40 dB SPL.,"Русское название единицы (Вологдин, «Слух и восприятие звука», 2012; Акустический журнал, 2022). Обозначение «сон» с числом не склоняется, как «дБ».",standard,
+sharpness,резкость,"How much a sound's energy sits at high frequencies, as heard; in acum.","Римская-Корсакова и др., «Оценки раздражающего действия шума», Акустический журнал, 2022, № 5; Стаценко и др., 2023: «резкость», единица «акум». Не путать с жёсткостью (harshness).",standard,
+roughness,хриплость,The rasping quality of fast amplitude modulation (about 15–300 Hz); in asper.,"В русской научной психоакустике — «хриплость» (Ищенко, Акустический журнал, 1977; Римская-Корсакова и др., 2022; Стаценко и др., 2023). «Шероховатость» — калька из популярных и переводных текстов; найти её у Алдошиной не удалось. Не путать с жёсткостью (harshness).",standard,шероховатость
+fluctuation strength,сила флуктуаций,"The sensation of slow amplitude modulation (about 1–20 Hz, strongest near 4 Hz); in vacil.","Акустический журнал, 2022, и Стаценко и др., 2023: «сила флуктуаций», единица «васил» (vacil); в первой статье встречается и «сила колебаний». Написание «флюктуаций» устарело.",standard,сила колебаний
+psychoacoustic annoyance,психоакустическое раздражение,"Zwicker's combination of loudness, sharpness, roughness and fluctuation strength into one annoyance value.","Термин и сокращение ПАР — Римская-Корсакова и др., Акустический журнал, 2022; Стаценко и др., 2023. «Раздражающее действие шума» — общий термин гигиены шума.",standard,раздражающее действие
+masking,маскировка,One sound making another harder or impossible to hear.,"Вологдин, 2012; Акустический журнал: «маскировка», «слуховая маскировка».",standard,маскирование
+critical band,критическая полоса,The frequency range the ear integrates as one; on the Bark scale.,"Вологдин, 2012: «критические полосы слуха», единица «барк».",standard,критическая полоса слуха
+curve,кривая,A value drawn over time along the waveform.,,common,
+overview,обзор,A small picture of a whole sound used to find one's way in it.,,common,обзорная полоса; миниатюра
+strip,лента,"The overview of one sound as Playhead draws it: waveform, curves and marks in one band.","«Лента» наглядна и свободна («полоса» нужна для частотных полос, «стрип» напоминает channel strip — канальную линейку). Дорожка (lane) — часть ленты.",coined,полоса; стрип
+look,облик,"A named way to draw a strip, written as a short code of layers.","«Облик» не занят в интерфейсах (в отличие от меню «Вид») и не путается с «темой» (только цвета) и «скином»; «стиль» слишком общий, «лук» — разговорная калька.",coined,вид; стиль; лук
+look code,код облика,"The short text that defines a look, for example ""form:overlay,shape:mirror,lane:harshness"".","Следует выбору для look; сам код не переводится, ключи и значения остаются латиницей.",coined,код вида; строка облика; лук-код
+layer,слой,"One element of a look: a waveform, spectrogram, curve, set of marks or sections.","«Слой» привычен по графическим редакторам; то же слово стоит в «пересведении слоёв» (звуковые слои). Если их нужно развести, для облика подойдёт «элемент облика», «пласт» — книжно.",coined,элемент облика; пласт
+lane,дорожка,A horizontal band of a strip that holds one curve.,"Как «дорожки автоматизации» в русских DAW. «Полоса» тоже возможна, но занята частотными полосами (эквалайзер, критические полосы).",common,полоса
+overlaid,наложенный,Curves drawn in one shared band instead of separate lanes.,"Прилагательное согласуется с существительным («наложенные кривые»); в переключателе формы — «Наложение». Не путать с «зеркальным»: наложение — общая полоса, зеркальность — симметрия.",common,внахлёст
+mirrored,зеркальный,"Drawn symmetrically above and below a centre line, like a waveform.",В переключателе формы — наречие «Зеркально». Не путать с «наложенным».,common,симметричный
+from the baseline,от базовой линии,Drawn upwards from the bottom of the band.,"Не «от нуля»: базовая линия — низ полосы, а не нулевой уровень сигнала.",common,от основания; снизу вверх
+horizon chart,горизонтный график,A compact chart that folds a curve into coloured bands of increasing intensity.,Так в русскоязычных текстах о визуализации данных (dev.by: «Горизонтный график (Horizon graphs)»); общепринятого стандарта нет.,standard,график-горизонт
+sculpted waveform,вылепленная форма волны,"A waveform whose height follows a curve, for example perceived loudness, instead of the peak level.","«Вылепленная» точно передаёт sculpted и наглядна; «рельефная» звучит естественнее, но намекает на объём и тени; «по кривой» однозначно, но не похоже на название.",coined,рельефная форма волны; форма волны по кривой; скульптурная форма волны
+outline,контур,The ordinary peak waveform drawn as a thin line behind another layer.,,common,
+marks,метки,"Ticks along the strip at events, onsets, beats or section boundaries.","Не «маркеры»: в DAW маркер — отметка, которую ставит пользователь.",common,
+legend,легенда,The text that says what each colour and line of a strip shows.,Как в русских Excel и библиотеках графиков.,standard,условные обозначения
+analysis profile,профиль анализа,"How much Playhead analyses: fast (curves only), sound effect, or music.",,common,
+descriptor,дескриптор,A number or curve computed from a sound that describes one of its properties.,Как в русской литературе по MIR («аудиодескрипторы»; Peeters et al. 2011).,standard,
+feature,признак,A descriptor used as input to a classifier or search.,«Признак» — норма русского машинного обучения; «фича» — разговорный жаргон.,standard,фича
+activity,активность,How much is happening: spectral change and the density of events.,"«Активность» проста и понятна; «оживлённость» и «событийность» ближе к смыслу, но тяжелее. Не путать с arousal (возбуждение).",coined,оживлённость; событийность
+arousal,возбуждение,"How exciting or calming a sound is, after the psychological dimension of the same name.",В русской психологии эмоций (модель Рассела «валентность — возбуждение») встречаются «возбуждение» и «активация»; «активация» слишком близка к activity. Не путать с «возбуждением» (excitation) в кросс-синтезе.,standard,активация
+harshness,жёсткость,"How unpleasant a sound is to listen to, computed from psychoacoustic annoyance; not the same as roughness.","Звукорежиссёры называют harsh-звук «жёстким» или «резким», но «резкость» занята sharpness, поэтому — «жёсткость»; остальные варианты описательны или непонятны без английского. Хриплость и резкость — входные величины, а не синонимы.",coined,режущий характер; неприятность звучания; харшнесс
+tension,напряжение,"Build-up and release over time, after the model of musical tension by Farbood (2012).",Farbood 2012. «Напряжение» — обычный термин теории музыки; «напряжённость» книжнее.,common,напряжённость
+harmonic tension,гармоническое напряжение,"How far the harmony is from rest, from the tonal interval space.",Bernardes et al. 2016 (Tonal Interval Space).,standard,
+novelty,новизна,How much a moment differs from what came before.,Foote 2000: «функция новизны». Новизна учитывает и изменения уровня — в отличие от спектральной неожиданности.,standard,
+spectral surprise,спектральная неожиданность,Change of the spectrum that loudness does not explain.,"Буквальный вариант ясен, но «неожиданность» встречается и как перевод surprisal, поэтому в тексте всегда пишите полностью; «сюрприз» звучит несерьёзно, описательный вариант точен, но длинен.",coined,спектральный сюрприз; необъяснённое изменение спектра
+surprisal,собственная информация,"Information content of an event: the less expected, the higher.","Стандартный русский термин теории информации (self-information); в психолингвистике всё чаще «сюрпризал». Не переводите как «неожиданность», чтобы не смешать со спектральной неожиданностью (Abdallah and Plumbley 2009).",standard,сюрпризал; информационное содержание
+structural change,структурное изменение,"Where a piece moves to a new part, signed: up where sound enters, down where it falls away or breaks off.","Буквальный вариант нейтрален и сохраняет знак; «смена части» идиоматична, но знака не передаёт; «структурный сдвиг» звучит как экономический термин.",coined,смена части; структурный сдвиг
+local pulse,локальный пульс,How clearly a regular pulse is felt at each moment.,Grosche and Müller 2011 (PLP — «преобладающий локальный пульс»). Не называйте «силой доли» (beat strength).,standard,
+onset,онсет,The moment a sound or note begins.,В русской MIR-литературе — «онсет» или «начало ноты». «Онсет» короче и не смешивается с атакой (участок от начала до пика) и транзиентом (быстрое изменение). В пользовательских текстах при первом упоминании: «онсет (начало звука)».,standard,начало звука; момент начала
+onset strength,сила онсетов,How strongly new sound arrives at each moment; peaks are hits.,,standard,сила начал
+event,событие,"One distinct sound within a file, such as a hit, a step or a creak, with a start and an end.",,common,
+attack,атака,"The first part of a sound, from its start to its peak.","Атака — участок, онсет — момент, транзиент — характер изменения.",standard,
+body,тело,"The sustained, often tonal, part of a sound after its attack.",В саунд-дизайне говорят «тело звука» (атака — тело — хвост).,common,
+decay,затухание,The part of a sound in which it dies away.,"В огибающей ADSR decay — «спад», а «затухание» там иногда означает release; здесь речь о естественном угасании звука. Не используйте «затухание» для fade-out и damping.",standard,спад
+tail,хвост,"The late part of a decay, including reverberation.",,common,
+transient,транзиент,"A short, fast change of level and spectrum, typically at an attack.","«Транзиент» — студийная норма; «переходный процесс» — термин физики и электротехники, в интерфейсе громоздок.",standard,переходный процесс
+beat,доля,The regular pulse a listener taps along to.,Музыкальный термин — «доля» (русская Audacity: «Доли и такты»); «бит» в русской речи означает ещё и инструментал.,standard,бит
+downbeat,сильная доля,The first beat of a bar.,В русской теории музыки сильная доля такта — первая; в MIR-текстах встречается калька «даунбит».,standard,первая доля; даунбит
+bar,такт,"A group of beats, usually four.",Американское measure — тоже «такт».,standard,
+tempo,темп,"The speed of the beat, in beats per minute (BPM).","BPM оставлено латиницей, как в DAW; по-русски сокращают «уд./мин».",standard,
+section,часть,"A part of a piece, such as an intro or chorus, found from where its sound changes.",«Часть» — обычное слово для формы песни; «секция» в русской речи чаще означает группу инструментов.,common,раздел; секция
+recurrence,рекуррентность,How much a sound returns to states it has been in before.,"Marwan et al. 2007: «рекуррентный анализ», «рекуррентные диаграммы». «Повторяемость» понятнее, но близка к частоте повторения (repetition rate).",standard,повторяемость
+repetition rate,частота повторения,"How often a pattern repeats, in Hz.",,common,
+periodicity,периодичность,How strongly a sound is periodic (pitched) rather than noisy.,Hillenbrand et al. 1994.,standard,
+phase coherence,фазовая когерентность,"How steadily a sound's phases advance; 1 for a steady tone, near 0 for noise.",,standard,
+time arrow,стрела времени,How much a sound changes when played backwards; high for hits that decay.,"«Стрела времени» — устоявшаяся физическая метафора, понятна без пояснений; «необратимость во времени» (time irreversibility) — технический термин только для документации (Ramsey and Rothman 1996).",coined,необратимость во времени; асимметрия во времени
+impulsiveness,импульсность,"How much a sound consists of clicks, cracks and crackle, from spectral kurtosis.","«Импульсность» опирается на привычное «импульсный шум»; «трескучесть» образна, но разговорна. Не «колючесть» (spikiness) и не «импульсивность» (черта характера).",coined,импульсный характер; трескучесть
+spectral kurtosis,спектральный эксцесс,"A statistic that is 0 for steady noise, −1 for a steady tone and large for clicks.",Kurtosis в русской статистике — «эксцесс»; в вибродиагностике по Antoni (2006) встречается калька «спектральный куртозис» («куртограмма»).,standard,спектральный куртозис
+spectral motion,движение спектра,"How fast the spectrum's centre moves up or down, in octaves per second.","«Движение спектра» звучит естественно; «спектральное движение» — калька; «дрейф центроида» технически точнее, но длиннее и уже по смыслу.",coined,спектральное движение; дрейф центроида
+spectral centroid,спектральный центроид,The centre of mass of a spectrum; a measure of brightness.,,standard,центр тяжести спектра
+reshaping,изменение формы спектра,"Spectral change that does not move the centre, as when a spectrum spreads or narrows.","Описательный вариант однозначен; «перестройка» короче, но в радиотехнике означает перестройку частоты; «переформирование» — тяжеловесная калька.",coined,перестройка спектра; переформирование спектра
+burstiness,пачечность,"Whether events come regularly (below 0), at random (0) or in bursts (above 0).","Устоявшегося перевода параметра Goh and Barabási 2008 найти не удалось; «пачечность» — по аналогии с «пачечным трафиком» в теории телетрафика, «всплесковость» — описательно.",standard,всплесковость; бёрстность
+temporal entropy,временная энтропия,How evenly a sound's energy is spread over time.,Sueur et al. 2008 (индекс Ht в биоакустике).,standard,
+decay time (T60),время затухания (T60),The time a sound takes to fall by 60 dB.,Для помещений та же величина называется «время реверберации» (RT60); здесь — для любого звука (Schroeder 1965).,standard,
+damping,демпфирование,How quickly a vibrating body loses energy.,"Термин механики выбран, чтобы не смешивать с decay («затухание»).",standard,затухание колебаний
+material,материал,"What an impacted object is made of, as heard: damped, glass-like or metal-like.",Klatzky et al. 2000.,common,
+partial,парциальный тон,One frequency component of a sound.,«Парциальный тон» — термин музыкальной акустики; «парциал» — краткая форма из аддитивного синтеза.,standard,парциал; частичный тон
+overtone,обертон,A partial above the lowest one.,,standard,
+inharmonic,негармонический,"With partials that are not whole-number multiples of a fundamental, as in bells and struck metal.",«Негармонический» — музыкальная акустика; «ангармонический» — физика колебаний.,standard,ангармонический
+quality checks,проверки качества,"Automatic checks for clipping, DC offset, silence and cut tails.",,common,
+self-check,самопроверка,A test that edits a sound in a known way and checks that the analysis changes as it must.,"«Самопроверка» понятна пользователю; «самотест» звучит как аппаратная диагностика; «метаморфная проверка» (metamorphic testing, Chen et al. 1998) точна, но только для документации. Не «модульный тест».",coined,самотест; метаморфная проверка
+de-harsh,смягчить жёсткость,A tool that turns down resonances only while the sound is harsh.,"Инфинитив по правилу команд; «смягчить» точнее передаёт частичное приглушение, чем «убрать»; «антижёсткость» — именной вариант по образцу названий процессоров, «де-харш» непонятен без английского. Не «деэссер»: он реагирует на уровень в одной полосе.",coined,убрать жёсткость; антижёсткость; де-харш
+attack and body,атака и тело,"A tool that splits a sound into its transient part and its sustained part, to rebalance them.","Существительное, как в английском названии; «транзиенты и тело» привычнее звукорежиссёрам, но смешивает транзиент с атакой. Не «транзиент-шейпер»: тот работает с уровнем, а не с разделением.",coined,разделение атаки и тела; транзиенты и тело
+layer remix,пересведение слоёв,A tool that separates a sound into layers and mixes them again at new levels.,"«Пересведение» — точный студийный термин (mix — «сведение»); «ремикс» короче, но по-русски означает творческую переделку трека; «пересборка» нейтральна, но теряет связь со сведением.",coined,ремикс слоёв; пересборка слоёв
+tension shaper,шейпер напряжения,A tool that turns the tension curve into gain and brightness automation.,"«Шейпер» знаком по «транзиент-шейперу»; «формирователь напряжения» в электронике означает формирователь электрического напряжения; «автоматизация по напряжению» однозначна, но длинна.",coined,формирователь напряжения; автоматизация по напряжению
+loop maker,зацикливание,A tool that finds and crossfades loop points where the sound repeats best.,"«Зацикливание» — привычное русское название этого действия; «создание лупа» — буквально, «луп-мейкер» — калька, а «мастер» в русских интерфейсах означает wizard.",coined,создание лупа; луп-мейкер; мастер лупов
+variations,вариации,"Several slightly different versions of one sound, to avoid repetition in games.",,common,
+clean-up for export,очистка перед экспортом,A tool that repairs what the quality checks flag before a sound is exported.,,common,
+reverb on the tails,реверб на хвостах,"Reverberation fed only from the decays of the events, keeping the attacks dry.","«Реверб» — студийное название процессора, «реверберация» — само явление, поэтому первая альтернатива книжнее; «хвостовой реверб» компактен, но читается как «хвост реверберации».",coined,реверберация хвостов; хвостовой реверб
+drive the hits,перегрузить удары,Saturation applied only to the events' attacks or bodies.,"Инфинитив по правилу команд; «перегруз» в студийной речи — overdrive, но вне контекста «перегрузить» может читаться как ошибка. «Добавить драйв ударам» однозначно, но длиннее; «раскачать» разговорно и путается с pumping.",coined,добавить драйв ударам; раскачать удары; драйв на удары
+ring time,время звона,A tool that lengthens or shortens how long each event rings after its peak.,"«Звон» — прямой аналог ring (ср. «звон малого барабана»), но для глухих звуков звучит странно; «послезвучание» — акустический термин без этого оттенка; «длительность звучания» легко принять за общую длину.",coined,послезвучание; длительность звучания
+level the events,выровнять громкость событий,"A tool that evens out how loud the events are, one gain per event, without touching their shape.","«Громкость» добавлена, потому что «выровнять события» по-русски скорее значит «выровнять по времени»; именной вариант — для заголовков. Не «компрессия»: компрессор меняет форму.",coined,выровнять события; выравнивание громкости событий
+fold to mono,свернуть в моно,"Turn stereo into mono with the channels' phase lined up, so nothing cancels.","«Свернуть» передаёт fold и отличается от «свести в моно» — так обычно (и в русской Audacity) называют простое суммирование, то есть sum to mono. «Сложить» буквально, но значит «суммировать».",coined,свести в моно; фазовое сведение в моно; сложить в моно
+widen the tails,расширить хвосты,"Make or widen stereo only after the attacks, keeping attacks centred and the result mono-compatible.","Инфинитив по правилу команд; вариант со словом «стерео» точнее, но длиннее; «стерео на хвостах» — именная пара к «реверб на хвостах».",coined,расширить стерео хвостов; стерео на хвостах
+downmix,даунмикс,Turn more channels into fewer.,«Понижающее микширование» — термин русской версии МСЭ-R BS.775-4; в студийной речи и интерфейсе — «даунмикс».,standard,понижающее микширование
+mono compatibility,моносовместимость,How well a stereo sound survives being summed to mono.,,standard,
+decorrelation,декорреляция,"Making two signals less alike while keeping their spectrum, to widen a stereo image.",,standard,
+comb filtering,гребенчатая фильтрация,Regular notches in a spectrum when a signal is summed with a delayed copy of itself.,,standard,гребенчатый эффект
+cancellation,взаимное подавление,Loss of level when signals of opposite phase are summed.,,standard,фазовое подавление; компенсация
+pre-echo,предэхо,"A faint smear of a sound before its attack, caused by frame-based processing.","Термин теории перцептивных кодеков (MP3, AAC).",standard,пре-эхо
+EQ,эквалайзер,An equaliser: a filter that changes the level of frequency bands.,В интерфейсе допустимо латинское EQ; процесс — «эквализация».,standard,
+dynamic EQ,динамический эквалайзер,An EQ whose band gains follow the level in each band.,,standard,
+automation,автоматизация,"Parameter changes over time, recorded or drawn.",,standard,
+compressor,компрессор,A processor that turns loud passages down by a ratio above a threshold.,,standard,
+threshold,порог,The level above which a processor acts.,,standard,
+ratio,степень сжатия,How strongly a compressor turns the level down above its threshold.,В технической литературе — «степень (коэффициент) сжатия»; в русской Audacity — «Соотношение»; на ручках плагинов часто оставляют Ratio.,standard,коэффициент сжатия; Ratio
+attack time,время атаки,How fast a processor reacts when the level rises.,,standard,
+release time,время релиза,How fast a processor recovers when the level falls.,"В студийной речи — «релиз»; «время восстановления» — технический термин для документации. Русская Audacity непоследовательна («время спада», «время затухания»), а оба этих слова здесь заняты.",standard,время восстановления
+gate,гейт,A processor or condition that opens only above a threshold.,«Гейт» — студийная норма (вариант русской Audacity «шлюз» не прижился); в значении условия анализа — «пороговое условие».,standard,шумовой гейт; пороговое условие
+saturation,сатурация,Soft distortion that adds harmonics and rounds peaks.,"«Сатурация» — студийная норма; «насыщение» — технический термин (насыщение ленты, трансформатора).",standard,насыщение
+pumping,пампинг,Audible rise and fall of the background caused by a compressor.,Студийный жаргон; описательно — «пульсация фона». Близкий эффект breathing — «дыхание» компрессора.,standard,
+evenness,равномерность,How alike the events are in loudness.,,common,
+effect chain,цепочка эффектов,Effects applied one after another to a sound.,,common,
+preset,пресет,A saved set of settings.,Как в русской Audacity («Пресет»); «предустановка» — стиль Microsoft.,standard,предустановка
+morph,морфинг,A gradual blend from one sound into another.,,common,морф
+cross-synthesis,кросс-синтез,Combining the spectrum of one sound with the envelope or excitation of another.,,standard,перекрёстный синтез
+convolution,свёртка,"Filtering one sound by another, for example by a room's impulse response.",«Свёртка» — математический термин и термин ЦОС; в студийной речи — «конволюционный ревербератор».,standard,конволюция
+envelope transfer,перенос огибающей,Giving one sound the level envelope of another.,,common,
+ring modulation,кольцевая модуляция,"Multiplying two signals, which creates sum and difference frequencies.",,standard,
+granular,гранулярный,Built from many short grains of sound.,Ср. «гранулярный синтез»; grain — «гранула» (реже «зерно»).,standard,
+accent,акцент,A short added sound placed at a moment of another sound to emphasise it.,"«Акцент» короток и точен; «акцентный звук» однозначнее в списках; «стингер» — жаргон игрового и кинозвука, но обычно означает короткую музыкальную вставку.",coined,акцентный звук; стингер
+generator,генератор,A part of the app that makes new sounds from parameters.,,common,
+synth,синтезатор,"A sound generator built from oscillators, noise, envelopes and filters.",,standard,синт
+impact,удар,A physical model of a struck object of a given material and shape.,"Слово «удар» переводит и hits («перегрузить удары»); если их нужно развести, генератор можно назвать «модель удара». «Импакт» — жаргон трейлерного звука (мощные удары), здесь уже по смыслу.",common,модель удара; импакт
+resynthesis,ресинтез,"Rebuilding a sound from parameters measured on it, such as its partials and decays.",,standard,
+modal,модальный,"Made of resonant modes, each with a frequency and a decay.",Ср. «модальный синтез». Не путать с музыкальным ладом (mode).,standard,
+texture,текстура,"A continuous sound made of many small events, such as rain, fire or gravel.",,common,
+action and reaction,действие и реакция,"A generator in which an action, such as an object moving or a force, drives the sound of a medium that responds to it (gravel, water, air).","Буквальный вариант прозрачен и симметричен английскому; «отклик» мягче, но в ЦОС занят (импульсный отклик); «реакция среды» описывает только половину пары.",coined,действие и отклик; реакция среды
+medium,среда,"What reacts to an action: gravel, leaves, water, air, sparks or a force field.",,common,
+drive curve,управляющая кривая,A curve that controls a sound's parameters over time.,"«Управляющая» — как «управляющий сигнал», естественно по-русски; «кривая управления» — буквальнее; «кривая драйва» сохраняет английское слово, но «драйв» в студийной речи означает перегруз.",coined,кривая управления; кривая драйва
+inertia,инерция,How slowly a reaction settles after the action stops.,,common,инерционность
+Foley,фоли,Everyday sounds performed and recorded in sync with picture.,"В отечественном кино традиционно «шумовое озвучание», исполнитель — «шумовик»; в игровом звуке и современном постпродакшене — «фоли» (по фамилии Джека Фоли), строчными.",standard,шумовое озвучание; синхронные шумы
+ambience,атмосфера,The background sound of a place.,"В постпродакшене говорят «атмосферы», «фоны»; калька «эмбиенс» легко путается с жанром «эмбиент».",standard,фон; эмбиенс
+one-shot,ваншот,"A short sound played once, such as a hit or a UI click.",«Ваншот» — обычное слово в библиотеках сэмплов; в документации при первом упоминании можно пояснить: «одиночный звук».,common,одиночный звук; однократный сэмпл
+whoosh,вуш,The sound of something moving fast past the listener.,"В библиотеках и у монтажёров — «вуш»; «пролёт» — русское слово для pass-by, «вжух» — шуточно-разговорное.",common,свист; пролёт; вжух
+finishing,финализация,"The last steps before export: format, channels, fades and level.",,common,доводка; финишная обработка
+steel,сталь,,,standard,
+brass,латунь,,,standard,
+aluminium,алюминий,,,standard,
+glass,стекло,,,standard,
+ceramic,керамика,,,standard,
+ice,лёд,,,standard,
+wood,дерево,,«Древесина» — материал в технических текстах; в интерфейсе — «дерево».,standard,древесина
+plastic,пластик,,,standard,пластмасса
+stone,камень,,,standard,
+cardboard,картон,,,standard,
+rubber,резина,,,standard,
+bar,стержень,"A long solid body, such as a rod or beam.",Термин теории колебаний; не путать с тактом (bar).,standard,брусок
+plate,пластина,A thin flat body.,,standard,
+membrane,мембрана,"A stretched skin, as on a drum.",,standard,
+shell,оболочка,"A thin curved body, such as a can or pot.",,common,
+bell,колокол,,,standard,
+wire,струна,A stiff string or wire that rings with slightly stretched (inharmonic) partials.,В физике колебаний — «струна»; «проволока» называет скорее материал.,standard,проволока
+box,ящик,A hollow body with flat sides.,,common,коробка; короб

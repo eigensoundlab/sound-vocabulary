@@ -1,0 +1,1314 @@
+{
+  "_language": "es",
+  "_name": "Español",
+  "_notes": "Neutral international Spanish. Sources: Spanish ITU-R texts (UIT-R BS.1770: 'sonoridad', 'nivel de cresta real', 'ponderación K'; BS.775), Spanish acoustics literature (UPV, SEA), and Spanish DAW/editor localisations (Cubase 13 es, Ableton Live 12 es, Adobe Audition es, Audacity 3.4 es, Native Instruments es, Apple es). Loans are the recommended term only where studios clearly prefer them (clipping, preset, downmix, foley, one-shot, whoosh, morphing, ratio, mid/side); the Spanish form is then in 'alt'. 'term' is in lowercase dictionary form; 'short' is a sentence-case UI label. Tool names: English imperative tools (de-harsh, drive the hits, level the events, fold to mono, widen the tails) become infinitive commands (Microsoft/Apple Spanish style, as 'Guardar'); English noun tools (attack and body, layer remix, tension shaper, loop maker, clean-up for export, reverb on the tails, ring time) stay nouns. The definite article is kept where the English has 'the' ('Nivelar los eventos') and may be dropped in tight UI. Distinctions kept: sonoridad (heard) vs nivel (measured), never 'volumen' in technical text; estridencia (harshness) vs rugosidad (roughness) vs agudeza (sharpness), with 'aspereza' deliberately unused because the literature uses it for roughness; inicio (onset) vs ataque (attack) vs transitorio (transient); novedad vs sorpresa espectral vs autoinformación; en espejo (mirrored) vs superpuesto (overlaid); clipping vs saturación; decaimiento (decay) vs tiempo de liberación (release). Display vocabulary: tira (strip), carril (lane), franja (generic band), capa (layer), estilo (look). Pitch is 'tono' (formal 'altura'); beat is 'pulso', bar positions 'tiempos'. Definitions use an impersonal register; UI strings should avoid tú/usted where an infinitive works. Numbers, units and symbols are unchanged; in UI use the locale's decimal separator (comma in Spain and most of South America, point in Mexico and Central America). Notes are written in English for the author.",
+  "terms": {
+    "waveform": {
+      "term": "forma de onda",
+      "definition": "La representación gráfica de la amplitud de un sonido a lo largo del tiempo.",
+      "note": "Universal (Audacity es, Cubase es, Adobe Audition es).",
+      "gender": "f"
+    },
+    "spectrogram": {
+      "term": "espectrograma",
+      "definition": "Una imagen de cómo cambia con el tiempo el contenido en frecuencia de un sonido: el tiempo en horizontal, la frecuencia en vertical y el nivel como color.",
+      "gender": "m"
+    },
+    "mel-scale": {
+      "term": "escala mel",
+      "definition": "Una escala de frecuencias espaciada según se percibe el tono: aproximadamente lineal por debajo de 1 kHz y logarítmica por encima.",
+      "note": "'tono' is used for pitch throughout (as in DAWs: 'cambio de tono'); formal acoustics also says 'altura tonal'.",
+      "gender": "f"
+    },
+    "playhead": {
+      "term": "cabezal de reproducción",
+      "short": "Cabezal",
+      "alt": [
+        "cursor de reproducción"
+      ],
+      "definition": "La línea móvil que marca la posición de reproducción actual.",
+      "note": "Adobe Audition/Premiere es: 'cabezal de reproducción'; Logic Pro es: 'cursor de reproducción'; Cubase es: 'cursor del proyecto'. 'cabezal' keeps the English separation from the edit cursor ('cursor de edición'), as the source asks. The app name Playhead is not translated.",
+      "gender": "m"
+    },
+    "edit-cursor": {
+      "term": "cursor de edición",
+      "definition": "La posición donde empiezan la edición y la reproducción; se fija haciendo clic.",
+      "gender": "m"
+    },
+    "sample-rate": {
+      "term": "frecuencia de muestreo",
+      "alt": [
+        "tasa de muestreo"
+      ],
+      "definition": "Muestras por segundo de un sonido digital, en Hz.",
+      "note": "Cubase es and textbooks: 'frecuencia de muestreo'; 'tasa de muestreo' is a frequent calque, more common in Latin America.",
+      "gender": "f"
+    },
+    "bit-depth": {
+      "term": "profundidad de bits",
+      "alt": [
+        "resolución en bits"
+      ],
+      "definition": "Bits por muestra de un sonido digital; determina su resolución.",
+      "note": "Cubase es: 'profundidad de bits'; 'resolución' alone is also heard.",
+      "gender": "f"
+    },
+    "channel": {
+      "term": "canal",
+      "definition": "Una de las señales de un archivo de sonido; el estéreo tiene dos.",
+      "gender": "m"
+    },
+    "mono": {
+      "term": "mono",
+      "definition": "Un solo canal.",
+      "note": "Invariable as an adjective ('pista mono', 'sonidos mono'); formal 'monofónico'.",
+      "gender": "m"
+    },
+    "stereo": {
+      "term": "estéreo",
+      "definition": "Dos canales, izquierdo y derecho.",
+      "note": "Written with accent; usually invariable as an adjective ('pistas estéreo').",
+      "gender": "m"
+    },
+    "mid-side": {
+      "term": "mid/side",
+      "short": "M/S",
+      "alt": [
+        "centro/lateral",
+        "medio/lateral"
+      ],
+      "definition": "Estéreo expresado como la suma (mid, centro) y la diferencia (side, lateral) de los canales.",
+      "note": "Spanish studio usage keeps 'Mid/Side' or 'M/S' (RØDE es: 'la técnica Mid-Side (también conocida como M-S)'); 'centro/lateral' and 'medio/lateral' appear in textbooks."
+    },
+    "phase": {
+      "term": "fase",
+      "definition": "En qué punto de su ciclo se encuentra una onda en un momento dado.",
+      "gender": "f"
+    },
+    "polarity": {
+      "term": "polaridad",
+      "definition": "Si una señal está en su orientación normal o invertida.",
+      "note": "Spanish DAWs often label a plain inversion 'invertir fase' (Cubase es: 'Invertir fase'); in our UI and docs use 'invertir la polaridad'.",
+      "gender": "f"
+    },
+    "level": {
+      "term": "nivel",
+      "definition": "La magnitud de una señal, normalmente en dB.",
+      "note": "Measured quantity; keep apart from 'sonoridad' (heard). Avoid 'volumen' in technical text.",
+      "gender": "m"
+    },
+    "gain": {
+      "term": "ganancia",
+      "definition": "Un cambio de nivel, en dB.",
+      "gender": "f"
+    },
+    "peak": {
+      "term": "pico",
+      "alt": [
+        "cresta"
+      ],
+      "definition": "El mayor valor absoluto de las muestras.",
+      "note": "Studio and DAW usage is 'pico' (Audacity es, Cubase es); ITU-R texts in Spanish say 'cresta' ('medidor de cresta de la muestra').",
+      "gender": "m"
+    },
+    "true-peak": {
+      "term": "pico real",
+      "alt": [
+        "true peak",
+        "cresta real"
+      ],
+      "definition": "El pico de la señal entre muestras, tal como lo reproduciría un convertidor digital-analógico (DAC).",
+      "note": "UIT-R BS.1770-5 (es) is titled '...el nivel de cresta de audio real' and uses 'nivel de cresta real', unit dBTP. Broadcast practice says 'pico real' or keeps 'true peak'.",
+      "gender": "m"
+    },
+    "loudness": {
+      "term": "sonoridad",
+      "alt": [
+        "loudness"
+      ],
+      "definition": "Cuán fuerte se oye un sonido, a diferencia de su nivel.",
+      "note": "UIT-R BS.1770 (es: 'Algoritmos para medir la sonoridad...') and Spanish psychoacoustics use 'sonoridad'; the loan 'loudness' is common in broadcast. Avoid 'volumen' (Audacity es 'Normalizar volumen') and 'intensidad sonora' (physical intensity, W/m²).",
+      "gender": "f"
+    },
+    "lufs": {
+      "term": "LUFS",
+      "definition": "Unidades de sonoridad relativas a la escala completa (UIT-R BS.1770); 1 LU equivale a 1 dB.",
+      "note": "Symbol unchanged. UIT-R BS.1770 (es) uses the equivalent LKFS ('sonoridad, ponderada en K, en relación con la plena escala nominal'); EBU R 128 uses LUFS. 'escala completa' is the usual practice; ITU = UIT in Spanish references."
+    },
+    "k-weighting": {
+      "term": "ponderación K",
+      "definition": "La ponderación en frecuencia que aplican los medidores de sonoridad antes de medir.",
+      "note": "UIT-R BS.1770 (es): 'ponderación de la frecuencia «K»'.",
+      "gender": "f"
+    },
+    "normalize": {
+      "term": "normalizar",
+      "definition": "Ajustar el pico o la sonoridad de un sonido a un valor objetivo.",
+      "note": "Verb, as in Audacity es and Cubase es. Noun: 'normalización'."
+    },
+    "fade": {
+      "term": "fundido",
+      "alt": [
+        "fade"
+      ],
+      "definition": "Un cambio gradual de nivel al principio (fundido de entrada) o al final (fundido de salida).",
+      "note": "Cubase es: 'fundido de entrada' / 'fundido de salida'. Audacity es uses 'Aparecer/Desvanecer progresivamente' (not recommended). 'fade in/out' is common in speech.",
+      "gender": "m"
+    },
+    "clipping": {
+      "term": "clipping",
+      "alt": [
+        "recorte",
+        "saturación digital"
+      ],
+      "definition": "Distorsión que se produce cuando una señal supera el mayor valor que se puede almacenar.",
+      "note": "Cubase es keeps 'clipping'; Audacity es uses 'recorte'. The loan is recommended because 'recorte/recortar' also means trim/crop in editors. Do not call it 'saturación', reserved for soft saturation.",
+      "gender": "m"
+    },
+    "dc-offset": {
+      "term": "desplazamiento DC",
+      "short": "Desplazamiento DC",
+      "alt": [
+        "desplazamiento de CC",
+        "offset de DC"
+      ],
+      "definition": "Un desplazamiento constante de la señal respecto de cero.",
+      "note": "Audacity es: 'desplazamiento DC'. 'CC' (corriente continua) is Spain's abbreviation, 'CD' (corriente directa) is used in Mexico and parts of Latin America, so 'DC' is the neutral choice; 'offset de DC' in studio talk.",
+      "gender": "m"
+    },
+    "noise-floor": {
+      "term": "nivel de ruido de fondo",
+      "short": "Ruido de fondo",
+      "alt": [
+        "suelo de ruido",
+        "piso de ruido"
+      ],
+      "definition": "El nivel del ruido de fondo bajo un sonido.",
+      "note": "'suelo de ruido' is Spain, 'piso de ruido' Latin America; 'nivel de ruido de fondo' is understood everywhere and names a level, as the definition does.",
+      "gender": "m"
+    },
+    "silence": {
+      "term": "silencio",
+      "definition": "Un tramo sin sonido por encima del nivel de ruido de fondo.",
+      "gender": "m"
+    },
+    "cut-tail": {
+      "term": "cola cortada",
+      "definition": "Un sonido que termina antes de que su decaimiento se haya extinguido.",
+      "note": "Uses 'cola' (tail).",
+      "gender": "f"
+    },
+    "take": {
+      "term": "toma",
+      "definition": "Una versión grabada o renderizada de un sonido.",
+      "note": "Cubase es: 'toma'. Universal in studio Spanish.",
+      "gender": "f"
+    },
+    "render": {
+      "term": "renderizar",
+      "alt": [
+        "procesar",
+        "generar"
+      ],
+      "definition": "Calcular un sonido procesado y escribirlo como audio.",
+      "note": "Studio verb (Cubase es: 'se renderiza'); Adobe es uses 'procesar', Audacity es 'generar'. Noun: 'renderizado'."
+    },
+    "loop": {
+      "term": "bucle",
+      "alt": [
+        "loop"
+      ],
+      "definition": "Un sonido que se repite sin una unión audible.",
+      "note": "Audacity es and Audition es: 'bucle' ('reproducir en bucle'); 'loop' (m) is common among producers for the sound itself and Cubase es keeps it. Both are understood everywhere.",
+      "gender": "m"
+    },
+    "crossfade": {
+      "term": "fundido cruzado",
+      "definition": "Un fundido de salida de un sonido que se superpone a un fundido de entrada de otro.",
+      "note": "Cubase es and Audacity es.",
+      "gender": "m"
+    },
+    "slice": {
+      "term": "trocear",
+      "alt": [
+        "slice"
+      ],
+      "definition": "Cortar un sonido en partes en puntos elegidos.",
+      "note": "Ableton Live 12 es: 'Trocear a una nueva pista MIDI'; the pieces are 'trozos' (Cubase es) or 'rebanadas' (Ableton es)."
+    },
+    "time-stretch": {
+      "term": "estiramiento temporal",
+      "alt": [
+        "time stretch"
+      ],
+      "definition": "Cambiar la duración de un sonido sin cambiar su tono.",
+      "note": "Audacity es: 'estiramiento de tiempo'; Cubase es: 'corrección de tiempo' for its warp feature; the loan 'time stretch' is common.",
+      "gender": "m"
+    },
+    "pitch-shift": {
+      "term": "cambio de tono",
+      "alt": [
+        "transposición",
+        "pitch shift"
+      ],
+      "definition": "Cambiar el tono de un sonido sin cambiar su duración.",
+      "note": "Audacity es: 'Cambiar tono'; Cubase es: 'Transposición'. 'tono' = pitch (formal 'altura').",
+      "gender": "m"
+    },
+    "sone": {
+      "term": "sonio",
+      "alt": [
+        "son"
+      ],
+      "definition": "La unidad de sonoridad percibida; 1 sonio es la sonoridad de un tono de 1 kHz a 40 dB SPL.",
+      "note": "Wikipedia es: 'El sonio o son es una unidad de sonoridad'; UPV acoustics notes use 'sonio'. Plural 'sonios'.",
+      "gender": "m"
+    },
+    "sharpness": {
+      "term": "agudeza",
+      "definition": "Cuánta energía de un sonido se concentra en las frecuencias altas, tal como se percibe; en acum.",
+      "note": "Spanish sound-quality literature: 'agudeza (sharpness)'. Some papers gloss it as 'nitidez': avoid, it means clarity. Unit acum unchanged (DIN 45692).",
+      "gender": "f"
+    },
+    "roughness": {
+      "term": "rugosidad",
+      "definition": "La cualidad rasposa de la modulación de amplitud rápida (aproximadamente 15–300 Hz); en asper.",
+      "note": "Spanish literature uses both 'rugosidad' and 'aspereza' for Zwicker's roughness (UPV paper: 'roughness (aspereza, rugosidad)'). We use only 'rugosidad' and keep 'aspereza' out of the psychoacoustic set, so that harshness ('estridencia') cannot be read as roughness. Unit asper unchanged.",
+      "gender": "f"
+    },
+    "fluctuation-strength": {
+      "term": "fuerza de fluctuación",
+      "alt": [
+        "intensidad de fluctuación"
+      ],
+      "definition": "La sensación de la modulación de amplitud lenta (aproximadamente 1–20 Hz, máxima cerca de 4 Hz); en vacil.",
+      "note": "Calque of Fluktuationsstärke. 'intensidad de fluctuación' also occurs, but 'intensidad' clashes with sound intensity; UPV notes say 'fuerza fluctuante'. Unit vacil.",
+      "gender": "f"
+    },
+    "psychoacoustic-annoyance": {
+      "term": "molestia psicoacústica",
+      "definition": "La combinación, propuesta por Zwicker, de sonoridad, agudeza, rugosidad y fuerza de fluctuación en un único valor de molestia.",
+      "note": "'molestia' is the standard Spanish term for noise annoyance (UPV notes: 'modelo de molestia/agrado de Zwicker').",
+      "gender": "f"
+    },
+    "masking": {
+      "term": "enmascaramiento",
+      "definition": "Que un sonido haga que otro sea más difícil o imposible de oír.",
+      "gender": "m"
+    },
+    "critical-band": {
+      "term": "banda crítica",
+      "definition": "El rango de frecuencias que el oído integra como una unidad; en la escala Bark.",
+      "gender": "f"
+    },
+    "curve": {
+      "term": "curva",
+      "definition": "Un valor dibujado a lo largo del tiempo, siguiendo la forma de onda.",
+      "gender": "f"
+    },
+    "overview": {
+      "term": "vista general",
+      "alt": [
+        "vista global"
+      ],
+      "definition": "Una imagen pequeña de un sonido completo que sirve para orientarse en él.",
+      "note": "Cubase es: 'Línea de vista global' (overview line); 'vista general' is the more common Spanish UI term.",
+      "gender": "f"
+    },
+    "strip": {
+      "term": "tira",
+      "alt": [
+        "franja",
+        "banda",
+        "strip"
+      ],
+      "definition": "La vista general de un sonido tal como la dibuja Playhead: forma de onda, curvas y marcas en una sola franja.",
+      "note": "'tira' as in 'tira de canal' (channel strip) and film strip. 'franja' is kept for the generic 'band' used in definitions; 'banda' is avoided because of frequency bands. The loan is unlikely in UI.",
+      "gender": "f"
+    },
+    "look": {
+      "term": "estilo",
+      "alt": [
+        "aspecto",
+        "look",
+        "vista"
+      ],
+      "definition": "Una forma, con nombre propio, de dibujar una tira, escrita como un código breve de capas.",
+      "note": "'estilo' reads as a named, reusable set of drawing choices (like text styles) and stays distinct from 'tema' (theme). 'aspecto' is the OS word for appearance/theme, which the English avoids; 'look' (an anglicism listed by the DLE) is natural in speech but odd in UI ('Guardar look'); 'vista' clashes with 'vista general'.",
+      "gender": "m"
+    },
+    "look-code": {
+      "term": "código de estilo",
+      "alt": [
+        "código de aspecto",
+        "código de look"
+      ],
+      "definition": "El texto breve que define un estilo, por ejemplo \"form:overlay,shape:mirror,lane:harshness\".",
+      "note": "Follows 'look'. The code keywords (form, overlay, shape, mirror, lane, harshness) are syntax and stay in English.",
+      "gender": "m"
+    },
+    "layer": {
+      "term": "capa",
+      "alt": [
+        "plano",
+        "layer"
+      ],
+      "definition": "Un elemento de un estilo: una forma de onda, un espectrograma, una curva, un conjunto de marcas o las secciones.",
+      "note": "'capa' is universal for graphic layers (image editors) and for sound layers in sound design, matching the English double use (see layer-remix). 'plano' is a possible but vaguer alternative.",
+      "gender": "f"
+    },
+    "lane": {
+      "term": "carril",
+      "definition": "Una franja horizontal de una tira que contiene una curva.",
+      "note": "Cubase es: 'Carriles' (lanes). Avoid 'pista' (track).",
+      "gender": "m"
+    },
+    "overlay": {
+      "term": "superpuesto",
+      "alt": [
+        "superposición"
+      ],
+      "definition": "Curvas dibujadas en una franja común en lugar de en carriles separados.",
+      "note": "Adjective that agrees ('curvas superpuestas'); the mode as a noun is 'superposición'. Must stay distinct from 'en espejo' (mirrored)."
+    },
+    "mirrored": {
+      "term": "en espejo",
+      "alt": [
+        "simétrico",
+        "reflejado"
+      ],
+      "definition": "Dibujado simétricamente por encima y por debajo de una línea central, como una forma de onda.",
+      "note": "Invariable and visual; 'simétrico' is acceptable in docs. Not to be confused with 'superpuesto' (overlaid)."
+    },
+    "baseline-form": {
+      "term": "desde la línea de base",
+      "short": "Desde la base",
+      "alt": [
+        "desde abajo"
+      ],
+      "definition": "Dibujado hacia arriba desde la parte inferior de la franja."
+    },
+    "horizon-chart": {
+      "term": "gráfico de horizonte",
+      "definition": "Un gráfico compacto que pliega una curva en bandas de color de intensidad creciente.",
+      "note": "No settled Spanish term in data-visualisation literature; 'gráfico de horizonte' is the transparent calque. Docs may add '(horizon chart)' on first use.",
+      "gender": "m"
+    },
+    "sculpted-waveform": {
+      "term": "forma de onda esculpida",
+      "alt": [
+        "forma de onda modelada",
+        "forma de onda perfilada"
+      ],
+      "definition": "Una forma de onda cuya altura sigue una curva, por ejemplo la sonoridad percibida, en lugar del nivel de pico.",
+      "note": "Literal 'esculpida' keeps the image and is unambiguous; 'modelada' sounds more technical but collides with 'modelado' (physical modelling); 'perfilada' is softer.",
+      "gender": "f"
+    },
+    "outline": {
+      "term": "contorno",
+      "definition": "La forma de onda de picos habitual, dibujada como una línea fina detrás de otra capa.",
+      "note": "Avoid 'perfil' (used for the analysis profile).",
+      "gender": "m"
+    },
+    "marks": {
+      "term": "marcas",
+      "definition": "Pequeñas marcas a lo largo de la tira en eventos, inicios, pulsos o límites de sección.",
+      "note": "Distinct from 'marcadores' (user markers in DAWs).",
+      "gender": "f"
+    },
+    "legend": {
+      "term": "leyenda",
+      "definition": "El texto que indica qué muestra cada color y cada línea de una tira.",
+      "gender": "f"
+    },
+    "profile": {
+      "term": "perfil de análisis",
+      "short": "Perfil",
+      "definition": "Cuánto analiza Playhead: rápido (solo curvas), efecto de sonido o música.",
+      "gender": "m"
+    },
+    "descriptor": {
+      "term": "descriptor",
+      "definition": "Un número o una curva calculados a partir de un sonido que describen una de sus propiedades.",
+      "gender": "m"
+    },
+    "feature": {
+      "term": "característica",
+      "alt": [
+        "rasgo"
+      ],
+      "definition": "Un descriptor que se usa como entrada de un clasificador o de una búsqueda.",
+      "note": "Standard in Spanish machine learning ('extracción de características'); 'rasgo' is less common.",
+      "gender": "f"
+    },
+    "activity": {
+      "term": "actividad",
+      "alt": [
+        "dinamismo",
+        "movimiento"
+      ],
+      "definition": "Cuánto está ocurriendo: el cambio espectral y la densidad de eventos.",
+      "note": "Literal and idiomatic coincide. 'dinamismo' risks confusion with dynamics ('dinámica'); 'movimiento' collides with 'movimiento espectral'.",
+      "gender": "f"
+    },
+    "arousal": {
+      "term": "activación",
+      "alt": [
+        "arousal"
+      ],
+      "definition": "Cuán excitante o calmante es un sonido, por analogía con la dimensión psicológica del mismo nombre.",
+      "note": "Spanish emotion research pairs 'valencia' and 'activación' (e.g. Spanish and Rioplatense work on the SAM scale and IADS sounds); the loan 'arousal' appears in academic texts. 'excitación' is avoided for its other connotations.",
+      "gender": "f"
+    },
+    "harshness": {
+      "term": "estridencia",
+      "alt": [
+        "aspereza",
+        "dureza",
+        "harshness"
+      ],
+      "definition": "Cuán desagradable resulta escuchar un sonido, a partir de la molestia psicoacústica; no es lo mismo que la rugosidad.",
+      "note": "'aspereza' is the most idiomatic translation of 'harshness' in mixing talk, but Spanish psychoacoustics also uses it for roughness (asper), the exact confusion the source warns against. 'estridencia' (DLE 'estridente': agudo, desapacible y chirriante) names the unpleasantness without a technical clash; 'dureza' collides with hardness (mallet, material, impact model).",
+      "gender": "f"
+    },
+    "tension": {
+      "term": "tensión",
+      "definition": "Acumulación y distensión a lo largo del tiempo, según el modelo de tensión musical de Farbood (2012).",
+      "note": "'tensión/distensión' is the Spanish music-theory pair for build-up and release.",
+      "gender": "f"
+    },
+    "harmonic-tension": {
+      "term": "tensión armónica",
+      "definition": "Cuán lejos está la armonía del reposo, según el espacio de intervalos tonales.",
+      "note": "Bernardes et al.'s Tonal Interval Space = 'espacio de intervalos tonales'.",
+      "gender": "f"
+    },
+    "novelty": {
+      "term": "novedad",
+      "definition": "Cuánto difiere un momento de lo que vino antes.",
+      "note": "'curva/función de novedad' (Foote) in Spanish MIR.",
+      "gender": "f"
+    },
+    "spectral-surprise": {
+      "term": "sorpresa espectral",
+      "alt": [
+        "imprevisto espectral",
+        "cambio espectral inesperado"
+      ],
+      "definition": "Cambio del espectro que la sonoridad no explica.",
+      "note": "The literal rendering is natural and keeps the English pairing; keep it apart from 'novedad' (novelty) and 'autoinformación' (surprisal). 'cambio espectral inesperado' is clearer but too long for UI.",
+      "gender": "f"
+    },
+    "surprisal": {
+      "term": "autoinformación",
+      "alt": [
+        "contenido de información"
+      ],
+      "definition": "Contenido de información de un evento: cuanto menos esperado, mayor.",
+      "note": "Information-theory term (self-information); music-expectation literature (IDyOM) says 'contenido de información (IC)'. 'sorpresa' is avoided because it would merge with 'sorpresa espectral'.",
+      "gender": "f"
+    },
+    "structural-change": {
+      "term": "cambio estructural",
+      "alt": [
+        "cambio de sección",
+        "transición estructural"
+      ],
+      "definition": "Dónde una pieza pasa a una parte nueva, con signo: hacia arriba donde entra sonido, hacia abajo donde cae o se corta.",
+      "note": "'cambio de sección' is friendlier but blurs with the section marks. In the Playhead UI the signed legend reads 'arriba: entrada; abajo: caída o corte'.",
+      "gender": "m"
+    },
+    "local-pulse": {
+      "term": "pulso local",
+      "definition": "Con qué fuerza y regularidad se percibe un pulso en cada momento.",
+      "note": "Grosche and Müller's PLP = 'pulso local predominante'. Avoid 'fuerza del pulso' (beat strength).",
+      "gender": "m"
+    },
+    "onset": {
+      "term": "inicio",
+      "alt": [
+        "onset"
+      ],
+      "definition": "El momento en que empieza un sonido o una nota.",
+      "note": "Spanish MIR often keeps 'onset' ('detección de onsets'); 'inicio' (de nota, de sonido) keeps it distinct from 'ataque' (a phase of the sound) and 'transitorio' (a signal feature).",
+      "gender": "m"
+    },
+    "onset-strength": {
+      "term": "fuerza de inicio",
+      "alt": [
+        "fuerza de onset"
+      ],
+      "definition": "Con qué fuerza llega sonido nuevo en cada momento; sus picos son golpes.",
+      "note": "'intensidad' avoided (physical quantity).",
+      "gender": "f"
+    },
+    "event": {
+      "term": "evento",
+      "definition": "Un sonido diferenciado dentro de un archivo, como un golpe, un paso o un crujido, con un inicio y un final.",
+      "note": "Cubase es: 'Eventos'.",
+      "gender": "m"
+    },
+    "attack": {
+      "term": "ataque",
+      "definition": "La primera parte de un sonido, desde su comienzo hasta su pico.",
+      "gender": "m"
+    },
+    "body": {
+      "term": "cuerpo",
+      "definition": "La parte sostenida, a menudo tonal, de un sonido tras su ataque.",
+      "gender": "m"
+    },
+    "decay": {
+      "term": "decaimiento",
+      "alt": [
+        "caída"
+      ],
+      "definition": "La parte de un sonido en la que este se extingue.",
+      "note": "As in synth and reverb UIs (Audacity es: 'Decaimiento (ms)'); room-acoustics texts say 'caída' ('curva de caída', 'tiempo de caída inicial' EDT). The loan 'decay' is also common.",
+      "gender": "m"
+    },
+    "tail": {
+      "term": "cola",
+      "definition": "La parte final del decaimiento, incluida la reverberación.",
+      "note": "'cola de reverberación' is standard.",
+      "gender": "f"
+    },
+    "transient": {
+      "term": "transitorio",
+      "alt": [
+        "transiente"
+      ],
+      "definition": "Un cambio breve y rápido de nivel y espectro, típicamente en un ataque.",
+      "note": "Ableton Live es and Native Instruments es: 'transitorios'; 'transiente' is an anglicism heard in Latin America.",
+      "gender": "m"
+    },
+    "beat": {
+      "term": "pulso",
+      "alt": [
+        "tiempo",
+        "beat"
+      ],
+      "definition": "El pulso regular que un oyente marcaría con el pie.",
+      "note": "'pulso' is the felt pulse (music theory; MIR 'seguimiento del pulso'); DAWs count bar positions in 'tiempos' ('compás:tiempo'). Audacity es wrongly renders beat as 'compás'.",
+      "gender": "m"
+    },
+    "downbeat": {
+      "term": "primer tiempo",
+      "alt": [
+        "tiempo fuerte",
+        "downbeat"
+      ],
+      "definition": "El primer tiempo de un compás.",
+      "note": "'primer tiempo (del compás)' is exact; 'tiempo fuerte' means any strong beat.",
+      "gender": "m"
+    },
+    "bar": {
+      "term": "compás",
+      "definition": "Un grupo de pulsos (tiempos), normalmente cuatro.",
+      "note": "No bar/measure split in Spanish: both are 'compás'.",
+      "gender": "m"
+    },
+    "tempo": {
+      "term": "tempo",
+      "definition": "La velocidad del pulso, en pulsos por minuto (BPM).",
+      "note": "'BPM' is kept; the Spanish expansion is 'pulsos' or 'pulsaciones por minuto'.",
+      "gender": "m"
+    },
+    "section": {
+      "term": "sección",
+      "definition": "Una parte de una pieza, como una introducción o un estribillo, detectada a partir de dónde cambia su sonido.",
+      "gender": "f"
+    },
+    "recurrence": {
+      "term": "recurrencia",
+      "definition": "Cuánto vuelve un sonido a estados en los que ya ha estado.",
+      "note": "Marwan et al.: 'gráficos de recurrencia'.",
+      "gender": "f"
+    },
+    "repetition-rate": {
+      "term": "frecuencia de repetición",
+      "alt": [
+        "tasa de repetición"
+      ],
+      "definition": "Con qué frecuencia se repite un patrón, en Hz.",
+      "note": "Given in Hz, so 'frecuencia' rather than 'tasa'.",
+      "gender": "f"
+    },
+    "periodicity": {
+      "term": "periodicidad",
+      "definition": "En qué medida un sonido es periódico (con tono definido) en lugar de ruidoso.",
+      "gender": "f"
+    },
+    "phase-coherence": {
+      "term": "coherencia de fase",
+      "definition": "Con qué regularidad avanzan las fases de un sonido; 1 para un tono estable, cerca de 0 para el ruido.",
+      "gender": "f"
+    },
+    "time-arrow": {
+      "term": "flecha del tiempo",
+      "alt": [
+        "irreversibilidad temporal",
+        "asimetría temporal"
+      ],
+      "definition": "Cuánto cambia un sonido al reproducirlo al revés; es alta en golpes que decaen.",
+      "note": "'flecha del tiempo' is the established physics phrase and reads well as a curve name; 'irreversibilidad temporal' is the technical term (docs only, as in English); 'asimetría temporal' is a plain description.",
+      "gender": "f"
+    },
+    "impulsiveness": {
+      "term": "impulsividad",
+      "alt": [
+        "carácter impulsivo",
+        "contenido impulsivo"
+      ],
+      "definition": "En qué medida un sonido se compone de clics, chasquidos y crepitaciones, a partir de la curtosis espectral.",
+      "note": "'impulsividad' and 'ruido impulsivo' are used in Spanish noise assessment; 'carácter impulsivo' avoids the psychological sense of 'impulsividad' but is longer.",
+      "gender": "f"
+    },
+    "spectral-kurtosis": {
+      "term": "curtosis espectral",
+      "definition": "Un estadístico que vale 0 para un ruido estable, −1 para un tono estable y es grande para los clics.",
+      "gender": "f"
+    },
+    "spectral-motion": {
+      "term": "movimiento espectral",
+      "alt": [
+        "desplazamiento espectral",
+        "deriva espectral"
+      ],
+      "definition": "Con qué rapidez sube o baja el centro del espectro, en octavas por segundo.",
+      "note": "Literal and clear. 'desplazamiento espectral' clashes with 'desplazamiento DC'; 'deriva espectral' suggests a slow drift.",
+      "gender": "m"
+    },
+    "spectral-centroid": {
+      "term": "centroide espectral",
+      "definition": "El centro de masas de un espectro; una medida del brillo.",
+      "gender": "m"
+    },
+    "reshaping": {
+      "term": "remodelado",
+      "alt": [
+        "cambio de forma",
+        "reconfiguración"
+      ],
+      "definition": "Cambio espectral que no desplaza el centro, como cuando un espectro se ensancha o se estrecha.",
+      "note": "'remodelado' is short and suggests a change of shape in place; 'cambio de forma' is plainest but generic; 'reconfiguración' sounds like settings.",
+      "gender": "m"
+    },
+    "burstiness": {
+      "term": "índice de ráfagas",
+      "short": "Ráfagas",
+      "alt": [
+        "burstiness"
+      ],
+      "definition": "Si los eventos llegan de forma regular (por debajo de 0), aleatoria (0) o en ráfagas (por encima de 0).",
+      "note": "No settled Spanish term; Spanish network-science papers usually keep 'burstiness' (Goh and Barabási's parameter B). 'índice de ráfagas' is transparent.",
+      "gender": "m"
+    },
+    "temporal-entropy": {
+      "term": "entropía temporal",
+      "definition": "Cuán uniformemente se reparte la energía de un sonido en el tiempo.",
+      "note": "Sueur et al.'s H_t; same term in Spanish ecoacoustics.",
+      "gender": "f"
+    },
+    "decay-time": {
+      "term": "tiempo de decaimiento (T60)",
+      "short": "Decaimiento (T60)",
+      "alt": [
+        "tiempo de caída (T60)"
+      ],
+      "definition": "El tiempo que tarda un sonido en caer 60 dB.",
+      "note": "Follows 'decaimiento'. For rooms the same measure is 'tiempo de reverberación'.",
+      "gender": "m"
+    },
+    "damping": {
+      "term": "amortiguamiento",
+      "definition": "Con qué rapidez pierde energía un cuerpo que vibra.",
+      "gender": "m"
+    },
+    "material": {
+      "term": "material",
+      "definition": "De qué está hecho un objeto golpeado, tal como se percibe: amortiguado, similar al vidrio o similar al metal.",
+      "gender": "m"
+    },
+    "partial": {
+      "term": "parcial",
+      "definition": "Una componente de frecuencia de un sonido.",
+      "note": "Noun 'un parcial'; use 'armónico' only for harmonic partials.",
+      "gender": "m"
+    },
+    "overtone": {
+      "term": "sobretono",
+      "definition": "Un parcial por encima del más grave.",
+      "note": "'armónico' only when the partial is harmonic.",
+      "gender": "m"
+    },
+    "inharmonic": {
+      "term": "inarmónico",
+      "definition": "Con parciales que no son múltiplos enteros de una fundamental, como en campanas y metales golpeados."
+    },
+    "quality-checks": {
+      "term": "comprobaciones de calidad",
+      "alt": [
+        "controles de calidad"
+      ],
+      "definition": "Comprobaciones automáticas de clipping, desplazamiento DC, silencio y colas cortadas.",
+      "note": "'comprobar' is the Microsoft Spanish verb for 'check'; 'controles de calidad' also natural.",
+      "gender": "f"
+    },
+    "self-check": {
+      "term": "autocomprobación",
+      "alt": [
+        "autoverificación",
+        "autotest"
+      ],
+      "definition": "Una prueba que modifica un sonido de forma conocida y comprueba que el análisis cambia como debe.",
+      "note": "Matches 'comprobaciones de calidad'. 'autotest' is common in electronics but suggests a unit test, which the English avoids.",
+      "gender": "f"
+    },
+    "de-harsh": {
+      "term": "reducir estridencia",
+      "short": "Reducir estridencia",
+      "alt": [
+        "reducir aspereza",
+        "suavizar",
+        "de-harsh"
+      ],
+      "definition": "Una herramienta que atenúa las resonancias solo mientras el sonido es estridente.",
+      "note": "Infinitive command. Follows 'harshness'; becomes 'Reducir aspereza' if the author picks 'aspereza'. 'Suavizar' alone is idiomatic but too generic (smoothing). Not a de-esser ('de-esser' also in Spanish)."
+    },
+    "attack-and-body": {
+      "term": "ataque y cuerpo",
+      "short": "Ataque y cuerpo",
+      "alt": [
+        "separar ataque y cuerpo",
+        "ataque/cuerpo"
+      ],
+      "definition": "Una herramienta que separa un sonido en su parte transitoria y su parte sostenida, para reequilibrarlas.",
+      "note": "Noun title, as in English. 'Separar ataque y cuerpo' says what it does but is a command; avoid 'modelador de transitorios' (transient shaper)."
+    },
+    "layer-remix": {
+      "term": "remezcla de capas",
+      "short": "Remezcla de capas",
+      "alt": [
+        "remezclar capas",
+        "remix de capas"
+      ],
+      "definition": "Una herramienta que separa un sonido en capas y las vuelve a mezclar con niveles nuevos.",
+      "note": "Noun title. 'remix' is common in speech but 'remezcla' is standard Spanish.",
+      "gender": "f"
+    },
+    "tension-shaper": {
+      "term": "modelador de tensión",
+      "short": "Modelador de tensión",
+      "alt": [
+        "moldeador de tensión",
+        "perfilador de tensión"
+      ],
+      "definition": "Una herramienta que convierte la curva de tensión en automatización de ganancia y brillo.",
+      "note": "Parallels the Spanish names for a transient shaper ('modelador' / 'moldeador de transitorios'). 'perfilador' is literal but rare.",
+      "gender": "m"
+    },
+    "loop-maker": {
+      "term": "creador de bucles",
+      "short": "Creador de bucles",
+      "alt": [
+        "generador de bucles",
+        "creador de loops"
+      ],
+      "definition": "Una herramienta que encuentra los puntos de bucle donde el sonido se repite mejor y los une con un fundido cruzado.",
+      "note": "Follows 'bucle'; 'creador de loops' if the author prefers the loan for loops.",
+      "gender": "m"
+    },
+    "variations": {
+      "term": "variaciones",
+      "definition": "Varias versiones ligeramente distintas de un mismo sonido, para evitar la repetición en los juegos.",
+      "gender": "f"
+    },
+    "clean-up": {
+      "term": "limpieza para exportar",
+      "short": "Limpieza para exportar",
+      "alt": [
+        "limpieza previa a la exportación"
+      ],
+      "definition": "Una herramienta que corrige lo que señalan las comprobaciones de calidad antes de exportar un sonido.",
+      "note": "Exactly 22 characters, fits as a UI label.",
+      "gender": "f"
+    },
+    "reverb-on-tails": {
+      "term": "reverberación en las colas",
+      "short": "Reverb en las colas",
+      "alt": [
+        "reverb en las colas",
+        "reverb solo en colas"
+      ],
+      "definition": "Reverberación alimentada solo por los decaimientos de los eventos, que mantiene secos los ataques.",
+      "note": "Noun title. Studio Spanish says 'la reverb'; 'reverberación' is preferred in docs, the short form in UI.",
+      "gender": "f"
+    },
+    "drive-hits": {
+      "term": "saturar los golpes",
+      "short": "Saturar los golpes",
+      "alt": [
+        "saturar golpes",
+        "drive en los golpes",
+        "calentar los golpes"
+      ],
+      "definition": "Saturación aplicada solo a los ataques o a los cuerpos de los eventos.",
+      "note": "Infinitive command. 'drive' as a saturation control is often left in English ('el drive'), but 'saturar' is clearest; 'golpes' = hits. 'calentar' is studio slang."
+    },
+    "ring-time": {
+      "term": "tiempo de resonancia",
+      "short": "Tiempo de resonancia",
+      "alt": [
+        "duración de la resonancia",
+        "tiempo de vibración"
+      ],
+      "definition": "Una herramienta que alarga o acorta cuánto tiempo resuena cada evento después de su pico.",
+      "note": "Noun title, as in English. 'resonar' is the verb for ringing objects; avoid 'tiempo de decaimiento' (T60).",
+      "gender": "m"
+    },
+    "level-events": {
+      "term": "nivelar los eventos",
+      "short": "Nivelar los eventos",
+      "alt": [
+        "igualar los eventos",
+        "igualar el nivel de los eventos"
+      ],
+      "definition": "Una herramienta que iguala la sonoridad de los eventos, con una ganancia por evento, sin alterar su forma.",
+      "note": "Infinitive command. 'nivelar' keeps the link to 'nivel' and to 'nivelador' (leveler); 'igualar' is just as idiomatic. Not 'comprimir' (a compressor changes the shape)."
+    },
+    "fold-to-mono": {
+      "term": "pasar a mono en fase",
+      "short": "Pasar a mono en fase",
+      "alt": [
+        "plegar a mono",
+        "pasar a mono",
+        "fold to mono"
+      ],
+      "definition": "Convertir estéreo en mono con la fase de los canales alineada, para que nada se cancele.",
+      "note": "Infinitive command. 'pasar a mono' is the everyday phrase but also covers the plain sum ('sumar a mono'; Audacity es 'Mezclar pista estéreo a mono'); 'en fase' carries the alignment. Literal 'plegar' is not used in Spanish audio."
+    },
+    "widen-tails": {
+      "term": "ensanchar las colas",
+      "short": "Ensanchar las colas",
+      "alt": [
+        "abrir las colas",
+        "ampliar el estéreo de las colas"
+      ],
+      "definition": "Crear o ensanchar el estéreo solo después de los ataques, manteniendo los ataques centrados y el resultado compatible con mono.",
+      "note": "Infinitive command. 'ensanchar la imagen estéreo' is standard phrasing; 'abrir' is studio slang ('abrir el estéreo')."
+    },
+    "downmix": {
+      "term": "downmix",
+      "alt": [
+        "mezcla descendente"
+      ],
+      "definition": "Convertir más canales en menos.",
+      "note": "Apple Compressor es keeps 'downmix' and studios use the loan; UIT-R BS.775 (es) says 'mezclado descendente', Dolby-style docs 'mezcla descendente'.",
+      "gender": "m"
+    },
+    "mono-compatibility": {
+      "term": "compatibilidad mono",
+      "alt": [
+        "compatibilidad con mono"
+      ],
+      "definition": "Lo bien que un sonido estéreo resiste la suma a mono.",
+      "note": "UIT-R BS.775 (es): 'compatibilidad con los sistemas de escucha monofónica'.",
+      "gender": "f"
+    },
+    "decorrelation": {
+      "term": "decorrelación",
+      "definition": "Hacer que dos señales se parezcan menos manteniendo su espectro, para ensanchar una imagen estéreo.",
+      "gender": "f"
+    },
+    "comb-filtering": {
+      "term": "filtrado en peine",
+      "alt": [
+        "efecto peine"
+      ],
+      "definition": "Muescas regulares en un espectro cuando una señal se suma con una copia retardada de sí misma.",
+      "note": "'filtro peine' = comb filter; 'efecto peine' is common in studio talk.",
+      "gender": "m"
+    },
+    "cancellation": {
+      "term": "cancelación",
+      "definition": "Pérdida de nivel cuando se suman señales de fase opuesta.",
+      "note": "Often 'cancelación de fase' (RØDE es).",
+      "gender": "f"
+    },
+    "pre-echo": {
+      "term": "preeco",
+      "alt": [
+        "pre-eco"
+      ],
+      "definition": "Un leve emborronamiento de un sonido antes de su ataque, causado por el procesamiento por tramas.",
+      "note": "RAE spelling joins prefixes ('preeco'); 'pre-eco' is widely seen.",
+      "gender": "m"
+    },
+    "eq": {
+      "term": "ecualizador (EQ)",
+      "short": "EQ",
+      "alt": [
+        "ecualización"
+      ],
+      "definition": "Un ecualizador: un filtro que cambia el nivel de bandas de frecuencia.",
+      "note": "'EQ' is used as is in Spanish UIs and speech (masculine: 'el EQ'); 'ecualización' is the process (Audacity es).",
+      "gender": "m"
+    },
+    "dynamic-eq": {
+      "term": "ecualizador dinámico",
+      "short": "EQ dinámico",
+      "alt": [
+        "EQ dinámico"
+      ],
+      "definition": "Un EQ cuyas ganancias de banda siguen el nivel de cada banda.",
+      "gender": "m"
+    },
+    "automation": {
+      "term": "automatización",
+      "definition": "Cambios de parámetros a lo largo del tiempo, grabados o dibujados.",
+      "gender": "f"
+    },
+    "compressor": {
+      "term": "compresor",
+      "definition": "Un procesador que, por encima de un umbral, baja los pasajes fuertes según una ratio.",
+      "gender": "m"
+    },
+    "threshold": {
+      "term": "umbral",
+      "definition": "El nivel por encima del cual actúa un procesador.",
+      "note": "Audacity es, Native Instruments es.",
+      "gender": "m"
+    },
+    "ratio": {
+      "term": "ratio",
+      "alt": [
+        "relación de compresión"
+      ],
+      "definition": "Cuánto reduce un compresor el nivel por encima de su umbral.",
+      "note": "Studio and Native Instruments es usage: 'ratio'. The DLE gives it as feminine ('la ratio'), but 'el ratio' is very common, especially in Latin America. 'relación de compresión' in formal texts.",
+      "gender": "f"
+    },
+    "attack-time": {
+      "term": "tiempo de ataque",
+      "definition": "Con qué rapidez reacciona un procesador cuando el nivel sube.",
+      "gender": "m"
+    },
+    "release-time": {
+      "term": "tiempo de liberación",
+      "alt": [
+        "tiempo de relajación",
+        "release"
+      ],
+      "definition": "Con qué rapidez se recupera un procesador cuando el nivel baja.",
+      "note": "Native Instruments es: 'liberación'; ADSR texts use 'relajación'; Apple keeps 'Release'. Avoid Audacity es 'tiempo de decaimiento', which collides with decay.",
+      "gender": "m"
+    },
+    "gate": {
+      "term": "puerta",
+      "alt": [
+        "gate",
+        "puerta de ruido"
+      ],
+      "definition": "Un procesador o una condición que solo se abre por encima de un umbral.",
+      "note": "Audacity es: 'Puerta', 'Puerta de ruido'; 'gate' common in studio talk.",
+      "gender": "f"
+    },
+    "saturation": {
+      "term": "saturación",
+      "definition": "Distorsión suave que añade armónicos y redondea los picos.",
+      "note": "Keep apart from clipping, although 'saturar' is loosely used for both in speech.",
+      "gender": "f"
+    },
+    "pumping": {
+      "term": "bombeo",
+      "definition": "Subida y bajada audibles del fondo causadas por un compresor.",
+      "note": "Native Instruments es: 'bombeo'.",
+      "gender": "m"
+    },
+    "evenness": {
+      "term": "uniformidad",
+      "alt": [
+        "regularidad"
+      ],
+      "definition": "Cuán parecidos son los eventos en sonoridad.",
+      "note": "'regularidad' would suggest timing (see burstiness).",
+      "gender": "f"
+    },
+    "effect-chain": {
+      "term": "cadena de efectos",
+      "definition": "Efectos aplicados uno tras otro a un sonido.",
+      "gender": "f"
+    },
+    "preset": {
+      "term": "preset",
+      "alt": [
+        "preajuste",
+        "valor predefinido"
+      ],
+      "definition": "Un conjunto de ajustes guardado.",
+      "note": "Cubase es keeps 'preset'; Apple and Adobe es use 'preajuste'; Audacity es 'valor predefinido'.",
+      "gender": "m"
+    },
+    "morph": {
+      "term": "morphing",
+      "alt": [
+        "transformación progresiva",
+        "metamorfosis"
+      ],
+      "definition": "Una transición gradual de un sonido a otro.",
+      "note": "Spanish sound design uses the loan 'morphing'; 'transformación progresiva' suits docs.",
+      "gender": "m"
+    },
+    "cross-synthesis": {
+      "term": "síntesis cruzada",
+      "definition": "Combinación del espectro de un sonido con la envolvente o la excitación de otro.",
+      "gender": "f"
+    },
+    "convolution": {
+      "term": "convolución",
+      "definition": "Filtrado de un sonido mediante otro, por ejemplo mediante la respuesta al impulso de una sala.",
+      "gender": "f"
+    },
+    "envelope-transfer": {
+      "term": "transferencia de envolvente",
+      "definition": "Dar a un sonido la envolvente de nivel de otro.",
+      "gender": "f"
+    },
+    "ring-modulation": {
+      "term": "modulación en anillo",
+      "definition": "Multiplicación de dos señales, que crea frecuencias suma y diferencia.",
+      "gender": "f"
+    },
+    "granular": {
+      "term": "granular",
+      "definition": "Construido a partir de muchos granos cortos de sonido."
+    },
+    "accent": {
+      "term": "acento",
+      "alt": [
+        "refuerzo",
+        "realce",
+        "sweetener"
+      ],
+      "definition": "Un sonido breve añadido en un momento de otro sonido para enfatizarlo.",
+      "note": "'acento' is the musical sense and reads naturally; 'refuerzo' describes the purpose (like a sweetener); 'realce' may suggest an EQ boost; 'sweetener' is the trade loan.",
+      "gender": "m"
+    },
+    "generator": {
+      "term": "generador",
+      "definition": "Una parte de la aplicación que crea sonidos nuevos a partir de parámetros.",
+      "gender": "m"
+    },
+    "synth": {
+      "term": "sintetizador",
+      "alt": [
+        "sinte",
+        "synth"
+      ],
+      "definition": "Un generador de sonido construido con osciladores, ruido, envolventes y filtros.",
+      "note": "Colloquial 'sinte' (Spain and Latin America) and 'synth'.",
+      "gender": "m"
+    },
+    "impact-model": {
+      "term": "impacto",
+      "definition": "Un modelo físico de un objeto golpeado de un material y una forma determinados.",
+      "note": "As a model name: 'modelo de impacto'.",
+      "gender": "m"
+    },
+    "resynthesis": {
+      "term": "resíntesis",
+      "definition": "Reconstrucción de un sonido a partir de parámetros medidos en él, como sus parciales y decaimientos.",
+      "gender": "f"
+    },
+    "modal": {
+      "term": "modal",
+      "definition": "Formado por modos resonantes, cada uno con su frecuencia y su decaimiento.",
+      "note": "'síntesis modal'."
+    },
+    "texture": {
+      "term": "textura",
+      "definition": "Un sonido continuo formado por muchos eventos pequeños, como la lluvia, el fuego o la grava.",
+      "gender": "f"
+    },
+    "reaction": {
+      "term": "acción y reacción",
+      "short": "Acción y reacción",
+      "alt": [
+        "reacción",
+        "respuesta del medio"
+      ],
+      "definition": "Un generador en el que una acción, como un objeto que se mueve o una fuerza, impulsa el sonido de un medio que responde a ella (grava, agua, aire).",
+      "note": "Literal pair as in English; 'reacción' alone for a compact label; 'respuesta del medio' is the most explicit but long.",
+      "gender": "f"
+    },
+    "medium": {
+      "term": "medio",
+      "definition": "Lo que reacciona a una acción: grava, hojas, agua, aire, chispas o un campo de fuerza.",
+      "gender": "m"
+    },
+    "drive-curve": {
+      "term": "curva motriz",
+      "alt": [
+        "curva de control",
+        "curva de mando"
+      ],
+      "definition": "Una curva que controla los parámetros de un sonido a lo largo del tiempo.",
+      "note": "'motriz' renders 'drive' (as in 'fuerza motriz') and is distinctive; 'curva de control' is immediately clear but generic; 'curva de mando' is literal and slightly old-fashioned.",
+      "gender": "f"
+    },
+    "inertia": {
+      "term": "inercia",
+      "definition": "Con qué lentitud se asienta una reacción después de que cesa la acción.",
+      "gender": "f"
+    },
+    "foley": {
+      "term": "foley",
+      "alt": [
+        "efectos de sala"
+      ],
+      "definition": "Sonidos cotidianos interpretados y grabados en sincronía con la imagen.",
+      "note": "'foley' (usually lowercase, m) is used across Spanish-speaking industries; Spain's film and dubbing tradition also calls it 'efectos sala' / 'efectos de sala'.",
+      "gender": "m"
+    },
+    "ambience": {
+      "term": "ambiente",
+      "alt": [
+        "sonido ambiente"
+      ],
+      "definition": "El sonido de fondo de un lugar.",
+      "note": "Post-production speaks of 'ambientes' (pl.).",
+      "gender": "m"
+    },
+    "one-shot": {
+      "term": "one-shot",
+      "alt": [
+        "sonido de disparo único"
+      ],
+      "definition": "Un sonido corto que se reproduce una vez, como un golpe o un clic de interfaz.",
+      "note": "Loan used in samplers and sound libraries.",
+      "gender": "m"
+    },
+    "whoosh": {
+      "term": "whoosh",
+      "alt": [
+        "pasada"
+      ],
+      "definition": "El sonido de algo que pasa rápidamente junto al oyente.",
+      "note": "Loan used in Spanish sound libraries; 'pasada' covers pass-bys.",
+      "gender": "m"
+    },
+    "finishing": {
+      "term": "acabado",
+      "alt": [
+        "finalización",
+        "retoques finales"
+      ],
+      "definition": "Los últimos pasos antes de exportar: formato, canales, fundidos y nivel.",
+      "gender": "m"
+    },
+    "steel": {
+      "term": "acero",
+      "gender": "m"
+    },
+    "brass": {
+      "term": "latón",
+      "note": "Not 'bronce' (bronze).",
+      "gender": "m"
+    },
+    "aluminium": {
+      "term": "aluminio",
+      "gender": "m"
+    },
+    "glass": {
+      "term": "vidrio",
+      "alt": [
+        "cristal"
+      ],
+      "note": "'vidrio' is universal and technical; 'cristal' is everyday Spain usage (and technically means crystal glass).",
+      "gender": "m"
+    },
+    "ceramic": {
+      "term": "cerámica",
+      "gender": "f"
+    },
+    "ice": {
+      "term": "hielo",
+      "gender": "m"
+    },
+    "wood": {
+      "term": "madera",
+      "gender": "f"
+    },
+    "plastic": {
+      "term": "plástico",
+      "gender": "m"
+    },
+    "stone": {
+      "term": "piedra",
+      "gender": "f"
+    },
+    "cardboard": {
+      "term": "cartón",
+      "gender": "m"
+    },
+    "rubber": {
+      "term": "caucho",
+      "alt": [
+        "goma",
+        "hule"
+      ],
+      "note": "'caucho' is understood everywhere; 'goma' is everyday in Spain and the Southern Cone, 'hule' in Mexico and Central America.",
+      "gender": "m"
+    },
+    "bar-shape": {
+      "term": "barra",
+      "definition": "Un cuerpo sólido alargado, como una varilla o una viga.",
+      "note": "Shape; unrelated to 'compás' (musical bar).",
+      "gender": "f"
+    },
+    "plate": {
+      "term": "placa",
+      "alt": [
+        "lámina"
+      ],
+      "definition": "Un cuerpo plano y delgado.",
+      "note": "Mechanics: 'placa'; 'lámina' for very thin sheets.",
+      "gender": "f"
+    },
+    "membrane": {
+      "term": "membrana",
+      "definition": "Una piel tensada, como el parche de un tambor.",
+      "gender": "f"
+    },
+    "shell": {
+      "term": "cáscara",
+      "alt": [
+        "carcasa",
+        "lámina curva"
+      ],
+      "definition": "Un cuerpo curvo y delgado, como una lata o una olla.",
+      "note": "Structural mechanics calls shells 'cáscaras' or 'láminas'; 'carcasa' (casing) is more everyday if 'cáscara' reads too organic in UI.",
+      "gender": "f"
+    },
+    "bell": {
+      "term": "campana",
+      "gender": "f"
+    },
+    "wire": {
+      "term": "cuerda",
+      "short": "Cuerda / alambre",
+      "alt": [
+        "alambre"
+      ],
+      "definition": "Una cuerda rígida o un alambre que resuena con parciales ligeramente estirados (inarmónicos).",
+      "note": "Workbench's 'Wire / string' shape: 'cuerda' is the physics term ('cuerda vibrante') and covers metal strings and wires; 'alambre' keeps the metal-wire image and suits a combined label 'Cuerda / alambre'. 'parciales estirados' as in piano 'afinación estirada'.",
+      "gender": "f"
+    },
+    "box": {
+      "term": "caja",
+      "definition": "Un cuerpo hueco con caras planas.",
+      "gender": "f"
+    }
+  }
+}

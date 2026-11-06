@@ -1,0 +1,865 @@
+{
+ "waveform": {
+  "term": "Wellenform",
+  "short": "Wellenform",
+  "definition": "Die grafische Darstellung der Amplitude eines Sounds über der Zeit."
+ },
+ "spectrogram": {
+  "term": "Spektrogramm",
+  "short": "Spektrogramm",
+  "definition": "Ein Bild davon, wie sich der Frequenzinhalt eines Sounds über die Zeit ändert: Zeit nach rechts, Frequenz nach oben, Pegel als Farbe."
+ },
+ "mel-scale": {
+  "term": "Mel-Skala",
+  "short": "Mel-Skala",
+  "definition": "Eine Frequenzskala, die so eingeteilt ist, wie Tonhöhe gehört wird: unterhalb von 1 kHz annähernd linear, darüber logarithmisch."
+ },
+ "playhead": {
+  "term": "Abspielposition",
+  "short": "Abspielposition",
+  "definition": "Die mitlaufende Linie, die die aktuelle Wiedergabeposition markiert."
+ },
+ "edit-cursor": {
+  "term": "Einfügemarke",
+  "short": "Einfügemarke",
+  "definition": "Die Position, an der Bearbeitung und Wiedergabe beginnen; wird per Klick gesetzt."
+ },
+ "sample-rate": {
+  "term": "Abtastrate",
+  "short": "Abtastrate",
+  "definition": "Anzahl der Abtastwerte pro Sekunde eines digitalen Sounds, in Hz."
+ },
+ "bit-depth": {
+  "term": "Bittiefe",
+  "short": "Bittiefe",
+  "definition": "Bits pro Abtastwert eines digitalen Sounds; bestimmt seine Auflösung."
+ },
+ "channel": {
+  "term": "Kanal",
+  "short": "Kanal",
+  "definition": "Ein Signal einer Audiodatei; Stereo hat zwei."
+ },
+ "mono": {
+  "term": "Mono",
+  "short": "Mono",
+  "definition": "Ein Kanal."
+ },
+ "stereo": {
+  "term": "Stereo",
+  "short": "Stereo",
+  "definition": "Zwei Kanäle, links und rechts."
+ },
+ "mid-side": {
+  "term": "Mitte/Seite",
+  "short": "Mitte/Seite",
+  "definition": "Stereo, dargestellt als Summe (Mitte) und Differenz (Seite) der Kanäle."
+ },
+ "phase": {
+  "term": "Phase",
+  "short": "Phase",
+  "definition": "An welcher Stelle ihres Zyklus sich eine Welle zu einem bestimmten Zeitpunkt befindet."
+ },
+ "polarity": {
+  "term": "Polarität",
+  "short": "Polarität",
+  "definition": "Ob ein Signal in ursprünglicher Lage oder invertiert ist."
+ },
+ "level": {
+  "term": "Pegel",
+  "short": "Pegel",
+  "definition": "Wie stark ein Signal ist, meist in dB."
+ },
+ "gain": {
+  "term": "Gain",
+  "short": "Gain",
+  "definition": "Eine Pegeländerung, in dB."
+ },
+ "peak": {
+  "term": "Spitzenwert",
+  "short": "Spitzenwert",
+  "definition": "Der größte Betrag der Abtastwerte."
+ },
+ "true-peak": {
+  "term": "True Peak",
+  "short": "True Peak",
+  "definition": "Der Spitzenwert des Signals zwischen den Abtastwerten, wie ihn ein D/A-Wandler wiedergeben würde."
+ },
+ "loudness": {
+  "term": "Lautheit",
+  "short": "Lautheit",
+  "definition": "Wie laut ein Sound gehört wird, im Unterschied zu seinem Pegel."
+ },
+ "lufs": {
+  "term": "LUFS",
+  "short": "LUFS",
+  "definition": "Lautheitseinheiten relativ zur digitalen Vollaussteuerung (ITU-R BS.1770); 1 LU entspricht 1 dB."
+ },
+ "k-weighting": {
+  "term": "K-Bewertung",
+  "short": "K-Bewertung",
+  "definition": "Die Frequenzbewertung, die Lautheitsmesser vor der Messung anwenden."
+ },
+ "normalize": {
+  "term": "Normalisieren",
+  "short": "Normalisieren",
+  "definition": "Den Spitzenwert oder die Lautheit eines Sounds auf einen Zielwert setzen."
+ },
+ "fade": {
+  "term": "Fade",
+  "short": "Fade",
+  "definition": "Eine allmähliche Pegeländerung am Anfang (Fade-in) oder am Ende (Fade-out)."
+ },
+ "clipping": {
+  "term": "Clipping",
+  "short": "Clipping",
+  "definition": "Verzerrung, wenn ein Signal den größten speicherbaren Wert überschreitet."
+ },
+ "dc-offset": {
+  "term": "DC-Offset",
+  "short": "DC-Offset",
+  "definition": "Eine konstante Verschiebung des Signals weg von null."
+ },
+ "noise-floor": {
+  "term": "Grundrauschen",
+  "short": "Grundrauschen",
+  "definition": "Der Pegel des Hintergrundrauschens unter einem Sound."
+ },
+ "silence": {
+  "term": "Stille",
+  "short": "Stille",
+  "definition": "Ein Zeitraum ohne Schall oberhalb des Grundrauschens."
+ },
+ "cut-tail": {
+  "term": "abgeschnittener Ausklang",
+  "short": "Ausklang abgeschnitten",
+  "definition": "Ein Sound, der endet, bevor seine Abklingphase ausgeklungen ist."
+ },
+ "take": {
+  "term": "Take",
+  "short": "Take",
+  "definition": "Eine aufgenommene oder gerenderte Version eines Sounds."
+ },
+ "render": {
+  "term": "Rendern",
+  "short": "Rendern",
+  "definition": "Einen bearbeiteten Sound berechnen und als Audio schreiben."
+ },
+ "loop": {
+  "term": "Loop",
+  "short": "Loop",
+  "definition": "Ein Sound, der sich ohne hörbare Nahtstelle wiederholt."
+ },
+ "crossfade": {
+  "term": "Crossfade",
+  "short": "Crossfade",
+  "definition": "Ein Fade-out eines Sounds, der sich mit dem Fade-in eines anderen überlappt."
+ },
+ "slice": {
+  "term": "Slicen",
+  "short": "Slicen",
+  "definition": "Einen Sound an gewählten Stellen in Teile schneiden."
+ },
+ "time-stretch": {
+  "term": "Time-Stretching",
+  "short": "Time-Stretching",
+  "definition": "Die Dauer eines Sounds ändern, ohne seine Tonhöhe zu ändern."
+ },
+ "pitch-shift": {
+  "term": "Pitch-Shifting",
+  "short": "Pitch-Shifting",
+  "definition": "Die Tonhöhe eines Sounds ändern, ohne seine Dauer zu ändern."
+ },
+ "sone": {
+  "term": "Sone",
+  "short": "Sone",
+  "definition": "Die Einheit der wahrgenommenen Lautheit; 1 sone ist die Lautheit eines 1-kHz-Tons mit 40 dB SPL."
+ },
+ "sharpness": {
+  "term": "Schärfe",
+  "short": "Schärfe",
+  "definition": "Wie stark die Energie eines Sounds nach dem Höreindruck bei hohen Frequenzen liegt; in acum."
+ },
+ "roughness": {
+  "term": "Rauigkeit",
+  "short": "Rauigkeit",
+  "definition": "Der raue, schnarrende Höreindruck schneller Amplitudenmodulation (etwa 15–300 Hz); in asper."
+ },
+ "fluctuation-strength": {
+  "term": "Schwankungsstärke",
+  "short": "Schwankungsstärke",
+  "definition": "Die Empfindung langsamer Amplitudenmodulation (etwa 1–20 Hz, am stärksten um 4 Hz); in vacil."
+ },
+ "psychoacoustic-annoyance": {
+  "term": "psychoakustische Lästigkeit",
+  "short": "Lästigkeit",
+  "definition": "Zwickers Zusammenfassung von Lautheit, Schärfe, Rauigkeit und Schwankungsstärke zu einem einzigen Lästigkeitswert."
+ },
+ "masking": {
+  "term": "Verdeckung",
+  "short": "Verdeckung",
+  "definition": "Ein Sound macht einen anderen schwerer oder gar nicht hörbar."
+ },
+ "critical-band": {
+  "term": "Frequenzgruppe",
+  "short": "Frequenzgruppe",
+  "definition": "Der Frequenzbereich, den das Gehör zu einer Einheit zusammenfasst; angegeben auf der Bark-Skala (Tonheit)."
+ },
+ "curve": {
+  "term": "Kurve",
+  "short": "Kurve",
+  "definition": "Ein Wert, der über der Zeit entlang der Wellenform gezeichnet wird."
+ },
+ "overview": {
+  "term": "Übersicht",
+  "short": "Übersicht",
+  "definition": "Ein kleines Bild eines ganzen Sounds, mit dem man sich darin zurechtfindet."
+ },
+ "strip": {
+  "term": "Streifen",
+  "short": "Streifen",
+  "definition": "Die Übersicht eines Sounds, wie Playhead sie zeichnet: Wellenform, Kurven und Markierungen in einem Band."
+ },
+ "look": {
+  "term": "Look",
+  "short": "Look",
+  "definition": "Eine benannte Art, einen Streifen zu zeichnen, festgelegt durch einen kurzen Code aus Ebenen."
+ },
+ "look-code": {
+  "term": "Look-Code",
+  "short": "Look-Code",
+  "definition": "Der kurze Text, der einen Look festlegt, zum Beispiel „form:overlay,shape:mirror,lane:harshness“."
+ },
+ "layer": {
+  "term": "Ebene",
+  "short": "Ebene",
+  "definition": "Ein Element eines Looks: eine Wellenform, ein Spektrogramm, eine Kurve, eine Gruppe von Markierungen oder Abschnitte."
+ },
+ "lane": {
+  "term": "Lane",
+  "short": "Lane",
+  "definition": "Ein waagerechtes Band eines Streifens, das eine Kurve enthält."
+ },
+ "overlay": {
+  "term": "überlagert",
+  "short": "überlagert",
+  "definition": "Kurven, die in einem gemeinsamen Band statt in getrennten Lanes gezeichnet werden."
+ },
+ "mirrored": {
+  "term": "gespiegelt",
+  "short": "gespiegelt",
+  "definition": "Symmetrisch über und unter einer Mittellinie gezeichnet, wie eine Wellenform."
+ },
+ "baseline-form": {
+  "term": "von der Grundlinie",
+  "short": "von der Grundlinie",
+  "definition": "Vom unteren Rand des Bandes nach oben gezeichnet."
+ },
+ "horizon-chart": {
+  "term": "Horizon-Chart",
+  "short": "Horizon-Chart",
+  "definition": "Ein kompaktes Diagramm, das eine Kurve in farbige Bänder zunehmender Intensität zusammenfaltet."
+ },
+ "sculpted-waveform": {
+  "term": "modellierte Wellenform",
+  "short": "modellierte Wellenform",
+  "definition": "Eine Wellenform, deren Höhe statt des Spitzenpegels einer Kurve folgt, zum Beispiel der wahrgenommenen Lautheit."
+ },
+ "outline": {
+  "term": "Umriss",
+  "short": "Umriss",
+  "definition": "Die gewöhnliche Spitzenwert-Wellenform, als dünne Linie hinter einer anderen Ebene gezeichnet."
+ },
+ "marks": {
+  "term": "Markierungen",
+  "short": "Markierungen",
+  "definition": "Striche entlang des Streifens an Ereignissen, Onsets, Beats oder Abschnittsgrenzen."
+ },
+ "legend": {
+  "term": "Legende",
+  "short": "Legende",
+  "definition": "Der Text, der angibt, was jede Farbe und jede Linie eines Streifens zeigt."
+ },
+ "profile": {
+  "term": "Analyseprofil",
+  "short": "Analyseprofil",
+  "definition": "Wie viel Playhead analysiert: schnell (nur Kurven), Soundeffekt oder Musik."
+ },
+ "descriptor": {
+  "term": "Deskriptor",
+  "short": "Deskriptor",
+  "definition": "Eine aus einem Sound berechnete Zahl oder Kurve, die eine seiner Eigenschaften beschreibt."
+ },
+ "feature": {
+  "term": "Merkmal",
+  "short": "Merkmal",
+  "definition": "Ein Deskriptor, der als Eingabe für einen Klassifikator oder eine Suche dient."
+ },
+ "activity": {
+  "term": "Aktivität",
+  "short": "Aktivität",
+  "definition": "Wie viel passiert: spektrale Veränderung und Dichte der Ereignisse."
+ },
+ "arousal": {
+  "term": "Erregung",
+  "short": "Erregung",
+  "definition": "Wie aufregend oder beruhigend ein Sound wirkt, nach der gleichnamigen psychologischen Dimension."
+ },
+ "harshness": {
+  "term": "Härte",
+  "short": "Härte",
+  "definition": "Wie unangenehm ein Sound anzuhören ist, abgeleitet aus der psychoakustischen Lästigkeit; nicht dasselbe wie Rauigkeit."
+ },
+ "tension": {
+  "term": "Spannung",
+  "short": "Spannung",
+  "definition": "Aufbau und Lösung über die Zeit, nach Farboods Modell der musikalischen Spannung."
+ },
+ "harmonic-tension": {
+  "term": "harmonische Spannung",
+  "short": "harmonische Spannung",
+  "definition": "Wie weit die Harmonik von der Ruhe entfernt ist, bestimmt im tonalen Intervallraum."
+ },
+ "novelty": {
+  "term": "Neuheit",
+  "short": "Neuheit",
+  "definition": "Wie sehr sich ein Moment vom Vorangegangenen unterscheidet."
+ },
+ "spectral-surprise": {
+  "term": "spektrale Überraschung",
+  "short": "spektrale Überraschung",
+  "definition": "Veränderung des Spektrums, die sich nicht durch die Lautheit erklären lässt."
+ },
+ "surprisal": {
+  "term": "Informationsgehalt",
+  "short": "Informationsgehalt",
+  "definition": "Informationsgehalt eines Ereignisses: je weniger erwartet, desto höher."
+ },
+ "structural-change": {
+  "term": "Strukturwechsel",
+  "short": "Strukturwechsel",
+  "definition": "Wo ein Stück in einen neuen Teil übergeht, mit Vorzeichen: nach oben, wo Klang einsetzt, nach unten, wo er wegfällt oder abbricht."
+ },
+ "local-pulse": {
+  "term": "lokaler Puls",
+  "short": "lokaler Puls",
+  "definition": "Wie stark und regelmäßig in jedem Moment ein Beat spürbar ist."
+ },
+ "onset": {
+  "term": "Onset",
+  "short": "Onset",
+  "definition": "Der Moment, in dem ein Sound oder ein Ton beginnt."
+ },
+ "onset-strength": {
+  "term": "Onset-Stärke",
+  "short": "Onset-Stärke",
+  "definition": "Wie stark in jedem Moment neuer Schall einsetzt; Spitzen sind Hits."
+ },
+ "event": {
+  "term": "Ereignis",
+  "short": "Ereignis",
+  "definition": "Ein einzelner, abgegrenzter Sound innerhalb einer Datei, etwa ein Schlag, ein Schritt oder ein Knarren, mit Anfang und Ende."
+ },
+ "attack": {
+  "term": "Attack",
+  "short": "Attack",
+  "definition": "Der erste Teil eines Sounds, von seinem Beginn bis zu seinem Maximum."
+ },
+ "body": {
+  "term": "Körper",
+  "short": "Körper",
+  "definition": "Der gehaltene, oft tonale Teil eines Sounds nach dem Attack."
+ },
+ "decay": {
+  "term": "Abklingphase",
+  "short": "Abklingphase",
+  "definition": "Der Teil eines Sounds, in dem er abklingt."
+ },
+ "tail": {
+  "term": "Ausklang",
+  "short": "Ausklang",
+  "definition": "Der späte Teil der Abklingphase, einschließlich des Nachhalls."
+ },
+ "transient": {
+  "term": "Transiente",
+  "short": "Transiente",
+  "definition": "Eine kurze, schnelle Änderung von Pegel und Spektrum, typischerweise im Attack."
+ },
+ "beat": {
+  "term": "Beat",
+  "short": "Beat",
+  "definition": "Der regelmäßige Puls, zu dem Hörer mitklopfen."
+ },
+ "downbeat": {
+  "term": "Downbeat",
+  "short": "Downbeat",
+  "definition": "Der erste Beat eines Takts."
+ },
+ "bar": {
+  "term": "Takt",
+  "short": "Takt",
+  "definition": "Eine Gruppe von Beats, meist vier."
+ },
+ "tempo": {
+  "term": "Tempo",
+  "short": "Tempo",
+  "definition": "Die Geschwindigkeit des Beats, in Beats pro Minute (BPM)."
+ },
+ "section": {
+  "term": "Abschnitt",
+  "short": "Abschnitt",
+  "definition": "Ein Teil eines Stücks, etwa Intro oder Refrain, ermittelt aus den Stellen, an denen sich sein Klang ändert."
+ },
+ "recurrence": {
+  "term": "Rekurrenz",
+  "short": "Rekurrenz",
+  "definition": "Wie sehr ein Sound zu Zuständen zurückkehrt, in denen er schon war."
+ },
+ "repetition-rate": {
+  "term": "Wiederholrate",
+  "short": "Wiederholrate",
+  "definition": "Wie oft sich ein Muster wiederholt, in Hz."
+ },
+ "periodicity": {
+  "term": "Periodizität",
+  "short": "Periodizität",
+  "definition": "Wie stark ein Sound periodisch (tonhaft) statt rauschhaft ist."
+ },
+ "phase-coherence": {
+  "term": "Phasenkohärenz",
+  "short": "Phasenkohärenz",
+  "definition": "Wie gleichmäßig die Phasen eines Sounds fortschreiten; 1 für einen stationären Ton, nahe 0 für Rauschen."
+ },
+ "time-arrow": {
+  "term": "Zeitpfeil",
+  "short": "Zeitpfeil",
+  "definition": "Wie sehr sich ein Sound ändert, wenn er rückwärts abgespielt wird; hoch bei abklingenden Hits."
+ },
+ "impulsiveness": {
+  "term": "Impulshaltigkeit",
+  "short": "Impulshaltigkeit",
+  "definition": "Wie sehr ein Sound aus Klicks, Knacksern und Knistern besteht, ermittelt aus der spektralen Kurtosis."
+ },
+ "spectral-kurtosis": {
+  "term": "spektrale Kurtosis",
+  "short": "spektrale Kurtosis",
+  "definition": "Eine Kenngröße, die für stationäres Rauschen 0, für einen stationären Ton −1 und für Klicks groß ist."
+ },
+ "spectral-motion": {
+  "term": "spektrale Bewegung",
+  "short": "spektrale Bewegung",
+  "definition": "Wie schnell sich der Schwerpunkt des Spektrums nach oben oder unten bewegt, in Oktaven pro Sekunde."
+ },
+ "spectral-centroid": {
+  "term": "spektraler Schwerpunkt",
+  "short": "spektraler Schwerpunkt",
+  "definition": "Der Schwerpunkt eines Spektrums; ein Maß für die Helligkeit."
+ },
+ "reshaping": {
+  "term": "Umformung",
+  "short": "Umformung",
+  "definition": "Spektrale Veränderung, die den Schwerpunkt nicht verschiebt, etwa wenn sich ein Spektrum verbreitert oder verengt."
+ },
+ "burstiness": {
+  "term": "Burstiness",
+  "short": "Burstiness",
+  "definition": "Ob Ereignisse regelmäßig (unter 0), zufällig (0) oder gehäuft in Schüben (über 0) auftreten."
+ },
+ "temporal-entropy": {
+  "term": "zeitliche Entropie",
+  "short": "zeitliche Entropie",
+  "definition": "Wie gleichmäßig die Energie eines Sounds über die Zeit verteilt ist."
+ },
+ "decay-time": {
+  "term": "Abklingzeit (T60)",
+  "short": "Abklingzeit (T60)",
+  "definition": "Die Zeit, in der ein Sound um 60 dB abfällt."
+ },
+ "damping": {
+  "term": "Dämpfung",
+  "short": "Dämpfung",
+  "definition": "Wie schnell ein schwingender Körper Energie verliert."
+ },
+ "material": {
+  "term": "Material",
+  "short": "Material",
+  "definition": "Woraus ein angeschlagenes Objekt besteht, wie es gehört wird: gedämpft, glasartig oder metallisch."
+ },
+ "partial": {
+  "term": "Teilton",
+  "short": "Teilton",
+  "definition": "Eine Frequenzkomponente eines Sounds."
+ },
+ "overtone": {
+  "term": "Oberton",
+  "short": "Oberton",
+  "definition": "Ein Teilton oberhalb des tiefsten."
+ },
+ "inharmonic": {
+  "term": "inharmonisch",
+  "short": "inharmonisch",
+  "definition": "Mit Teiltönen, die keine ganzzahligen Vielfachen einer Grundfrequenz sind, wie bei Glocken und angeschlagenem Metall."
+ },
+ "quality-checks": {
+  "term": "Qualitätsprüfungen",
+  "short": "Qualitätsprüfungen",
+  "definition": "Automatische Prüfungen auf Clipping, DC-Offset, Stille und abgeschnittene Ausklänge."
+ },
+ "self-check": {
+  "term": "Selbsttest",
+  "short": "Selbsttest",
+  "definition": "Ein Test, der einen Sound auf bekannte Weise bearbeitet und prüft, ob sich die Analyse so ändert, wie sie muss."
+ },
+ "de-harsh": {
+  "term": "Härte reduzieren",
+  "short": "Härte reduzieren",
+  "definition": "Ein Werkzeug, das Resonanzen nur so lange absenkt, wie der Sound hart klingt."
+ },
+ "attack-and-body": {
+  "term": "Attack und Körper",
+  "short": "Attack und Körper",
+  "definition": "Ein Werkzeug, das einen Sound in seinen transienten und seinen gehaltenen Anteil zerlegt, um beide neu zu gewichten."
+ },
+ "layer-remix": {
+  "term": "Layer-Remix",
+  "short": "Layer-Remix",
+  "definition": "Ein Werkzeug, das einen Sound in Layer zerlegt und sie mit neuen Pegeln wieder zusammenmischt."
+ },
+ "tension-shaper": {
+  "term": "Spannungsformer",
+  "short": "Spannungsformer",
+  "definition": "Ein Werkzeug, das die Spannungskurve in Automation für Gain und Helligkeit umsetzt."
+ },
+ "loop-maker": {
+  "term": "Loop-Finder",
+  "short": "Loop-Finder",
+  "definition": "Ein Werkzeug, das Loop-Punkte dort findet, wo sich der Sound am besten wiederholt, und sie mit Crossfades versieht."
+ },
+ "variations": {
+  "term": "Variationen",
+  "short": "Variationen",
+  "definition": "Mehrere leicht unterschiedliche Versionen eines Sounds, um Wiederholungen in Spielen zu vermeiden."
+ },
+ "clean-up": {
+  "term": "Bereinigung für den Export",
+  "short": "Export-Bereinigung",
+  "definition": "Ein Werkzeug, das behebt, was die Qualitätsprüfungen beanstanden, bevor ein Sound exportiert wird."
+ },
+ "reverb-on-tails": {
+  "term": "Hall auf die Ausklänge",
+  "short": "Hall auf die Ausklänge",
+  "definition": "Hall, der nur aus den Abklingphasen der Ereignisse gespeist wird, sodass die Attacks trocken bleiben."
+ },
+ "drive-hits": {
+  "term": "Hits anzerren",
+  "short": "Hits anzerren",
+  "definition": "Sättigung, die nur auf die Attacks oder Körper der Ereignisse angewendet wird."
+ },
+ "ring-time": {
+  "term": "Nachklingzeit",
+  "short": "Nachklingzeit",
+  "definition": "Ein Werkzeug, das verlängert oder verkürzt, wie lange jedes Ereignis nach seinem Maximum nachklingt."
+ },
+ "level-events": {
+  "term": "Ereignisse angleichen",
+  "short": "Ereignisse angleichen",
+  "definition": "Ein Werkzeug, das angleicht, wie laut die Ereignisse sind – ein Gain pro Ereignis –, ohne ihre Form zu verändern."
+ },
+ "fold-to-mono": {
+  "term": "Phasenrichtig auf Mono mischen",
+  "short": "Phasenrichtig auf Mono",
+  "definition": "Stereo in Mono umwandeln und dabei die Phasen der Kanäle ausrichten, sodass sich nichts auslöscht."
+ },
+ "widen-tails": {
+  "term": "Ausklänge verbreitern",
+  "short": "Ausklänge verbreitern",
+  "definition": "Stereo nur nach den Attacks erzeugen oder verbreitern; die Attacks bleiben in der Mitte, und das Ergebnis bleibt monokompatibel."
+ },
+ "downmix": {
+  "term": "Downmix",
+  "short": "Downmix",
+  "definition": "Mehr Kanäle in weniger Kanäle umwandeln."
+ },
+ "mono-compatibility": {
+  "term": "Monokompatibilität",
+  "short": "Monokompatibilität",
+  "definition": "Wie gut ein Stereosound das Summieren zu Mono übersteht."
+ },
+ "decorrelation": {
+  "term": "Dekorrelation",
+  "short": "Dekorrelation",
+  "definition": "Zwei Signale einander unähnlicher machen, ohne ihr Spektrum zu ändern, um ein Stereobild zu verbreitern."
+ },
+ "comb-filtering": {
+  "term": "Kammfiltereffekt",
+  "short": "Kammfiltereffekt",
+  "definition": "Regelmäßige Einbrüche im Spektrum, wenn ein Signal mit einer verzögerten Kopie seiner selbst summiert wird."
+ },
+ "cancellation": {
+  "term": "Auslöschung",
+  "short": "Auslöschung",
+  "definition": "Pegelverlust, wenn Signale entgegengesetzter Phase summiert werden."
+ },
+ "pre-echo": {
+  "term": "Vorecho",
+  "short": "Vorecho",
+  "definition": "Eine schwache Verschmierung eines Sounds vor seinem Attack, verursacht durch blockweise (rahmenbasierte) Verarbeitung."
+ },
+ "eq": {
+  "term": "EQ",
+  "short": "EQ",
+  "definition": "Ein Equalizer: ein Filter, das den Pegel von Frequenzbändern verändert."
+ },
+ "dynamic-eq": {
+  "term": "dynamischer EQ",
+  "short": "dynamischer EQ",
+  "definition": "Ein EQ, dessen Gain pro Band dem Pegel im jeweiligen Band folgt."
+ },
+ "automation": {
+  "term": "Automation",
+  "short": "Automation",
+  "definition": "Parameteränderungen über die Zeit, aufgenommen oder gezeichnet."
+ },
+ "compressor": {
+  "term": "Kompressor",
+  "short": "Kompressor",
+  "definition": "Ein Prozessor, der laute Passagen oberhalb eines Thresholds gemäß einer Ratio absenkt."
+ },
+ "threshold": {
+  "term": "Threshold",
+  "short": "Threshold",
+  "definition": "Der Pegel, oberhalb dessen ein Prozessor eingreift."
+ },
+ "ratio": {
+  "term": "Ratio",
+  "short": "Ratio",
+  "definition": "Wie stark ein Kompressor den Pegel oberhalb seines Thresholds absenkt."
+ },
+ "attack-time": {
+  "term": "Attack-Zeit",
+  "short": "Attack",
+  "definition": "Wie schnell ein Prozessor reagiert, wenn der Pegel steigt."
+ },
+ "release-time": {
+  "term": "Release-Zeit",
+  "short": "Release",
+  "definition": "Wie schnell ein Prozessor in den Ruhezustand zurückkehrt, wenn der Pegel fällt."
+ },
+ "gate": {
+  "term": "Gate",
+  "short": "Gate",
+  "definition": "Ein Prozessor oder eine Bedingung, der bzw. die nur oberhalb eines Thresholds öffnet."
+ },
+ "saturation": {
+  "term": "Sättigung",
+  "short": "Sättigung",
+  "definition": "Weiche Verzerrung, die Harmonische hinzufügt und Spitzen abrundet."
+ },
+ "pumping": {
+  "term": "Pumpen",
+  "short": "Pumpen",
+  "definition": "Hörbares Auf und Ab des Hintergrunds, verursacht durch einen Kompressor."
+ },
+ "evenness": {
+  "term": "Gleichmäßigkeit",
+  "short": "Gleichmäßigkeit",
+  "definition": "Wie ähnlich sich die Ereignisse in ihrer Lautheit sind."
+ },
+ "effect-chain": {
+  "term": "Effektkette",
+  "short": "Effektkette",
+  "definition": "Effekte, die nacheinander auf einen Sound angewendet werden."
+ },
+ "preset": {
+  "term": "Preset",
+  "short": "Preset",
+  "definition": "Ein gespeicherter Satz von Einstellungen."
+ },
+ "morph": {
+  "term": "Morphing",
+  "short": "Morphing",
+  "definition": "Ein allmählicher Übergang von einem Sound in einen anderen."
+ },
+ "cross-synthesis": {
+  "term": "Kreuzsynthese",
+  "short": "Kreuzsynthese",
+  "definition": "Das Spektrum eines Sounds mit der Hüllkurve oder der Anregung eines anderen kombinieren."
+ },
+ "convolution": {
+  "term": "Faltung",
+  "short": "Faltung",
+  "definition": "Einen Sound durch einen anderen filtern, zum Beispiel durch die Impulsantwort eines Raums."
+ },
+ "envelope-transfer": {
+  "term": "Hüllkurvenübertragung",
+  "short": "Hüllkurvenübertragung",
+  "definition": "Einem Sound die Pegelhüllkurve eines anderen geben."
+ },
+ "ring-modulation": {
+  "term": "Ringmodulation",
+  "short": "Ringmodulation",
+  "definition": "Multiplikation zweier Signale, die Summen- und Differenzfrequenzen erzeugt."
+ },
+ "granular": {
+  "term": "granular",
+  "short": "granular",
+  "definition": "Aus vielen kurzen Klangkörnern (Grains) aufgebaut."
+ },
+ "accent": {
+  "term": "Akzent",
+  "short": "Akzent",
+  "definition": "Ein kurzer, zusätzlicher Sound, der an eine Stelle eines anderen Sounds gesetzt wird, um sie zu betonen."
+ },
+ "generator": {
+  "term": "Generator",
+  "short": "Generator",
+  "definition": "Ein Teil der App, der aus Parametern neue Sounds erzeugt."
+ },
+ "synth": {
+  "term": "Synth",
+  "short": "Synth",
+  "definition": "Ein Klangerzeuger aus Oszillatoren, Rauschen, Hüllkurven und Filtern."
+ },
+ "impact-model": {
+  "term": "Impact",
+  "short": "Impact",
+  "definition": "Ein physikalisches Modell eines angeschlagenen Objekts aus einem bestimmten Material und mit einer bestimmten Form."
+ },
+ "resynthesis": {
+  "term": "Resynthese",
+  "short": "Resynthese",
+  "definition": "Einen Sound aus an ihm gemessenen Parametern, etwa seinen Teiltönen und Abklingzeiten, neu aufbauen."
+ },
+ "modal": {
+  "term": "modal",
+  "short": "modal",
+  "definition": "Aus Resonanzmoden aufgebaut, jede mit einer Frequenz und einer Abklingzeit."
+ },
+ "texture": {
+  "term": "Textur",
+  "short": "Textur",
+  "definition": "Ein kontinuierlicher Sound aus vielen kleinen Ereignissen, etwa Regen, Feuer oder Kies."
+ },
+ "reaction": {
+  "term": "Aktion und Reaktion",
+  "short": "Aktion und Reaktion",
+  "definition": "Ein Medium (Kies, Wasser, Luft), das auf eine Aktion reagiert, etwa auf ein Objekt, das sich hindurchbewegt."
+ },
+ "medium": {
+  "term": "Medium",
+  "short": "Medium",
+  "definition": "Was auf eine Aktion reagiert: Kies, Laub, Wasser, Luft, Funken oder ein Kraftfeld."
+ },
+ "drive-curve": {
+  "term": "Steuerkurve",
+  "short": "Steuerkurve",
+  "definition": "Eine Kurve, die die Parameter eines Sounds über die Zeit steuert."
+ },
+ "inertia": {
+  "term": "Trägheit",
+  "short": "Trägheit",
+  "definition": "Wie langsam sich eine Reaktion beruhigt, nachdem die Aktion aufgehört hat."
+ },
+ "foley": {
+  "term": "Foley",
+  "short": "Foley",
+  "definition": "Alltagsgeräusche, die synchron zum Bild gespielt und aufgenommen werden."
+ },
+ "ambience": {
+  "term": "Atmo",
+  "short": "Atmo",
+  "definition": "Der Hintergrundklang eines Ortes."
+ },
+ "one-shot": {
+  "term": "One-Shot",
+  "short": "One-Shot",
+  "definition": "Ein kurzer Sound, der einmal abgespielt wird, etwa ein Hit oder ein UI-Klick."
+ },
+ "whoosh": {
+  "term": "Whoosh",
+  "short": "Whoosh",
+  "definition": "Das Geräusch von etwas, das sich schnell am Hörer vorbeibewegt."
+ },
+ "finishing": {
+  "term": "Endbearbeitung",
+  "short": "Endbearbeitung",
+  "definition": "Die letzten Schritte vor dem Export: Format, Kanäle, Fades und Pegel."
+ },
+ "steel": {
+  "term": "Stahl",
+  "short": "Stahl"
+ },
+ "brass": {
+  "term": "Messing",
+  "short": "Messing"
+ },
+ "aluminium": {
+  "term": "Aluminium",
+  "short": "Aluminium"
+ },
+ "glass": {
+  "term": "Glas",
+  "short": "Glas"
+ },
+ "ceramic": {
+  "term": "Keramik",
+  "short": "Keramik"
+ },
+ "ice": {
+  "term": "Eis",
+  "short": "Eis"
+ },
+ "wood": {
+  "term": "Holz",
+  "short": "Holz"
+ },
+ "plastic": {
+  "term": "Kunststoff",
+  "short": "Kunststoff"
+ },
+ "stone": {
+  "term": "Stein",
+  "short": "Stein"
+ },
+ "cardboard": {
+  "term": "Pappe",
+  "short": "Pappe"
+ },
+ "rubber": {
+  "term": "Gummi",
+  "short": "Gummi"
+ },
+ "bar-shape": {
+  "term": "Stab",
+  "short": "Stab",
+  "definition": "Ein langer, massiver Körper, etwa eine Stange oder ein Träger."
+ },
+ "plate": {
+  "term": "Platte",
+  "short": "Platte",
+  "definition": "Ein dünner, flacher Körper."
+ },
+ "membrane": {
+  "term": "Membran",
+  "short": "Membran",
+  "definition": "Eine gespannte Haut, wie bei einer Trommel."
+ },
+ "shell": {
+  "term": "Schale",
+  "short": "Schale",
+  "definition": "Ein dünner, gewölbter Körper, etwa eine Dose oder ein Topf."
+ },
+ "bell": {
+  "term": "Glocke",
+  "short": "Glocke"
+ },
+ "wire": {
+  "term": "Draht",
+  "short": "Draht",
+  "definition": "Eine dünne, gespannte Saite."
+ },
+ "box": {
+  "term": "Kasten",
+  "short": "Kasten",
+  "definition": "Ein Hohlkörper mit flachen Seiten."
+ }
+}

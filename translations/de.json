@@ -1,0 +1,1100 @@
+{
+  "_language": "de",
+  "_name": "Deutsch",
+  "_notes": "Notes are in English for the author; terms and definitions in German (DE standard; AT/CH variants in 'note'; CH writes ss for ß throughout, e.g. Gleichmässigkeit). (1) Professional terms first: psychoacoustics after Zwicker/Fastl and DIN (Lautheit DIN 45631/ISO 532-1, Schärfe DIN 45692, Rauigkeit, Schwankungsstärke, psychoakustische Lästigkeit, Frequenzgruppe, Verdeckung); loudness metering as in German broadcast practice for EBU R 128 (Lautheit, Pegel, True Peak, K-Bewertung, Gate; cf. ZDF 'Vorgaben zur lautheitsnormierten Tonaussteuerung' 2022). Lautheit (loudness) and Pegel (level) are never interchanged; colloquial 'Lautstärke' is avoided because it is used for both. (2) Where German DAWs (Cubase, Logic, Ableton Live) and studio speech use English loans, the loan is the 'term' and the German word goes in 'alt': Attack, Release, Threshold, Ratio, Gain, Gate, Take, Fade, Crossfade, Loop, Preset, Lane, One-Shot, Foley, Downmix. Dynamics parameters follow the HdM Stuttgart / Dickreiter pairing 'Attack-Zeit (Ansprechzeit)', 'Release-Zeit (Rücklaufzeit)'. (3) 'a sound' (the object being edited) = 'Sound' (m., pl. Sounds), as in German sound-design writing; 'Klang' only where timbre/tonality is meant, 'Schall' only for physical sound. DIN 1320's Ton/Klang/Geräusch distinction is not forced on the UI. (4) Tool names: English imperatives (de-harsh, level the events, fold to mono, widen the tails, drive the hits) become German command form, object first and infinitive last, Microsoft German style ('Ereignisse angleichen', 'Härte reduzieren'); English noun titles (attack and body, layer remix, tension shaper, loop maker, ring time, reverb on the tails, clean-up for export) stay nouns or noun phrases ('Spannungsformer', 'Nachklingzeit'). (5) Capitalisation: 'term' is given in dictionary form (nouns capitalised, adjectives and option values lower case, e.g. 'überlagert', 'spektrale Bewegung'); UI labels in 'short' use sentence case. Hyphenated compounds with loans per Duden (Look-Code, Layer-Remix, DC-Offset, Attack-Zeit, True-Peak-Pegel). (6) Units and symbols unchanged (LUFS, LU, dB, dBTP, Hz, sone, acum, asper, vacil, T60, BPM); German texts use the decimal comma and the minus sign −. (7) Post-1996 spelling: Rauigkeit (Zwicker/Fastl's German books spell 'Rauhigkeit'). (8) Key disambiguations: drawing 'layer' of a look = Ebene, sound 'layer' = Layer; 'Faltung' = convolution, so 'fold to mono' is not rendered with 'falten'; excitation = Anregung, arousal = Erregung, activity = Aktivität; Cubase's 'Event' means a clip, so event = Ereignis. (9) 'short' is given where the term exceeds about 22 characters or where the UI label differs (Attack, Release). 'gender' is given for nouns; loans follow majority usage.",
+  "terms": {
+    "waveform": {
+      "term": "Wellenform",
+      "definition": "Die grafische Darstellung der Amplitude eines Sounds über der Zeit.",
+      "gender": "f"
+    },
+    "spectrogram": {
+      "term": "Spektrogramm",
+      "definition": "Ein Bild davon, wie sich der Frequenzinhalt eines Sounds über die Zeit ändert: Zeit nach rechts, Frequenz nach oben, Pegel als Farbe.",
+      "gender": "n"
+    },
+    "mel-scale": {
+      "term": "Mel-Skala",
+      "definition": "Eine Frequenzskala, die so eingeteilt ist, wie Tonhöhe gehört wird: unterhalb von 1 kHz annähernd linear, darüber logarithmisch.",
+      "note": "Duden spelling with hyphen; unit 'mel'.",
+      "gender": "f"
+    },
+    "playhead": {
+      "term": "Abspielposition",
+      "alt": ["Abspielpositionslinie", "Playhead"],
+      "definition": "Die mitlaufende Linie, die die aktuelle Wiedergabeposition markiert.",
+      "note": "Logic Pro de defines it exactly so: 'Die Abspielposition ist die vertikale Linie, die die aktuelle Wiedergabeposition in einem Projekt zeigt.' Not 'Cursor' (Cubase's 'Projekt-Cursor'), so it stays distinct from the Einfügemarke (edit cursor). Use 'Abspielpositionslinie' where the line must be told apart from the time value. The app name Playhead stays English.",
+      "gender": "f"
+    },
+    "edit-cursor": {
+      "term": "Einfügemarke",
+      "alt": ["Bearbeitungscursor", "Edit-Cursor"],
+      "definition": "Die Position, an der Bearbeitung und Wiedergabe beginnen; wird per Klick gesetzt.",
+      "note": "As in Ableton Live de ('Einfügemarke', the blinking insert marker from which playback starts). 'Cursor' is acceptable here but never for the playhead.",
+      "gender": "f"
+    },
+    "sample-rate": {
+      "term": "Abtastrate",
+      "alt": ["Samplerate", "Samplingrate"],
+      "definition": "Anzahl der Abtastwerte pro Sekunde eines digitalen Sounds, in Hz.",
+      "note": "'Abtastrate' in standards, textbooks and Audacity de; Cubase de and studio speech often say 'Samplerate'.",
+      "gender": "f"
+    },
+    "bit-depth": {
+      "term": "Bittiefe",
+      "alt": ["Wortbreite", "Bit-Auflösung"],
+      "definition": "Bits pro Abtastwert eines digitalen Sounds; bestimmt seine Auflösung.",
+      "note": "'Wortbreite' is the older engineering term.",
+      "gender": "f"
+    },
+    "channel": {
+      "term": "Kanal",
+      "definition": "Ein Signal einer Audiodatei; Stereo hat zwei.",
+      "gender": "m"
+    },
+    "mono": {
+      "term": "Mono",
+      "definition": "Ein Kanal.",
+      "gender": "n"
+    },
+    "stereo": {
+      "term": "Stereo",
+      "definition": "Zwei Kanäle, links und rechts.",
+      "gender": "n"
+    },
+    "mid-side": {
+      "term": "Mitte/Seite",
+      "alt": ["M/S", "Mid/Side"],
+      "definition": "Stereo, dargestellt als Summe (Mitte) und Differenz (Seite) der Kanäle.",
+      "note": "German recording practice: MS-Verfahren, Mitten- und Seitensignal; DAW plug-ins often keep 'Mid/Side'."
+    },
+    "phase": {
+      "term": "Phase",
+      "definition": "An welcher Stelle ihres Zyklus sich eine Welle zu einem bestimmten Zeitpunkt befindet.",
+      "gender": "f"
+    },
+    "polarity": {
+      "term": "Polarität",
+      "definition": "Ob ein Signal in ursprünglicher Lage oder invertiert ist.",
+      "note": "German studio speech often says 'Phase drehen' for a plain inversion; keep 'Polarität umkehren' for that, as the English does.",
+      "gender": "f"
+    },
+    "level": {
+      "term": "Pegel",
+      "definition": "Wie stark ein Signal ist, meist in dB.",
+      "note": "Pegel ≠ Lautheit. Avoid colloquial 'Lautstärke', which is used for both.",
+      "gender": "m"
+    },
+    "gain": {
+      "term": "Gain",
+      "alt": ["Verstärkung", "Pegeländerung"],
+      "definition": "Eine Pegeländerung, in dB.",
+      "note": "Studio and DAW usage (Cubase, Logic). 'Verstärkung' (Audacity de) suggests only boosting, while a gain can be negative. Gender varies: das Gain / der Gain.",
+      "gender": "n"
+    },
+    "peak": {
+      "term": "Spitzenwert",
+      "alt": ["Peak", "Sample-Peak", "Spitzenpegel"],
+      "definition": "Der größte Betrag der Abtastwerte.",
+      "note": "German broadcast documents contrast 'Sample Peak' with 'True Peak' (ZDF Vorgaben 2022); meters label it 'Peak'. Use 'Spitzenpegel' for the value in dBFS. For a compact meter label 'Peak' is fine next to 'True Peak'.",
+      "gender": "m"
+    },
+    "true-peak": {
+      "term": "True Peak",
+      "alt": ["True-Peak-Pegel"],
+      "definition": "Der Spitzenwert des Signals zwischen den Abtastwerten, wie ihn ein D/A-Wandler wiedergeben würde.",
+      "note": "German broadcast usage keeps the English: ZDF Vorgaben 2022 'maximaler Spitzenpegel („Maximum True Peak Level“)', unit dBTP. Hyphenate in compounds: True-Peak-Pegel, True-Peak-Limiter.",
+      "gender": "m"
+    },
+    "loudness": {
+      "term": "Lautheit",
+      "definition": "Wie laut ein Sound gehört wird, im Unterschied zu seinem Pegel.",
+      "note": "DIN 45631 / ISO 532-1; EBU R 128 in German practice ('Programmlautheit', 'Lautheitsbereich'). Not 'Lautstärke'; 'Lautstärkepegel' (phon) is a different quantity.",
+      "gender": "f"
+    },
+    "lufs": {
+      "term": "LUFS",
+      "definition": "Lautheitseinheiten relativ zur digitalen Vollaussteuerung (ITU-R BS.1770); 1 LU entspricht 1 dB.",
+      "note": "ZDF Vorgaben 2022: 'Absolute Maßeinheit der Lautheit bezogen auf die digitale Vollaussteuerung'. Unit unchanged."
+    },
+    "k-weighting": {
+      "term": "K-Bewertung",
+      "alt": ["K-Bewertungskurve", "K-Filter"],
+      "definition": "Die Frequenzbewertung, die Lautheitsmesser vor der Messung anwenden.",
+      "note": "ZDF Vorgaben 2022: 'K-Bewertungskurve nach ITU-R BS. 1770'; analogous to A-Bewertung.",
+      "gender": "f"
+    },
+    "normalize": {
+      "term": "Normalisieren",
+      "alt": ["Normalisierung"],
+      "definition": "Den Spitzenwert oder die Lautheit eines Sounds auf einen Zielwert setzen.",
+      "note": "Command 'Normalisieren' (Audacity, Cubase); noun 'Normalisierung'.",
+      "gender": "n"
+    },
+    "fade": {
+      "term": "Fade",
+      "alt": ["Blende", "Ein-/Ausblendung"],
+      "definition": "Eine allmähliche Pegeländerung am Anfang (Fade-in) oder am Ende (Fade-out).",
+      "note": "Studio and DAW usage (Ableton de 'Fades', Cubase/Logic 'Fade-In/Fade-Out'; Duden spells 'Fade-in/Fade-out'). Broadcast and Audacity de use 'Einblenden/Ausblenden', which also work well as command names.",
+      "gender": "m"
+    },
+    "clipping": {
+      "term": "Clipping",
+      "alt": ["Übersteuerung"],
+      "definition": "Verzerrung, wenn ein Signal den größten speicherbaren Wert überschreitet.",
+      "note": "'Übersteuerung' is broader (also analogue, also without hard limiting); for the quality-check finding use 'Clipping'.",
+      "gender": "n"
+    },
+    "dc-offset": {
+      "term": "DC-Offset",
+      "alt": ["Gleichanteil", "Gleichspannungsversatz"],
+      "definition": "Eine konstante Verschiebung des Signals weg von null.",
+      "note": "Studio usage 'DC-Offset'; Audacity de uses 'Gleichspannungsversatz'; textbooks 'Gleichanteil'.",
+      "gender": "m"
+    },
+    "noise-floor": {
+      "term": "Grundrauschen",
+      "alt": ["Rauschpegel", "Rauschteppich"],
+      "definition": "Der Pegel des Hintergrundrauschens unter einem Sound.",
+      "note": "'Rauschpegel' when the number is meant; 'Rauschteppich' is studio jargon.",
+      "gender": "n"
+    },
+    "silence": {
+      "term": "Stille",
+      "definition": "Ein Zeitraum ohne Schall oberhalb des Grundrauschens.",
+      "gender": "f"
+    },
+    "cut-tail": {
+      "term": "abgeschnittener Ausklang",
+      "short": "Ausklang abgeschnitten",
+      "alt": ["abgerissenes Ende", "abgeschnittene Fahne"],
+      "definition": "Ein Sound, der endet, bevor seine Abklingphase ausgeklungen ist.",
+      "note": "Follows tail = Ausklang. Studio speech says 'der Hall reißt ab', hence 'abgerissenes Ende'. The short label reads as a quality-check finding.",
+      "gender": "m"
+    },
+    "take": {
+      "term": "Take",
+      "alt": ["Aufnahme", "Version"],
+      "definition": "Eine aufgenommene oder gerenderte Version eines Sounds.",
+      "note": "Studio and DAW usage (Cubase, Logic, Ableton 'Take-Lanes'). Duden: der oder das Take.",
+      "gender": "m"
+    },
+    "render": {
+      "term": "Rendern",
+      "alt": ["Bouncen", "Berechnen"],
+      "definition": "Einen bearbeiteten Sound berechnen und als Audio schreiben.",
+      "note": "Cubase de 'Rendern' (In-Place-Rendering); Logic de 'Bouncen'.",
+      "gender": "n"
+    },
+    "loop": {
+      "term": "Loop",
+      "alt": ["Schleife"],
+      "definition": "Ein Sound, der sich ohne hörbare Nahtstelle wiederholt.",
+      "note": "DAW and sound-design usage (Ableton de 'Loop-Klammer'); 'Schleife' (Audacity de) sounds dated in this context. Duden: der Loop.",
+      "gender": "m"
+    },
+    "crossfade": {
+      "term": "Crossfade",
+      "alt": ["Überblendung", "Kreuzblende"],
+      "definition": "Ein Fade-out eines Sounds, der sich mit dem Fade-in eines anderen überlappt.",
+      "note": "Cubase and Ableton de keep 'Crossfade'; broadcast says 'Überblendung' or 'Kreuzblende'.",
+      "gender": "m"
+    },
+    "slice": {
+      "term": "Slicen",
+      "alt": ["Zerteilen", "In Slices schneiden"],
+      "definition": "Einen Sound an gewählten Stellen in Teile schneiden.",
+      "note": "German DAW and sampler usage keeps 'slicen' (verb) and 'Slice' (the part). 'Zerteilen' is a plain German command if a loan-free UI is wanted.",
+      "gender": "n"
+    },
+    "time-stretch": {
+      "term": "Time-Stretching",
+      "alt": ["Zeitdehnung", "Time-Stretch"],
+      "definition": "Die Dauer eines Sounds ändern, ohne seine Tonhöhe zu ändern.",
+      "note": "Studio usage. 'Zeitdehnung' literally covers only lengthening (shortening would be 'Zeitstauchung'). Paired with Pitch-Shifting.",
+      "gender": "n"
+    },
+    "pitch-shift": {
+      "term": "Pitch-Shifting",
+      "alt": ["Tonhöhenverschiebung", "Tonhöhenänderung"],
+      "definition": "Die Tonhöhe eines Sounds ändern, ohne seine Dauer zu ändern.",
+      "note": "Cubase de names the offline process 'Tonhöhenverschiebung'; studio speech says 'Pitch-Shifting' or 'pitchen'. Kept as a loan to pair with Time-Stretching.",
+      "gender": "n"
+    },
+    "sone": {
+      "term": "Sone",
+      "definition": "Die Einheit der wahrgenommenen Lautheit; 1 sone ist die Lautheit eines 1-kHz-Tons mit 40 dB SPL.",
+      "note": "Unit symbol 'sone' unchanged; noun das Sone, pl. Sone (DIN 45631, Zwicker/Fastl).",
+      "gender": "n"
+    },
+    "sharpness": {
+      "term": "Schärfe",
+      "definition": "Wie stark die Energie eines Sounds nach dem Höreindruck bei hohen Frequenzen liegt; in acum.",
+      "note": "DIN 45692 'Messtechnische Simulation der Hörempfindung Schärfe'; the concept comes from German psychoacoustics (von Bismarck, Aures, Zwicker). Not the same as Härte (harshness).",
+      "gender": "f"
+    },
+    "roughness": {
+      "term": "Rauigkeit",
+      "alt": ["Rauhigkeit", "Rauheit"],
+      "definition": "Der raue, schnarrende Höreindruck schneller Amplitudenmodulation (etwa 15–300 Hz); in asper.",
+      "note": "Zwicker/Fastl's German texts spell 'Rauhigkeit' (pre-1996 spelling); current spelling 'Rauigkeit', occasionally 'Rauheit'. Distinct from Härte (harshness) and Schärfe (sharpness).",
+      "gender": "f"
+    },
+    "fluctuation-strength": {
+      "term": "Schwankungsstärke",
+      "definition": "Die Empfindung langsamer Amplitudenmodulation (etwa 1–20 Hz, am stärksten um 4 Hz); in vacil.",
+      "note": "Zwicker/Fastl.",
+      "gender": "f"
+    },
+    "psychoacoustic-annoyance": {
+      "term": "psychoakustische Lästigkeit",
+      "short": "Lästigkeit",
+      "definition": "Zwickers Zusammenfassung von Lautheit, Schärfe, Rauigkeit und Schwankungsstärke zu einem einzigen Lästigkeitswert.",
+      "note": "Widmann/Zwicker; Fastl and Zwicker 2007. Because 'Lästigkeit' is taken here, it is not used for harshness.",
+      "gender": "f"
+    },
+    "masking": {
+      "term": "Verdeckung",
+      "alt": ["Maskierung"],
+      "definition": "Ein Sound macht einen anderen schwerer oder gar nicht hörbar.",
+      "note": "Zwicker/Fastl and German psychoacoustics: Verdeckung, Mithörschwelle; studio and codec literature also say 'Maskierung'.",
+      "gender": "f"
+    },
+    "critical-band": {
+      "term": "Frequenzgruppe",
+      "alt": ["kritisches Band", "kritische Bandbreite"],
+      "definition": "Der Frequenzbereich, den das Gehör zu einer Einheit zusammenfasst; angegeben auf der Bark-Skala (Tonheit).",
+      "note": "Zwicker's German term (Frequenzgruppe, Tonheit in Bark); 'kritisches Band' is a back-translation from English.",
+      "gender": "f"
+    },
+    "curve": {
+      "term": "Kurve",
+      "definition": "Ein Wert, der über der Zeit entlang der Wellenform gezeichnet wird.",
+      "gender": "f"
+    },
+    "overview": {
+      "term": "Übersicht",
+      "alt": ["Überblick", "Übersichtsanzeige"],
+      "definition": "Ein kleines Bild eines ganzen Sounds, mit dem man sich darin zurechtfindet.",
+      "gender": "f"
+    },
+    "strip": {
+      "term": "Streifen",
+      "alt": ["Leiste", "Strip", "Übersichtsstreifen"],
+      "definition": "Die Übersicht eines Sounds, wie Playhead sie zeichnet: Wellenform, Kurven und Markierungen in einem Band.",
+      "note": "'Streifen' is literal, visual and collides with no DAW term; avoid 'Spur' (= track) and plain 'Band' (frequency band). 'Leiste' reads like a toolbar. A Lane is part of a Streifen.",
+      "gender": "m"
+    },
+    "look": {
+      "term": "Look",
+      "alt": ["Darstellung", "Ansicht", "Darstellungsstil"],
+      "definition": "Eine benannte Art, einen Streifen zu zeichnen, festgelegt durch einen kurzen Code aus Ebenen.",
+      "note": "'Look' is an established German loan (Duden; film and photo grading) and stays unambiguous as a named, coded object; 'Darstellung' and 'Ansicht' are already used in UIs for generic display options and zoom/scroll views. Not 'Skin', not 'Design/Theme' (colours only).",
+      "gender": "m"
+    },
+    "look-code": {
+      "term": "Look-Code",
+      "alt": ["Darstellungscode", "Look-Kürzel"],
+      "definition": "Der kurze Text, der einen Look festlegt, zum Beispiel „form:overlay,shape:mirror,lane:harshness“.",
+      "note": "Follows the choice for 'look' ('Darstellungscode' if 'Darstellung' is chosen). The code keywords stay English because they are syntax.",
+      "gender": "m"
+    },
+    "layer": {
+      "term": "Ebene",
+      "alt": ["Layer", "Schicht"],
+      "definition": "Ein Element eines Looks: eine Wellenform, ein Spektrogramm, eine Kurve, eine Gruppe von Markierungen oder Abschnitte.",
+      "note": "'Ebene' as in German graphics software (Photoshop, GIMP). This deliberately separates drawing layers from the sound layers of the layer-remix tool, for which the sound-design loan 'Layer' is used.",
+      "gender": "f"
+    },
+    "lane": {
+      "term": "Lane",
+      "alt": ["Bahn", "Zeile"],
+      "definition": "Ein waagerechtes Band eines Streifens, das eine Kurve enthält.",
+      "note": "As in German DAWs (Ableton de 'Take-Lanes', 'Automations-Lane'; Cubase de 'Lanes'). Avoid 'Spur' (= track). 'Bahn' is the German option for a loan-free UI.",
+      "gender": "f"
+    },
+    "overlay": {
+      "term": "überlagert",
+      "alt": ["übereinander", "Overlay"],
+      "definition": "Kurven, die in einem gemeinsamen Band statt in getrennten Lanes gezeichnet werden.",
+      "note": "Option value next to 'gespiegelt' and 'von der Grundlinie'. Not 'überblendet' (= crossfaded)."
+    },
+    "mirrored": {
+      "term": "gespiegelt",
+      "alt": ["symmetrisch"],
+      "definition": "Symmetrisch über und unter einer Mittellinie gezeichnet, wie eine Wellenform.",
+      "note": "Kept distinct from 'überlagert' (overlaid)."
+    },
+    "baseline-form": {
+      "term": "von der Grundlinie",
+      "alt": ["ab Grundlinie", "von unten"],
+      "definition": "Vom unteren Rand des Bandes nach oben gezeichnet.",
+      "note": "Grundlinie = bottom edge of the band, not the waveform's zero line (that is the Mittellinie)."
+    },
+    "horizon-chart": {
+      "term": "Horizon-Chart",
+      "alt": ["Horizontdiagramm"],
+      "definition": "Ein kompaktes Diagramm, das eine Kurve in farbige Bänder zunehmender Intensität zusammenfaltet.",
+      "note": "German visualisation writing mostly keeps the English (also 'Horizon Graph', Heer et al. 2009); 'Horizontdiagramm' is understandable but rarely attested.",
+      "gender": "n"
+    },
+    "sculpted-waveform": {
+      "term": "modellierte Wellenform",
+      "alt": ["geformte Wellenform", "Kurven-Wellenform", "Sculpted Waveform"],
+      "definition": "Eine Wellenform, deren Höhe statt des Spitzenpegels einer Kurve folgt, zum Beispiel der wahrgenommenen Lautheit.",
+      "note": "'modellieren' also means shaping by hand (clay), so it carries 'sculpted'; 'geformt' is neutral but bland; 'skulptiert' is not idiomatic German.",
+      "gender": "f"
+    },
+    "outline": {
+      "term": "Umriss",
+      "alt": ["Kontur", "Outline"],
+      "definition": "Die gewöhnliche Spitzenwert-Wellenform, als dünne Linie hinter einer anderen Ebene gezeichnet.",
+      "gender": "m"
+    },
+    "marks": {
+      "term": "Markierungen",
+      "alt": ["Marken", "Ticks"],
+      "definition": "Striche entlang des Streifens an Ereignissen, Onsets, Beats oder Abschnittsgrenzen.",
+      "note": "Not 'Marker': in DAWs those are user-set position markers.",
+      "gender": "f"
+    },
+    "legend": {
+      "term": "Legende",
+      "definition": "Der Text, der angibt, was jede Farbe und jede Linie eines Streifens zeigt.",
+      "gender": "f"
+    },
+    "profile": {
+      "term": "Analyseprofil",
+      "alt": ["Profil"],
+      "definition": "Wie viel Playhead analysiert: schnell (nur Kurven), Soundeffekt oder Musik.",
+      "gender": "n"
+    },
+    "descriptor": {
+      "term": "Deskriptor",
+      "alt": ["Audiodeskriptor", "Klangdeskriptor"],
+      "definition": "Eine aus einem Sound berechnete Zahl oder Kurve, die eine seiner Eigenschaften beschreibt.",
+      "note": "Peeters et al. 2011 (Timbre Toolbox).",
+      "gender": "m"
+    },
+    "feature": {
+      "term": "Merkmal",
+      "alt": ["Feature"],
+      "definition": "Ein Deskriptor, der als Eingabe für einen Klassifikator oder eine Suche dient.",
+      "note": "German pattern-recognition usage: Merkmal, Merkmalsextraktion, Merkmalsvektor; MIR jargon also says 'Feature'. Keeps feature ≠ descriptor.",
+      "gender": "n"
+    },
+    "activity": {
+      "term": "Aktivität",
+      "alt": ["Bewegtheit", "Geschehen", "Activity"],
+      "definition": "Wie viel passiert: spektrale Veränderung und Dichte der Ereignisse.",
+      "note": "Literal, immediately clear and short. 'Bewegtheit' is a musicological term with a similar meaning but less suited to a UI label. Not 'Aktivierung' (psychology, close to arousal).",
+      "gender": "f"
+    },
+    "arousal": {
+      "term": "Erregung",
+      "alt": ["Arousal"],
+      "definition": "Wie aufregend oder beruhigend ein Sound wirkt, nach der gleichnamigen psychologischen Dimension.",
+      "note": "German emotion psychology uses both 'Erregung' and the loan 'Arousal' (valence/arousal after Russell). Not 'Aktivierung' (collides with Aktivität) and not 'Anregung' (= excitation in cross-synthesis).",
+      "gender": "f"
+    },
+    "harshness": {
+      "term": "Härte",
+      "alt": ["Harschheit", "Aggressivität", "Harshness"],
+      "definition": "Wie unangenehm ein Sound anzuhören ist, abgeleitet aus der psychoakustischen Lästigkeit; nicht dasselbe wie Rauigkeit.",
+      "note": "'Härte' is studio jargon ('Härten in den Hochmitten'), short, and clearly separate from Schärfe and Rauigkeit; risk: confusion with material or mallet hardness in the impact model, so write those as compounds ('Schlägelhärte'). 'Harschheit' is unambiguous but rare; 'Lästigkeit' is taken by psychoacoustic annoyance.",
+      "gender": "f"
+    },
+    "tension": {
+      "term": "Spannung",
+      "alt": ["Spannungsverlauf", "Spannungsbogen"],
+      "definition": "Aufbau und Lösung über die Zeit, nach Farboods Modell der musikalischen Spannung.",
+      "note": "Established in musicology (Spannung und Entspannung/Lösung). In technical prose 'Spannung' can be read as electrical voltage; write 'musikalische Spannung' where needed.",
+      "gender": "f"
+    },
+    "harmonic-tension": {
+      "term": "harmonische Spannung",
+      "definition": "Wie weit die Harmonik von der Ruhe entfernt ist, bestimmt im tonalen Intervallraum.",
+      "note": "Bernardes et al. 2016 (Tonal Interval Space, TIV).",
+      "gender": "f"
+    },
+    "novelty": {
+      "term": "Neuheit",
+      "alt": ["Novelty"],
+      "definition": "Wie sehr sich ein Moment vom Vorangegangenen unterscheidet.",
+      "note": "Foote 2000. German MIR writing (e.g. AudioLabs Erlangen) mostly keeps 'Novelty-Kurve' in English. Keep distinct from 'spektrale Überraschung' and 'Informationsgehalt' (surprisal).",
+      "gender": "f"
+    },
+    "spectral-surprise": {
+      "term": "spektrale Überraschung",
+      "alt": ["Spektralüberraschung", "unerklärte Klangänderung", "Spectral Surprise"],
+      "definition": "Veränderung des Spektrums, die sich nicht durch die Lautheit erklären lässt.",
+      "note": "Literal and clear; stays apart from 'Neuheit' (which also includes level changes) and from 'Informationsgehalt' (surprisal). Never shorten to bare 'Überraschung', or the line to surprisal blurs.",
+      "gender": "f"
+    },
+    "surprisal": {
+      "term": "Informationsgehalt",
+      "alt": ["Surprisal", "Selbstinformation"],
+      "definition": "Informationsgehalt eines Ereignisses: je weniger erwartet, desto höher.",
+      "note": "Standard German information-theory term (Shannon: Informationsgehalt, Selbstinformation); music cognition and psycholinguistics also use the loan 'Surprisal'. 'Überraschungswert' avoided so it cannot be confused with spectral surprise.",
+      "gender": "m"
+    },
+    "structural-change": {
+      "term": "Strukturwechsel",
+      "alt": ["Formwechsel", "strukturelle Änderung", "Teilwechsel"],
+      "definition": "Wo ein Stück in einen neuen Teil übergeht, mit Vorzeichen: nach oben, wo Klang einsetzt, nach unten, wo er wegfällt oder abbricht.",
+      "note": "'Strukturwechsel' is short and neutral (works for SFX as well as music); 'Formwechsel' is more musicological; 'strukturelle Änderung' is literal but long. Signed labels in the UI: 'oben: Einsatz, unten: Wegfall oder Abbruch'.",
+      "gender": "m"
+    },
+    "local-pulse": {
+      "term": "lokaler Puls",
+      "definition": "Wie stark und regelmäßig in jedem Moment ein Beat spürbar ist.",
+      "note": "Grosche and Müller 2011 (predominant local pulse, PLP). Not 'Beat-Stärke'.",
+      "gender": "m"
+    },
+    "onset": {
+      "term": "Onset",
+      "alt": ["Einsatz", "Toneinsatz"],
+      "definition": "Der Moment, in dem ein Sound oder ein Ton beginnt.",
+      "note": "German MIR and DSP usage keeps 'Onset' (Onset-Detektion); musicians say '(Ton-)Einsatz'. Onset (instant) ≠ Attack (phase up to the peak) ≠ Transiente (fast change).",
+      "gender": "m"
+    },
+    "onset-strength": {
+      "term": "Onset-Stärke",
+      "alt": ["Einsatzstärke"],
+      "definition": "Wie stark in jedem Moment neuer Schall einsetzt; Spitzen sind Hits.",
+      "gender": "f"
+    },
+    "event": {
+      "term": "Ereignis",
+      "alt": ["Klangereignis"],
+      "definition": "Ein einzelner, abgegrenzter Sound innerhalb einer Datei, etwa ein Schlag, ein Schritt oder ein Knarren, mit Anfang und Ende.",
+      "note": "Not 'Event': in Cubase an Event is a clip on a track.",
+      "gender": "n"
+    },
+    "attack": {
+      "term": "Attack",
+      "alt": ["Einschwingphase", "Anschlag"],
+      "definition": "Der erste Teil eines Sounds, von seinem Beginn bis zu seinem Maximum.",
+      "note": "Synth and studio usage; acoustics says 'Einschwingphase/Einschwingvorgang', percussion 'Anschlag'. Gender varies (der/die Attack); plural Attacks.",
+      "gender": "m"
+    },
+    "body": {
+      "term": "Körper",
+      "alt": ["Body", "Klangkern"],
+      "definition": "Der gehaltene, oft tonale Teil eines Sounds nach dem Attack.",
+      "note": "Studio jargon ('der Snare fehlt Körper'); 'Body' is also common. Not 'Klangkörper' (= instrument body or orchestra) and not 'Sustain' (an ADSR level).",
+      "gender": "m"
+    },
+    "decay": {
+      "term": "Abklingphase",
+      "alt": ["Ausklingen", "Decay"],
+      "definition": "Der Teil eines Sounds, in dem er abklingt.",
+      "note": "Do not equate with the Decay stage of an ADSR envelope (fall to the sustain level), where German synths keep 'Decay'. Acoustics: Ausschwingvorgang.",
+      "gender": "f"
+    },
+    "tail": {
+      "term": "Ausklang",
+      "alt": ["Fahne", "Tail"],
+      "definition": "Der späte Teil der Abklingphase, einschließlich des Nachhalls.",
+      "note": "Studio jargon 'Fahne' (Hallfahne); 'Ausklang' is understood by everyone and forms good tool names (Ausklänge verbreitern). Plural Ausklänge.",
+      "gender": "m"
+    },
+    "transient": {
+      "term": "Transiente",
+      "alt": ["Transient"],
+      "definition": "Eine kurze, schnelle Änderung von Pegel und Spektrum, typischerweise im Attack.",
+      "note": "Plural 'Transienten' (Ableton de, studio). Gender varies: die Transiente / der Transient.",
+      "gender": "f"
+    },
+    "beat": {
+      "term": "Beat",
+      "alt": ["Schlag", "Zählzeit"],
+      "definition": "Der regelmäßige Puls, zu dem Hörer mitklopfen.",
+      "note": "Ableton de writes both 'Beats' and 'Schlägen'; music theory says Schlag, Grundschlag, Zählzeit.",
+      "gender": "m"
+    },
+    "downbeat": {
+      "term": "Downbeat",
+      "alt": ["Eins", "erste Zählzeit"],
+      "definition": "Der erste Beat eines Takts.",
+      "note": "Musicians say 'die Eins'; German MIR writing keeps 'Downbeat'.",
+      "gender": "m"
+    },
+    "bar": {
+      "term": "Takt",
+      "definition": "Eine Gruppe von Beats, meist vier.",
+      "note": "US 'measure' is also 'Takt'. Not to be confused with bar-shape (Stab).",
+      "gender": "m"
+    },
+    "tempo": {
+      "term": "Tempo",
+      "definition": "Die Geschwindigkeit des Beats, in Beats pro Minute (BPM).",
+      "gender": "n"
+    },
+    "section": {
+      "term": "Abschnitt",
+      "alt": ["Formteil", "Teil"],
+      "definition": "Ein Teil eines Stücks, etwa Intro oder Refrain, ermittelt aus den Stellen, an denen sich sein Klang ändert.",
+      "note": "'Formteil' is the musicological term for music; 'Abschnitt' also fits sound effects.",
+      "gender": "m"
+    },
+    "recurrence": {
+      "term": "Rekurrenz",
+      "alt": ["Wiederkehr"],
+      "definition": "Wie sehr ein Sound zu Zuständen zurückkehrt, in denen er schon war.",
+      "note": "Marwan et al. 2007; German: Rekurrenzplot, Rekurrenzquantifizierungsanalyse.",
+      "gender": "f"
+    },
+    "repetition-rate": {
+      "term": "Wiederholrate",
+      "alt": ["Wiederholungsrate", "Wiederholfrequenz"],
+      "definition": "Wie oft sich ein Muster wiederholt, in Hz.",
+      "gender": "f"
+    },
+    "periodicity": {
+      "term": "Periodizität",
+      "definition": "Wie stark ein Sound periodisch (tonhaft) statt rauschhaft ist.",
+      "note": "Hillenbrand et al. 1994.",
+      "gender": "f"
+    },
+    "phase-coherence": {
+      "term": "Phasenkohärenz",
+      "definition": "Wie gleichmäßig die Phasen eines Sounds fortschreiten; 1 für einen stationären Ton, nahe 0 für Rauschen.",
+      "gender": "f"
+    },
+    "time-arrow": {
+      "term": "Zeitpfeil",
+      "alt": ["Zeitrichtung", "Zeitasymmetrie", "Time Arrow"],
+      "definition": "Wie sehr sich ein Sound ändert, wenn er rückwärts abgespielt wird; hoch bei abklingenden Hits.",
+      "note": "'Zeitpfeil' is the established German physics term for the arrow of time and short; 'Zeitasymmetrie' is more technical. For docs: zeitliche Irreversibilität (Ramsey and Rothman 1996).",
+      "gender": "m"
+    },
+    "impulsiveness": {
+      "term": "Impulshaltigkeit",
+      "alt": ["Impulshaftigkeit", "Impulsivität", "Knackanteil"],
+      "definition": "Wie sehr ein Sound aus Klicks, Knacksern und Knistern besteht, ermittelt aus der spektralen Kurtosis.",
+      "note": "'Impulshaltigkeit' is the established term of German noise assessment (DIN 45645-1, TA Lärm: 'impulshaltige Geräusche') and fits the meaning, although there it is rated from level differences, not spectral kurtosis. 'Impulsivität' sounds like a character trait. Not 'Spitzigkeit' (spikiness).",
+      "gender": "f"
+    },
+    "spectral-kurtosis": {
+      "term": "spektrale Kurtosis",
+      "alt": ["spektrale Wölbung"],
+      "definition": "Eine Kenngröße, die für stationäres Rauschen 0, für einen stationären Ton −1 und für Klicks groß ist.",
+      "note": "Antoni 2006; German machine-diagnostics literature mostly says 'spektrale Kurtosis'.",
+      "gender": "f"
+    },
+    "spectral-motion": {
+      "term": "spektrale Bewegung",
+      "alt": ["Schwerpunktbewegung", "Spektraldrift", "Spectral Motion"],
+      "definition": "Wie schnell sich der Schwerpunkt des Spektrums nach oben oder unten bewegt, in Oktaven pro Sekunde.",
+      "note": "Literal and clear; 'Schwerpunktbewegung' is more precise (it is the centroid that moves) but unclear without context; 'Drift' suggests slow change.",
+      "gender": "f"
+    },
+    "spectral-centroid": {
+      "term": "spektraler Schwerpunkt",
+      "alt": ["Spektralschwerpunkt", "Spectral Centroid"],
+      "definition": "Der Schwerpunkt eines Spektrums; ein Maß für die Helligkeit.",
+      "gender": "m"
+    },
+    "reshaping": {
+      "term": "Umformung",
+      "alt": ["spektrale Umformung", "Formänderung", "Reshaping"],
+      "definition": "Spektrale Veränderung, die den Schwerpunkt nicht verschiebt, etwa wenn sich ein Spektrum verbreitert oder verengt.",
+      "note": "'Umformung' is short and sits well next to 'spektrale Bewegung'; 'spektrale Umformung' is clearer in docs.",
+      "gender": "f"
+    },
+    "burstiness": {
+      "term": "Burstiness",
+      "definition": "Ob Ereignisse regelmäßig (unter 0), zufällig (0) oder gehäuft in Schüben (über 0) auftreten.",
+      "note": "Goh and Barabási 2008; German scientific writing leaves it untranslated. If a German UI word is wanted, descriptive 'Schubhaftigkeit' or 'Häufung' could serve, but neither is established.",
+      "gender": "f"
+    },
+    "temporal-entropy": {
+      "term": "zeitliche Entropie",
+      "alt": ["temporale Entropie"],
+      "definition": "Wie gleichmäßig die Energie eines Sounds über die Zeit verteilt ist.",
+      "note": "Sueur et al. 2008 (Ht).",
+      "gender": "f"
+    },
+    "decay-time": {
+      "term": "Abklingzeit (T60)",
+      "definition": "Die Zeit, in der ein Sound um 60 dB abfällt.",
+      "note": "In room acoustics T60 is the 'Nachhallzeit' (DIN EN ISO 3382); for sounds and struck objects in general 'Abklingzeit'.",
+      "gender": "f"
+    },
+    "damping": {
+      "term": "Dämpfung",
+      "definition": "Wie schnell ein schwingender Körper Energie verliert.",
+      "gender": "f"
+    },
+    "material": {
+      "term": "Material",
+      "definition": "Woraus ein angeschlagenes Objekt besteht, wie es gehört wird: gedämpft, glasartig oder metallisch.",
+      "note": "Klatzky et al. 2000.",
+      "gender": "n"
+    },
+    "partial": {
+      "term": "Teilton",
+      "alt": ["Partialton"],
+      "definition": "Eine Frequenzkomponente eines Sounds.",
+      "gender": "m"
+    },
+    "overtone": {
+      "term": "Oberton",
+      "definition": "Ein Teilton oberhalb des tiefsten.",
+      "note": "Counting: 1. Oberton = 2. Teilton.",
+      "gender": "m"
+    },
+    "inharmonic": {
+      "term": "inharmonisch",
+      "alt": ["unharmonisch"],
+      "definition": "Mit Teiltönen, die keine ganzzahligen Vielfachen einer Grundfrequenz sind, wie bei Glocken und angeschlagenem Metall.",
+      "note": "German instrument acoustics also writes 'unharmonische Teiltöne'."
+    },
+    "quality-checks": {
+      "term": "Qualitätsprüfungen",
+      "alt": ["Qualitätschecks"],
+      "definition": "Automatische Prüfungen auf Clipping, DC-Offset, Stille und abgeschnittene Ausklänge.",
+      "gender": "f"
+    },
+    "self-check": {
+      "term": "Selbsttest",
+      "alt": ["Selbstprüfung", "Plausibilitätstest", "Self-Check"],
+      "definition": "Ein Test, der einen Sound auf bekannte Weise bearbeitet und prüft, ob sich die Analyse so ändert, wie sie muss.",
+      "note": "'Selbsttest' is familiar (device self-test) and short; 'Plausibilitätstest' describes the purpose but sounds bureaucratic. Not 'Unit-Test/Modultest'. Method: metamorphes Testen (Chen et al. 1998).",
+      "gender": "m"
+    },
+    "de-harsh": {
+      "term": "Härte reduzieren",
+      "alt": ["Härte zähmen", "Härten glätten", "De-Harsh"],
+      "definition": "Ein Werkzeug, das Resonanzen nur so lange absenkt, wie der Sound hart klingt.",
+      "note": "Command form, consistent with harshness = Härte. 'De-Harsh' would be understood by analogy with 'De-Esser' but is not German; 'Entschärfen' is catchy but blurs Schärfe (sharpness). Not a De-Esser (which keys on level in one band)."
+    },
+    "attack-and-body": {
+      "term": "Attack und Körper",
+      "alt": ["Attack & Body", "Anschlag und Körper", "Transiente und Körper"],
+      "definition": "Ein Werkzeug, das einen Sound in seinen transienten und seinen gehaltenen Anteil zerlegt, um beide neu zu gewichten.",
+      "note": "Noun title built from the chosen single terms (Attack, Körper); 'Attack & Body' is the pure-loan title many sound designers would accept. Not 'Transient-Shaper' (works on level, not on a split)."
+    },
+    "layer-remix": {
+      "term": "Layer-Remix",
+      "alt": ["Schichten neu mischen", "Layer neu mischen", "Schichten-Remix"],
+      "definition": "Ein Werkzeug, das einen Sound in Layer zerlegt und sie mit neuen Pegeln wieder zusammenmischt.",
+      "note": "'Layer' is the sound-design word for sound layers (Layering) and keeps them apart from the 'Ebenen' of a look; 'Remix' is naturalised. 'Schichten neu mischen' is the loan-free command form.",
+      "gender": "m"
+    },
+    "tension-shaper": {
+      "term": "Spannungsformer",
+      "alt": ["Spannungsbogen formen", "Spannungsautomation", "Tension Shaper"],
+      "definition": "Ein Werkzeug, das die Spannungskurve in Automation für Gain und Helligkeit umsetzt.",
+      "note": "Compact compound like 'Hüllkurvenformer'; drawback: engineers may read 'Spannung' as voltage. 'Spannungsbogen formen' is more idiomatic (Spannungsbogen = dramatic arc) but is a command, not a title.",
+      "gender": "m"
+    },
+    "loop-maker": {
+      "term": "Loop-Finder",
+      "alt": ["Loop-Maker", "Loop-Generator", "Loop erstellen"],
+      "definition": "Ein Werkzeug, das Loop-Punkte dort findet, wo sich der Sound am besten wiederholt, und sie mit Crossfades versieht.",
+      "note": "'Loop-Finder' names the main job and reads as German ('Finder' is native); 'Loop-Maker' is the plain loan; 'Loop-Generator' collides with 'Generator' (the Workbench sound generator).",
+      "gender": "m"
+    },
+    "variations": {
+      "term": "Variationen",
+      "alt": ["Varianten"],
+      "definition": "Mehrere leicht unterschiedliche Versionen eines Sounds, um Wiederholungen in Spielen zu vermeiden.",
+      "note": "German game-audio usage; 'Varianten' also common.",
+      "gender": "f"
+    },
+    "clean-up": {
+      "term": "Bereinigung für den Export",
+      "short": "Export-Bereinigung",
+      "alt": ["Export-Bereinigung", "Für den Export bereinigen"],
+      "definition": "Ein Werkzeug, das behebt, was die Qualitätsprüfungen beanstanden, bevor ein Sound exportiert wird.",
+      "note": "Noun title as in the English.",
+      "gender": "f"
+    },
+    "reverb-on-tails": {
+      "term": "Hall auf die Ausklänge",
+      "alt": ["Hall im Ausklang", "Ausklang-Hall", "Tail-Reverb"],
+      "definition": "Hall, der nur aus den Abklingphasen der Ereignisse gespeist wird, sodass die Attacks trocken bleiben.",
+      "note": "Follows the studio idiom 'Hall auf die Snare'; 'Hall im Ausklang' is smoother and shorter but loses the per-event plural. 'Hall' (not 'Reverb') is standard German studio usage."
+    },
+    "drive-hits": {
+      "term": "Hits anzerren",
+      "alt": ["Schläge anzerren", "Ereignisse sättigen", "Drive the Hits"],
+      "definition": "Sättigung, die nur auf die Attacks oder Körper der Ereignisse angewendet wird.",
+      "note": "'anzerren' is the studio verb for driving lightly into distortion; 'Hits' is common in German sound design ('Impacts & Hits'). 'Schläge' is more German but evokes blows; 'Ereignisse sättigen' is exact but flat."
+    },
+    "ring-time": {
+      "term": "Nachklingzeit",
+      "alt": ["Ausschwingzeit", "Klingdauer", "Ring Time"],
+      "definition": "Ein Werkzeug, das verlängert oder verkürzt, wie lange jedes Ereignis nach seinem Maximum nachklingt.",
+      "note": "'nachklingen' carries 'ring'; 'Ausschwingzeit' is acoustically correct but easily confused with Abklingzeit (T60).",
+      "gender": "f"
+    },
+    "level-events": {
+      "term": "Ereignisse angleichen",
+      "alt": ["Ereignispegel angleichen", "Ereignisse ausgleichen", "Level the Events"],
+      "definition": "Ein Werkzeug, das angleicht, wie laut die Ereignisse sind – ein Gain pro Ereignis –, ohne ihre Form zu verändern.",
+      "note": "Command form (object + infinitive, Microsoft German style). 'angleichen' stresses the result (equal loudness), 'ausgleichen' the process. Not 'komprimieren' (a compressor changes the shape)."
+    },
+    "fold-to-mono": {
+      "term": "Phasenrichtig auf Mono mischen",
+      "short": "Phasenrichtig auf Mono",
+      "alt": ["Auf Mono zusammenführen", "Phasenrichtig zu Mono", "Fold to Mono"],
+      "definition": "Stereo in Mono umwandeln und dabei die Phasen der Kanäle ausrichten, sodass sich nichts auslöscht.",
+      "note": "A literal 'falten' is avoided because 'Faltung' is German for convolution. 'phasenrichtig' marks the difference from a plain 'auf Mono summieren' (sum to mono); 'zusammenführen' is shorter but hides the point."
+    },
+    "widen-tails": {
+      "term": "Ausklänge verbreitern",
+      "alt": ["Ausklänge aufweiten", "Stereo im Ausklang", "Widen the Tails"],
+      "definition": "Stereo nur nach den Attacks erzeugen oder verbreitern; die Attacks bleiben in der Mitte, und das Ergebnis bleibt monokompatibel.",
+      "note": "Command form; 'verbreitern' as in 'Stereobreite'. 'aufweiten' is also heard in studios."
+    },
+    "downmix": {
+      "term": "Downmix",
+      "alt": ["Heruntermischen"],
+      "definition": "Mehr Kanäle in weniger Kanäle umwandeln.",
+      "note": "Broadcast and surround usage; Audacity de 'heruntermischen'.",
+      "gender": "m"
+    },
+    "mono-compatibility": {
+      "term": "Monokompatibilität",
+      "definition": "Wie gut ein Stereosound das Summieren zu Mono übersteht.",
+      "gender": "f"
+    },
+    "decorrelation": {
+      "term": "Dekorrelation",
+      "definition": "Zwei Signale einander unähnlicher machen, ohne ihr Spektrum zu ändern, um ein Stereobild zu verbreitern.",
+      "gender": "f"
+    },
+    "comb-filtering": {
+      "term": "Kammfiltereffekt",
+      "alt": ["Kammfilterung"],
+      "definition": "Regelmäßige Einbrüche im Spektrum, wenn ein Signal mit einer verzögerten Kopie seiner selbst summiert wird.",
+      "gender": "m"
+    },
+    "cancellation": {
+      "term": "Auslöschung",
+      "alt": ["Phasenauslöschung"],
+      "definition": "Pegelverlust, wenn Signale entgegengesetzter Phase summiert werden.",
+      "gender": "f"
+    },
+    "pre-echo": {
+      "term": "Vorecho",
+      "alt": ["Pre-Echo"],
+      "definition": "Eine schwache Verschmierung eines Sounds vor seinem Attack, verursacht durch blockweise (rahmenbasierte) Verarbeitung.",
+      "note": "German codec literature (MP3/AAC): Vorecho.",
+      "gender": "n"
+    },
+    "eq": {
+      "term": "EQ",
+      "alt": ["Equalizer", "Entzerrer"],
+      "definition": "Ein Equalizer: ein Filter, das den Pegel von Frequenzbändern verändert.",
+      "note": "'Entzerrer' is the older broadcast term. 'das Filter' in technical prose, 'der Filter' in studio speech.",
+      "gender": "m"
+    },
+    "dynamic-eq": {
+      "term": "dynamischer EQ",
+      "definition": "Ein EQ, dessen Gain pro Band dem Pegel im jeweiligen Band folgt.",
+      "gender": "m"
+    },
+    "automation": {
+      "term": "Automation",
+      "alt": ["Automatisierung"],
+      "definition": "Parameteränderungen über die Zeit, aufgenommen oder gezeichnet.",
+      "note": "Cubase, Logic and Ableton de say 'Automation'; 'Automatisierung' is general IT German.",
+      "gender": "f"
+    },
+    "compressor": {
+      "term": "Kompressor",
+      "definition": "Ein Prozessor, der laute Passagen oberhalb eines Thresholds gemäß einer Ratio absenkt.",
+      "gender": "m"
+    },
+    "threshold": {
+      "term": "Threshold",
+      "alt": ["Schwellenwert", "Schwellwert"],
+      "definition": "Der Pegel, oberhalb dessen ein Prozessor eingreift.",
+      "note": "Control label in German DAWs (Cubase, Logic); German textbooks: 'Threshold (Arbeitspunkt, Schwellwert)' (HdM Stuttgart, Regelverstärker). 'Schwellenwert' reads well in running text.",
+      "gender": "m"
+    },
+    "ratio": {
+      "term": "Ratio",
+      "alt": ["Kompressionsverhältnis", "Verhältnis"],
+      "definition": "Wie stark ein Kompressor den Pegel oberhalb seines Thresholds absenkt.",
+      "note": "HdM Stuttgart: 'Ratio (Kompressionsstärke)'; Audacity de 'Verhältnis'.",
+      "gender": "f"
+    },
+    "attack-time": {
+      "term": "Attack-Zeit",
+      "short": "Attack",
+      "alt": ["Ansprechzeit"],
+      "definition": "Wie schnell ein Prozessor reagiert, wenn der Pegel steigt.",
+      "note": "HdM Stuttgart: 'Attack-Time (Ansprechzeit)'. Control label simply 'Attack'.",
+      "gender": "f"
+    },
+    "release-time": {
+      "term": "Release-Zeit",
+      "short": "Release",
+      "alt": ["Rücklaufzeit"],
+      "definition": "Wie schnell ein Prozessor in den Ruhezustand zurückkehrt, wenn der Pegel fällt.",
+      "note": "HdM Stuttgart: 'Release-Time (Rücklaufzeit)'. Control label simply 'Release'.",
+      "gender": "f"
+    },
+    "gate": {
+      "term": "Gate",
+      "alt": ["Rauschsperre"],
+      "definition": "Ein Prozessor oder eine Bedingung, der bzw. die nur oberhalb eines Thresholds öffnet.",
+      "note": "As a processor also 'Rauschsperre' (Noise Gate); in loudness metering 'Gate/Gating' (ZDF Vorgaben 2022: 'Absolutes Gate −70 LUFS').",
+      "gender": "n"
+    },
+    "saturation": {
+      "term": "Sättigung",
+      "alt": ["Saturation"],
+      "definition": "Weiche Verzerrung, die Harmonische hinzufügt und Spitzen abrundet.",
+      "gender": "f"
+    },
+    "pumping": {
+      "term": "Pumpen",
+      "definition": "Hörbares Auf und Ab des Hintergrunds, verursacht durch einen Kompressor.",
+      "note": "HdM Stuttgart: '„Pumpen“ eines Kompressors'.",
+      "gender": "n"
+    },
+    "evenness": {
+      "term": "Gleichmäßigkeit",
+      "definition": "Wie ähnlich sich die Ereignisse in ihrer Lautheit sind.",
+      "note": "CH: Gleichmässigkeit.",
+      "gender": "f"
+    },
+    "effect-chain": {
+      "term": "Effektkette",
+      "definition": "Effekte, die nacheinander auf einen Sound angewendet werden.",
+      "gender": "f"
+    },
+    "preset": {
+      "term": "Preset",
+      "alt": ["Voreinstellung"],
+      "definition": "Ein gespeicherter Satz von Einstellungen.",
+      "gender": "n"
+    },
+    "morph": {
+      "term": "Morphing",
+      "alt": ["Morph", "Klangüberblendung"],
+      "definition": "Ein allmählicher Übergang von einem Sound in einen anderen.",
+      "note": "German uses the noun 'Morphing' (verb 'morphen'); not 'Crossfade', which only blends levels.",
+      "gender": "n"
+    },
+    "cross-synthesis": {
+      "term": "Kreuzsynthese",
+      "definition": "Das Spektrum eines Sounds mit der Hüllkurve oder der Anregung eines anderen kombinieren.",
+      "note": "excitation = Anregung (source-filter model), not 'Erregung' (= arousal).",
+      "gender": "f"
+    },
+    "convolution": {
+      "term": "Faltung",
+      "definition": "Einen Sound durch einen anderen filtern, zum Beispiel durch die Impulsantwort eines Raums.",
+      "note": "Faltungshall. This is why 'fold to mono' is not rendered with 'falten'.",
+      "gender": "f"
+    },
+    "envelope-transfer": {
+      "term": "Hüllkurvenübertragung",
+      "alt": ["Hüllkurventransfer"],
+      "definition": "Einem Sound die Pegelhüllkurve eines anderen geben.",
+      "gender": "f"
+    },
+    "ring-modulation": {
+      "term": "Ringmodulation",
+      "definition": "Multiplikation zweier Signale, die Summen- und Differenzfrequenzen erzeugt.",
+      "gender": "f"
+    },
+    "granular": {
+      "term": "granular",
+      "definition": "Aus vielen kurzen Klangkörnern (Grains) aufgebaut.",
+      "note": "Granularsynthese; studio usage 'Grains'."
+    },
+    "accent": {
+      "term": "Akzent",
+      "alt": ["Betonung", "Akzentsound", "Accent"],
+      "definition": "Ein kurzer, zusätzlicher Sound, der an eine Stelle eines anderen Sounds gesetzt wird, um sie zu betonen.",
+      "note": "'Akzent' is literal and familiar from music; 'Betonung' names the act rather than the added sound; 'Akzentsound' is unambiguous but longer.",
+      "gender": "m"
+    },
+    "generator": {
+      "term": "Generator",
+      "definition": "Ein Teil der App, der aus Parametern neue Sounds erzeugt.",
+      "gender": "m"
+    },
+    "synth": {
+      "term": "Synth",
+      "alt": ["Synthesizer"],
+      "definition": "Ein Klangerzeuger aus Oszillatoren, Rauschen, Hüllkurven und Filtern.",
+      "gender": "m"
+    },
+    "impact-model": {
+      "term": "Impact",
+      "alt": ["Aufprall", "Anschlagmodell"],
+      "definition": "Ein physikalisches Modell eines angeschlagenen Objekts aus einem bestimmten Material und mit einer bestimmten Form.",
+      "note": "'Impacts' is common in German sound design (library categories 'Impacts & Hits'); use 'Anschlagmodell' in docs when the model itself is meant.",
+      "gender": "m"
+    },
+    "resynthesis": {
+      "term": "Resynthese",
+      "definition": "Einen Sound aus an ihm gemessenen Parametern, etwa seinen Teiltönen und Abklingzeiten, neu aufbauen.",
+      "gender": "f"
+    },
+    "modal": {
+      "term": "modal",
+      "definition": "Aus Resonanzmoden aufgebaut, jede mit einer Frequenz und einer Abklingzeit.",
+      "note": "Modalsynthese; die Mode, pl. Moden."
+    },
+    "texture": {
+      "term": "Textur",
+      "definition": "Ein kontinuierlicher Sound aus vielen kleinen Ereignissen, etwa Regen, Feuer oder Kies.",
+      "gender": "f"
+    },
+    "reaction": {
+      "term": "Aktion und Reaktion",
+      "alt": ["Einwirkung und Reaktion", "Anregung und Antwort", "Action & Reaction"],
+      "definition": "Ein Medium (Kies, Wasser, Luft), das auf eine Aktion reagiert, etwa auf ein Objekt, das sich hindurchbewegt.",
+      "note": "Literal and clear; echoes Newton's 'actio = reactio', which fits. 'Anregung und Antwort' is acoustically apt but collides with Anregung = excitation."
+    },
+    "medium": {
+      "term": "Medium",
+      "definition": "Was auf eine Aktion reagiert: Kies, Laub, Wasser, Luft, Funken oder ein Kraftfeld.",
+      "gender": "n"
+    },
+    "drive-curve": {
+      "term": "Steuerkurve",
+      "alt": ["Antriebskurve", "Drive-Kurve", "Verlaufskurve"],
+      "definition": "Eine Kurve, die die Parameter eines Sounds über die Zeit steuert.",
+      "note": "'Steuerkurve' (control curve) is precise and avoids the clash with drive = Anzerrung (drive the hits); 'Antriebskurve' is literal but sounds mechanical.",
+      "gender": "f"
+    },
+    "inertia": {
+      "term": "Trägheit",
+      "alt": ["Nachlauf"],
+      "definition": "Wie langsam sich eine Reaktion beruhigt, nachdem die Aktion aufgehört hat.",
+      "gender": "f"
+    },
+    "foley": {
+      "term": "Foley",
+      "alt": ["Geräuschemacherei"],
+      "definition": "Alltagsgeräusche, die synchron zum Bild gespielt und aufgenommen werden.",
+      "note": "German film-sound practice: Foley, Geräuschemacher(in). Capitalised as in English (after Jack Foley).",
+      "gender": "n"
+    },
+    "ambience": {
+      "term": "Atmo",
+      "alt": ["Atmosphäre", "Ambience"],
+      "definition": "Der Hintergrundklang eines Ortes.",
+      "note": "German film-sound and sound-design standard (die Atmo, pl. Atmos; Atmo-Aufnahme).",
+      "gender": "f"
+    },
+    "one-shot": {
+      "term": "One-Shot",
+      "definition": "Ein kurzer Sound, der einmal abgespielt wird, etwa ein Hit oder ein UI-Klick.",
+      "gender": "m"
+    },
+    "whoosh": {
+      "term": "Whoosh",
+      "alt": ["Swoosh", "Wusch"],
+      "definition": "Das Geräusch von etwas, das sich schnell am Hörer vorbeibewegt.",
+      "note": "SFX library usage; 'Wusch' is the German onomatopoeia.",
+      "gender": "m"
+    },
+    "finishing": {
+      "term": "Endbearbeitung",
+      "alt": ["Feinschliff", "Fertigstellung", "Finishing"],
+      "definition": "Die letzten Schritte vor dem Export: Format, Kanäle, Fades und Pegel.",
+      "note": "'Feinschliff' is more idiomatic but suggests polish rather than format and channels.",
+      "gender": "f"
+    },
+    "steel": {
+      "term": "Stahl",
+      "gender": "m"
+    },
+    "brass": {
+      "term": "Messing",
+      "gender": "n"
+    },
+    "aluminium": {
+      "term": "Aluminium",
+      "gender": "n"
+    },
+    "glass": {
+      "term": "Glas",
+      "gender": "n"
+    },
+    "ceramic": {
+      "term": "Keramik",
+      "gender": "f"
+    },
+    "ice": {
+      "term": "Eis",
+      "gender": "n"
+    },
+    "wood": {
+      "term": "Holz",
+      "gender": "n"
+    },
+    "plastic": {
+      "term": "Kunststoff",
+      "alt": ["Plastik"],
+      "gender": "m"
+    },
+    "stone": {
+      "term": "Stein",
+      "gender": "m"
+    },
+    "cardboard": {
+      "term": "Pappe",
+      "alt": ["Karton"],
+      "gender": "f"
+    },
+    "rubber": {
+      "term": "Gummi",
+      "note": "Material: das Gummi (DE), der Gummi (AT, also DE colloquial).",
+      "gender": "n"
+    },
+    "bar-shape": {
+      "term": "Stab",
+      "alt": ["Balken"],
+      "definition": "Ein langer, massiver Körper, etwa eine Stange oder ein Träger.",
+      "note": "Not 'Takt' (musical bar).",
+      "gender": "m"
+    },
+    "plate": {
+      "term": "Platte",
+      "definition": "Ein dünner, flacher Körper.",
+      "gender": "f"
+    },
+    "membrane": {
+      "term": "Membran",
+      "alt": ["Membrane"],
+      "definition": "Eine gespannte Haut, wie bei einer Trommel.",
+      "note": "AT also 'Membrane'.",
+      "gender": "f"
+    },
+    "shell": {
+      "term": "Schale",
+      "definition": "Ein dünner, gewölbter Körper, etwa eine Dose oder ein Topf.",
+      "gender": "f"
+    },
+    "bell": {
+      "term": "Glocke",
+      "gender": "f"
+    },
+    "wire": {
+      "term": "Draht",
+      "alt": ["Saite"],
+      "definition": "Eine dünne, gespannte Saite.",
+      "note": "Literal 'Draht' keeps the object-like naming of the shape list; physically a tensioned string is modelled, so choose 'Saite' if non-metal strings are meant.",
+      "gender": "m"
+    },
+    "box": {
+      "term": "Kasten",
+      "alt": ["Kiste", "Box"],
+      "definition": "Ein Hohlkörper mit flachen Seiten.",
+      "gender": "m"
+    }
+  }
+}

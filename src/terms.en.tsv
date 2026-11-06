@@ -1,0 +1,176 @@
+id	group	status	term	short	definition	avoid	ref	apps
+waveform	core	standard	waveform		The drawing of a sound's amplitude over time.			playhead workbench
+spectrogram	core	standard	spectrogram		A picture of how a sound's frequency content changes over time: time across, frequency up, level as colour.			playhead workbench
+mel-scale	core	standard	mel scale		A frequency scale spaced as pitch is heard: roughly linear below 1 kHz and logarithmic above.			playhead
+playhead	core	common	playhead		The moving line that marks the current playback position.	cursor (in docs, keep "playhead" for the moving line)		playhead workbench
+edit-cursor	core	common	edit cursor		The position where editing and playback start, set by clicking.			playhead workbench
+sample-rate	core	standard	sample rate		Samples per second of a digital sound, in Hz.			playhead workbench
+bit-depth	core	standard	bit depth		Bits per sample of a digital sound; sets its resolution.			workbench
+channel	core	standard	channel		One signal of a sound file; stereo has two.			playhead workbench
+mono	core	standard	mono		One channel.			playhead workbench
+stereo	core	standard	stereo		Two channels, left and right.			playhead workbench
+mid-side	core	standard	mid/side		Stereo written as the sum (mid) and the difference (side) of the channels.			playhead
+phase	core	standard	phase		Where in its cycle a wave is at a given moment.			playhead workbench
+polarity	core	standard	polarity		Whether a signal is upright or inverted.	phase (when the signal is simply inverted)		playhead workbench
+level	core	standard	level		How strong a signal is, usually in dB.			playhead workbench
+gain	core	standard	gain		A change of level, in dB.			playhead workbench
+peak	core	standard	peak		The largest absolute sample value.			playhead workbench
+true-peak	core	standard	true peak		The peak of the signal between samples, as a DAC would reproduce it.		ITU-R BS.1770	playhead workbench
+loudness	core	standard	loudness		How loud a sound is heard, as opposed to its level.		ITU-R BS.1770; ISO 532-1	playhead workbench
+lufs	core	standard	LUFS		Loudness units relative to full scale (ITU-R BS.1770); 1 LU is 1 dB.		ITU-R BS.1770; EBU R 128	playhead workbench
+k-weighting	core	standard	K-weighting		The frequency weighting that loudness meters apply before measuring.		ITU-R BS.1770	playhead
+normalize	core	standard	normalize		Set a sound's peak or loudness to a target.			workbench
+fade	core	standard	fade		A gradual change of level at the start (fade-in) or end (fade-out).			workbench
+clipping	core	standard	clipping		Distortion when a signal exceeds the largest value that can be stored.			playhead workbench
+dc-offset	core	standard	DC offset		A constant shift of the signal away from zero.			playhead workbench
+noise-floor	core	standard	noise floor		The level of the background noise under a sound.			playhead workbench
+silence	core	standard	silence		A stretch with no sound above the noise floor.			playhead workbench
+cut-tail	core	common	cut tail		A sound that ends before its decay has died away.			playhead workbench
+take	core	common	take		One recorded or rendered version of a sound.			workbench
+render	core	standard	render		Compute a processed sound and write it as audio.			playhead workbench
+loop	core	standard	loop		A sound that repeats without an audible join.			playhead workbench
+crossfade	core	standard	crossfade		A fade-out of one sound overlapping a fade-in of another.			playhead workbench
+slice	core	common	slice		Cut a sound into parts at chosen points.			workbench
+time-stretch	core	standard	time stretch		Change a sound's duration without changing its pitch.			workbench
+pitch-shift	core	standard	pitch shift		Change a sound's pitch without changing its duration.			workbench
+sone	psycho	standard	sone		The unit of loudness as heard; 1 sone is the loudness of a 1 kHz tone at 40 dB SPL.		ISO 532-1	playhead
+sharpness	psycho	standard	sharpness		How much a sound's energy sits at high frequencies, as heard; in acum.		DIN 45692	playhead
+roughness	psycho	standard	roughness		The rasping quality of fast amplitude modulation (about 15–300 Hz); in asper.		Daniel and Weber 1997	playhead
+fluctuation-strength	psycho	standard	fluctuation strength		The sensation of slow amplitude modulation (about 1–20 Hz, strongest near 4 Hz); in vacil.		Fastl and Zwicker 2007	playhead
+psychoacoustic-annoyance	psycho	standard	psychoacoustic annoyance		Zwicker's combination of loudness, sharpness, roughness and fluctuation strength into one annoyance value.		Fastl and Zwicker 2007	playhead
+masking	psycho	standard	masking		One sound making another harder or impossible to hear.			playhead workbench
+critical-band	psycho	standard	critical band		The frequency range the ear integrates as one; on the Bark scale.			playhead
+curve	analysis	common	curve		A value drawn over time along the waveform.			playhead workbench
+overview	analysis	common	overview		A small picture of a whole sound used to find one's way in it.			playhead workbench
+strip	analysis	coined	strip		The overview of one sound as Playhead draws it: waveform, curves and marks in one band.	lane (a lane is part of a strip)		playhead workbench
+look	analysis	coined	look		A named way to draw a strip, written as a short code of layers.	skin, theme (a theme sets colours only)		playhead workbench
+look-code	analysis	coined	look code		The short text that defines a look, for example "form:overlay,shape:mirror,lane:harshness".			playhead workbench
+layer	analysis	coined	layer		One element of a look: a waveform, spectrogram, curve, set of marks or sections.			playhead workbench
+lane	analysis	common	lane		A horizontal band of a strip that holds one curve.			playhead workbench
+overlay	analysis	common	overlaid		Curves drawn in one shared band instead of separate lanes.			playhead workbench
+mirrored	analysis	common	mirrored		Drawn symmetrically above and below a centre line, like a waveform.			playhead workbench
+baseline-form	analysis	common	from the baseline		Drawn upwards from the bottom of the band.			playhead
+horizon-chart	analysis	standard	horizon chart		A compact chart that folds a curve into coloured bands of increasing intensity.			playhead
+sculpted-waveform	analysis	coined	sculpted waveform		A waveform whose height follows a curve, for example perceived loudness, instead of the peak level.			playhead workbench
+outline	analysis	common	outline		The ordinary peak waveform drawn as a thin line behind another layer.			playhead
+marks	analysis	common	marks		Ticks along the strip at events, onsets, beats or section boundaries.			playhead workbench
+legend	analysis	standard	legend		The text that says what each colour and line of a strip shows.			playhead workbench
+profile	analysis	common	analysis profile		How much Playhead analyses: fast (curves only), sound effect, or music.			playhead workbench
+descriptor	analysis	standard	descriptor		A number or curve computed from a sound that describes one of its properties.		Peeters et al. 2011	playhead
+feature	analysis	standard	feature		A descriptor used as input to a classifier or search.			playhead
+activity	analysis	coined	activity		How much is happening: spectral change and the density of events.			playhead workbench
+arousal	analysis	standard	arousal		How exciting or calming a sound is, after the psychological dimension of the same name.			playhead workbench
+harshness	analysis	coined	harshness		How unpleasant a sound is to listen to, computed from psychoacoustic annoyance; not the same as roughness.	roughness, sharpness (both are inputs, not synonyms)		playhead workbench
+tension	analysis	common	tension		Build-up and release over time, after the model of musical tension by Farbood (2012).		Farbood 2012	playhead workbench
+harmonic-tension	analysis	standard	harmonic tension		How far the harmony is from rest, from the tonal interval space.		Bernardes et al. 2016	playhead
+novelty	analysis	standard	novelty		How much a moment differs from what came before.		Foote 2000	playhead workbench
+spectral-surprise	analysis	coined	spectral surprise		Change of the spectrum that loudness does not explain.	novelty (novelty also includes level changes)		playhead workbench
+surprisal	analysis	standard	surprisal		Information content of an event: the less expected, the higher.		Abdallah and Plumbley 2009	playhead
+structural-change	analysis	coined	structural change		Where a piece moves to a new part, signed: up where sound enters, down where it falls away or breaks off.			playhead workbench
+local-pulse	analysis	standard	local pulse		How clearly a regular pulse is felt at each moment.	beat strength	Grosche and Müller 2011	playhead workbench
+onset	analysis	standard	onset		The moment a sound or note begins.			playhead workbench
+onset-strength	analysis	standard	onset strength		How strongly new sound arrives at each moment; peaks are hits.			playhead workbench
+event	analysis	common	event		One distinct sound within a file, such as a hit, a step or a creak, with a start and an end.			playhead workbench
+attack	analysis	standard	attack		The first part of a sound, from its start to its peak.			playhead workbench
+body	analysis	common	body		The sustained, often tonal, part of a sound after its attack.			playhead workbench
+decay	analysis	standard	decay		The part of a sound in which it dies away.			playhead workbench
+tail	analysis	common	tail		The late part of a decay, including reverberation.			playhead workbench
+transient	analysis	standard	transient		A short, fast change of level and spectrum, typically at an attack.			playhead workbench
+beat	analysis	standard	beat		The regular pulse a listener taps along to.			playhead workbench
+downbeat	analysis	standard	downbeat		The first beat of a bar.			playhead workbench
+bar	analysis	standard	bar		A group of beats, usually four.	measure (US)		playhead workbench
+tempo	analysis	standard	tempo		The speed of the beat, in beats per minute (BPM).			playhead workbench
+section	analysis	common	section		A part of a piece, such as an intro or chorus, found from where its sound changes.			playhead workbench
+recurrence	analysis	standard	recurrence		How much a sound returns to states it has been in before.		Marwan et al. 2007	playhead
+repetition-rate	analysis	common	repetition rate		How often a pattern repeats, in Hz.			playhead
+periodicity	analysis	standard	periodicity		How strongly a sound is periodic (pitched) rather than noisy.		Hillenbrand et al. 1994	playhead
+phase-coherence	analysis	standard	phase coherence		How steadily a sound's phases advance; 1 for a steady tone, near 0 for noise.			playhead
+time-arrow	analysis	coined	time arrow		How much a sound changes when played backwards; high for hits that decay.	time irreversibility (technical term, docs only)	Ramsey and Rothman 1996	playhead workbench
+impulsiveness	analysis	coined	impulsiveness		How much a sound consists of clicks, cracks and crackle, from spectral kurtosis.	spikiness	Antoni 2006	playhead workbench
+spectral-kurtosis	analysis	standard	spectral kurtosis		A statistic that is 0 for steady noise, −1 for a steady tone and large for clicks.		Antoni 2006	playhead
+spectral-motion	analysis	coined	spectral motion		How fast the spectrum's centre moves up or down, in octaves per second.			playhead
+spectral-centroid	analysis	standard	spectral centroid		The centre of mass of a spectrum; a measure of brightness.			playhead workbench
+reshaping	analysis	coined	reshaping		Spectral change that does not move the centre, as when a spectrum spreads or narrows.			playhead
+burstiness	analysis	standard	burstiness		Whether events come regularly (below 0), at random (0) or in bursts (above 0).		Goh and Barabási 2008	playhead workbench
+temporal-entropy	analysis	standard	temporal entropy		How evenly a sound's energy is spread over time.		Sueur et al. 2008	playhead
+decay-time	analysis	standard	decay time (T60)		The time a sound takes to fall by 60 dB.		Schroeder 1965	playhead workbench
+damping	analysis	standard	damping		How quickly a vibrating body loses energy.			playhead workbench
+material	analysis	common	material		What an impacted object is made of, as heard: damped, glass-like or metal-like.		Klatzky et al. 2000	playhead workbench
+partial	analysis	standard	partial		One frequency component of a sound.			playhead workbench
+overtone	analysis	standard	overtone		A partial above the lowest one.			playhead workbench
+inharmonic	analysis	standard	inharmonic		With partials that are not whole-number multiples of a fundamental, as in bells and struck metal.			playhead workbench
+quality-checks	analysis	common	quality checks		Automatic checks for clipping, DC offset, silence and cut tails.			playhead workbench
+self-check	analysis	coined	self-check		A test that edits a sound in a known way and checks that the analysis changes as it must.	unit test	Chen et al. 1998 (metamorphic testing)	playhead
+de-harsh	tools	coined	de-harsh		A tool that turns down resonances only while the sound is harsh.	de-esser (a de-esser keys on level in one band)		playhead workbench
+attack-and-body	tools	coined	attack and body		A tool that splits a sound into its transient part and its sustained part, to rebalance them.	transient shaper (works on level, not on a split)		playhead workbench
+layer-remix	tools	coined	layer remix		A tool that separates a sound into layers and mixes them again at new levels.			playhead
+tension-shaper	tools	coined	tension shaper		A tool that turns the tension curve into gain and brightness automation.			playhead
+loop-maker	tools	coined	loop maker		A tool that finds and crossfades loop points where the sound repeats best.			playhead workbench
+variations	tools	common	variations		Several slightly different versions of one sound, to avoid repetition in games.			playhead workbench
+clean-up	tools	common	clean-up for export		A tool that repairs what the quality checks flag before a sound is exported.			playhead
+reverb-on-tails	tools	coined	reverb on the tails		Reverberation fed only from the decays of the events, keeping the attacks dry.			playhead workbench
+drive-hits	tools	coined	drive the hits		Saturation applied only to the events' attacks or bodies.			playhead workbench
+ring-time	tools	coined	ring time		A tool that lengthens or shortens how long each event rings after its peak.			playhead workbench
+level-events	tools	coined	level the events		A tool that evens out how loud the events are, one gain per event, without touching their shape.	compress (a compressor changes the shape)		playhead workbench
+fold-to-mono	tools	coined	fold to mono		Turn stereo into mono with the channels' phase lined up, so nothing cancels.	sum to mono (the plain sum)		playhead workbench
+widen-tails	tools	coined	widen the tails		Make or widen stereo only after the attacks, keeping attacks centred and the result mono-compatible.			playhead workbench
+downmix	tools	standard	downmix		Turn more channels into fewer.			playhead workbench
+mono-compatibility	tools	standard	mono compatibility		How well a stereo sound survives being summed to mono.			playhead workbench
+decorrelation	tools	standard	decorrelation		Making two signals less alike while keeping their spectrum, to widen a stereo image.			playhead
+comb-filtering	tools	standard	comb filtering		Regular notches in a spectrum when a signal is summed with a delayed copy of itself.			playhead workbench
+cancellation	tools	standard	cancellation		Loss of level when signals of opposite phase are summed.			playhead workbench
+pre-echo	tools	standard	pre-echo		A faint smear of a sound before its attack, caused by frame-based processing.			playhead
+eq	tools	standard	EQ		An equaliser: a filter that changes the level of frequency bands.			playhead workbench
+dynamic-eq	tools	standard	dynamic EQ		An EQ whose band gains follow the level in each band.			playhead workbench
+automation	tools	standard	automation		Parameter changes over time, recorded or drawn.			playhead workbench
+compressor	tools	standard	compressor		A processor that turns loud passages down by a ratio above a threshold.			playhead workbench
+threshold	tools	standard	threshold		The level above which a processor acts.			playhead workbench
+ratio	tools	standard	ratio		How strongly a compressor turns the level down above its threshold.			workbench
+attack-time	tools	standard	attack time		How fast a processor reacts when the level rises.			workbench
+release-time	tools	standard	release time		How fast a processor recovers when the level falls.			workbench
+gate	tools	standard	gate		A processor or condition that opens only above a threshold.			playhead workbench
+saturation	tools	standard	saturation		Soft distortion that adds harmonics and rounds peaks.			playhead workbench
+pumping	tools	standard	pumping		Audible rise and fall of the background caused by a compressor.			playhead
+evenness	tools	common	evenness		How alike the events are in loudness.			playhead
+effect-chain	workbench	common	effect chain		Effects applied one after another to a sound.			workbench
+preset	workbench	standard	preset		A saved set of settings.			workbench
+morph	workbench	common	morph		A gradual blend from one sound into another.			workbench
+cross-synthesis	workbench	standard	cross-synthesis		Combining the spectrum of one sound with the envelope or excitation of another.			workbench
+convolution	workbench	standard	convolution		Filtering one sound by another, for example by a room's impulse response.			workbench
+envelope-transfer	workbench	common	envelope transfer		Giving one sound the level envelope of another.			workbench
+ring-modulation	workbench	standard	ring modulation		Multiplying two signals, which creates sum and difference frequencies.			workbench
+granular	workbench	standard	granular		Built from many short grains of sound.			workbench
+accent	workbench	coined	accent		A short added sound placed at a moment of another sound to emphasise it.			workbench
+generator	workbench	common	generator		A part of the app that makes new sounds from parameters.			workbench
+synth	workbench	standard	synth		A sound generator built from oscillators, noise, envelopes and filters.			workbench
+impact-model	workbench	common	impact		A physical model of a struck object of a given material and shape.			workbench
+resynthesis	workbench	standard	resynthesis		Rebuilding a sound from parameters measured on it, such as its partials and decays.			workbench
+modal	workbench	standard	modal		Made of resonant modes, each with a frequency and a decay.			playhead workbench
+texture	workbench	common	texture		A continuous sound made of many small events, such as rain, fire or gravel.			workbench
+reaction	workbench	coined	action and reaction		A generator in which an action, such as an object moving or a force, drives the sound of a medium that responds to it (gravel, water, air).			workbench
+medium	workbench	common	medium		What reacts to an action: gravel, leaves, water, air, sparks or a force field.			workbench
+drive-curve	workbench	coined	drive curve		A curve that controls a sound's parameters over time.			workbench
+inertia	workbench	common	inertia		How slowly a reaction settles after the action stops.			workbench
+foley	workbench	standard	Foley		Everyday sounds performed and recorded in sync with picture.			workbench
+ambience	workbench	standard	ambience		The background sound of a place.			playhead workbench
+one-shot	workbench	common	one-shot		A short sound played once, such as a hit or a UI click.			playhead workbench
+whoosh	workbench	common	whoosh		The sound of something moving fast past the listener.			workbench
+finishing	workbench	common	finishing		The last steps before export: format, channels, fades and level.			workbench
+steel	material	standard	steel					workbench
+brass	material	standard	brass					workbench
+aluminium	material	standard	aluminium					workbench
+glass	material	standard	glass					playhead workbench
+ceramic	material	standard	ceramic					workbench
+ice	material	standard	ice					workbench
+wood	material	standard	wood					playhead workbench
+plastic	material	standard	plastic					workbench
+stone	material	standard	stone					workbench
+cardboard	material	standard	cardboard					workbench
+rubber	material	standard	rubber					workbench
+bar-shape	material	standard	bar		A long solid body, such as a rod or beam.			workbench
+plate	material	standard	plate		A thin flat body.			workbench
+membrane	material	standard	membrane		A stretched skin, as on a drum.			workbench
+shell	material	common	shell		A thin curved body, such as a can or pot.			workbench
+bell	material	standard	bell					workbench
+wire	material	standard	wire		A stiff string or wire that rings with slightly stretched (inharmonic) partials.			workbench
+box	material	common	box		A hollow body with flat sides.			workbench

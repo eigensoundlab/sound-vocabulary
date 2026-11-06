@@ -1,0 +1,865 @@
+{
+ "waveform": {
+  "term": "vlnový průběh",
+  "short": "Průběh",
+  "definition": "Vykreslení amplitudy zvuku v čase."
+ },
+ "spectrogram": {
+  "term": "spektrogram",
+  "short": "spektrogram",
+  "definition": "Obraz toho, jak se frekvenční obsah zvuku mění v čase: čas vodorovně, frekvence svisle, úroveň barvou."
+ },
+ "mel-scale": {
+  "term": "melová stupnice",
+  "short": "melová stupnice",
+  "definition": "Frekvenční stupnice rozložená podle vnímané výšky tónu: zhruba lineární pod 1 kHz a logaritmická nad ním."
+ },
+ "playhead": {
+  "term": "ukazatel přehrávání",
+  "short": "ukazatel přehrávání",
+  "definition": "Pohyblivá čára, která označuje aktuální pozici přehrávání."
+ },
+ "edit-cursor": {
+  "term": "editační kurzor",
+  "short": "editační kurzor",
+  "definition": "Pozice, od které začínají úpravy a přehrávání; nastavuje se kliknutím."
+ },
+ "sample-rate": {
+  "term": "vzorkovací frekvence",
+  "short": "vzorkovací frekvence",
+  "definition": "Počet vzorků za sekundu u digitálního zvuku, v Hz."
+ },
+ "bit-depth": {
+  "term": "bitová hloubka",
+  "short": "bitová hloubka",
+  "definition": "Počet bitů na vzorek digitálního zvuku; určuje jeho rozlišení."
+ },
+ "channel": {
+  "term": "kanál",
+  "short": "kanál",
+  "definition": "Jeden signál zvukového souboru; stereo má dva."
+ },
+ "mono": {
+  "term": "mono",
+  "short": "mono",
+  "definition": "Jeden kanál."
+ },
+ "stereo": {
+  "term": "stereo",
+  "short": "stereo",
+  "definition": "Dva kanály, levý a pravý."
+ },
+ "mid-side": {
+  "term": "mid/side (M/S)",
+  "short": "M/S",
+  "definition": "Stereo zapsané jako součet (mid) a rozdíl (side) kanálů."
+ },
+ "phase": {
+  "term": "fáze",
+  "short": "fáze",
+  "definition": "V jakém místě své periody se vlna v daném okamžiku nachází."
+ },
+ "polarity": {
+  "term": "polarita",
+  "short": "polarita",
+  "definition": "Zda je signál v původní orientaci, nebo obrácený."
+ },
+ "level": {
+  "term": "úroveň",
+  "short": "úroveň",
+  "definition": "Jak silný je signál, obvykle v dB."
+ },
+ "gain": {
+  "term": "zesílení",
+  "short": "zesílení",
+  "definition": "Změna úrovně, v dB."
+ },
+ "peak": {
+  "term": "špička",
+  "short": "špička",
+  "definition": "Největší absolutní hodnota vzorku."
+ },
+ "true-peak": {
+  "term": "skutečná špičková úroveň",
+  "short": "Skutečná špička",
+  "definition": "Špička signálu mezi vzorky, jak by ji reprodukoval D/A převodník."
+ },
+ "loudness": {
+  "term": "hlasitost",
+  "short": "hlasitost",
+  "definition": "Jak hlasitě je zvuk slyšet, na rozdíl od jeho úrovně."
+ },
+ "lufs": {
+  "term": "LUFS",
+  "short": "LUFS",
+  "definition": "Jednotky hlasitosti vztažené k plné škále (ITU-R BS.1770); 1 LU odpovídá 1 dB."
+ },
+ "k-weighting": {
+  "term": "frekvenční váhování K",
+  "short": "Váhování K",
+  "definition": "Frekvenční váhování, které měřiče hlasitosti používají před měřením."
+ },
+ "normalize": {
+  "term": "normalizovat",
+  "short": "normalizovat",
+  "definition": "Nastavit špičku nebo hlasitost zvuku na cílovou hodnotu."
+ },
+ "fade": {
+  "term": "fade",
+  "short": "fade",
+  "definition": "Postupná změna úrovně na začátku (fade-in) nebo na konci (fade-out)."
+ },
+ "clipping": {
+  "term": "přebuzení",
+  "short": "přebuzení",
+  "definition": "Zkreslení, k němuž dojde, když signál překročí největší hodnotu, kterou lze uložit."
+ },
+ "dc-offset": {
+  "term": "stejnosměrná složka",
+  "short": "stejnosměrná složka",
+  "definition": "Stálý posun signálu od nuly."
+ },
+ "noise-floor": {
+  "term": "šumové pozadí",
+  "short": "šumové pozadí",
+  "definition": "Úroveň šumu v pozadí pod zvukem."
+ },
+ "silence": {
+  "term": "ticho",
+  "short": "ticho",
+  "definition": "Úsek bez zvuku nad úrovní šumového pozadí."
+ },
+ "cut-tail": {
+  "term": "useknuté doznění",
+  "short": "useknuté doznění",
+  "definition": "Zvuk, který skončí dřív, než jeho doznívání odezní."
+ },
+ "take": {
+  "term": "take",
+  "short": "take",
+  "definition": "Jedna nahraná nebo vyrenderovaná verze zvuku."
+ },
+ "render": {
+  "term": "renderovat",
+  "short": "renderovat",
+  "definition": "Vypočítat zpracovaný zvuk a zapsat ho jako audio."
+ },
+ "loop": {
+  "term": "smyčka",
+  "short": "smyčka",
+  "definition": "Zvuk, který se opakuje bez slyšitelného spoje."
+ },
+ "crossfade": {
+  "term": "prolínání",
+  "short": "prolínání",
+  "definition": "Postupné zeslabení (fade-out) jednoho zvuku, které se překrývá s postupným zesílením (fade-in) jiného."
+ },
+ "slice": {
+  "term": "rozřezat",
+  "short": "rozřezat",
+  "definition": "Rozdělit zvuk na části ve zvolených bodech."
+ },
+ "time-stretch": {
+  "term": "časové roztažení",
+  "short": "Roztažení v čase",
+  "definition": "Změnit délku zvuku beze změny jeho výšky."
+ },
+ "pitch-shift": {
+  "term": "posun výšky tónu",
+  "short": "Posun výšky",
+  "definition": "Změnit výšku zvuku beze změny jeho délky."
+ },
+ "sone": {
+  "term": "sone",
+  "short": "sone",
+  "definition": "Jednotka slyšené hlasitosti; 1 sone je hlasitost tónu 1 kHz o hladině 40 dB SPL."
+ },
+ "sharpness": {
+  "term": "ostrost",
+  "short": "ostrost",
+  "definition": "Do jaké míry leží energie zvuku ve vysokých frekvencích, jak je slyšet; v acum."
+ },
+ "roughness": {
+  "term": "drsnost",
+  "short": "drsnost",
+  "definition": "Chraplavý vjem rychlé amplitudové modulace (asi 15–300 Hz); v asper."
+ },
+ "fluctuation-strength": {
+  "term": "síla fluktuace",
+  "short": "síla fluktuace",
+  "definition": "Vjem pomalé amplitudové modulace (asi 1–20 Hz, nejsilnější kolem 4 Hz); ve vacil."
+ },
+ "psychoacoustic-annoyance": {
+  "term": "psychoakustické obtěžování",
+  "short": "psychoakustické obtěžování",
+  "definition": "Zwickerovo spojení hlasitosti, ostrosti, drsnosti a síly fluktuace do jediné hodnoty obtěžování."
+ },
+ "masking": {
+  "term": "maskování",
+  "short": "maskování",
+  "definition": "Jev, kdy jeden zvuk ztěžuje nebo znemožňuje slyšet jiný zvuk."
+ },
+ "critical-band": {
+  "term": "kritické pásmo",
+  "short": "kritické pásmo",
+  "definition": "Frekvenční rozsah, který ucho integruje jako celek; vyjadřuje se na Barkově stupnici."
+ },
+ "curve": {
+  "term": "křivka",
+  "short": "křivka",
+  "definition": "Hodnota vykreslená v čase podél vlnového průběhu."
+ },
+ "overview": {
+  "term": "přehled",
+  "short": "přehled",
+  "definition": "Malý obraz celého zvuku, který slouží k orientaci v něm."
+ },
+ "strip": {
+  "term": "pás",
+  "short": "pás",
+  "definition": "Přehled jednoho zvuku tak, jak ho kreslí Playhead: vlnový průběh, křivky a značky v jednom pásu."
+ },
+ "look": {
+  "term": "vzhled",
+  "short": "vzhled",
+  "definition": "Pojmenovaný způsob kreslení pásu, zapsaný jako krátký kód vrstev."
+ },
+ "look-code": {
+  "term": "kód vzhledu",
+  "short": "kód vzhledu",
+  "definition": "Krátký text, který definuje vzhled, například „form:overlay,shape:mirror,lane:harshness“."
+ },
+ "layer": {
+  "term": "vrstva",
+  "short": "vrstva",
+  "definition": "Jeden prvek vzhledu: vlnový průběh, spektrogram, křivka, sada značek nebo oddíly."
+ },
+ "lane": {
+  "term": "pruh",
+  "short": "pruh",
+  "definition": "Vodorovná část pásu, ve které je vykreslena jedna křivka."
+ },
+ "overlay": {
+  "term": "překryté",
+  "short": "Přes sebe",
+  "definition": "Křivky kreslené do jednoho společného pruhu místo do samostatných pruhů."
+ },
+ "mirrored": {
+  "term": "zrcadlené",
+  "short": "Zrcadlené",
+  "definition": "Kreslené souměrně nad a pod středovou čárou, jako vlnový průběh."
+ },
+ "baseline-form": {
+  "term": "od základny",
+  "short": "od základny",
+  "definition": "Kreslené od spodního okraje pruhu nahoru."
+ },
+ "horizon-chart": {
+  "term": "horizontový graf",
+  "short": "horizontový graf",
+  "definition": "Kompaktní graf, který křivku skládá do barevných pásem se vzrůstající intenzitou."
+ },
+ "sculpted-waveform": {
+  "term": "tvarovaný vlnový průběh",
+  "short": "Tvarovaný průběh",
+  "definition": "Vlnový průběh, jehož výška sleduje křivku, například vnímanou hlasitost, místo špičkové úrovně."
+ },
+ "outline": {
+  "term": "obrys",
+  "short": "obrys",
+  "definition": "Běžný špičkový vlnový průběh nakreslený tenkou čarou za jinou vrstvou."
+ },
+ "marks": {
+  "term": "značky",
+  "short": "značky",
+  "definition": "Rysky podél pásu u událostí, nástupů, dob nebo hranic oddílů."
+ },
+ "legend": {
+  "term": "legenda",
+  "short": "legenda",
+  "definition": "Text, který říká, co jednotlivé barvy a čáry pásu znázorňují."
+ },
+ "profile": {
+  "term": "profil analýzy",
+  "short": "profil analýzy",
+  "definition": "Kolik toho Playhead analyzuje: rychlý profil (jen křivky), zvukový efekt nebo hudba."
+ },
+ "descriptor": {
+  "term": "deskriptor",
+  "short": "deskriptor",
+  "definition": "Číslo nebo křivka vypočtená ze zvuku, která popisuje jednu jeho vlastnost."
+ },
+ "feature": {
+  "term": "příznak",
+  "short": "příznak",
+  "definition": "Deskriptor použitý jako vstup klasifikátoru nebo vyhledávání."
+ },
+ "activity": {
+  "term": "aktivita",
+  "short": "aktivita",
+  "definition": "Kolik se toho děje: spektrální změny a hustota událostí."
+ },
+ "arousal": {
+  "term": "vzrušení",
+  "short": "vzrušení",
+  "definition": "Jak vzrušující, nebo naopak zklidňující zvuk je; podle stejnojmenné psychologické dimenze."
+ },
+ "harshness": {
+  "term": "nepříjemnost",
+  "short": "nepříjemnost",
+  "definition": "Jak nepříjemné je zvuk poslouchat, odvozeno z psychoakustického obtěžování; není totéž co drsnost."
+ },
+ "tension": {
+  "term": "napětí",
+  "short": "napětí",
+  "definition": "Narůstání a uvolňování v čase, podle modelu hudebního napětí, který navrhla Farbood (2012)."
+ },
+ "harmonic-tension": {
+  "term": "harmonické napětí",
+  "short": "harmonické napětí",
+  "definition": "Jak daleko je harmonie od klidu, určeno z tonálního intervalového prostoru."
+ },
+ "novelty": {
+  "term": "novost",
+  "short": "novost",
+  "definition": "Jak moc se daný okamžik liší od toho, co mu předcházelo."
+ },
+ "spectral-surprise": {
+  "term": "spektrální překvapení",
+  "short": "spektrální překvapení",
+  "definition": "Změna spektra, kterou nelze vysvětlit hlasitostí."
+ },
+ "surprisal": {
+  "term": "překvapivost",
+  "short": "překvapivost",
+  "definition": "Informační obsah události: čím je méně očekávaná, tím je vyšší."
+ },
+ "structural-change": {
+  "term": "strukturní změna",
+  "short": "strukturní změna",
+  "definition": "Místo, kde skladba přechází do nové části, se znaménkem: nahoru tam, kde zvuk vstupuje, dolů tam, kde odeznívá nebo se přeruší."
+ },
+ "local-pulse": {
+  "term": "lokální puls",
+  "short": "lokální puls",
+  "definition": "Jak silně a pravidelně je v každém okamžiku cítit doba."
+ },
+ "onset": {
+  "term": "nástup",
+  "short": "nástup",
+  "definition": "Okamžik, kdy začíná zvuk nebo tón."
+ },
+ "onset-strength": {
+  "term": "síla nástupu",
+  "short": "síla nástupu",
+  "definition": "Jak silně v každém okamžiku přichází nový zvuk; vrcholy odpovídají úderům."
+ },
+ "event": {
+  "term": "událost",
+  "short": "událost",
+  "definition": "Jeden samostatný zvuk v souboru, například úder, krok nebo vrznutí, se začátkem a koncem."
+ },
+ "attack": {
+  "term": "náběh",
+  "short": "náběh",
+  "definition": "První část zvuku, od jeho začátku po jeho vrchol."
+ },
+ "body": {
+  "term": "tělo",
+  "short": "tělo",
+  "definition": "Trvající, často tónová část zvuku po náběhu."
+ },
+ "decay": {
+  "term": "doznívání",
+  "short": "doznívání",
+  "definition": "Část zvuku, během níž zvuk odeznívá."
+ },
+ "tail": {
+  "term": "doznění",
+  "short": "doznění",
+  "definition": "Pozdní část doznívání, včetně dozvuku."
+ },
+ "transient": {
+  "term": "tranzient",
+  "short": "tranzient",
+  "definition": "Krátká, rychlá změna úrovně a spektra, typicky při náběhu."
+ },
+ "beat": {
+  "term": "doba",
+  "short": "doba",
+  "definition": "Pravidelný puls, do kterého posluchač ťuká."
+ },
+ "downbeat": {
+  "term": "první doba",
+  "short": "první doba",
+  "definition": "První doba taktu."
+ },
+ "bar": {
+  "term": "takt",
+  "short": "takt",
+  "definition": "Skupina dob, obvykle čtyř."
+ },
+ "tempo": {
+  "term": "tempo",
+  "short": "tempo",
+  "definition": "Rychlost dob, udávaná v úderech za minutu (BPM)."
+ },
+ "section": {
+  "term": "oddíl",
+  "short": "oddíl",
+  "definition": "Část skladby, například intro nebo refrén, nalezená podle toho, kde se mění její zvuk."
+ },
+ "recurrence": {
+  "term": "rekurence",
+  "short": "rekurence",
+  "definition": "Jak moc se zvuk vrací do stavů, ve kterých už byl."
+ },
+ "repetition-rate": {
+  "term": "frekvence opakování",
+  "short": "frekvence opakování",
+  "definition": "Jak často se vzor opakuje, v Hz."
+ },
+ "periodicity": {
+  "term": "periodicita",
+  "short": "periodicita",
+  "definition": "Jak silně je zvuk periodický (má výšku), a ne šumový."
+ },
+ "phase-coherence": {
+  "term": "fázová koherence",
+  "short": "fázová koherence",
+  "definition": "Jak rovnoměrně postupují fáze zvuku; 1 pro ustálený tón, blízko 0 pro šum."
+ },
+ "time-arrow": {
+  "term": "šipka času",
+  "short": "šipka času",
+  "definition": "Jak moc se zvuk změní, když se přehraje pozpátku; vysoká pro údery, které doznívají."
+ },
+ "impulsiveness": {
+  "term": "impulzivnost",
+  "short": "impulzivnost",
+  "definition": "Jak moc se zvuk skládá z cvaknutí, prasknutí a praskotu; odvozeno ze spektrální kurtózy."
+ },
+ "spectral-kurtosis": {
+  "term": "spektrální kurtóza",
+  "short": "spektrální kurtóza",
+  "definition": "Statistika, která je 0 pro ustálený šum, −1 pro ustálený tón a velká pro cvaknutí."
+ },
+ "spectral-motion": {
+  "term": "pohyb spektra",
+  "short": "pohyb spektra",
+  "definition": "Jak rychle se střed spektra posouvá nahoru nebo dolů, v oktávách za sekundu."
+ },
+ "spectral-centroid": {
+  "term": "spektrální centroid",
+  "short": "spektrální centroid",
+  "definition": "Těžiště spektra; míra jasu zvuku."
+ },
+ "reshaping": {
+  "term": "přetváření",
+  "short": "přetváření",
+  "definition": "Spektrální změna, která neposouvá střed spektra, například když se spektrum rozšiřuje nebo zužuje."
+ },
+ "burstiness": {
+  "term": "shlukovitost",
+  "short": "shlukovitost",
+  "definition": "Zda události přicházejí pravidelně (pod 0), náhodně (0), nebo ve shlucích (nad 0)."
+ },
+ "temporal-entropy": {
+  "term": "časová entropie",
+  "short": "časová entropie",
+  "definition": "Jak rovnoměrně je energie zvuku rozložena v čase."
+ },
+ "decay-time": {
+  "term": "doba doznívání (T60)",
+  "short": "Doba doznívání",
+  "definition": "Doba, za kterou zvuk klesne o 60 dB."
+ },
+ "damping": {
+  "term": "tlumení",
+  "short": "tlumení",
+  "definition": "Jak rychle kmitající těleso ztrácí energii."
+ },
+ "material": {
+  "term": "materiál",
+  "short": "materiál",
+  "definition": "Z čeho je udeřený předmět vyroben, jak to zní: tlumený, sklovitý nebo kovový."
+ },
+ "partial": {
+  "term": "částkový tón",
+  "short": "částkový tón",
+  "definition": "Jedna frekvenční složka zvuku."
+ },
+ "overtone": {
+  "term": "svrchní tón",
+  "short": "svrchní tón",
+  "definition": "Částkový tón nad nejnižším."
+ },
+ "inharmonic": {
+  "term": "neharmonický",
+  "short": "neharmonický",
+  "definition": "S částkovými tóny, které nejsou celočíselnými násobky základního tónu, jako u zvonů a udeřeného kovu."
+ },
+ "quality-checks": {
+  "term": "kontroly kvality",
+  "short": "kontroly kvality",
+  "definition": "Automatické kontroly přebuzení, stejnosměrné složky, ticha a useknutých doznění."
+ },
+ "self-check": {
+  "term": "samokontrola",
+  "short": "samokontrola",
+  "definition": "Test, který zvuk upraví známým způsobem a ověří, že se analýza změní tak, jak má."
+ },
+ "de-harsh": {
+  "term": "zjemnit",
+  "short": "Zjemnit",
+  "definition": "Nástroj, který stahuje rezonance jen po dobu, kdy je zvuk nepříjemný."
+ },
+ "attack-and-body": {
+  "term": "náběh a tělo",
+  "short": "náběh a tělo",
+  "definition": "Nástroj, který rozdělí zvuk na tranzientní a trvající část, aby je bylo možné znovu vyvážit."
+ },
+ "layer-remix": {
+  "term": "remix vrstev",
+  "short": "remix vrstev",
+  "definition": "Nástroj, který rozloží zvuk na vrstvy a znovu je smíchá s novými úrovněmi."
+ },
+ "tension-shaper": {
+  "term": "tvarovač napětí",
+  "short": "tvarovač napětí",
+  "definition": "Nástroj, který převádí křivku napětí na automatizaci zesílení a jasu."
+ },
+ "loop-maker": {
+  "term": "tvorba smyček",
+  "short": "tvorba smyček",
+  "definition": "Nástroj, který najde body smyčky tam, kde se zvuk nejlépe opakuje, a prolne je."
+ },
+ "variations": {
+  "term": "varianty",
+  "short": "varianty",
+  "definition": "Několik mírně odlišných verzí jednoho zvuku, aby se ve hrách zabránilo opakování."
+ },
+ "clean-up": {
+  "term": "vyčištění pro export",
+  "short": "vyčištění pro export",
+  "definition": "Nástroj, který před exportem zvuku opraví to, na co upozornily kontroly kvality."
+ },
+ "reverb-on-tails": {
+  "term": "dozvuk na doznění",
+  "short": "dozvuk na doznění",
+  "definition": "Dozvuk napájený pouze z doznívání událostí; náběhy zůstávají suché."
+ },
+ "drive-hits": {
+  "term": "saturovat údery",
+  "short": "saturovat údery",
+  "definition": "Saturace použitá pouze na náběhy nebo těla událostí."
+ },
+ "ring-time": {
+  "term": "délka doznívání",
+  "short": "délka doznívání",
+  "definition": "Nástroj, který prodlužuje nebo zkracuje, jak dlouho každá událost po svém vrcholu doznívá."
+ },
+ "level-events": {
+  "term": "vyrovnat události",
+  "short": "vyrovnat události",
+  "definition": "Nástroj, který vyrovná hlasitost událostí jedním zesílením na každou událost, aniž by měnil jejich tvar."
+ },
+ "fold-to-mono": {
+  "term": "sloučit do mona",
+  "short": "sloučit do mona",
+  "definition": "Převést stereo na mono se srovnanou fází kanálů, aby se nic nevyrušilo."
+ },
+ "widen-tails": {
+  "term": "rozšířit doznění",
+  "short": "rozšířit doznění",
+  "definition": "Vytvořit nebo rozšířit stereo jen po nábězích; náběhy zůstanou uprostřed a výsledek kompatibilní s monem."
+ },
+ "downmix": {
+  "term": "downmix",
+  "short": "downmix",
+  "definition": "Převést více kanálů na méně kanálů."
+ },
+ "mono-compatibility": {
+  "term": "monokompatibilita",
+  "short": "monokompatibilita",
+  "definition": "Jak dobře stereofonní zvuk snese sečtení do mona."
+ },
+ "decorrelation": {
+  "term": "dekorelace",
+  "short": "dekorelace",
+  "definition": "Snížení podobnosti dvou signálů při zachování jejich spektra, za účelem rozšíření stereofonního obrazu."
+ },
+ "comb-filtering": {
+  "term": "hřebenová filtrace",
+  "short": "hřebenová filtrace",
+  "definition": "Pravidelné zářezy ve spektru, když se signál sečte se svou zpožděnou kopií."
+ },
+ "cancellation": {
+  "term": "vyrušení",
+  "short": "vyrušení",
+  "definition": "Ztráta úrovně při sečtení signálů s opačnou fází."
+ },
+ "pre-echo": {
+  "term": "předozvěna",
+  "short": "předozvěna",
+  "definition": "Slabé rozmazání zvuku před jeho náběhem, způsobené zpracováním po rámcích."
+ },
+ "eq": {
+  "term": "ekvalizér",
+  "short": "EQ",
+  "definition": "Ekvalizér (EQ): filtr, který mění úroveň frekvenčních pásem."
+ },
+ "dynamic-eq": {
+  "term": "dynamický ekvalizér",
+  "short": "Dynamický EQ",
+  "definition": "Ekvalizér, jehož zesílení v pásmech sleduje úroveň v jednotlivých pásmech."
+ },
+ "automation": {
+  "term": "automatizace",
+  "short": "automatizace",
+  "definition": "Změny parametrů v čase, nahrané nebo nakreslené."
+ },
+ "compressor": {
+  "term": "kompresor",
+  "short": "kompresor",
+  "definition": "Procesor, který nad prahem stahuje hlasité pasáže v daném poměru."
+ },
+ "threshold": {
+  "term": "práh",
+  "short": "práh",
+  "definition": "Úroveň, nad kterou procesor začne působit."
+ },
+ "ratio": {
+  "term": "poměr",
+  "short": "poměr",
+  "definition": "Jak silně kompresor nad prahem snižuje úroveň."
+ },
+ "attack-time": {
+  "term": "doba náběhu",
+  "short": "Náběh",
+  "definition": "Jak rychle procesor zareaguje, když úroveň stoupne."
+ },
+ "release-time": {
+  "term": "doba uvolnění",
+  "short": "Uvolnění",
+  "definition": "Jak rychle se procesor vrátí zpět, když úroveň klesne."
+ },
+ "gate": {
+  "term": "brána",
+  "short": "brána",
+  "definition": "Procesor nebo podmínka, která se otevře jen nad prahem."
+ },
+ "saturation": {
+  "term": "saturace",
+  "short": "saturace",
+  "definition": "Měkké zkreslení, které přidává harmonické složky a zaobluje špičky."
+ },
+ "pumping": {
+  "term": "pumpování",
+  "short": "pumpování",
+  "definition": "Slyšitelné stoupání a klesání pozadí způsobené kompresorem."
+ },
+ "evenness": {
+  "term": "vyrovnanost",
+  "short": "vyrovnanost",
+  "definition": "Jak podobné si jsou události hlasitostí."
+ },
+ "effect-chain": {
+  "term": "řetězec efektů",
+  "short": "řetězec efektů",
+  "definition": "Efekty použité na zvuk jeden po druhém."
+ },
+ "preset": {
+  "term": "předvolba",
+  "short": "předvolba",
+  "definition": "Uložená sada nastavení."
+ },
+ "morph": {
+  "term": "morfing",
+  "short": "morfing",
+  "definition": "Postupný plynulý přechod jednoho zvuku do druhého."
+ },
+ "cross-synthesis": {
+  "term": "křížová syntéza",
+  "short": "křížová syntéza",
+  "definition": "Spojení spektra jednoho zvuku s obálkou nebo buzením jiného zvuku."
+ },
+ "convolution": {
+  "term": "konvoluce",
+  "short": "konvoluce",
+  "definition": "Filtrování jednoho zvuku jiným zvukem, například impulzní odezvou místnosti."
+ },
+ "envelope-transfer": {
+  "term": "přenos obálky",
+  "short": "přenos obálky",
+  "definition": "Předání obálky úrovně jednoho zvuku jinému zvuku."
+ },
+ "ring-modulation": {
+  "term": "kruhová modulace",
+  "short": "kruhová modulace",
+  "definition": "Násobení dvou signálů, při kterém vznikají součtové a rozdílové frekvence."
+ },
+ "granular": {
+  "term": "granulární",
+  "short": "granulární",
+  "definition": "Sestavený z mnoha krátkých zrn zvuku."
+ },
+ "accent": {
+  "term": "akcent",
+  "short": "akcent",
+  "definition": "Krátký přidaný zvuk umístěný do určitého okamžiku jiného zvuku, aby ho zdůraznil."
+ },
+ "generator": {
+  "term": "generátor",
+  "short": "generátor",
+  "definition": "Část aplikace, která vytváří nové zvuky z parametrů."
+ },
+ "synth": {
+  "term": "syntezátor",
+  "short": "syntezátor",
+  "definition": "Generátor zvuku sestavený z oscilátorů, šumu, obálek a filtrů."
+ },
+ "impact-model": {
+  "term": "náraz",
+  "short": "náraz",
+  "definition": "Fyzikální model udeřeného předmětu z daného materiálu a daného tvaru."
+ },
+ "resynthesis": {
+  "term": "resyntéza",
+  "short": "resyntéza",
+  "definition": "Znovusestavení zvuku z parametrů na něm naměřených, například z jeho částkových tónů a doznívání."
+ },
+ "modal": {
+  "term": "modální",
+  "short": "modální",
+  "definition": "Složený z rezonančních módů, z nichž každý má svou frekvenci a doznívání."
+ },
+ "texture": {
+  "term": "textura",
+  "short": "textura",
+  "definition": "Spojitý zvuk složený z mnoha drobných událostí, jako je déšť, oheň nebo štěrk."
+ },
+ "reaction": {
+  "term": "akce a reakce",
+  "short": "akce a reakce",
+  "definition": "Generátor, ve kterém akce, například pohyb předmětu nebo síla, budí zvuk média, které na ni reaguje (štěrk, voda, vzduch)."
+ },
+ "medium": {
+  "term": "médium",
+  "short": "médium",
+  "definition": "To, co reaguje na akci: štěrk, listí, voda, vzduch, jiskry nebo silové pole."
+ },
+ "drive-curve": {
+  "term": "řídicí křivka",
+  "short": "řídicí křivka",
+  "definition": "Křivka, která v čase řídí parametry zvuku."
+ },
+ "inertia": {
+  "term": "setrvačnost",
+  "short": "setrvačnost",
+  "definition": "Jak pomalu se reakce ustálí poté, co akce skončí."
+ },
+ "foley": {
+  "term": "ruchy",
+  "short": "ruchy",
+  "definition": "Běžné zvuky předvedené a nahrané synchronně s obrazem."
+ },
+ "ambience": {
+  "term": "atmosféra",
+  "short": "atmosféra",
+  "definition": "Zvukové pozadí určitého místa."
+ },
+ "one-shot": {
+  "term": "one-shot",
+  "short": "one-shot",
+  "definition": "Krátký zvuk přehraný jednou, například úder nebo cvaknutí v uživatelském rozhraní."
+ },
+ "whoosh": {
+  "term": "whoosh",
+  "short": "whoosh",
+  "definition": "Zvuk něčeho, co se rychle pohybuje kolem posluchače."
+ },
+ "finishing": {
+  "term": "finalizace",
+  "short": "finalizace",
+  "definition": "Poslední kroky před exportem: formát, kanály, fade-in/fade-out a úroveň."
+ },
+ "steel": {
+  "term": "ocel",
+  "short": "ocel"
+ },
+ "brass": {
+  "term": "mosaz",
+  "short": "mosaz"
+ },
+ "aluminium": {
+  "term": "hliník",
+  "short": "hliník"
+ },
+ "glass": {
+  "term": "sklo",
+  "short": "sklo"
+ },
+ "ceramic": {
+  "term": "keramika",
+  "short": "keramika"
+ },
+ "ice": {
+  "term": "led",
+  "short": "led"
+ },
+ "wood": {
+  "term": "dřevo",
+  "short": "dřevo"
+ },
+ "plastic": {
+  "term": "plast",
+  "short": "plast"
+ },
+ "stone": {
+  "term": "kámen",
+  "short": "kámen"
+ },
+ "cardboard": {
+  "term": "karton",
+  "short": "karton"
+ },
+ "rubber": {
+  "term": "guma",
+  "short": "guma"
+ },
+ "bar-shape": {
+  "term": "tyč",
+  "short": "tyč",
+  "definition": "Dlouhé plné těleso, například prut nebo nosník."
+ },
+ "plate": {
+  "term": "deska",
+  "short": "deska",
+  "definition": "Tenké ploché těleso."
+ },
+ "membrane": {
+  "term": "membrána",
+  "short": "membrána",
+  "definition": "Napjatá blána, jako na bubnu."
+ },
+ "shell": {
+  "term": "skořepina",
+  "short": "skořepina",
+  "definition": "Tenké zakřivené těleso, například plechovka nebo hrnec."
+ },
+ "bell": {
+  "term": "zvon",
+  "short": "zvon"
+ },
+ "wire": {
+  "term": "drát",
+  "short": "drát",
+  "definition": "Tuhá struna nebo drát, který zní s mírně roztaženými (neharmonickými) částkovými tóny."
+ },
+ "box": {
+  "term": "skříň",
+  "short": "skříň",
+  "definition": "Duté těleso s rovnými stěnami."
+ }
+}

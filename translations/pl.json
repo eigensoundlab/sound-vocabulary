@@ -1,0 +1,1132 @@
+{
+  "_language": "pl",
+  "_name": "Polski",
+  "_notes": "Conventions. (1) Commands: Polish UIs use the 2nd-person-singular imperative for commands (Windows/Microsoft practice: Zapisz, Otwórz; Audacity pl: Normalizuj, Zmień tempo, Obetnij ciszę; Ardour pl: Normalizuj, Odwróć polaryzację). Tool names that are imperatives in English (de-harsh, level the events, fold to mono, widen the tails, drive the hits) are therefore Polish imperatives in `term` (złagodź brzmienie, wyrównaj głośność zdarzeń, złóż do mono, poszerz ogony, nasyć uderzenia); the verbal noun for headings and docs is in `alt`. Tool names that are nouns in English stay nouns (atak i korpus, remiks warstw, kreator pętli, pogłos na ogonach, czas wybrzmiewania), as in Audacity pl (Przenikanie klipów, Bramka szumów, Kompresor). (2) Standard process verbs (normalize, render, slice) use the verbal noun as the glossary form (normalizacja, renderowanie, cięcie), with the imperative UI command in `short` (Normalizuj, Renderuj, Potnij). (3) `term` is lower case except abbreviations; `short` is in sentence case as a UI label. Polish quotation marks „…”, decimal comma, units and symbols unchanged (dB, Hz, LUFS, acum, asper, vacil, T60). (4) English loans are kept only where Polish studios and Polish DAW localisations keep them (preset, take, downmix, true peak, one-shot, whoosh, pre-echo), with the Polish alternative in `alt`. (5) Reserved words that keep the English distinctions: głośność = loudness (heard), poziom = level (measured); ostrość = sharpness, chropowatość = roughness, nieprzyjemność = harshness; początek dźwięku = onset (moment), atak = attack (phase), transjent = transient; nowość = novelty, zaskoczenie widmowe = spectral surprise, informacja własna = surprisal (never bare „zaskoczenie”); lustrzane = mirrored, nałożone = overlaid; zanikanie = decay, czas zaniku = decay time, wybrzmiewanie = ring (tool); uderzenie = hit (event), so beat = miara (except the fixed BPM phrase „uderzeń na minutę”). Sources checked: Audacity 3.7.3 pl.po, Ardour pl.po, LMMS pl.ts, TVP technical delivery specifications (s.tvp.pl), KRRiT regulation Dz.U. 2013 poz. 48 (LU/LUFS), A. Preis (UAM Poznań) in naukawpolsce.pl and M. Gałuszka in twojazielonka.org (psychoacoustic terms), a Polish film-sound article on ejournals.eu (Foley/ambience), Polish Wikipedia article titles (Son (głośność dźwięku), Bark (skala), Mel (skala), Transjent, Strzałka czasu, Filtr grzebieniowy, Korektor (akustyka), Ilość informacji, Rozdzielczość bitowa dźwięku). Terms the Playhead app needed that the vocabulary does not have yet (envelope, pan, timbre, bar line, thumbnail, asset, F-measure = „wynik F” …) are listed in proposals/pl.tsv.",
+  "terms": {
+    "waveform": {
+      "term": "przebieg",
+      "short": "Przebieg",
+      "alt": ["kształt fali", "wykres fali", "waveform"],
+      "definition": "Wykres amplitudy dźwięku w czasie.",
+      "note": "Audacity pl uses „kształt fali”, Ardour pl „wykres fali”. „Przebieg” (przebieg czasowy) is the electronics and studio word and combines well (przebieg szczytowy, przebieg rzeźbiony); write „przebieg fali” in docs where the context is unclear.",
+      "gender": "m"
+    },
+    "spectrogram": {
+      "term": "spektrogram",
+      "alt": ["sonogram"],
+      "definition": "Obraz zmian zawartości częstotliwościowej dźwięku w czasie: czas w poziomie, częstotliwość w pionie, poziom jako kolor.",
+      "note": "Audacity pl and Ardour pl. „Sonogram” is an older variant, still common in bioacoustics.",
+      "gender": "m"
+    },
+    "mel-scale": {
+      "term": "skala melowa",
+      "alt": ["skala mel"],
+      "definition": "Skala częstotliwości rozłożona tak, jak słyszymy wysokość dźwięku: w przybliżeniu liniowa poniżej 1 kHz i logarytmiczna powyżej.",
+      "note": "Unit „mel”; Polish Wikipedia: „Mel (skala)”.",
+      "gender": "f"
+    },
+    "playhead": {
+      "term": "głowica odtwarzania",
+      "short": "Głowica",
+      "alt": ["wskaźnik odtwarzania", "znacznik odtwarzania"],
+      "definition": "Ruchoma linia, która wskazuje bieżące miejsce odtwarzania.",
+      "note": "Ardour pl: „głowica”; Audacity pl: „wskaźnik odtwarzania”. Do not call it „kursor” (that is the edit cursor). The app name Playhead stays in English.",
+      "gender": "f"
+    },
+    "edit-cursor": {
+      "term": "kursor edycji",
+      "alt": ["punkt edycji"],
+      "definition": "Miejsce, od którego zaczyna się edycja i odtwarzanie, ustawiane kliknięciem.",
+      "note": "Audacity pl: „Kursor”; Ardour pl: „punkt edycji” (edit point).",
+      "gender": "m"
+    },
+    "sample-rate": {
+      "term": "częstotliwość próbkowania",
+      "short": "Częst. próbkowania",
+      "definition": "Liczba próbek na sekundę dźwięku cyfrowego, w Hz.",
+      "note": "Audacity, Ardour, LMMS pl; TVP technical requirements.",
+      "gender": "f"
+    },
+    "bit-depth": {
+      "term": "rozdzielczość bitowa",
+      "alt": ["głębia bitowa"],
+      "definition": "Liczba bitów na próbkę dźwięku cyfrowego; decyduje o dokładności jego zapisu.",
+      "note": "Audacity pl („Rozdzielczość bitowa”), Polish Wikipedia („Rozdzielczość bitowa dźwięku”), TVP („rozdzielczość … bitów/próbkę”). „Głębia bitowa” is a common calque. „Sets its resolution” is rendered as accuracy, to avoid „rozdzielczość… rozdzielczość”.",
+      "gender": "f"
+    },
+    "channel": {
+      "term": "kanał",
+      "definition": "Jeden sygnał w pliku dźwiękowym; stereo ma dwa.",
+      "gender": "m"
+    },
+    "mono": {
+      "term": "mono",
+      "alt": ["monofonia"],
+      "definition": "Jeden kanał.",
+      "note": "Indeclinable (ścieżka mono); adjective „monofoniczny” in formal text.",
+      "gender": "n"
+    },
+    "stereo": {
+      "term": "stereo",
+      "alt": ["stereofonia"],
+      "definition": "Dwa kanały: lewy i prawy.",
+      "note": "Indeclinable; adjective „stereofoniczny”.",
+      "gender": "n"
+    },
+    "mid-side": {
+      "term": "M/S",
+      "short": "M/S",
+      "alt": ["mid/side", "sygnał sumaryczny i różnicowy"],
+      "definition": "Zapis stereo jako sumy (mid, M) i różnicy (side, S) kanałów.",
+      "note": "Polish engineers say „M/S”, „technika M/S”, or „mid/side”; the descriptive „sygnał sumaryczny i różnicowy” is used in textbooks."
+    },
+    "phase": {
+      "term": "faza",
+      "definition": "Miejsce w cyklu, w którym fala znajduje się w danej chwili.",
+      "gender": "f"
+    },
+    "polarity": {
+      "term": "biegunowość",
+      "alt": ["polaryzacja"],
+      "definition": "To, czy sygnał jest nieodwrócony, czy odwrócony.",
+      "note": "Audacity pl: „biegunowość”; Ardour pl and studio speech: „polaryzacja” (in electronics „polaryzacja” also means bias, so „biegunowość” is the cleaner term). Do not say „odwrócenie fazy” for a plain inversion.",
+      "gender": "f"
+    },
+    "level": {
+      "term": "poziom",
+      "definition": "Siła sygnału, zwykle w dB.",
+      "note": "Measured quantity. Do not use „głośność” for it, although everyday Polish calls the volume control „głośność”.",
+      "gender": "m"
+    },
+    "gain": {
+      "term": "wzmocnienie",
+      "alt": ["gain"],
+      "definition": "Zmiana poziomu, w dB.",
+      "note": "Audacity, Ardour, LMMS pl. A negative value is still „wzmocnienie” (−6 dB). „Gain” is common in speech (gain staging).",
+      "gender": "n"
+    },
+    "peak": {
+      "term": "wartość szczytowa",
+      "short": "Szczyt",
+      "alt": ["szczyt", "poziom szczytowy"],
+      "definition": "Największa wartość bezwzględna próbki.",
+      "note": "Audacity pl („Szczyt”, „Poziom szczytowy”), TVP („miernik wartości szczytowej”).",
+      "gender": "f"
+    },
+    "true-peak": {
+      "term": "true peak",
+      "short": "True peak",
+      "alt": ["rzeczywisty poziom szczytowy", "maksymalny chwilowy poziom sygnału"],
+      "definition": "Wartość szczytowa sygnału między próbkami, taka, jaką odtworzyłby przetwornik C/A.",
+      "note": "No settled Polish term. TVP delivery specs write „Maksymalny chwilowy poziom sygnału („True Peak”)” and Ardour pl keeps „True Peak”; unit dBTP. Use the loan in the UI and add the Polish gloss on first use in docs. DAC = przetwornik C/A.",
+      "gender": "m"
+    },
+    "loudness": {
+      "term": "głośność",
+      "definition": "Jak głośno dźwięk jest słyszany, w odróżnieniu od jego poziomu.",
+      "note": "Psychoacoustic quantity (son, LUFS); KRRiT regulation Dz.U. 2013 poz. 48, Ardour pl („Analiza głośności”). Keep „poziom” for measured level. „Poziom głośności” in acoustics is loudness level in phons, while Polish broadcast rules use it for programme loudness in LUFS, so qualify it when you use it.",
+      "gender": "f"
+    },
+    "lufs": {
+      "term": "LUFS",
+      "definition": "Jednostki głośności względem pełnej skali (ITU-R BS.1770); 1 LU to 1 dB.",
+      "note": "KRRiT regulation (Dz.U. 2013 poz. 48): LU, „jednostka pomiarowa głośności”; LUFS, „jednostka głośności wyrażona w LU w odniesieniu do pełnej skali”."
+    },
+    "k-weighting": {
+      "term": "ważenie K",
+      "alt": ["charakterystyka częstotliwościowa K", "filtr K"],
+      "definition": "Korekcja częstotliwościowa, którą mierniki głośności stosują przed pomiarem.",
+      "note": "Modelled on A-weighting in Polish noise standards („charakterystyka częstotliwościowa A”, „poziom dźwięku A”); „ważenie K” is the usual broadcast-engineering calque.",
+      "gender": "n"
+    },
+    "normalize": {
+      "term": "normalizacja",
+      "short": "Normalizuj",
+      "definition": "Ustawienie szczytu lub głośności dźwięku na wartość docelową.",
+      "note": "Glossary form is the verbal noun; the UI command is „Normalizuj” (Audacity, Ardour pl). Specify „normalizacja szczytowa” or „normalizacja głośności”.",
+      "gender": "f"
+    },
+    "fade": {
+      "term": "przejście",
+      "alt": ["fade", "zgłośnienie / wyciszenie"],
+      "definition": "Stopniowa zmiana poziomu na początku (zgłośnienie, fade-in) lub na końcu (wyciszenie, fade-out).",
+      "note": "Generic „przejście” as in Audacity and Ardour pl („Typ przejścia”, „Długość przejścia”). For the two directions use „zgłośnienie” (fade-in) and „wyciszenie” (fade-out); Audacity has „Zgłośnienie”/„Ściszenie”. In speech, „fade-in/fade-out”.",
+      "gender": "n"
+    },
+    "clipping": {
+      "term": "przesterowanie",
+      "alt": ["obcinanie", "clipping"],
+      "definition": "Zniekształcenie powstające, gdy sygnał przekracza największą wartość, jaką można zapisać.",
+      "note": "Ardour pl and studio speech use „przesterowanie” (clip indicator); Audacity pl uses „obcinanie” („Znajdź obcinanie”, „miękkie obcinanie”). Use „obcinanie (clipping)” where it must be told apart from analogue overdrive or saturation.",
+      "gender": "n"
+    },
+    "dc-offset": {
+      "term": "składowa stała",
+      "alt": ["offset DC", "przesunięcie DC"],
+      "definition": "Stałe przesunięcie sygnału względem zera.",
+      "note": "Electronics term for the DC component; Audacity pl: „offset DC”.",
+      "gender": "f"
+    },
+    "noise-floor": {
+      "term": "poziom szumu tła",
+      "short": "Szum tła",
+      "alt": ["poziom szumów", "noise floor"],
+      "definition": "Poziom szumu tła, na którym leży dźwięk.",
+      "note": "Audacity pl: „Poziom szumu”. Equipment self-noise is „szumy własne”.",
+      "gender": "m"
+    },
+    "silence": {
+      "term": "cisza",
+      "definition": "Odcinek bez dźwięku powyżej poziomu szumu tła.",
+      "gender": "f"
+    },
+    "cut-tail": {
+      "term": "ucięty ogon",
+      "alt": ["ucięte wybrzmienie"],
+      "definition": "Dźwięk, który kończy się, zanim jego zanikanie dobiegnie końca.",
+      "gender": "m"
+    },
+    "take": {
+      "term": "take",
+      "alt": ["dubel", "podejście", "wersja"],
+      "definition": "Jedna nagrana lub wyrenderowana wersja dźwięku.",
+      "note": "Ardour pl keeps „take” (genitive „take'a”). Polish film and recording studios also say „dubel”, which declines easily (duble, dubli). For generated output, „wersja” is a neutral fallback.",
+      "gender": "m"
+    },
+    "render": {
+      "term": "renderowanie",
+      "short": "Renderuj",
+      "alt": ["zgrywanie", "bounce"],
+      "definition": "Obliczenie przetworzonego dźwięku i zapisanie go jako audio.",
+      "note": "Audacity pl: „Renderuj”; Ardour pl uses „Zrzuć” for bounce. „Zgrać” is studio speech for writing a mix to a file.",
+      "gender": "n"
+    },
+    "loop": {
+      "term": "pętla",
+      "definition": "Dźwięk, który powtarza się bez słyszalnego szwu.",
+      "note": "Audacity, Ardour, LMMS pl; verb „zapętlić”.",
+      "gender": "f"
+    },
+    "crossfade": {
+      "term": "przenikanie",
+      "alt": ["przejście krzyżowe", "crossfade"],
+      "definition": "Wyciszenie jednego dźwięku nakładające się na zgłośnienie drugiego.",
+      "note": "Audacity pl: „Przenikanie”; Ardour pl: „przejście krzyżowe”; in speech, „crossfade”.",
+      "gender": "n"
+    },
+    "slice": {
+      "term": "cięcie",
+      "short": "Potnij",
+      "alt": ["podział na fragmenty", "slice"],
+      "definition": "Pocięcie dźwięku na części w wybranych punktach.",
+      "note": "Verbal noun as the glossary form; the UI command is „Potnij”. Call the parts „fragmenty” (sampler slang: „slice'y”). Audacity and Ardour pl use „Podziel” for split.",
+      "gender": "n"
+    },
+    "time-stretch": {
+      "term": "rozciąganie w czasie",
+      "short": "Rozciąganie w czasie",
+      "alt": ["time stretch"],
+      "definition": "Zmiana długości dźwięku bez zmiany jego wysokości.",
+      "note": "Ardour pl („rozciąganie w czasie”), Audacity pl („rozciągnięty w czasie”).",
+      "gender": "n"
+    },
+    "pitch-shift": {
+      "term": "zmiana wysokości",
+      "alt": ["przesunięcie wysokości", "transpozycja", "pitch shift"],
+      "definition": "Zmiana wysokości dźwięku bez zmiany jego długości.",
+      "note": "Audacity pl: „Zmień wysokość” (Change Pitch), „Przesunięcie wysokości” (Pitch Shift). „Transpozycja” is the musical term, for whole-semitone shifts.",
+      "gender": "f"
+    },
+    "sone": {
+      "term": "son",
+      "definition": "Jednostka głośności (słyszanej); 1 son to głośność tonu 1 kHz o poziomie 40 dB SPL.",
+      "note": "Polish Wikipedia: „Son (głośność dźwięku)”; plural „sony”.",
+      "gender": "m"
+    },
+    "sharpness": {
+      "term": "ostrość",
+      "definition": "Jak bardzo energia dźwięku skupia się w wysokich częstotliwościach, w odbiorze słuchowym; jednostka: acum.",
+      "note": "Polish psychoacoustics (A. Preis, UAM Poznań, in naukawpolsce.pl). Studio speech also calls a harsh sound „ostry”, but in these apps „ostrość” is kept for DIN 45692 sharpness only; harshness is „nieprzyjemność”.",
+      "gender": "f"
+    },
+    "roughness": {
+      "term": "chropowatość",
+      "alt": ["szorstkość"],
+      "definition": "Zgrzytliwa, chropawa jakość brzmienia wynikająca z szybkiej modulacji amplitudy (ok. 15–300 Hz); jednostka: asper.",
+      "note": "A. Preis (naukawpolsce.pl) and M. Gałuszka (twojazielonka.org) use „chropowatość”; „szorstkość” is an equivalent variant also found in Polish texts. Keep both away from harshness („nieprzyjemność”).",
+      "gender": "f"
+    },
+    "fluctuation-strength": {
+      "term": "siła fluktuacji",
+      "definition": "Wrażenie wywołane wolną modulacją amplitudy (ok. 1–20 Hz, najsilniejsze w pobliżu 4 Hz); jednostka: vacil.",
+      "note": "A. Preis (naukawpolsce.pl), M. Gałuszka (twojazielonka.org).",
+      "gender": "f"
+    },
+    "psychoacoustic-annoyance": {
+      "term": "uciążliwość psychoakustyczna",
+      "short": "Uciążliwość",
+      "alt": ["dokuczliwość psychoakustyczna"],
+      "definition": "Zaproponowane przez Zwickera połączenie głośności, ostrości, chropowatości i siły fluktuacji w jedną wartość uciążliwości.",
+      "note": "„Uciążliwość hałasu” is the established Polish noise-annoyance term in environmental acoustics; A. Preis uses „dokuczliwość”. Harshness („nieprzyjemność”) is derived from it but is a separate term.",
+      "gender": "f"
+    },
+    "masking": {
+      "term": "maskowanie",
+      "definition": "Zjawisko, w którym jeden dźwięk utrudnia lub uniemożliwia usłyszenie innego.",
+      "note": "Standard in Polish psychoacoustics, audiology („maskowanie przesłuchu”, UAM) and perceptual coding. Polish Wikipedia titles the article „Zagłuszanie (akustyka)”, but audio usage is „maskowanie”.",
+      "gender": "n"
+    },
+    "critical-band": {
+      "term": "pasmo krytyczne",
+      "definition": "Zakres częstotliwości, który słuch integruje jako całość; wyrażany w skali Bark.",
+      "note": "Bark scale: „skala Bark” (Polish Wikipedia: „Bark (skala)”), unit „bark”.",
+      "gender": "n"
+    },
+    "curve": {
+      "term": "krzywa",
+      "definition": "Wartość wykreślona w czasie wzdłuż przebiegu.",
+      "gender": "f"
+    },
+    "overview": {
+      "term": "widok ogólny",
+      "alt": ["podgląd całości", "przegląd", "miniatura"],
+      "definition": "Mały obraz całego dźwięku, który pomaga się w nim zorientować.",
+      "note": "Bare „podgląd” means preview, so it is avoided as the main term.",
+      "gender": "m"
+    },
+    "strip": {
+      "term": "pasek",
+      "alt": ["pas", "taśma", "strip"],
+      "definition": "Widok ogólny jednego dźwięku w postaci, w jakiej rysuje go Playhead: przebieg, krzywe i znaczniki w jednym pasie.",
+      "note": "„Pasek” is the natural Polish UI word for a horizontal band; it is also used for toolbars („pasek narzędzi”), but „pasek dźwięku” is unambiguous in context. „Taśma” is evocative (tape) but suggests a recording medium; „pas” is neutral but stiff. A lane is „tor”, part of a „pasek”.",
+      "gender": "m"
+    },
+    "look": {
+      "term": "styl",
+      "alt": ["wygląd", "odsłona", "look"],
+      "definition": "Nazwany sposób rysowania paska, zapisany jako krótki kod warstw.",
+      "note": "„Wygląd” is the literal choice, but Polish UIs use „Wygląd” for Appearance/theme settings (and „motyw” for theme), which the source says to keep apart. „Styl” reads well („kod stylu”, „Styl: …”). „Odsłona” is idiomatic („w nowej odsłonie”) but also means a page view.",
+      "gender": "m"
+    },
+    "look-code": {
+      "term": "kod stylu",
+      "alt": ["kod wyglądu", "kod looku"],
+      "definition": "Krótki tekst definiujący styl, np. „form:overlay,shape:mirror,lane:harshness”.",
+      "note": "Follows the choice made for look. The code keywords stay in English.",
+      "gender": "m"
+    },
+    "layer": {
+      "term": "warstwa",
+      "alt": ["element", "składnik", "layer"],
+      "definition": "Jeden element stylu: przebieg, spektrogram, krzywa, zestaw znaczników lub sekcje.",
+      "note": "„Warstwa” is universal in Polish graphics and audio software. Like the English, it is also used for the separated sound layers in the layer remix tool; „element” is the fallback if the two meanings must be kept apart.",
+      "gender": "f"
+    },
+    "lane": {
+      "term": "tor",
+      "alt": ["pas", "linia"],
+      "definition": "Poziomy pas w obrębie paska, w którym mieści się jedna krzywa.",
+      "note": "As in „tor automatyki”. This avoids „ścieżka” (track) and „pasmo” (frequency band).",
+      "gender": "m"
+    },
+    "overlay": {
+      "term": "nałożone",
+      "alt": ["nakładane", "we wspólnym torze"],
+      "definition": "Krzywe rysowane w jednym wspólnym pasie zamiast w osobnych torach.",
+      "note": "Adjective (krzywe nałożone); noun „nałożenie”. Distinct from mirrored („lustrzane”)."
+    },
+    "mirrored": {
+      "term": "lustrzane",
+      "alt": ["symetryczne", "odbite"],
+      "definition": "Rysowane symetrycznie nad linią środkową i pod nią, jak przebieg.",
+      "note": "Adjective that agrees with its noun (krzywa lustrzana, przebieg lustrzany). Not „nałożone” (overlaid)."
+    },
+    "baseline-form": {
+      "term": "od podstawy",
+      "alt": ["od linii bazowej", "od dołu"],
+      "definition": "Rysowane w górę od dolnej krawędzi pasa.",
+      "note": "Adverbial option label, alongside „lustrzane” and „nałożone”."
+    },
+    "horizon-chart": {
+      "term": "wykres horyzontowy",
+      "alt": ["horizon chart"],
+      "definition": "Zwarty wykres, który składa krzywą w kolorowe pasma o rosnącej intensywności.",
+      "note": "I found no competing Polish term; the calque is transparent. Give „(horizon chart)” on first mention in docs.",
+      "gender": "m"
+    },
+    "sculpted-waveform": {
+      "term": "przebieg rzeźbiony",
+      "alt": ["przebieg kształtowany", "rzeźbiona fala", "sculpted waveform"],
+      "definition": "Przebieg, którego wysokość podąża za krzywą, np. za postrzeganą głośnością, zamiast za poziomem szczytowym.",
+      "note": "„Rzeźbić brzmienie” is a common Polish studio metaphor, so the literal rendering works; the adjective follows the noun, as in classifying Polish terms (przebieg szczytowy). „Kształtowany” is plainer but less distinctive.",
+      "gender": "m"
+    },
+    "outline": {
+      "term": "kontur",
+      "alt": ["obrys"],
+      "definition": "Zwykły przebieg szczytowy narysowany cienką linią za inną warstwą.",
+      "gender": "m"
+    },
+    "marks": {
+      "term": "znaczniki",
+      "alt": ["kreski", "znaczki"],
+      "definition": "Kreski wzdłuż paska w miejscach zdarzeń, początków dźwięków, miar lub granic sekcji.",
+      "note": "Ardour and Audacity pl: „znacznik” = marker.",
+      "gender": "m"
+    },
+    "legend": {
+      "term": "legenda",
+      "definition": "Tekst objaśniający, co pokazuje każdy kolor i każda linia paska.",
+      "gender": "f"
+    },
+    "profile": {
+      "term": "profil analizy",
+      "short": "Profil analizy",
+      "definition": "Zakres analizy wykonywanej przez Playhead: szybki (tylko krzywe), efekt dźwiękowy lub muzyka.",
+      "gender": "m"
+    },
+    "descriptor": {
+      "term": "deskryptor",
+      "definition": "Liczba lub krzywa obliczona z dźwięku, opisująca jedną z jego właściwości.",
+      "note": "Polish MPEG-7 and MIR literature: „deskryptory audio”.",
+      "gender": "m"
+    },
+    "feature": {
+      "term": "cecha",
+      "definition": "Deskryptor używany jako wejście klasyfikatora lub wyszukiwania.",
+      "note": "Polish machine-learning usage („wektor cech”, „ekstrakcja cech”).",
+      "gender": "f"
+    },
+    "activity": {
+      "term": "aktywność",
+      "alt": ["ruchliwość", "zagęszczenie zdarzeń", "activity"],
+      "definition": "Ile się dzieje: zmiany widma i gęstość zdarzeń.",
+      "note": "Literal and clear. „Ruchliwość” is more idiomatic for a busy sound but sounds more evaluative; „zagęszczenie zdarzeń” covers only half the definition.",
+      "gender": "f"
+    },
+    "arousal": {
+      "term": "pobudzenie",
+      "definition": "Jak bardzo dźwięk ekscytuje lub uspokaja; od wymiaru psychologicznego o tej nazwie.",
+      "note": "Polish emotion psychology: „pobudzenie” (the valence–arousal model is „walencja–pobudzenie”).",
+      "gender": "n"
+    },
+    "harshness": {
+      "term": "nieprzyjemność",
+      "alt": ["przykrość", "jazgotliwość", "harshness"],
+      "definition": "Jak nieprzyjemny w słuchaniu jest dźwięk, obliczana z uciążliwości psychoakustycznej; nie to samo co chropowatość.",
+      "note": "Studio Polish calls harsh sound „ostry”, but „ostrość” is taken by sharpness and „chropowatość”/„szorstkość” by roughness, so a third word is needed. „Nieprzyjemność” follows the definition directly; „przykrość” is shorter but sounds emotional (sorrow); „jazgotliwość” is vivid but colloquial and suggests loud din.",
+      "gender": "f"
+    },
+    "tension": {
+      "term": "napięcie",
+      "definition": "Narastanie i rozładowanie w czasie, według modelu napięcia muzycznego Farbood (2012).",
+      "note": "Polish music theory pair „napięcie – rozładowanie (odprężenie)”.",
+      "gender": "n"
+    },
+    "harmonic-tension": {
+      "term": "napięcie harmoniczne",
+      "definition": "Jak daleko harmonia jest od stanu spoczynku, wyznaczone w tonalnej przestrzeni interwałów.",
+      "gender": "n"
+    },
+    "novelty": {
+      "term": "nowość",
+      "definition": "Jak bardzo dana chwila różni się od tego, co było wcześniej.",
+      "note": "Foote's novelty function is „funkcja nowości”. Keep it distinct from „zaskoczenie widmowe” and „informacja własna”.",
+      "gender": "f"
+    },
+    "spectral-surprise": {
+      "term": "zaskoczenie widmowe",
+      "alt": ["niespodzianka widmowa", "nieoczekiwana zmiana widma", "spectral surprise"],
+      "definition": "Zmiana widma, której nie wyjaśnia głośność.",
+      "note": "Literal and natural. It only works if surprisal is „informacja własna” and never bare „zaskoczenie”. „Niespodzianka” sounds playful; the descriptive form is clear but long.",
+      "gender": "n"
+    },
+    "surprisal": {
+      "term": "informacja własna",
+      "alt": ["ilość informacji", "surprisal"],
+      "definition": "Zawartość informacyjna zdarzenia: im mniej oczekiwane, tym wyższa.",
+      "note": "Polish information-theory term for self-information (Polish Wikipedia: „Ilość informacji”). Music-cognition papers sometimes write „zaskoczenie”; that is avoided here to keep it apart from spectral surprise.",
+      "gender": "f"
+    },
+    "structural-change": {
+      "term": "zmiana strukturalna",
+      "alt": ["zmiana formy", "przejście formalne", "structural change"],
+      "definition": "Miejsce, w którym utwór przechodzi do nowej części; ze znakiem: w górę tam, gdzie dźwięk wchodzi, w dół tam, gdzie zanika lub się urywa.",
+      "note": "„Strukturalna” matches MIR usage („analiza struktury utworu”); „zmiana formy” is the musicological wording. In the app's short legends, up/down are „wejście” / „spadek lub urwanie”.",
+      "gender": "f"
+    },
+    "local-pulse": {
+      "term": "puls lokalny",
+      "definition": "Jak wyraźnie w każdej chwili odczuwalny jest regularny puls.",
+      "note": "Grosche & Müller's PLP = „dominujący puls lokalny”. Avoid „siła beatu/miary” (beat strength). Its measure is „wyrazistość pulsu” (pulse clarity).",
+      "gender": "m"
+    },
+    "onset": {
+      "term": "początek dźwięku",
+      "short": "Początek",
+      "alt": ["onset"],
+      "definition": "Chwila, w której zaczyna się dźwięk lub nuta.",
+      "note": "Ardour pl („Rozdziel na początkach dźwięków perkusyjnych”, „czas między początkami dźwięków”); MIR jargon „onset”. It is a moment; „atak” is the phase and „transjent” the change.",
+      "gender": "m"
+    },
+    "onset-strength": {
+      "term": "siła początków dźwięku",
+      "short": "Siła początków",
+      "alt": ["siła onsetu", "funkcja detekcji początków"],
+      "definition": "Jak silnie w każdej chwili pojawia się nowy dźwięk; szczyty to uderzenia.",
+      "note": "Technical docs may use „funkcja detekcji początków” (onset detection function).",
+      "gender": "f"
+    },
+    "event": {
+      "term": "zdarzenie",
+      "definition": "Jeden wyodrębniony dźwięk w pliku, np. uderzenie, krok lub skrzypnięcie, z początkiem i końcem.",
+      "note": "As in „detekcja zdarzeń dźwiękowych” (sound event detection).",
+      "gender": "n"
+    },
+    "attack": {
+      "term": "atak",
+      "alt": ["narastanie", "faza narastania"],
+      "definition": "Pierwsza część dźwięku, od jego początku do szczytu.",
+      "note": "Studio and musical-acoustics usage. LMMS and Audacity pl use „narastanie” for the ADSR stage.",
+      "gender": "m"
+    },
+    "body": {
+      "term": "korpus",
+      "alt": ["ciało", "faza ustalona", "body"],
+      "definition": "Podtrzymana, często tonalna część dźwięku po ataku.",
+      "note": "„Dodać ciała” is a common studio idiom, but „ciało” as the name of a part reads oddly. „Korpus” works in „atak i korpus”. Acoustics textbooks say „stan ustalony”.",
+      "gender": "m"
+    },
+    "decay": {
+      "term": "zanikanie",
+      "alt": ["wybrzmiewanie", "zanik"],
+      "definition": "Część dźwięku, w której dźwięk wygasa.",
+      "note": "This is not the ADSR decay stage (LMMS and Audacity pl: „opadanie”). „Wybrzmiewanie” is a good synonym but is used for the ring time tool.",
+      "gender": "n"
+    },
+    "tail": {
+      "term": "ogon",
+      "definition": "Późna część zanikania, łącznie z pogłosem.",
+      "note": "Studio usage („ogon pogłosu”).",
+      "gender": "m"
+    },
+    "transient": {
+      "term": "transjent",
+      "alt": ["stan nieustalony", "transient"],
+      "definition": "Krótka, szybka zmiana poziomu i widma, zwykle w ataku.",
+      "note": "Polish Wikipedia („Transjent”) and Ardour pl; acoustics textbooks use „stan nieustalony”.",
+      "gender": "m"
+    },
+    "beat": {
+      "term": "miara",
+      "alt": ["puls", "beat"],
+      "definition": "Regularny puls, który słuchacz wystukuje.",
+      "note": "Polish music theory (miary w takcie; Audacity pl „Miary i takty”). Ardour and LMMS pl use „uderzenie”, which is avoided here because „uderzenie” means a hit (event). „Beat” is common in speech; note that „bit” means a hip-hop instrumental.",
+      "gender": "f"
+    },
+    "downbeat": {
+      "term": "pierwsza miara taktu",
+      "short": "Pierwsza miara",
+      "alt": ["raz", "downbeat"],
+      "definition": "Pierwsza miara w takcie.",
+      "note": "Musicians say „raz” („wejście na raz”). „Mocna część taktu” is broader.",
+      "gender": "f"
+    },
+    "bar": {
+      "term": "takt",
+      "definition": "Grupa miar, zwykle czterech.",
+      "note": "The US „measure” is also „takt”.",
+      "gender": "m"
+    },
+    "tempo": {
+      "term": "tempo",
+      "definition": "Szybkość miar, w uderzeniach na minutę (BPM).",
+      "note": "„Uderzeń na minutę” is the fixed Polish reading of BPM (Audacity pl). It is the one place where „uderzenie” refers to the beat.",
+      "gender": "n"
+    },
+    "section": {
+      "term": "sekcja",
+      "alt": ["część", "odcinek formy"],
+      "definition": "Część utworu, np. intro lub refren, wyznaczona na podstawie miejsc, w których zmienia się brzmienie.",
+      "note": "Producers say „sekcja”. Musicologists say „część” or „odcinek”, but „część” is too generic for a UI label and also means a movement.",
+      "gender": "f"
+    },
+    "recurrence": {
+      "term": "rekurencja",
+      "alt": ["powracanie"],
+      "definition": "Jak bardzo dźwięk wraca do stanów, w których już był.",
+      "note": "As in recurrence plots („wykresy rekurencyjne”) and RQA („ilościowa analiza rekurencji”) in Polish nonlinear-dynamics writing.",
+      "gender": "f"
+    },
+    "repetition-rate": {
+      "term": "częstotliwość powtarzania",
+      "short": "Częst. powtarzania",
+      "alt": ["częstość powtórzeń"],
+      "definition": "Jak często powtarza się wzór, w Hz.",
+      "note": "As in „częstotliwość powtarzania impulsów” (pulse repetition frequency).",
+      "gender": "f"
+    },
+    "periodicity": {
+      "term": "okresowość",
+      "definition": "Jak bardzo dźwięk jest okresowy (ma określoną wysokość), a nie szumowy.",
+      "gender": "f"
+    },
+    "phase-coherence": {
+      "term": "koherencja fazowa",
+      "alt": ["spójność fazowa"],
+      "definition": "Jak równomiernie narastają fazy dźwięku; 1 dla stałego tonu, blisko 0 dla szumu.",
+      "gender": "f"
+    },
+    "time-arrow": {
+      "term": "strzałka czasu",
+      "alt": ["kierunkowość czasu", "nieodwracalność czasowa", "time arrow"],
+      "definition": "Jak bardzo dźwięk zmienia się po odtworzeniu wstecz; wysoka dla uderzeń, które zanikają.",
+      "note": "„Strzałka czasu” is the established Polish physics term for the arrow of time (Polish Wikipedia), so the metaphor carries over. „Nieodwracalność czasowa” is the technical term, for docs only.",
+      "gender": "f"
+    },
+    "impulsiveness": {
+      "term": "impulsowość",
+      "alt": ["impulsywność", "trzaskliwość", "impulsiveness"],
+      "definition": "Jak bardzo dźwięk składa się z kliknięć, trzasków i trzeszczenia; wyznaczana z kurtozy widmowej.",
+      "note": "Polish acousticians use „impulsowość” for impulsive noise (M. Gałuszka, twojazielonka.org; „hałas impulsowy”). „Impulsywność” is the everyday word for temperament; „trzaskliwość” is vivid but unusual. Avoid „kolczastość” (spikiness).",
+      "gender": "f"
+    },
+    "spectral-kurtosis": {
+      "term": "kurtoza widmowa",
+      "definition": "Statystyka równa 0 dla stałego szumu, −1 dla stałego tonu i duża dla kliknięć.",
+      "gender": "f"
+    },
+    "spectral-motion": {
+      "term": "ruch widma",
+      "alt": ["ruch widmowy", "prędkość środka widma", "spectral motion"],
+      "definition": "Jak szybko środek widma przesuwa się w górę lub w dół, w oktawach na sekundę.",
+      "note": "Literal and short. The descriptive „prędkość środka widma” is exact but long.",
+      "gender": "m"
+    },
+    "spectral-centroid": {
+      "term": "centroid widma",
+      "alt": ["środek ciężkości widma", "centroid widmowy"],
+      "definition": "Środek ciężkości widma; miara jasności.",
+      "note": "Polish MIR and MPEG-7 writing uses both „centroid” and „środek ciężkości widma”.",
+      "gender": "m"
+    },
+    "reshaping": {
+      "term": "zmiana kształtu widma",
+      "short": "Zmiana kształtu",
+      "alt": ["przekształcanie widma", "deformacja widma", "reshaping"],
+      "definition": "Zmiana widma, która nie przesuwa jego środka, np. gdy widmo się rozszerza lub zwęża.",
+      "note": "„Przekształcanie” is the closest literal match but collides with „przekształcenie” (a transform, e.g. „przekształcenie Fouriera”). „Deformacja” sounds like damage.",
+      "gender": "f"
+    },
+    "burstiness": {
+      "term": "seryjność",
+      "alt": ["burstiness", "skupianie w seriach"],
+      "definition": "Czy zdarzenia pojawiają się regularnie (poniżej 0), losowo (0) czy seriami (powyżej 0).",
+      "note": "No established Polish term: Polish complex-systems papers usually keep „burstiness”. „Seryjność” (from „seria”, a burst as in „seria strzałów”) is my proposal; it can also suggest „produkcja seryjna”, so the loan is safer in docs.",
+      "gender": "f"
+    },
+    "temporal-entropy": {
+      "term": "entropia czasowa",
+      "definition": "Jak równomiernie energia dźwięku rozkłada się w czasie.",
+      "gender": "f"
+    },
+    "decay-time": {
+      "term": "czas zaniku (T60)",
+      "alt": ["czas wybrzmiewania", "czas pogłosu"],
+      "definition": "Czas, w którym poziom dźwięku spada o 60 dB.",
+      "note": "„Czas pogłosu” (T60) is the room-acoustics term (PN-EN ISO 3382); for a single sound „czas zaniku” is clearer. „Czas wybrzmiewania” is used for the ring time tool.",
+      "gender": "m"
+    },
+    "damping": {
+      "term": "tłumienie",
+      "definition": "Jak szybko drgające ciało traci energię.",
+      "note": "Physics: „tłumienie drgań”; LMMS pl „Tłumienie”.",
+      "gender": "n"
+    },
+    "material": {
+      "term": "materiał",
+      "definition": "Z czego wykonany jest uderzany przedmiot, w odbiorze słuchowym: tłumiony, szklisty lub metaliczny.",
+      "gender": "m"
+    },
+    "partial": {
+      "term": "ton składowy",
+      "alt": ["składowa", "ton częściowy", "parcjał"],
+      "definition": "Jedna składowa częstotliwościowa dźwięku.",
+      "note": "Polish musical acoustics („tony składowe”). „Parcjał” is additive-synthesis jargon. Bare „składowa” is avoided as the term because of „składowa stała” (DC offset).",
+      "gender": "m"
+    },
+    "overtone": {
+      "term": "alikwot",
+      "alt": ["nadton"],
+      "definition": "Ton składowy powyżej najniższego.",
+      "note": "Audacity pl: „alikwoty”. Polish usage often treats „alikwot” as a harmonic only; here it includes inharmonic partials.",
+      "gender": "m"
+    },
+    "inharmonic": {
+      "term": "nieharmoniczny",
+      "definition": "O tonach składowych, które nie są całkowitymi wielokrotnościami częstotliwości podstawowej, jak w dzwonach i uderzanym metalu."
+    },
+    "quality-checks": {
+      "term": "kontrola jakości",
+      "alt": ["testy jakości"],
+      "definition": "Automatyczne sprawdzanie przesterowania, składowej stałej, ciszy i uciętych ogonów.",
+      "gender": "f"
+    },
+    "self-check": {
+      "term": "autotest",
+      "alt": ["samosprawdzenie", "samokontrola", "self-check"],
+      "definition": "Test, który zmienia dźwięk w znany sposób i sprawdza, czy analiza zmienia się tak, jak powinna.",
+      "note": "„Autotest” is the familiar Polish IT word for a built-in self-test; „samosprawdzenie” is literal but clumsy. It must not be „test jednostkowy” (unit test); the technical name for docs is „test metamorficzny”.",
+      "gender": "m"
+    },
+    "de-harsh": {
+      "term": "złagodź brzmienie",
+      "short": "Złagodź brzmienie",
+      "alt": ["redukuj nieprzyjemność", "łagodzenie brzmienia", "de-harsh"],
+      "definition": "Narzędzie, które tłumi rezonanse tylko wtedy, gdy dźwięk jest nieprzyjemny.",
+      "note": "Imperative, per the command convention; noun form „łagodzenie brzmienia” for headings. „Złagodzić” is what Polish engineers say about taming harsh resonances. The literal „redukuj nieprzyjemność” ties the tool to the curve name. The loan works by analogy with „de-esser”, which Polish keeps in English. This is not a de-esser (a de-esser keys on level in one band)."
+    },
+    "attack-and-body": {
+      "term": "atak i korpus",
+      "alt": ["atak i ciało", "atak i podtrzymanie", "attack & body"],
+      "definition": "Narzędzie, które rozdziela dźwięk na część transjentową i część podtrzymaną, aby zmienić proporcje między nimi.",
+      "note": "Noun title, as in English. „Atak i ciało” is idiomatic studio speech but reads oddly as a title; „podtrzymanie” recalls ADSR sustain. Do not call it „kształtowanie transjentów” (a transient shaper works on level, not on a split)."
+    },
+    "layer-remix": {
+      "term": "remiks warstw",
+      "alt": ["przemiksowanie warstw", "rozkład na warstwy", "layer remix"],
+      "definition": "Narzędzie, które rozdziela dźwięk na warstwy i miksuje je ponownie na nowych poziomach.",
+      "note": "„Remiks” is naturalised Polish and short; „przemiksowanie warstw” is the plain verbal noun; „rozkład na warstwy” names only the first step.",
+      "gender": "m"
+    },
+    "tension-shaper": {
+      "term": "kształtowanie napięcia",
+      "alt": ["modelator napięcia", "kształtownik napięcia", "tension shaper"],
+      "definition": "Narzędzie, które zamienia krzywą napięcia na automatykę wzmocnienia i jasności.",
+      "note": "Polish names such processors after the process („kształtowanie transjentów” for transient shaper). „Kształtownik” is the literal agent noun but in Polish it means a steel section; „modelator” is acceptable but rare.",
+      "gender": "n"
+    },
+    "loop-maker": {
+      "term": "kreator pętli",
+      "alt": ["zapętlacz", "generator pętli", "loop maker"],
+      "definition": "Narzędzie, które znajduje punkty pętli tam, gdzie dźwięk najlepiej się powtarza, i łączy je przenikaniem.",
+      "note": "„Kreator” is the Polish UI word for a wizard, which fits a tool that finds the points for you. „Zapętlacz” is playful and idiomatic. „Generator” clashes with the Workbench generator.",
+      "gender": "m"
+    },
+    "variations": {
+      "term": "warianty",
+      "alt": ["wariacje", "odmiany"],
+      "definition": "Kilka nieco różniących się wersji jednego dźwięku, aby uniknąć powtarzalności w grach.",
+      "note": "„Wariacje” suggests musical variations; game-audio usage is „warianty”.",
+      "gender": "m"
+    },
+    "clean-up": {
+      "term": "czyszczenie przed eksportem",
+      "short": "Czyszczenie",
+      "alt": ["wyczyść przed eksportem", "porządki przed eksportem", "przygotowanie do eksportu"],
+      "definition": "Narzędzie, które przed eksportem naprawia to, co wykryła kontrola jakości.",
+      "note": "The vocabulary term is a noun, but Playhead names the tool with a verb („Clean up for export”), so the app uses the imperative „Wyczyść przed eksportem”, following the command convention.",
+      "gender": "n"
+    },
+    "reverb-on-tails": {
+      "term": "pogłos na ogonach",
+      "alt": ["pogłos wybrzmień", "pogłos tylko na ogonach", "reverb na ogonach"],
+      "definition": "Pogłos zasilany wyłącznie zanikaniem zdarzeń, przy którym ataki pozostają suche.",
+      "note": "Literal and clear in studio Polish („ogon”, „suchy”). „Wybrzmienia” is more elegant but less exact. The half-loan is how engineers would say it aloud.",
+      "gender": "m"
+    },
+    "drive-hits": {
+      "term": "nasyć uderzenia",
+      "alt": ["podkręć uderzenia", "przesteruj uderzenia", "drive na uderzeniach"],
+      "definition": "Saturacja stosowana tylko do ataków lub korpusów zdarzeń.",
+      "note": "Imperative; noun form „nasycanie uderzeń” or „saturacja uderzeń”. „Nasycić” maps directly to saturation („nasycenie”). „Podkręcić” (crank up) is idiomatic but sounds like a level boost. „Przesterować” is the natural word for drive but points to clipping („przesterowanie”)."
+    },
+    "ring-time": {
+      "term": "czas wybrzmiewania",
+      "alt": ["długość wybrzmienia", "czas dzwonienia", "ring time"],
+      "definition": "Narzędzie, które wydłuża lub skraca czas, przez jaki każde zdarzenie wybrzmiewa po swoim szczycie.",
+      "note": "„Wybrzmiewać” means exactly „to ring out”. „Dzwonienie” is literal but evokes phones and bells. The measured decay time stays „czas zaniku (T60)”.",
+      "gender": "m"
+    },
+    "level-events": {
+      "term": "wyrównaj głośność zdarzeń",
+      "short": "Wyrównaj głośność",
+      "alt": ["wyrównaj zdarzenia", "wyrównywanie głośności zdarzeń", "level events"],
+      "definition": "Narzędzie, które wyrównuje głośność zdarzeń, stosując jedno wzmocnienie na zdarzenie, bez zmiany ich kształtu.",
+      "note": "Imperative; noun form „wyrównywanie głośności zdarzeń”. The bare „wyrównaj zdarzenia” is closer to the English but can be read as „align the events” in time. Do not call it „kompresja” (a compressor changes the shape)."
+    },
+    "fold-to-mono": {
+      "term": "złóż do mono",
+      "alt": ["zmiksuj do mono z wyrównaniem fazy", "mono bez wygaszania", "fold to mono"],
+      "definition": "Zamiana stereo na mono z wyrównaną fazą kanałów, tak aby nic się nie wygaszało.",
+      "note": "Imperative; noun form „składanie do mono”. „Złożyć” keeps the folding metaphor and stays distinct from the plain sum („zsumuj do mono”; Audacity pl „Miksuj stereo do mono”). The descriptive form is exact but long."
+    },
+    "widen-tails": {
+      "term": "poszerz ogony",
+      "alt": ["poszerz wybrzmienia", "stereo na ogonach", "widen tails"],
+      "definition": "Tworzenie lub poszerzanie stereo tylko po atakach, z atakami pozostawionymi w środku i wynikiem kompatybilnym z mono.",
+      "note": "Imperative; noun form „poszerzanie ogonów”. It pairs with „pogłos na ogonach”. „Wybrzmienia” is softer but less precise about what is widened."
+    },
+    "downmix": {
+      "term": "downmix",
+      "alt": ["downmiks", "zgranie do mniejszej liczby kanałów"],
+      "definition": "Zamiana większej liczby kanałów na mniejszą.",
+      "note": "Broadcast and post-production usage keeps the loan („downmix 5.1 do stereo”); „downmiks” is the Polonised spelling.",
+      "gender": "m"
+    },
+    "mono-compatibility": {
+      "term": "kompatybilność z mono",
+      "short": "Kompatybilność mono",
+      "alt": ["kompatybilność mono", "zgodność monofoniczna"],
+      "definition": "Jak dobrze dźwięk stereo znosi zsumowanie do mono.",
+      "note": "TVP technical requirements: „kompatybilność sygnału stereofonicznego z monofonicznym”.",
+      "gender": "f"
+    },
+    "decorrelation": {
+      "term": "dekorelacja",
+      "definition": "Zmniejszanie podobieństwa dwóch sygnałów przy zachowaniu ich widma, aby poszerzyć obraz stereo.",
+      "gender": "f"
+    },
+    "comb-filtering": {
+      "term": "filtracja grzebieniowa",
+      "alt": ["efekt filtru grzebieniowego"],
+      "definition": "Regularne wycięcia w widmie, gdy sygnał sumuje się z opóźnioną kopią samego siebie.",
+      "note": "Polish Wikipedia: „Filtr grzebieniowy”.",
+      "gender": "f"
+    },
+    "cancellation": {
+      "term": "wygaszanie",
+      "alt": ["znoszenie się sygnałów", "interferencja destrukcyjna"],
+      "definition": "Utrata poziomu, gdy sumują się sygnały o przeciwnej fazie.",
+      "note": "Studio speech also says „sygnały się znoszą”; physics: „interferencja destrukcyjna”.",
+      "gender": "n"
+    },
+    "pre-echo": {
+      "term": "pre-echo",
+      "alt": ["echo wyprzedzające", "przedecho"],
+      "definition": "Słabe rozmycie dźwięku przed jego atakiem, wywołane przetwarzaniem w ramkach.",
+      "note": "Polish perceptual-coding texts mostly keep „pre-echo” („zjawisko pre-echa”); the Polish calques exist but are rare.",
+      "gender": "n"
+    },
+    "eq": {
+      "term": "korektor",
+      "short": "EQ",
+      "alt": ["EQ", "equalizer"],
+      "definition": "Korektor częstotliwości: filtr, który zmienia poziom pasm częstotliwości.",
+      "note": "Polish Wikipedia: „Korektor (akustyka)”; Audacity pl: „korektor graficzny”. Controls show „EQ”.",
+      "gender": "m"
+    },
+    "dynamic-eq": {
+      "term": "korektor dynamiczny",
+      "short": "Dynamiczny EQ",
+      "alt": ["dynamiczny EQ"],
+      "definition": "Korektor, którego wzmocnienia pasm podążają za poziomem w każdym paśmie.",
+      "gender": "m"
+    },
+    "automation": {
+      "term": "automatyka",
+      "alt": ["automatyzacja"],
+      "definition": "Zmiany parametrów w czasie, nagrane lub narysowane.",
+      "note": "Ardour pl and LMMS pl („ścieżka automatyki”, „edytor automatyki”).",
+      "gender": "f"
+    },
+    "compressor": {
+      "term": "kompresor",
+      "definition": "Procesor, który ścisza głośne fragmenty powyżej progu w zadanym stosunku.",
+      "note": "Polish Wikipedia: „Kompresor dynamiki”; Audacity and LMMS pl.",
+      "gender": "m"
+    },
+    "threshold": {
+      "term": "próg",
+      "definition": "Poziom, powyżej którego procesor zaczyna działać.",
+      "note": "Audacity, Ardour, LMMS pl.",
+      "gender": "m"
+    },
+    "ratio": {
+      "term": "współczynnik kompresji",
+      "short": "Współczynnik",
+      "alt": ["stopień kompresji", "ratio"],
+      "definition": "Jak silnie kompresor obniża poziom powyżej progu.",
+      "note": "Audacity pl („Współczynnik kompresji”), LMMS pl („Współczynnik”). Hardware controls often keep „Ratio”.",
+      "gender": "m"
+    },
+    "attack-time": {
+      "term": "czas ataku",
+      "alt": ["czas narastania", "attack"],
+      "definition": "Jak szybko procesor reaguje, gdy poziom rośnie.",
+      "note": "Studio usage. Audacity and LMMS pl use „czas narastania”.",
+      "gender": "m"
+    },
+    "release-time": {
+      "term": "czas powrotu",
+      "alt": ["czas zwolnienia", "czas opadania", "release"],
+      "definition": "Jak szybko procesor wraca do stanu spoczynku, gdy poziom spada.",
+      "note": "Studio Polish varies: „powrót”, „zwolnienie”, often plain „release”. Audacity pl has „czas opadania”; LMMS pl has „czas zanikania”, which is avoided because „zanikanie” = decay here.",
+      "gender": "m"
+    },
+    "gate": {
+      "term": "bramka",
+      "alt": ["gate"],
+      "definition": "Procesor lub warunek, który otwiera się dopiero powyżej progu.",
+      "note": "Audacity pl („Bramka szumów”), LMMS pl. BS.1770 gating = „bramkowanie”.",
+      "gender": "f"
+    },
+    "saturation": {
+      "term": "saturacja",
+      "alt": ["nasycenie"],
+      "definition": "Łagodne zniekształcenie, które dodaje harmoniczne i zaokrągla szczyty.",
+      "note": "Studio usage prefers „saturacja”; „nasycenie” is the native word (nasycenie taśmy, lampy).",
+      "gender": "f"
+    },
+    "pumping": {
+      "term": "pompowanie",
+      "definition": "Słyszalne narastanie i opadanie tła wywołane przez kompresor.",
+      "gender": "n"
+    },
+    "evenness": {
+      "term": "równomierność",
+      "alt": ["wyrównanie"],
+      "definition": "Jak bardzo zdarzenia są do siebie podobne pod względem głośności.",
+      "gender": "f"
+    },
+    "effect-chain": {
+      "term": "łańcuch efektów",
+      "definition": "Efekty stosowane do dźwięku jeden po drugim.",
+      "gender": "m"
+    },
+    "preset": {
+      "term": "preset",
+      "alt": ["ustawienie wstępne", "zestaw ustawień"],
+      "definition": "Zapisany zestaw ustawień.",
+      "note": "Ardour, LMMS and Audacity pl all use „preset” (presety, presetu).",
+      "gender": "m"
+    },
+    "morph": {
+      "term": "morfing",
+      "alt": ["płynne przejście"],
+      "definition": "Stopniowe przejście jednego dźwięku w inny.",
+      "gender": "m"
+    },
+    "cross-synthesis": {
+      "term": "synteza krzyżowa",
+      "definition": "Łączenie widma jednego dźwięku z obwiednią lub pobudzeniem innego.",
+      "gender": "f"
+    },
+    "convolution": {
+      "term": "splot",
+      "alt": ["konwolucja"],
+      "definition": "Filtrowanie jednego dźwięku przez inny, np. przez odpowiedź impulsową pomieszczenia.",
+      "note": "Mathematical term (Polish Wikipedia: „Splot (analiza matematyczna)”); studio speech uses „pogłos splotowy” and the calque „konwolucja”.",
+      "gender": "m"
+    },
+    "envelope-transfer": {
+      "term": "przeniesienie obwiedni",
+      "definition": "Nadanie jednemu dźwiękowi obwiedni poziomu innego dźwięku.",
+      "note": "„Obwiednia” as in Audacity pl and Polish Wikipedia („Obwiednia dźwięku”).",
+      "gender": "n"
+    },
+    "ring-modulation": {
+      "term": "modulacja pierścieniowa",
+      "definition": "Mnożenie dwóch sygnałów, które tworzy częstotliwości sumacyjne i różnicowe.",
+      "note": "LMMS pl.",
+      "gender": "f"
+    },
+    "granular": {
+      "term": "granularny",
+      "definition": "Zbudowany z wielu krótkich ziaren dźwięku.",
+      "note": "Polish Wikipedia: „Synteza granularna”; grain = „ziarno”."
+    },
+    "accent": {
+      "term": "akcent",
+      "alt": ["podkreślenie", "dźwięk akcentujący", "accent"],
+      "definition": "Krótki dodatkowy dźwięk umieszczony w danej chwili innego dźwięku, aby go podkreślić.",
+      "note": "„Akcent” is natural (accent = emphasis) but a musician may read it as a louder note. „Podkreślenie” is plainer. Film post calls such layers „sweetener”.",
+      "gender": "m"
+    },
+    "generator": {
+      "term": "generator",
+      "definition": "Część aplikacji, która tworzy nowe dźwięki na podstawie parametrów.",
+      "gender": "m"
+    },
+    "synth": {
+      "term": "syntezator",
+      "alt": ["synth"],
+      "definition": "Generator dźwięku zbudowany z oscylatorów, szumu, obwiedni i filtrów.",
+      "gender": "m"
+    },
+    "impact-model": {
+      "term": "model uderzenia",
+      "short": "Uderzenie",
+      "alt": ["impakt", "zderzenie"],
+      "definition": "Fizyczny model uderzanego przedmiotu o danym materiale i kształcie.",
+      "note": "Use „Uderzenie” as the generator title and „model uderzenia” in docs, to keep it apart from hits (uderzenia = events). Game-audio slang: „impakt”.",
+      "gender": "m"
+    },
+    "resynthesis": {
+      "term": "resynteza",
+      "definition": "Odtworzenie dźwięku z parametrów zmierzonych na nim samym, takich jak tony składowe i ich zanikanie.",
+      "gender": "f"
+    },
+    "modal": {
+      "term": "modalny",
+      "definition": "Złożony z modów rezonansowych, z których każdy ma częstotliwość i czas zaniku.",
+      "note": "As in „synteza modalna”; mechanics says „mody drgań” or „postaci drgań własnych”."
+    },
+    "texture": {
+      "term": "tekstura",
+      "definition": "Ciągły dźwięk złożony z wielu drobnych zdarzeń, jak deszcz, ogień czy żwir.",
+      "gender": "f"
+    },
+    "reaction": {
+      "term": "akcja i reakcja",
+      "alt": ["działanie i reakcja", "działanie i odpowiedź", "action & reaction"],
+      "definition": "Generator, w którym działanie, np. ruch przedmiotu lub siła, wywołuje dźwięk reagującego na nie ośrodka (żwir, woda, powietrze).",
+      "note": "„Zasada akcji i reakcji” is the everyday Polish name of Newton's third law, so the pair is instantly understood. „Działanie” is more formal; „odpowiedź” sounds like signal processing."
+    },
+    "medium": {
+      "term": "ośrodek",
+      "alt": ["medium"],
+      "definition": "To, co reaguje na działanie: żwir, liście, woda, powietrze, iskry lub pole siłowe.",
+      "note": "Physics term for a propagation medium; „medium” is also understood.",
+      "gender": "m"
+    },
+    "drive-curve": {
+      "term": "krzywa sterująca",
+      "alt": ["krzywa napędowa", "krzywa wysterowania", "drive curve"],
+      "definition": "Krzywa, która steruje parametrami dźwięku w czasie.",
+      "note": "„Sterować” is the Polish verb for driving a parameter. „Napędowa” is mechanically literal. „Wysterowanie” in Polish audio means drive or level, so it would suggest gain only.",
+      "gender": "f"
+    },
+    "inertia": {
+      "term": "bezwładność",
+      "definition": "Jak wolno reakcja się uspokaja po ustaniu działania.",
+      "gender": "f"
+    },
+    "foley": {
+      "term": "efekty synchroniczne",
+      "alt": ["Foley", "imitacja synchroniczna", "synchrony"],
+      "definition": "Codzienne dźwięki wykonywane i nagrywane synchronicznie z obrazem.",
+      "note": "Polish film-sound terminology: „efekty synchroniczne”, „imitacja synchroniczna”, with the artist called „imitator” (Polish film-sound article on ejournals.eu; noiz.ai pl „Kinowe efekty synchroniczne (Foley)”). „Foley” is understood in game audio.",
+      "gender": "m"
+    },
+    "ambience": {
+      "term": "atmosfera",
+      "alt": ["tło dźwiękowe", "ambient"],
+      "definition": "Dźwiękowe tło miejsca.",
+      "note": "Polish film post-production calls these tracks „atmosfery” (ejournals.eu article: „atmosfery, efekty boczne, synchroniczne”); general texts say „tło dźwiękowe”.",
+      "gender": "f"
+    },
+    "one-shot": {
+      "term": "one-shot",
+      "alt": ["dźwięk pojedynczy", "pojedynczy sampel"],
+      "definition": "Krótki dźwięk odtwarzany raz, np. uderzenie lub kliknięcie w interfejsie.",
+      "note": "Sampler and game-audio loan.",
+      "gender": "m"
+    },
+    "whoosh": {
+      "term": "whoosh",
+      "alt": ["świst", "przelot"],
+      "definition": "Dźwięk czegoś, co szybko przelatuje obok słuchacza.",
+      "note": "Sound designers use the loan; „świst” is the Polish word in general texts (noiz.ai pl: „charakterystyczne świsty”).",
+      "gender": "m"
+    },
+    "finishing": {
+      "term": "finalizacja",
+      "alt": ["wykończenie"],
+      "definition": "Ostatnie kroki przed eksportem: format, kanały, przejścia (fade) i poziom.",
+      "gender": "f"
+    },
+    "steel": {
+      "term": "stal",
+      "gender": "f"
+    },
+    "brass": {
+      "term": "mosiądz",
+      "gender": "m"
+    },
+    "aluminium": {
+      "term": "aluminium",
+      "gender": "n"
+    },
+    "glass": {
+      "term": "szkło",
+      "gender": "n"
+    },
+    "ceramic": {
+      "term": "ceramika",
+      "gender": "f"
+    },
+    "ice": {
+      "term": "lód",
+      "gender": "m"
+    },
+    "wood": {
+      "term": "drewno",
+      "gender": "n"
+    },
+    "plastic": {
+      "term": "plastik",
+      "alt": ["tworzywo sztuczne"],
+      "gender": "m"
+    },
+    "stone": {
+      "term": "kamień",
+      "gender": "m"
+    },
+    "cardboard": {
+      "term": "tektura",
+      "alt": ["karton"],
+      "note": "„Tektura” is the material; „karton” is also used colloquially and means a carton.",
+      "gender": "f"
+    },
+    "rubber": {
+      "term": "guma",
+      "gender": "f"
+    },
+    "bar-shape": {
+      "term": "pręt",
+      "alt": ["belka"],
+      "definition": "Długie, pełne ciało, np. pręt lub belka.",
+      "note": "Not „takt” (musical bar).",
+      "gender": "m"
+    },
+    "plate": {
+      "term": "płyta",
+      "alt": ["płytka"],
+      "definition": "Cienkie, płaskie ciało.",
+      "gender": "f"
+    },
+    "membrane": {
+      "term": "membrana",
+      "definition": "Napięta błona, jak w bębnie.",
+      "gender": "f"
+    },
+    "shell": {
+      "term": "powłoka",
+      "alt": ["skorupa", "czasza"],
+      "definition": "Cienkie, zakrzywione ciało, np. puszka lub garnek.",
+      "note": "Mechanics term („teoria powłok”).",
+      "gender": "f"
+    },
+    "bell": {
+      "term": "dzwon",
+      "alt": ["dzwonek"],
+      "gender": "m"
+    },
+    "wire": {
+      "term": "struna",
+      "short": "Drut / struna",
+      "alt": ["drut"],
+      "definition": "Sztywna struna lub drut, który dzwoni lekko rozciągniętymi (nieharmonicznymi) tonami składowymi.",
+      "note": "Polish names a vibrating stretched element „struna” (piano strings are steel wire); „drut” is the material. In Workbench the impact-model shape „Wire / string” is „Drut / struna”.",
+      "gender": "f"
+    },
+    "box": {
+      "term": "pudło",
+      "alt": ["skrzynka"],
+      "definition": "Puste w środku ciało o płaskich ściankach.",
+      "note": "As in „pudło rezonansowe”.",
+      "gender": "n"
+    }
+  }
+}

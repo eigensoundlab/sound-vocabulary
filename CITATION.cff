@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use these terms or translations, please cite them as below."
+type: dataset
+title: "Sound vocabulary: terms of sound analysis, sound design and game audio in English, Czech, German, Polish, Russian and Spanish"
+version: 0.1.0
+date-released: 2026-11-06
+authors:
+  - family-names: Sandner
+    given-names: Daniel
+    orcid: "https://orcid.org/0000-0002-1041-814X"
+    affiliation: "eigensound, Teplice, Czech Republic"
+license: CC-BY-4.0
+repository-code: "https://github.com/eigensoundlab/sound-vocabulary"
+keywords:
+  - terminology
+  - termbase
+  - localization
+  - psychoacoustics
+  - sound design
+  - game audio

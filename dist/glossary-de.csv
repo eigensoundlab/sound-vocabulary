@@ -1,0 +1,176 @@
+term,translation,definition,note,status,alternatives
+waveform,Wellenform,The drawing of a sound's amplitude over time.,,standard,
+spectrogram,Spektrogramm,"A picture of how a sound's frequency content changes over time: time across, frequency up, level as colour.",,standard,
+mel scale,Mel-Skala,A frequency scale spaced as pitch is heard: roughly linear below 1 kHz and logarithmic above.,Duden spelling with hyphen; unit 'mel'.,standard,
+playhead,Abspielposition,The moving line that marks the current playback position.,"Logic Pro de defines it exactly so: 'Die Abspielposition ist die vertikale Linie, die die aktuelle Wiedergabeposition in einem Projekt zeigt.' Not 'Cursor' (Cubase's 'Projekt-Cursor'), so it stays distinct from the Einfügemarke (edit cursor). Use 'Abspielpositionslinie' where the line must be told apart from the time value. The app name Playhead stays English.",common,Abspielpositionslinie; Playhead
+edit cursor,Einfügemarke,"The position where editing and playback start, set by clicking.","As in Ableton Live de ('Einfügemarke', the blinking insert marker from which playback starts). 'Cursor' is acceptable here but never for the playhead.",common,Bearbeitungscursor; Edit-Cursor
+sample rate,Abtastrate,"Samples per second of a digital sound, in Hz.","'Abtastrate' in standards, textbooks and Audacity de; Cubase de and studio speech often say 'Samplerate'.",standard,Samplerate; Samplingrate
+bit depth,Bittiefe,Bits per sample of a digital sound; sets its resolution.,'Wortbreite' is the older engineering term.,standard,Wortbreite; Bit-Auflösung
+channel,Kanal,One signal of a sound file; stereo has two.,,standard,
+mono,Mono,One channel.,,standard,
+stereo,Stereo,"Two channels, left and right.",,standard,
+mid/side,Mitte/Seite,Stereo written as the sum (mid) and the difference (side) of the channels.,"German recording practice: MS-Verfahren, Mitten- und Seitensignal; DAW plug-ins often keep 'Mid/Side'.",standard,M/S; Mid/Side
+phase,Phase,Where in its cycle a wave is at a given moment.,,standard,
+polarity,Polarität,Whether a signal is upright or inverted.,"German studio speech often says 'Phase drehen' for a plain inversion; keep 'Polarität umkehren' for that, as the English does.",standard,
+level,Pegel,"How strong a signal is, usually in dB.","Pegel ≠ Lautheit. Avoid colloquial 'Lautstärke', which is used for both.",standard,
+gain,Gain,"A change of level, in dB.","Studio and DAW usage (Cubase, Logic). 'Verstärkung' (Audacity de) suggests only boosting, while a gain can be negative. Gender varies: das Gain / der Gain.",standard,Verstärkung; Pegeländerung
+peak,Spitzenwert,The largest absolute sample value.,German broadcast documents contrast 'Sample Peak' with 'True Peak' (ZDF Vorgaben 2022); meters label it 'Peak'. Use 'Spitzenpegel' for the value in dBFS. For a compact meter label 'Peak' is fine next to 'True Peak'.,standard,Peak; Sample-Peak; Spitzenpegel
+true peak,True Peak,"The peak of the signal between samples, as a DAC would reproduce it.","German broadcast usage keeps the English: ZDF Vorgaben 2022 'maximaler Spitzenpegel („Maximum True Peak Level“)', unit dBTP. Hyphenate in compounds: True-Peak-Pegel, True-Peak-Limiter.",standard,True-Peak-Pegel
+loudness,Lautheit,"How loud a sound is heard, as opposed to its level.","DIN 45631 / ISO 532-1; EBU R 128 in German practice ('Programmlautheit', 'Lautheitsbereich'). Not 'Lautstärke'; 'Lautstärkepegel' (phon) is a different quantity.",standard,
+LUFS,LUFS,Loudness units relative to full scale (ITU-R BS.1770); 1 LU is 1 dB.,ZDF Vorgaben 2022: 'Absolute Maßeinheit der Lautheit bezogen auf die digitale Vollaussteuerung'. Unit unchanged.,standard,
+K-weighting,K-Bewertung,The frequency weighting that loudness meters apply before measuring.,ZDF Vorgaben 2022: 'K-Bewertungskurve nach ITU-R BS. 1770'; analogous to A-Bewertung.,standard,K-Bewertungskurve; K-Filter
+normalize,Normalisieren,Set a sound's peak or loudness to a target.,"Command 'Normalisieren' (Audacity, Cubase); noun 'Normalisierung'.",standard,Normalisierung
+fade,Fade,A gradual change of level at the start (fade-in) or end (fade-out).,"Studio and DAW usage (Ableton de 'Fades', Cubase/Logic 'Fade-In/Fade-Out'; Duden spells 'Fade-in/Fade-out'). Broadcast and Audacity de use 'Einblenden/Ausblenden', which also work well as command names.",standard,Blende; Ein-/Ausblendung
+clipping,Clipping,Distortion when a signal exceeds the largest value that can be stored.,"'Übersteuerung' is broader (also analogue, also without hard limiting); for the quality-check finding use 'Clipping'.",standard,Übersteuerung
+DC offset,DC-Offset,A constant shift of the signal away from zero.,Studio usage 'DC-Offset'; Audacity de uses 'Gleichspannungsversatz'; textbooks 'Gleichanteil'.,standard,Gleichanteil; Gleichspannungsversatz
+noise floor,Grundrauschen,The level of the background noise under a sound.,'Rauschpegel' when the number is meant; 'Rauschteppich' is studio jargon.,standard,Rauschpegel; Rauschteppich
+silence,Stille,A stretch with no sound above the noise floor.,,standard,
+cut tail,abgeschnittener Ausklang,A sound that ends before its decay has died away.,"Follows tail = Ausklang. Studio speech says 'der Hall reißt ab', hence 'abgerissenes Ende'. The short label reads as a quality-check finding.",common,abgerissenes Ende; abgeschnittene Fahne
+take,Take,One recorded or rendered version of a sound.,"Studio and DAW usage (Cubase, Logic, Ableton 'Take-Lanes'). Duden: der oder das Take.",common,Aufnahme; Version
+render,Rendern,Compute a processed sound and write it as audio.,Cubase de 'Rendern' (In-Place-Rendering); Logic de 'Bouncen'.,standard,Bouncen; Berechnen
+loop,Loop,A sound that repeats without an audible join.,DAW and sound-design usage (Ableton de 'Loop-Klammer'); 'Schleife' (Audacity de) sounds dated in this context. Duden: der Loop.,standard,Schleife
+crossfade,Crossfade,A fade-out of one sound overlapping a fade-in of another.,Cubase and Ableton de keep 'Crossfade'; broadcast says 'Überblendung' or 'Kreuzblende'.,standard,Überblendung; Kreuzblende
+slice,Slicen,Cut a sound into parts at chosen points.,German DAW and sampler usage keeps 'slicen' (verb) and 'Slice' (the part). 'Zerteilen' is a plain German command if a loan-free UI is wanted.,common,Zerteilen; In Slices schneiden
+time stretch,Time-Stretching,Change a sound's duration without changing its pitch.,Studio usage. 'Zeitdehnung' literally covers only lengthening (shortening would be 'Zeitstauchung'). Paired with Pitch-Shifting.,standard,Zeitdehnung; Time-Stretch
+pitch shift,Pitch-Shifting,Change a sound's pitch without changing its duration.,Cubase de names the offline process 'Tonhöhenverschiebung'; studio speech says 'Pitch-Shifting' or 'pitchen'. Kept as a loan to pair with Time-Stretching.,standard,Tonhöhenverschiebung; Tonhöhenänderung
+sone,Sone,The unit of loudness as heard; 1 sone is the loudness of a 1 kHz tone at 40 dB SPL.,"Unit symbol 'sone' unchanged; noun das Sone, pl. Sone (DIN 45631, Zwicker/Fastl).",standard,
+sharpness,Schärfe,"How much a sound's energy sits at high frequencies, as heard; in acum.","DIN 45692 'Messtechnische Simulation der Hörempfindung Schärfe'; the concept comes from German psychoacoustics (von Bismarck, Aures, Zwicker). Not the same as Härte (harshness).",standard,
+roughness,Rauigkeit,The rasping quality of fast amplitude modulation (about 15–300 Hz); in asper.,"Zwicker/Fastl's German texts spell 'Rauhigkeit' (pre-1996 spelling); current spelling 'Rauigkeit', occasionally 'Rauheit'. Distinct from Härte (harshness) and Schärfe (sharpness).",standard,Rauhigkeit; Rauheit
+fluctuation strength,Schwankungsstärke,"The sensation of slow amplitude modulation (about 1–20 Hz, strongest near 4 Hz); in vacil.",Zwicker/Fastl.,standard,
+psychoacoustic annoyance,psychoakustische Lästigkeit,"Zwicker's combination of loudness, sharpness, roughness and fluctuation strength into one annoyance value.","Widmann/Zwicker; Fastl and Zwicker 2007. Because 'Lästigkeit' is taken here, it is not used for harshness.",standard,
+masking,Verdeckung,One sound making another harder or impossible to hear.,"Zwicker/Fastl and German psychoacoustics: Verdeckung, Mithörschwelle; studio and codec literature also say 'Maskierung'.",standard,Maskierung
+critical band,Frequenzgruppe,The frequency range the ear integrates as one; on the Bark scale.,"Zwicker's German term (Frequenzgruppe, Tonheit in Bark); 'kritisches Band' is a back-translation from English.",standard,kritisches Band; kritische Bandbreite
+curve,Kurve,A value drawn over time along the waveform.,,common,
+overview,Übersicht,A small picture of a whole sound used to find one's way in it.,,common,Überblick; Übersichtsanzeige
+strip,Streifen,"The overview of one sound as Playhead draws it: waveform, curves and marks in one band.","'Streifen' is literal, visual and collides with no DAW term; avoid 'Spur' (= track) and plain 'Band' (frequency band). 'Leiste' reads like a toolbar. A Lane is part of a Streifen.",coined,Leiste; Strip; Übersichtsstreifen
+look,Look,"A named way to draw a strip, written as a short code of layers.","'Look' is an established German loan (Duden; film and photo grading) and stays unambiguous as a named, coded object; 'Darstellung' and 'Ansicht' are already used in UIs for generic display options and zoom/scroll views. Not 'Skin', not 'Design/Theme' (colours only).",coined,Darstellung; Ansicht; Darstellungsstil
+look code,Look-Code,"The short text that defines a look, for example ""form:overlay,shape:mirror,lane:harshness"".",Follows the choice for 'look' ('Darstellungscode' if 'Darstellung' is chosen). The code keywords stay English because they are syntax.,coined,Darstellungscode; Look-Kürzel
+layer,Ebene,"One element of a look: a waveform, spectrogram, curve, set of marks or sections.","'Ebene' as in German graphics software (Photoshop, GIMP). This deliberately separates drawing layers from the sound layers of the layer-remix tool, for which the sound-design loan 'Layer' is used.",coined,Layer; Schicht
+lane,Lane,A horizontal band of a strip that holds one curve.,"As in German DAWs (Ableton de 'Take-Lanes', 'Automations-Lane'; Cubase de 'Lanes'). Avoid 'Spur' (= track). 'Bahn' is the German option for a loan-free UI.",common,Bahn; Zeile
+overlaid,überlagert,Curves drawn in one shared band instead of separate lanes.,Option value next to 'gespiegelt' and 'von der Grundlinie'. Not 'überblendet' (= crossfaded).,common,übereinander; Overlay
+mirrored,gespiegelt,"Drawn symmetrically above and below a centre line, like a waveform.",Kept distinct from 'überlagert' (overlaid).,common,symmetrisch
+from the baseline,von der Grundlinie,Drawn upwards from the bottom of the band.,"Grundlinie = bottom edge of the band, not the waveform's zero line (that is the Mittellinie).",common,ab Grundlinie; von unten
+horizon chart,Horizon-Chart,A compact chart that folds a curve into coloured bands of increasing intensity.,"German visualisation writing mostly keeps the English (also 'Horizon Graph', Heer et al. 2009); 'Horizontdiagramm' is understandable but rarely attested.",standard,Horizontdiagramm
+sculpted waveform,modellierte Wellenform,"A waveform whose height follows a curve, for example perceived loudness, instead of the peak level.","'modellieren' also means shaping by hand (clay), so it carries 'sculpted'; 'geformt' is neutral but bland; 'skulptiert' is not idiomatic German.",coined,geformte Wellenform; Kurven-Wellenform; Sculpted Waveform
+outline,Umriss,The ordinary peak waveform drawn as a thin line behind another layer.,,common,Kontur; Outline
+marks,Markierungen,"Ticks along the strip at events, onsets, beats or section boundaries.",Not 'Marker': in DAWs those are user-set position markers.,common,Marken; Ticks
+legend,Legende,The text that says what each colour and line of a strip shows.,,standard,
+analysis profile,Analyseprofil,"How much Playhead analyses: fast (curves only), sound effect, or music.",,common,Profil
+descriptor,Deskriptor,A number or curve computed from a sound that describes one of its properties.,Peeters et al. 2011 (Timbre Toolbox).,standard,Audiodeskriptor; Klangdeskriptor
+feature,Merkmal,A descriptor used as input to a classifier or search.,"German pattern-recognition usage: Merkmal, Merkmalsextraktion, Merkmalsvektor; MIR jargon also says 'Feature'. Keeps feature ≠ descriptor.",standard,Feature
+activity,Aktivität,How much is happening: spectral change and the density of events.,"Literal, immediately clear and short. 'Bewegtheit' is a musicological term with a similar meaning but less suited to a UI label. Not 'Aktivierung' (psychology, close to arousal).",coined,Bewegtheit; Geschehen; Activity
+arousal,Erregung,"How exciting or calming a sound is, after the psychological dimension of the same name.",German emotion psychology uses both 'Erregung' and the loan 'Arousal' (valence/arousal after Russell). Not 'Aktivierung' (collides with Aktivität) and not 'Anregung' (= excitation in cross-synthesis).,standard,Arousal
+harshness,Härte,"How unpleasant a sound is to listen to, computed from psychoacoustic annoyance; not the same as roughness.","'Härte' is studio jargon ('Härten in den Hochmitten'), short, and clearly separate from Schärfe and Rauigkeit; risk: confusion with material or mallet hardness in the impact model, so write those as compounds ('Schlägelhärte'). 'Harschheit' is unambiguous but rare; 'Lästigkeit' is taken by psychoacoustic annoyance.",coined,Harschheit; Aggressivität; Harshness
+tension,Spannung,"Build-up and release over time, after the model of musical tension by Farbood (2012).",Established in musicology (Spannung und Entspannung/Lösung). In technical prose 'Spannung' can be read as electrical voltage; write 'musikalische Spannung' where needed.,common,Spannungsverlauf; Spannungsbogen
+harmonic tension,harmonische Spannung,"How far the harmony is from rest, from the tonal interval space.","Bernardes et al. 2016 (Tonal Interval Space, TIV).",standard,
+novelty,Neuheit,How much a moment differs from what came before.,Foote 2000. German MIR writing (e.g. AudioLabs Erlangen) mostly keeps 'Novelty-Kurve' in English. Keep distinct from 'spektrale Überraschung' and 'Informationsgehalt' (surprisal).,standard,Novelty
+spectral surprise,spektrale Überraschung,Change of the spectrum that loudness does not explain.,"Literal and clear; stays apart from 'Neuheit' (which also includes level changes) and from 'Informationsgehalt' (surprisal). Never shorten to bare 'Überraschung', or the line to surprisal blurs.",coined,Spektralüberraschung; unerklärte Klangänderung; Spectral Surprise
+surprisal,Informationsgehalt,"Information content of an event: the less expected, the higher.","Standard German information-theory term (Shannon: Informationsgehalt, Selbstinformation); music cognition and psycholinguistics also use the loan 'Surprisal'. 'Überraschungswert' avoided so it cannot be confused with spectral surprise.",standard,Surprisal; Selbstinformation
+structural change,Strukturwechsel,"Where a piece moves to a new part, signed: up where sound enters, down where it falls away or breaks off.","'Strukturwechsel' is short and neutral (works for SFX as well as music); 'Formwechsel' is more musicological; 'strukturelle Änderung' is literal but long. Signed labels in the UI: 'oben: Einsatz, unten: Wegfall oder Abbruch'.",coined,Formwechsel; strukturelle Änderung; Teilwechsel
+local pulse,lokaler Puls,How clearly a regular pulse is felt at each moment.,"Grosche and Müller 2011 (predominant local pulse, PLP). Not 'Beat-Stärke'.",standard,
+onset,Onset,The moment a sound or note begins.,German MIR and DSP usage keeps 'Onset' (Onset-Detektion); musicians say '(Ton-)Einsatz'. Onset (instant) ≠ Attack (phase up to the peak) ≠ Transiente (fast change).,standard,Einsatz; Toneinsatz
+onset strength,Onset-Stärke,How strongly new sound arrives at each moment; peaks are hits.,,standard,Einsatzstärke
+event,Ereignis,"One distinct sound within a file, such as a hit, a step or a creak, with a start and an end.",Not 'Event': in Cubase an Event is a clip on a track.,common,Klangereignis
+attack,Attack,"The first part of a sound, from its start to its peak.","Synth and studio usage; acoustics says 'Einschwingphase/Einschwingvorgang', percussion 'Anschlag'. Gender varies (der/die Attack); plural Attacks.",standard,Einschwingphase; Anschlag
+body,Körper,"The sustained, often tonal, part of a sound after its attack.",Studio jargon ('der Snare fehlt Körper'); 'Body' is also common. Not 'Klangkörper' (= instrument body or orchestra) and not 'Sustain' (an ADSR level).,common,Body; Klangkern
+decay,Abklingphase,The part of a sound in which it dies away.,"Do not equate with the Decay stage of an ADSR envelope (fall to the sustain level), where German synths keep 'Decay'. Acoustics: Ausschwingvorgang.",standard,Ausklingen; Decay
+tail,Ausklang,"The late part of a decay, including reverberation.",Studio jargon 'Fahne' (Hallfahne); 'Ausklang' is understood by everyone and forms good tool names (Ausklänge verbreitern). Plural Ausklänge.,common,Fahne; Tail
+transient,Transiente,"A short, fast change of level and spectrum, typically at an attack.","Plural 'Transienten' (Ableton de, studio). Gender varies: die Transiente / der Transient.",standard,Transient
+beat,Beat,The regular pulse a listener taps along to.,"Ableton de writes both 'Beats' and 'Schlägen'; music theory says Schlag, Grundschlag, Zählzeit.",standard,Schlag; Zählzeit
+downbeat,Downbeat,The first beat of a bar.,Musicians say 'die Eins'; German MIR writing keeps 'Downbeat'.,standard,Eins; erste Zählzeit
+bar,Takt,"A group of beats, usually four.",US 'measure' is also 'Takt'. Not to be confused with bar-shape (Stab).,standard,
+tempo,Tempo,"The speed of the beat, in beats per minute (BPM).",,standard,
+section,Abschnitt,"A part of a piece, such as an intro or chorus, found from where its sound changes.",'Formteil' is the musicological term for music; 'Abschnitt' also fits sound effects.,common,Formteil; Teil
+recurrence,Rekurrenz,How much a sound returns to states it has been in before.,"Marwan et al. 2007; German: Rekurrenzplot, Rekurrenzquantifizierungsanalyse.",standard,Wiederkehr
+repetition rate,Wiederholrate,"How often a pattern repeats, in Hz.",,common,Wiederholungsrate; Wiederholfrequenz
+periodicity,Periodizität,How strongly a sound is periodic (pitched) rather than noisy.,Hillenbrand et al. 1994.,standard,
+phase coherence,Phasenkohärenz,"How steadily a sound's phases advance; 1 for a steady tone, near 0 for noise.",,standard,
+time arrow,Zeitpfeil,How much a sound changes when played backwards; high for hits that decay.,'Zeitpfeil' is the established German physics term for the arrow of time and short; 'Zeitasymmetrie' is more technical. For docs: zeitliche Irreversibilität (Ramsey and Rothman 1996).,coined,Zeitrichtung; Zeitasymmetrie; Time Arrow
+impulsiveness,Impulshaltigkeit,"How much a sound consists of clicks, cracks and crackle, from spectral kurtosis.","'Impulshaltigkeit' is the established term of German noise assessment (DIN 45645-1, TA Lärm: 'impulshaltige Geräusche') and fits the meaning, although there it is rated from level differences, not spectral kurtosis. 'Impulsivität' sounds like a character trait. Not 'Spitzigkeit' (spikiness).",coined,Impulshaftigkeit; Impulsivität; Knackanteil
+spectral kurtosis,spektrale Kurtosis,"A statistic that is 0 for steady noise, −1 for a steady tone and large for clicks.",Antoni 2006; German machine-diagnostics literature mostly says 'spektrale Kurtosis'.,standard,spektrale Wölbung
+spectral motion,spektrale Bewegung,"How fast the spectrum's centre moves up or down, in octaves per second.",Literal and clear; 'Schwerpunktbewegung' is more precise (it is the centroid that moves) but unclear without context; 'Drift' suggests slow change.,coined,Schwerpunktbewegung; Spektraldrift; Spectral Motion
+spectral centroid,spektraler Schwerpunkt,The centre of mass of a spectrum; a measure of brightness.,,standard,Spektralschwerpunkt; Spectral Centroid
+reshaping,Umformung,"Spectral change that does not move the centre, as when a spectrum spreads or narrows.",'Umformung' is short and sits well next to 'spektrale Bewegung'; 'spektrale Umformung' is clearer in docs.,coined,spektrale Umformung; Formänderung; Reshaping
+burstiness,Burstiness,"Whether events come regularly (below 0), at random (0) or in bursts (above 0).","Goh and Barabási 2008; German scientific writing leaves it untranslated. If a German UI word is wanted, descriptive 'Schubhaftigkeit' or 'Häufung' could serve, but neither is established.",standard,
+temporal entropy,zeitliche Entropie,How evenly a sound's energy is spread over time.,Sueur et al. 2008 (Ht).,standard,temporale Entropie
+decay time (T60),Abklingzeit (T60),The time a sound takes to fall by 60 dB.,In room acoustics T60 is the 'Nachhallzeit' (DIN EN ISO 3382); for sounds and struck objects in general 'Abklingzeit'.,standard,
+damping,Dämpfung,How quickly a vibrating body loses energy.,,standard,
+material,Material,"What an impacted object is made of, as heard: damped, glass-like or metal-like.",Klatzky et al. 2000.,common,
+partial,Teilton,One frequency component of a sound.,,standard,Partialton
+overtone,Oberton,A partial above the lowest one.,Counting: 1. Oberton = 2. Teilton.,standard,
+inharmonic,inharmonisch,"With partials that are not whole-number multiples of a fundamental, as in bells and struck metal.",German instrument acoustics also writes 'unharmonische Teiltöne'.,standard,unharmonisch
+quality checks,Qualitätsprüfungen,"Automatic checks for clipping, DC offset, silence and cut tails.",,common,Qualitätschecks
+self-check,Selbsttest,A test that edits a sound in a known way and checks that the analysis changes as it must.,'Selbsttest' is familiar (device self-test) and short; 'Plausibilitätstest' describes the purpose but sounds bureaucratic. Not 'Unit-Test/Modultest'. Method: metamorphes Testen (Chen et al. 1998).,coined,Selbstprüfung; Plausibilitätstest; Self-Check
+de-harsh,Härte reduzieren,A tool that turns down resonances only while the sound is harsh.,"Command form, consistent with harshness = Härte. 'De-Harsh' would be understood by analogy with 'De-Esser' but is not German; 'Entschärfen' is catchy but blurs Schärfe (sharpness). Not a De-Esser (which keys on level in one band).",coined,Härte zähmen; Härten glätten; De-Harsh
+attack and body,Attack und Körper,"A tool that splits a sound into its transient part and its sustained part, to rebalance them.","Noun title built from the chosen single terms (Attack, Körper); 'Attack & Body' is the pure-loan title many sound designers would accept. Not 'Transient-Shaper' (works on level, not on a split).",coined,Attack & Body; Anschlag und Körper; Transiente und Körper
+layer remix,Layer-Remix,A tool that separates a sound into layers and mixes them again at new levels.,'Layer' is the sound-design word for sound layers (Layering) and keeps them apart from the 'Ebenen' of a look; 'Remix' is naturalised. 'Schichten neu mischen' is the loan-free command form.,coined,Schichten neu mischen; Layer neu mischen; Schichten-Remix
+tension shaper,Spannungsformer,A tool that turns the tension curve into gain and brightness automation.,"Compact compound like 'Hüllkurvenformer'; drawback: engineers may read 'Spannung' as voltage. 'Spannungsbogen formen' is more idiomatic (Spannungsbogen = dramatic arc) but is a command, not a title.",coined,Spannungsbogen formen; Spannungsautomation; Tension Shaper
+loop maker,Loop-Finder,A tool that finds and crossfades loop points where the sound repeats best.,'Loop-Finder' names the main job and reads as German ('Finder' is native); 'Loop-Maker' is the plain loan; 'Loop-Generator' collides with 'Generator' (the Workbench sound generator).,coined,Loop-Maker; Loop-Generator; Loop erstellen
+variations,Variationen,"Several slightly different versions of one sound, to avoid repetition in games.",German game-audio usage; 'Varianten' also common.,common,Varianten
+clean-up for export,Bereinigung für den Export,A tool that repairs what the quality checks flag before a sound is exported.,Noun title as in the English.,common,Export-Bereinigung; Für den Export bereinigen
+reverb on the tails,Hall auf die Ausklänge,"Reverberation fed only from the decays of the events, keeping the attacks dry.",Follows the studio idiom 'Hall auf die Snare'; 'Hall im Ausklang' is smoother and shorter but loses the per-event plural. 'Hall' (not 'Reverb') is standard German studio usage.,coined,Hall im Ausklang; Ausklang-Hall; Tail-Reverb
+drive the hits,Hits anzerren,Saturation applied only to the events' attacks or bodies.,'anzerren' is the studio verb for driving lightly into distortion; 'Hits' is common in German sound design ('Impacts & Hits'). 'Schläge' is more German but evokes blows; 'Ereignisse sättigen' is exact but flat.,coined,Schläge anzerren; Ereignisse sättigen; Drive the Hits
+ring time,Nachklingzeit,A tool that lengthens or shortens how long each event rings after its peak.,'nachklingen' carries 'ring'; 'Ausschwingzeit' is acoustically correct but easily confused with Abklingzeit (T60).,coined,Ausschwingzeit; Klingdauer; Ring Time
+level the events,Ereignisse angleichen,"A tool that evens out how loud the events are, one gain per event, without touching their shape.","Command form (object + infinitive, Microsoft German style). 'angleichen' stresses the result (equal loudness), 'ausgleichen' the process. Not 'komprimieren' (a compressor changes the shape).",coined,Ereignispegel angleichen; Ereignisse ausgleichen; Level the Events
+fold to mono,Phasenrichtig auf Mono mischen,"Turn stereo into mono with the channels' phase lined up, so nothing cancels.",A literal 'falten' is avoided because 'Faltung' is German for convolution. 'phasenrichtig' marks the difference from a plain 'auf Mono summieren' (sum to mono); 'zusammenführen' is shorter but hides the point.,coined,Auf Mono zusammenführen; Phasenrichtig zu Mono; Fold to Mono
+widen the tails,Ausklänge verbreitern,"Make or widen stereo only after the attacks, keeping attacks centred and the result mono-compatible.",Command form; 'verbreitern' as in 'Stereobreite'. 'aufweiten' is also heard in studios.,coined,Ausklänge aufweiten; Stereo im Ausklang; Widen the Tails
+downmix,Downmix,Turn more channels into fewer.,Broadcast and surround usage; Audacity de 'heruntermischen'.,standard,Heruntermischen
+mono compatibility,Monokompatibilität,How well a stereo sound survives being summed to mono.,,standard,
+decorrelation,Dekorrelation,"Making two signals less alike while keeping their spectrum, to widen a stereo image.",,standard,
+comb filtering,Kammfiltereffekt,Regular notches in a spectrum when a signal is summed with a delayed copy of itself.,,standard,Kammfilterung
+cancellation,Auslöschung,Loss of level when signals of opposite phase are summed.,,standard,Phasenauslöschung
+pre-echo,Vorecho,"A faint smear of a sound before its attack, caused by frame-based processing.",German codec literature (MP3/AAC): Vorecho.,standard,Pre-Echo
+EQ,EQ,An equaliser: a filter that changes the level of frequency bands.,"'Entzerrer' is the older broadcast term. 'das Filter' in technical prose, 'der Filter' in studio speech.",standard,Equalizer; Entzerrer
+dynamic EQ,dynamischer EQ,An EQ whose band gains follow the level in each band.,,standard,
+automation,Automation,"Parameter changes over time, recorded or drawn.","Cubase, Logic and Ableton de say 'Automation'; 'Automatisierung' is general IT German.",standard,Automatisierung
+compressor,Kompressor,A processor that turns loud passages down by a ratio above a threshold.,,standard,
+threshold,Threshold,The level above which a processor acts.,"Control label in German DAWs (Cubase, Logic); German textbooks: 'Threshold (Arbeitspunkt, Schwellwert)' (HdM Stuttgart, Regelverstärker). 'Schwellenwert' reads well in running text.",standard,Schwellenwert; Schwellwert
+ratio,Ratio,How strongly a compressor turns the level down above its threshold.,HdM Stuttgart: 'Ratio (Kompressionsstärke)'; Audacity de 'Verhältnis'.,standard,Kompressionsverhältnis; Verhältnis
+attack time,Attack-Zeit,How fast a processor reacts when the level rises.,HdM Stuttgart: 'Attack-Time (Ansprechzeit)'. Control label simply 'Attack'.,standard,Ansprechzeit
+release time,Release-Zeit,How fast a processor recovers when the level falls.,HdM Stuttgart: 'Release-Time (Rücklaufzeit)'. Control label simply 'Release'.,standard,Rücklaufzeit
+gate,Gate,A processor or condition that opens only above a threshold.,As a processor also 'Rauschsperre' (Noise Gate); in loudness metering 'Gate/Gating' (ZDF Vorgaben 2022: 'Absolutes Gate −70 LUFS').,standard,Rauschsperre
+saturation,Sättigung,Soft distortion that adds harmonics and rounds peaks.,,standard,Saturation
+pumping,Pumpen,Audible rise and fall of the background caused by a compressor.,HdM Stuttgart: '„Pumpen“ eines Kompressors'.,standard,
+evenness,Gleichmäßigkeit,How alike the events are in loudness.,CH: Gleichmässigkeit.,common,
+effect chain,Effektkette,Effects applied one after another to a sound.,,common,
+preset,Preset,A saved set of settings.,,standard,Voreinstellung
+morph,Morphing,A gradual blend from one sound into another.,"German uses the noun 'Morphing' (verb 'morphen'); not 'Crossfade', which only blends levels.",common,Morph; Klangüberblendung
+cross-synthesis,Kreuzsynthese,Combining the spectrum of one sound with the envelope or excitation of another.,"excitation = Anregung (source-filter model), not 'Erregung' (= arousal).",standard,
+convolution,Faltung,"Filtering one sound by another, for example by a room's impulse response.",Faltungshall. This is why 'fold to mono' is not rendered with 'falten'.,standard,
+envelope transfer,Hüllkurvenübertragung,Giving one sound the level envelope of another.,,common,Hüllkurventransfer
+ring modulation,Ringmodulation,"Multiplying two signals, which creates sum and difference frequencies.",,standard,
+granular,granular,Built from many short grains of sound.,Granularsynthese; studio usage 'Grains'.,standard,
+accent,Akzent,A short added sound placed at a moment of another sound to emphasise it.,'Akzent' is literal and familiar from music; 'Betonung' names the act rather than the added sound; 'Akzentsound' is unambiguous but longer.,coined,Betonung; Akzentsound; Accent
+generator,Generator,A part of the app that makes new sounds from parameters.,,common,
+synth,Synth,"A sound generator built from oscillators, noise, envelopes and filters.",,standard,Synthesizer
+impact,Impact,A physical model of a struck object of a given material and shape.,'Impacts' is common in German sound design (library categories 'Impacts & Hits'); use 'Anschlagmodell' in docs when the model itself is meant.,common,Aufprall; Anschlagmodell
+resynthesis,Resynthese,"Rebuilding a sound from parameters measured on it, such as its partials and decays.",,standard,
+modal,modal,"Made of resonant modes, each with a frequency and a decay.","Modalsynthese; die Mode, pl. Moden.",standard,
+texture,Textur,"A continuous sound made of many small events, such as rain, fire or gravel.",,common,
+action and reaction,Aktion und Reaktion,"A generator in which an action, such as an object moving or a force, drives the sound of a medium that responds to it (gravel, water, air).","Literal and clear; echoes Newton's 'actio = reactio', which fits. 'Anregung und Antwort' is acoustically apt but collides with Anregung = excitation.",coined,Einwirkung und Reaktion; Anregung und Antwort; Action & Reaction
+medium,Medium,"What reacts to an action: gravel, leaves, water, air, sparks or a force field.",,common,
+drive curve,Steuerkurve,A curve that controls a sound's parameters over time.,'Steuerkurve' (control curve) is precise and avoids the clash with drive = Anzerrung (drive the hits); 'Antriebskurve' is literal but sounds mechanical.,coined,Antriebskurve; Drive-Kurve; Verlaufskurve
+inertia,Trägheit,How slowly a reaction settles after the action stops.,,common,Nachlauf
+Foley,Foley,Everyday sounds performed and recorded in sync with picture.,"German film-sound practice: Foley, Geräuschemacher(in). Capitalised as in English (after Jack Foley).",standard,Geräuschemacherei
+ambience,Atmo,The background sound of a place.,"German film-sound and sound-design standard (die Atmo, pl. Atmos; Atmo-Aufnahme).",standard,Atmosphäre; Ambience
+one-shot,One-Shot,"A short sound played once, such as a hit or a UI click.",,common,
+whoosh,Whoosh,The sound of something moving fast past the listener.,SFX library usage; 'Wusch' is the German onomatopoeia.,common,Swoosh; Wusch
+finishing,Endbearbeitung,"The last steps before export: format, channels, fades and level.",'Feinschliff' is more idiomatic but suggests polish rather than format and channels.,common,Feinschliff; Fertigstellung; Finishing
+steel,Stahl,,,standard,
+brass,Messing,,,standard,
+aluminium,Aluminium,,,standard,
+glass,Glas,,,standard,
+ceramic,Keramik,,,standard,
+ice,Eis,,,standard,
+wood,Holz,,,standard,
+plastic,Kunststoff,,,standard,Plastik
+stone,Stein,,,standard,
+cardboard,Pappe,,,standard,Karton
+rubber,Gummi,,"Material: das Gummi (DE), der Gummi (AT, also DE colloquial).",standard,
+bar,Stab,"A long solid body, such as a rod or beam.",Not 'Takt' (musical bar).,standard,Balken
+plate,Platte,A thin flat body.,,standard,
+membrane,Membran,"A stretched skin, as on a drum.",AT also 'Membrane'.,standard,Membrane
+shell,Schale,"A thin curved body, such as a can or pot.",,common,
+bell,Glocke,,,standard,
+wire,Draht,A stiff string or wire that rings with slightly stretched (inharmonic) partials.,"Literal 'Draht' keeps the object-like naming of the shape list; physically a tensioned string is modelled, so choose 'Saite' if non-metal strings are meant.",standard,Saite
+box,Kasten,A hollow body with flat sides.,,common,Kiste; Box

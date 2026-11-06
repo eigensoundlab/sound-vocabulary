@@ -1,0 +1,15 @@
+english	german	where used	note
+envelope	Hüllkurve	Playhead: row.x4.name, row.x4.desc, row.n2.desc, row.n6.desc, note.approx.2, note.rhythm.1, cmp.sculpt.title, lib.look.sculpted.desc, lib.tool.hpss.desc	Standard German (Hüllkurve, f.), as in all German synths and DAWs; level envelope = Pegelhüllkurve (used in envelope-transfer).
+pan	Panorama	Playhead: row.x6.desc, lab.pan	Standard studio term (das Panorama; Panoramaregler). 'Pan' is also heard as a control label.
+width	Breite	Playhead: row.x6.desc, lab.maxWidth, lib.tool.widen.param.width	Stereo width = Stereobreite; plain 'Breite' on controls. Matches widen-tails = Ausklänge verbreitern.
+timbre	Klangfarbe	Playhead: row.s1.desc, row.n7.desc, row.n8.desc, lab.timbreSymbols	Standard German (DIN 1320, Klangfarbe, f.). Do not use 'Timbre' except in names (Timbre Toolbox).
+loudness range	Lautheitsbereich	Playhead: metric.lra	EBU R 128 / EBU Tech 3342 LRA in LU; German broadcast usage, e.g. ZDF 2022 spec: 'Lautheitsbereich („Loudness Range“, LRA)'.
+bar line	Taktstrich	Playhead: cmp.marks.downbeats, lib.mark.downbeats, row.d4.desc, lib.look.overview.desc, lib.look.hits.desc	Standard music term (der Taktstrich, pl. Taktstriche); the line drawn at each downbeat.
+thumbnail	Miniatur	Playhead: ui.thumb, ui.thumb.d3, ui.thumb.d5, row.d3.name, row.d5.name, sec.library.desc, aria.thumb	Short and neutral (die Miniatur); alternatives Vorschaubild, Thumbnail. Chosen by the author.
+loop seam	Nahtstelle	Playhead: row.x7.desc, check.seamJump, check.seamChange, lib.tool.loop.desc, lib.tool.loop.param.xfadeMs	The join where a loop wraps (die Nahtstelle; Loop-Nahtstelle in running text). Matches loop definition 'ohne hörbare Nahtstelle'.
+headroom	Headroom	Playhead: check.noHeadroom	Studio loan (der Headroom); German alternative Aussteuerungsreserve in broadcast texts.
+hit	Hit	Playhead: obj.N.impulse, obj.X.impulse, lib.curve.onsetStrength, lib.look.hits.name, lib.look.surprise.name, lib.look.character.desc, lib.look.hits.desc, lib.tool.tailverb.desc; vocabulary: drive-hits	Sound-design loan (der Hit, pl. Hits), as in SFX library categories 'Impacts & Hits'. Alternative Schlag. Keeps drive-hits = Hits anzerren consistent.
+riser	Riser	Playhead: guide.c2.mislead, row.n4.desc	Sound-design and EDM loan (der Riser), no established German word.
+sweep	Sweep	Playhead: obj.Y.sustained, row.x2.desc, row.n4.desc	Loan (der Sweep) for a gliding tone or noise; measurement sense = Gleitsinus.
+grain	Grain	Playhead: note.sfx.2, lab.grains.one, lab.grains.other, lib.tool.vars.desc, lib.tool.vars.param.grains; vocabulary: granular	Loan (das Grain, pl. Grains) as in Granularsynthese; German gloss Klangkorn in docs.
+sound object	Klangobjekt	Playhead: row.x5.name, status.sfx, status.stage.sfx	German rendering of Schaeffer's objet sonore (das Klangobjekt), used in German electroacoustic literature.

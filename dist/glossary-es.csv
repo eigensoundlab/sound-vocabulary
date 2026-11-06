@@ -1,0 +1,176 @@
+term,translation,definition,note,status,alternatives
+waveform,forma de onda,The drawing of a sound's amplitude over time.,"Universal (Audacity es, Cubase es, Adobe Audition es).",standard,
+spectrogram,espectrograma,"A picture of how a sound's frequency content changes over time: time across, frequency up, level as colour.",,standard,
+mel scale,escala mel,A frequency scale spaced as pitch is heard: roughly linear below 1 kHz and logarithmic above.,'tono' is used for pitch throughout (as in DAWs: 'cambio de tono'); formal acoustics also says 'altura tonal'.,standard,
+playhead,cabezal de reproducción,The moving line that marks the current playback position.,"Adobe Audition/Premiere es: 'cabezal de reproducción'; Logic Pro es: 'cursor de reproducción'; Cubase es: 'cursor del proyecto'. 'cabezal' keeps the English separation from the edit cursor ('cursor de edición'), as the source asks. The app name Playhead is not translated.",common,cursor de reproducción
+edit cursor,cursor de edición,"The position where editing and playback start, set by clicking.",,common,
+sample rate,frecuencia de muestreo,"Samples per second of a digital sound, in Hz.","Cubase es and textbooks: 'frecuencia de muestreo'; 'tasa de muestreo' is a frequent calque, more common in Latin America.",standard,tasa de muestreo
+bit depth,profundidad de bits,Bits per sample of a digital sound; sets its resolution.,Cubase es: 'profundidad de bits'; 'resolución' alone is also heard.,standard,resolución en bits
+channel,canal,One signal of a sound file; stereo has two.,,standard,
+mono,mono,One channel.,"Invariable as an adjective ('pista mono', 'sonidos mono'); formal 'monofónico'.",standard,
+stereo,estéreo,"Two channels, left and right.",Written with accent; usually invariable as an adjective ('pistas estéreo').,standard,
+mid/side,mid/side,Stereo written as the sum (mid) and the difference (side) of the channels.,Spanish studio usage keeps 'Mid/Side' or 'M/S' (RØDE es: 'la técnica Mid-Side (también conocida como M-S)'); 'centro/lateral' and 'medio/lateral' appear in textbooks.,standard,centro/lateral; medio/lateral
+phase,fase,Where in its cycle a wave is at a given moment.,,standard,
+polarity,polaridad,Whether a signal is upright or inverted.,Spanish DAWs often label a plain inversion 'invertir fase' (Cubase es: 'Invertir fase'); in our UI and docs use 'invertir la polaridad'.,standard,
+level,nivel,"How strong a signal is, usually in dB.",Measured quantity; keep apart from 'sonoridad' (heard). Avoid 'volumen' in technical text.,standard,
+gain,ganancia,"A change of level, in dB.",,standard,
+peak,pico,The largest absolute sample value.,"Studio and DAW usage is 'pico' (Audacity es, Cubase es); ITU-R texts in Spanish say 'cresta' ('medidor de cresta de la muestra').",standard,cresta
+true peak,pico real,"The peak of the signal between samples, as a DAC would reproduce it.","UIT-R BS.1770-5 (es) is titled '...el nivel de cresta de audio real' and uses 'nivel de cresta real', unit dBTP. Broadcast practice says 'pico real' or keeps 'true peak'.",standard,true peak; cresta real
+loudness,sonoridad,"How loud a sound is heard, as opposed to its level.","UIT-R BS.1770 (es: 'Algoritmos para medir la sonoridad...') and Spanish psychoacoustics use 'sonoridad'; the loan 'loudness' is common in broadcast. Avoid 'volumen' (Audacity es 'Normalizar volumen') and 'intensidad sonora' (physical intensity, W/m²).",standard,loudness
+LUFS,LUFS,Loudness units relative to full scale (ITU-R BS.1770); 1 LU is 1 dB.,"Symbol unchanged. UIT-R BS.1770 (es) uses the equivalent LKFS ('sonoridad, ponderada en K, en relación con la plena escala nominal'); EBU R 128 uses LUFS. 'escala completa' is the usual practice; ITU = UIT in Spanish references.",standard,
+K-weighting,ponderación K,The frequency weighting that loudness meters apply before measuring.,UIT-R BS.1770 (es): 'ponderación de la frecuencia «K»'.,standard,
+normalize,normalizar,Set a sound's peak or loudness to a target.,"Verb, as in Audacity es and Cubase es. Noun: 'normalización'.",standard,
+fade,fundido,A gradual change of level at the start (fade-in) or end (fade-out).,Cubase es: 'fundido de entrada' / 'fundido de salida'. Audacity es uses 'Aparecer/Desvanecer progresivamente' (not recommended). 'fade in/out' is common in speech.,standard,fade
+clipping,clipping,Distortion when a signal exceeds the largest value that can be stored.,"Cubase es keeps 'clipping'; Audacity es uses 'recorte'. The loan is recommended because 'recorte/recortar' also means trim/crop in editors. Do not call it 'saturación', reserved for soft saturation.",standard,recorte; saturación digital
+DC offset,desplazamiento DC,A constant shift of the signal away from zero.,"Audacity es: 'desplazamiento DC'. 'CC' (corriente continua) is Spain's abbreviation, 'CD' (corriente directa) is used in Mexico and parts of Latin America, so 'DC' is the neutral choice; 'offset de DC' in studio talk.",standard,desplazamiento de CC; offset de DC
+noise floor,nivel de ruido de fondo,The level of the background noise under a sound.,"'suelo de ruido' is Spain, 'piso de ruido' Latin America; 'nivel de ruido de fondo' is understood everywhere and names a level, as the definition does.",standard,suelo de ruido; piso de ruido
+silence,silencio,A stretch with no sound above the noise floor.,,standard,
+cut tail,cola cortada,A sound that ends before its decay has died away.,Uses 'cola' (tail).,common,
+take,toma,One recorded or rendered version of a sound.,Cubase es: 'toma'. Universal in studio Spanish.,common,
+render,renderizar,Compute a processed sound and write it as audio.,"Studio verb (Cubase es: 'se renderiza'); Adobe es uses 'procesar', Audacity es 'generar'. Noun: 'renderizado'.",standard,procesar; generar
+loop,bucle,A sound that repeats without an audible join.,Audacity es and Audition es: 'bucle' ('reproducir en bucle'); 'loop' (m) is common among producers for the sound itself and Cubase es keeps it. Both are understood everywhere.,standard,loop
+crossfade,fundido cruzado,A fade-out of one sound overlapping a fade-in of another.,Cubase es and Audacity es.,standard,
+slice,trocear,Cut a sound into parts at chosen points.,Ableton Live 12 es: 'Trocear a una nueva pista MIDI'; the pieces are 'trozos' (Cubase es) or 'rebanadas' (Ableton es).,common,slice
+time stretch,estiramiento temporal,Change a sound's duration without changing its pitch.,Audacity es: 'estiramiento de tiempo'; Cubase es: 'corrección de tiempo' for its warp feature; the loan 'time stretch' is common.,standard,time stretch
+pitch shift,cambio de tono,Change a sound's pitch without changing its duration.,Audacity es: 'Cambiar tono'; Cubase es: 'Transposición'. 'tono' = pitch (formal 'altura').,standard,transposición; pitch shift
+sone,sonio,The unit of loudness as heard; 1 sone is the loudness of a 1 kHz tone at 40 dB SPL.,Wikipedia es: 'El sonio o son es una unidad de sonoridad'; UPV acoustics notes use 'sonio'. Plural 'sonios'.,standard,son
+sharpness,agudeza,"How much a sound's energy sits at high frequencies, as heard; in acum.","Spanish sound-quality literature: 'agudeza (sharpness)'. Some papers gloss it as 'nitidez': avoid, it means clarity. Unit acum unchanged (DIN 45692).",standard,
+roughness,rugosidad,The rasping quality of fast amplitude modulation (about 15–300 Hz); in asper.,"Spanish literature uses both 'rugosidad' and 'aspereza' for Zwicker's roughness (UPV paper: 'roughness (aspereza, rugosidad)'). We use only 'rugosidad' and keep 'aspereza' out of the psychoacoustic set, so that harshness ('estridencia') cannot be read as roughness. Unit asper unchanged.",standard,
+fluctuation strength,fuerza de fluctuación,"The sensation of slow amplitude modulation (about 1–20 Hz, strongest near 4 Hz); in vacil.","Calque of Fluktuationsstärke. 'intensidad de fluctuación' also occurs, but 'intensidad' clashes with sound intensity; UPV notes say 'fuerza fluctuante'. Unit vacil.",standard,intensidad de fluctuación
+psychoacoustic annoyance,molestia psicoacústica,"Zwicker's combination of loudness, sharpness, roughness and fluctuation strength into one annoyance value.",'molestia' is the standard Spanish term for noise annoyance (UPV notes: 'modelo de molestia/agrado de Zwicker').,standard,
+masking,enmascaramiento,One sound making another harder or impossible to hear.,,standard,
+critical band,banda crítica,The frequency range the ear integrates as one; on the Bark scale.,,standard,
+curve,curva,A value drawn over time along the waveform.,,common,
+overview,vista general,A small picture of a whole sound used to find one's way in it.,Cubase es: 'Línea de vista global' (overview line); 'vista general' is the more common Spanish UI term.,common,vista global
+strip,tira,"The overview of one sound as Playhead draws it: waveform, curves and marks in one band.",'tira' as in 'tira de canal' (channel strip) and film strip. 'franja' is kept for the generic 'band' used in definitions; 'banda' is avoided because of frequency bands. The loan is unlikely in UI.,coined,franja; banda; strip
+look,estilo,"A named way to draw a strip, written as a short code of layers.","'estilo' reads as a named, reusable set of drawing choices (like text styles) and stays distinct from 'tema' (theme). 'aspecto' is the OS word for appearance/theme, which the English avoids; 'look' (an anglicism listed by the DLE) is natural in speech but odd in UI ('Guardar look'); 'vista' clashes with 'vista general'.",coined,aspecto; look; vista
+look code,código de estilo,"The short text that defines a look, for example ""form:overlay,shape:mirror,lane:harshness"".","Follows 'look'. The code keywords (form, overlay, shape, mirror, lane, harshness) are syntax and stay in English.",coined,código de aspecto; código de look
+layer,capa,"One element of a look: a waveform, spectrogram, curve, set of marks or sections.","'capa' is universal for graphic layers (image editors) and for sound layers in sound design, matching the English double use (see layer-remix). 'plano' is a possible but vaguer alternative.",coined,plano; layer
+lane,carril,A horizontal band of a strip that holds one curve.,Cubase es: 'Carriles' (lanes). Avoid 'pista' (track).,common,
+overlaid,superpuesto,Curves drawn in one shared band instead of separate lanes.,Adjective that agrees ('curvas superpuestas'); the mode as a noun is 'superposición'. Must stay distinct from 'en espejo' (mirrored).,common,superposición
+mirrored,en espejo,"Drawn symmetrically above and below a centre line, like a waveform.",Invariable and visual; 'simétrico' is acceptable in docs. Not to be confused with 'superpuesto' (overlaid).,common,simétrico; reflejado
+from the baseline,desde la línea de base,Drawn upwards from the bottom of the band.,,common,desde abajo
+horizon chart,gráfico de horizonte,A compact chart that folds a curve into coloured bands of increasing intensity.,No settled Spanish term in data-visualisation literature; 'gráfico de horizonte' is the transparent calque. Docs may add '(horizon chart)' on first use.,standard,
+sculpted waveform,forma de onda esculpida,"A waveform whose height follows a curve, for example perceived loudness, instead of the peak level.",Literal 'esculpida' keeps the image and is unambiguous; 'modelada' sounds more technical but collides with 'modelado' (physical modelling); 'perfilada' is softer.,coined,forma de onda modelada; forma de onda perfilada
+outline,contorno,The ordinary peak waveform drawn as a thin line behind another layer.,Avoid 'perfil' (used for the analysis profile).,common,
+marks,marcas,"Ticks along the strip at events, onsets, beats or section boundaries.",Distinct from 'marcadores' (user markers in DAWs).,common,
+legend,leyenda,The text that says what each colour and line of a strip shows.,,standard,
+analysis profile,perfil de análisis,"How much Playhead analyses: fast (curves only), sound effect, or music.",,common,
+descriptor,descriptor,A number or curve computed from a sound that describes one of its properties.,,standard,
+feature,característica,A descriptor used as input to a classifier or search.,Standard in Spanish machine learning ('extracción de características'); 'rasgo' is less common.,standard,rasgo
+activity,actividad,How much is happening: spectral change and the density of events.,Literal and idiomatic coincide. 'dinamismo' risks confusion with dynamics ('dinámica'); 'movimiento' collides with 'movimiento espectral'.,coined,dinamismo; movimiento
+arousal,activación,"How exciting or calming a sound is, after the psychological dimension of the same name.",Spanish emotion research pairs 'valencia' and 'activación' (e.g. Spanish and Rioplatense work on the SAM scale and IADS sounds); the loan 'arousal' appears in academic texts. 'excitación' is avoided for its other connotations.,standard,arousal
+harshness,estridencia,"How unpleasant a sound is to listen to, computed from psychoacoustic annoyance; not the same as roughness.","'aspereza' is the most idiomatic translation of 'harshness' in mixing talk, but Spanish psychoacoustics also uses it for roughness (asper), the exact confusion the source warns against. 'estridencia' (DLE 'estridente': agudo, desapacible y chirriante) names the unpleasantness without a technical clash; 'dureza' collides with hardness (mallet, material, impact model).",coined,aspereza; dureza; harshness
+tension,tensión,"Build-up and release over time, after the model of musical tension by Farbood (2012).",'tensión/distensión' is the Spanish music-theory pair for build-up and release.,common,
+harmonic tension,tensión armónica,"How far the harmony is from rest, from the tonal interval space.",Bernardes et al.'s Tonal Interval Space = 'espacio de intervalos tonales'.,standard,
+novelty,novedad,How much a moment differs from what came before.,'curva/función de novedad' (Foote) in Spanish MIR.,standard,
+spectral surprise,sorpresa espectral,Change of the spectrum that loudness does not explain.,The literal rendering is natural and keeps the English pairing; keep it apart from 'novedad' (novelty) and 'autoinformación' (surprisal). 'cambio espectral inesperado' is clearer but too long for UI.,coined,imprevisto espectral; cambio espectral inesperado
+surprisal,autoinformación,"Information content of an event: the less expected, the higher.",Information-theory term (self-information); music-expectation literature (IDyOM) says 'contenido de información (IC)'. 'sorpresa' is avoided because it would merge with 'sorpresa espectral'.,standard,contenido de información
+structural change,cambio estructural,"Where a piece moves to a new part, signed: up where sound enters, down where it falls away or breaks off.",'cambio de sección' is friendlier but blurs with the section marks. In the Playhead UI the signed legend reads 'arriba: entrada; abajo: caída o corte'.,coined,cambio de sección; transición estructural
+local pulse,pulso local,How clearly a regular pulse is felt at each moment.,Grosche and Müller's PLP = 'pulso local predominante'. Avoid 'fuerza del pulso' (beat strength).,standard,
+onset,inicio,The moment a sound or note begins.,"Spanish MIR often keeps 'onset' ('detección de onsets'); 'inicio' (de nota, de sonido) keeps it distinct from 'ataque' (a phase of the sound) and 'transitorio' (a signal feature).",standard,onset
+onset strength,fuerza de inicio,How strongly new sound arrives at each moment; peaks are hits.,'intensidad' avoided (physical quantity).,standard,fuerza de onset
+event,evento,"One distinct sound within a file, such as a hit, a step or a creak, with a start and an end.",Cubase es: 'Eventos'.,common,
+attack,ataque,"The first part of a sound, from its start to its peak.",,standard,
+body,cuerpo,"The sustained, often tonal, part of a sound after its attack.",,common,
+decay,decaimiento,The part of a sound in which it dies away.,"As in synth and reverb UIs (Audacity es: 'Decaimiento (ms)'); room-acoustics texts say 'caída' ('curva de caída', 'tiempo de caída inicial' EDT). The loan 'decay' is also common.",standard,caída
+tail,cola,"The late part of a decay, including reverberation.",'cola de reverberación' is standard.,common,
+transient,transitorio,"A short, fast change of level and spectrum, typically at an attack.",Ableton Live es and Native Instruments es: 'transitorios'; 'transiente' is an anglicism heard in Latin America.,standard,transiente
+beat,pulso,The regular pulse a listener taps along to.,'pulso' is the felt pulse (music theory; MIR 'seguimiento del pulso'); DAWs count bar positions in 'tiempos' ('compás:tiempo'). Audacity es wrongly renders beat as 'compás'.,standard,tiempo; beat
+downbeat,primer tiempo,The first beat of a bar.,'primer tiempo (del compás)' is exact; 'tiempo fuerte' means any strong beat.,standard,tiempo fuerte; downbeat
+bar,compás,"A group of beats, usually four.",No bar/measure split in Spanish: both are 'compás'.,standard,
+tempo,tempo,"The speed of the beat, in beats per minute (BPM).",'BPM' is kept; the Spanish expansion is 'pulsos' or 'pulsaciones por minuto'.,standard,
+section,sección,"A part of a piece, such as an intro or chorus, found from where its sound changes.",,common,
+recurrence,recurrencia,How much a sound returns to states it has been in before.,Marwan et al.: 'gráficos de recurrencia'.,standard,
+repetition rate,frecuencia de repetición,"How often a pattern repeats, in Hz.","Given in Hz, so 'frecuencia' rather than 'tasa'.",common,tasa de repetición
+periodicity,periodicidad,How strongly a sound is periodic (pitched) rather than noisy.,,standard,
+phase coherence,coherencia de fase,"How steadily a sound's phases advance; 1 for a steady tone, near 0 for noise.",,standard,
+time arrow,flecha del tiempo,How much a sound changes when played backwards; high for hits that decay.,"'flecha del tiempo' is the established physics phrase and reads well as a curve name; 'irreversibilidad temporal' is the technical term (docs only, as in English); 'asimetría temporal' is a plain description.",coined,irreversibilidad temporal; asimetría temporal
+impulsiveness,impulsividad,"How much a sound consists of clicks, cracks and crackle, from spectral kurtosis.",'impulsividad' and 'ruido impulsivo' are used in Spanish noise assessment; 'carácter impulsivo' avoids the psychological sense of 'impulsividad' but is longer.,coined,carácter impulsivo; contenido impulsivo
+spectral kurtosis,curtosis espectral,"A statistic that is 0 for steady noise, −1 for a steady tone and large for clicks.",,standard,
+spectral motion,movimiento espectral,"How fast the spectrum's centre moves up or down, in octaves per second.",Literal and clear. 'desplazamiento espectral' clashes with 'desplazamiento DC'; 'deriva espectral' suggests a slow drift.,coined,desplazamiento espectral; deriva espectral
+spectral centroid,centroide espectral,The centre of mass of a spectrum; a measure of brightness.,,standard,
+reshaping,remodelado,"Spectral change that does not move the centre, as when a spectrum spreads or narrows.",'remodelado' is short and suggests a change of shape in place; 'cambio de forma' is plainest but generic; 'reconfiguración' sounds like settings.,coined,cambio de forma; reconfiguración
+burstiness,índice de ráfagas,"Whether events come regularly (below 0), at random (0) or in bursts (above 0).",No settled Spanish term; Spanish network-science papers usually keep 'burstiness' (Goh and Barabási's parameter B). 'índice de ráfagas' is transparent.,standard,burstiness
+temporal entropy,entropía temporal,How evenly a sound's energy is spread over time.,Sueur et al.'s H_t; same term in Spanish ecoacoustics.,standard,
+decay time (T60),tiempo de decaimiento (T60),The time a sound takes to fall by 60 dB.,Follows 'decaimiento'. For rooms the same measure is 'tiempo de reverberación'.,standard,tiempo de caída (T60)
+damping,amortiguamiento,How quickly a vibrating body loses energy.,,standard,
+material,material,"What an impacted object is made of, as heard: damped, glass-like or metal-like.",,common,
+partial,parcial,One frequency component of a sound.,Noun 'un parcial'; use 'armónico' only for harmonic partials.,standard,
+overtone,sobretono,A partial above the lowest one.,'armónico' only when the partial is harmonic.,standard,
+inharmonic,inarmónico,"With partials that are not whole-number multiples of a fundamental, as in bells and struck metal.",,standard,
+quality checks,comprobaciones de calidad,"Automatic checks for clipping, DC offset, silence and cut tails.",'comprobar' is the Microsoft Spanish verb for 'check'; 'controles de calidad' also natural.,common,controles de calidad
+self-check,autocomprobación,A test that edits a sound in a known way and checks that the analysis changes as it must.,"Matches 'comprobaciones de calidad'. 'autotest' is common in electronics but suggests a unit test, which the English avoids.",coined,autoverificación; autotest
+de-harsh,reducir estridencia,A tool that turns down resonances only while the sound is harsh.,Infinitive command. Follows 'harshness'; becomes 'Reducir aspereza' if the author picks 'aspereza'. 'Suavizar' alone is idiomatic but too generic (smoothing). Not a de-esser ('de-esser' also in Spanish).,coined,reducir aspereza; suavizar; de-harsh
+attack and body,ataque y cuerpo,"A tool that splits a sound into its transient part and its sustained part, to rebalance them.","Noun title, as in English. 'Separar ataque y cuerpo' says what it does but is a command; avoid 'modelador de transitorios' (transient shaper).",coined,separar ataque y cuerpo; ataque/cuerpo
+layer remix,remezcla de capas,A tool that separates a sound into layers and mixes them again at new levels.,Noun title. 'remix' is common in speech but 'remezcla' is standard Spanish.,coined,remezclar capas; remix de capas
+tension shaper,modelador de tensión,A tool that turns the tension curve into gain and brightness automation.,Parallels the Spanish names for a transient shaper ('modelador' / 'moldeador de transitorios'). 'perfilador' is literal but rare.,coined,moldeador de tensión; perfilador de tensión
+loop maker,creador de bucles,A tool that finds and crossfades loop points where the sound repeats best.,Follows 'bucle'; 'creador de loops' if the author prefers the loan for loops.,coined,generador de bucles; creador de loops
+variations,variaciones,"Several slightly different versions of one sound, to avoid repetition in games.",,common,
+clean-up for export,limpieza para exportar,A tool that repairs what the quality checks flag before a sound is exported.,"Exactly 22 characters, fits as a UI label.",common,limpieza previa a la exportación
+reverb on the tails,reverberación en las colas,"Reverberation fed only from the decays of the events, keeping the attacks dry.","Noun title. Studio Spanish says 'la reverb'; 'reverberación' is preferred in docs, the short form in UI.",coined,reverb en las colas; reverb solo en colas
+drive the hits,saturar los golpes,Saturation applied only to the events' attacks or bodies.,"Infinitive command. 'drive' as a saturation control is often left in English ('el drive'), but 'saturar' is clearest; 'golpes' = hits. 'calentar' is studio slang.",coined,saturar golpes; drive en los golpes; calentar los golpes
+ring time,tiempo de resonancia,A tool that lengthens or shortens how long each event rings after its peak.,"Noun title, as in English. 'resonar' is the verb for ringing objects; avoid 'tiempo de decaimiento' (T60).",coined,duración de la resonancia; tiempo de vibración
+level the events,nivelar los eventos,"A tool that evens out how loud the events are, one gain per event, without touching their shape.",Infinitive command. 'nivelar' keeps the link to 'nivel' and to 'nivelador' (leveler); 'igualar' is just as idiomatic. Not 'comprimir' (a compressor changes the shape).,coined,igualar los eventos; igualar el nivel de los eventos
+fold to mono,pasar a mono en fase,"Turn stereo into mono with the channels' phase lined up, so nothing cancels.",Infinitive command. 'pasar a mono' is the everyday phrase but also covers the plain sum ('sumar a mono'; Audacity es 'Mezclar pista estéreo a mono'); 'en fase' carries the alignment. Literal 'plegar' is not used in Spanish audio.,coined,plegar a mono; pasar a mono; fold to mono
+widen the tails,ensanchar las colas,"Make or widen stereo only after the attacks, keeping attacks centred and the result mono-compatible.",Infinitive command. 'ensanchar la imagen estéreo' is standard phrasing; 'abrir' is studio slang ('abrir el estéreo').,coined,abrir las colas; ampliar el estéreo de las colas
+downmix,downmix,Turn more channels into fewer.,"Apple Compressor es keeps 'downmix' and studios use the loan; UIT-R BS.775 (es) says 'mezclado descendente', Dolby-style docs 'mezcla descendente'.",standard,mezcla descendente
+mono compatibility,compatibilidad mono,How well a stereo sound survives being summed to mono.,UIT-R BS.775 (es): 'compatibilidad con los sistemas de escucha monofónica'.,standard,compatibilidad con mono
+decorrelation,decorrelación,"Making two signals less alike while keeping their spectrum, to widen a stereo image.",,standard,
+comb filtering,filtrado en peine,Regular notches in a spectrum when a signal is summed with a delayed copy of itself.,'filtro peine' = comb filter; 'efecto peine' is common in studio talk.,standard,efecto peine
+cancellation,cancelación,Loss of level when signals of opposite phase are summed.,Often 'cancelación de fase' (RØDE es).,standard,
+pre-echo,preeco,"A faint smear of a sound before its attack, caused by frame-based processing.",RAE spelling joins prefixes ('preeco'); 'pre-eco' is widely seen.,standard,pre-eco
+EQ,ecualizador (EQ),An equaliser: a filter that changes the level of frequency bands.,'EQ' is used as is in Spanish UIs and speech (masculine: 'el EQ'); 'ecualización' is the process (Audacity es).,standard,ecualización
+dynamic EQ,ecualizador dinámico,An EQ whose band gains follow the level in each band.,,standard,EQ dinámico
+automation,automatización,"Parameter changes over time, recorded or drawn.",,standard,
+compressor,compresor,A processor that turns loud passages down by a ratio above a threshold.,,standard,
+threshold,umbral,The level above which a processor acts.,"Audacity es, Native Instruments es.",standard,
+ratio,ratio,How strongly a compressor turns the level down above its threshold.,"Studio and Native Instruments es usage: 'ratio'. The DLE gives it as feminine ('la ratio'), but 'el ratio' is very common, especially in Latin America. 'relación de compresión' in formal texts.",standard,relación de compresión
+attack time,tiempo de ataque,How fast a processor reacts when the level rises.,,standard,
+release time,tiempo de liberación,How fast a processor recovers when the level falls.,"Native Instruments es: 'liberación'; ADSR texts use 'relajación'; Apple keeps 'Release'. Avoid Audacity es 'tiempo de decaimiento', which collides with decay.",standard,tiempo de relajación; release
+gate,puerta,A processor or condition that opens only above a threshold.,"Audacity es: 'Puerta', 'Puerta de ruido'; 'gate' common in studio talk.",standard,gate; puerta de ruido
+saturation,saturación,Soft distortion that adds harmonics and rounds peaks.,"Keep apart from clipping, although 'saturar' is loosely used for both in speech.",standard,
+pumping,bombeo,Audible rise and fall of the background caused by a compressor.,Native Instruments es: 'bombeo'.,standard,
+evenness,uniformidad,How alike the events are in loudness.,'regularidad' would suggest timing (see burstiness).,common,regularidad
+effect chain,cadena de efectos,Effects applied one after another to a sound.,,common,
+preset,preset,A saved set of settings.,Cubase es keeps 'preset'; Apple and Adobe es use 'preajuste'; Audacity es 'valor predefinido'.,standard,preajuste; valor predefinido
+morph,morphing,A gradual blend from one sound into another.,Spanish sound design uses the loan 'morphing'; 'transformación progresiva' suits docs.,common,transformación progresiva; metamorfosis
+cross-synthesis,síntesis cruzada,Combining the spectrum of one sound with the envelope or excitation of another.,,standard,
+convolution,convolución,"Filtering one sound by another, for example by a room's impulse response.",,standard,
+envelope transfer,transferencia de envolvente,Giving one sound the level envelope of another.,,common,
+ring modulation,modulación en anillo,"Multiplying two signals, which creates sum and difference frequencies.",,standard,
+granular,granular,Built from many short grains of sound.,,standard,
+accent,acento,A short added sound placed at a moment of another sound to emphasise it.,'acento' is the musical sense and reads naturally; 'refuerzo' describes the purpose (like a sweetener); 'realce' may suggest an EQ boost; 'sweetener' is the trade loan.,coined,refuerzo; realce; sweetener
+generator,generador,A part of the app that makes new sounds from parameters.,,common,
+synth,sintetizador,"A sound generator built from oscillators, noise, envelopes and filters.",Colloquial 'sinte' (Spain and Latin America) and 'synth'.,standard,sinte; synth
+impact,impacto,A physical model of a struck object of a given material and shape.,As a model name: 'modelo de impacto'.,common,
+resynthesis,resíntesis,"Rebuilding a sound from parameters measured on it, such as its partials and decays.",,standard,
+modal,modal,"Made of resonant modes, each with a frequency and a decay.",'síntesis modal'.,standard,
+texture,textura,"A continuous sound made of many small events, such as rain, fire or gravel.",,common,
+action and reaction,acción y reacción,"A generator in which an action, such as an object moving or a force, drives the sound of a medium that responds to it (gravel, water, air).",Literal pair as in English; 'reacción' alone for a compact label; 'respuesta del medio' is the most explicit but long.,coined,reacción; respuesta del medio
+medium,medio,"What reacts to an action: gravel, leaves, water, air, sparks or a force field.",,common,
+drive curve,curva motriz,A curve that controls a sound's parameters over time.,'motriz' renders 'drive' (as in 'fuerza motriz') and is distinctive; 'curva de control' is immediately clear but generic; 'curva de mando' is literal and slightly old-fashioned.,coined,curva de control; curva de mando
+inertia,inercia,How slowly a reaction settles after the action stops.,,common,
+Foley,foley,Everyday sounds performed and recorded in sync with picture.,"'foley' (usually lowercase, m) is used across Spanish-speaking industries; Spain's film and dubbing tradition also calls it 'efectos sala' / 'efectos de sala'.",standard,efectos de sala
+ambience,ambiente,The background sound of a place.,Post-production speaks of 'ambientes' (pl.).,standard,sonido ambiente
+one-shot,one-shot,"A short sound played once, such as a hit or a UI click.",Loan used in samplers and sound libraries.,common,sonido de disparo único
+whoosh,whoosh,The sound of something moving fast past the listener.,Loan used in Spanish sound libraries; 'pasada' covers pass-bys.,common,pasada
+finishing,acabado,"The last steps before export: format, channels, fades and level.",,common,finalización; retoques finales
+steel,acero,,,standard,
+brass,latón,,Not 'bronce' (bronze).,standard,
+aluminium,aluminio,,,standard,
+glass,vidrio,,'vidrio' is universal and technical; 'cristal' is everyday Spain usage (and technically means crystal glass).,standard,cristal
+ceramic,cerámica,,,standard,
+ice,hielo,,,standard,
+wood,madera,,,standard,
+plastic,plástico,,,standard,
+stone,piedra,,,standard,
+cardboard,cartón,,,standard,
+rubber,caucho,,"'caucho' is understood everywhere; 'goma' is everyday in Spain and the Southern Cone, 'hule' in Mexico and Central America.",standard,goma; hule
+bar,barra,"A long solid body, such as a rod or beam.",Shape; unrelated to 'compás' (musical bar).,standard,
+plate,placa,A thin flat body.,Mechanics: 'placa'; 'lámina' for very thin sheets.,standard,lámina
+membrane,membrana,"A stretched skin, as on a drum.",,standard,
+shell,cáscara,"A thin curved body, such as a can or pot.",Structural mechanics calls shells 'cáscaras' or 'láminas'; 'carcasa' (casing) is more everyday if 'cáscara' reads too organic in UI.,common,carcasa; lámina curva
+bell,campana,,,standard,
+wire,cuerda,A stiff string or wire that rings with slightly stretched (inharmonic) partials.,Workbench's 'Wire / string' shape: 'cuerda' is the physics term ('cuerda vibrante') and covers metal strings and wires; 'alambre' keeps the metal-wire image and suits a combined label 'Cuerda / alambre'. 'parciales estirados' as in piano 'afinación estirada'.,standard,alambre
+box,caja,A hollow body with flat sides.,,common,

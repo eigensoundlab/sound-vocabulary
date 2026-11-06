@@ -1,0 +1,1452 @@
+{
+  "_language": "cs",
+  "_name": "Čeština",
+  "_notes": "Sources, in order of precedence: the Czech translations of EBU R 128 and EBU Tech 3341 published by RRTV (hlasitost, skutečná špičková úroveň, frekvenční váhování, hradlování, LUFS = jednotka hlasitosti vztažená k celému rozsahu); ČSN ISO 1996-1 (obtěžování, impulzivnost); Czech psychoacoustics and music acoustics (hlasitost/ostrost/drsnost; částkový tón, náběh, doznívání); Czech film sound (ruchy, atmosféra); the Czech localisations of Ardour, Audacity and LMMS (prolínání, práh, poměr, zesílení/zisk, předvolba, automatizace, takt/doba, pruh). Cubase, Studio One and Reaper have no official Czech UI. Conventions: (1) 'frekvence' is used throughout; ČSN and Audacity cs say 'kmitočet', which is equally correct and is given in alt where it matters. (2) level = úroveň, loudness = hlasitost; 'hladina' only for acoustic quantities such as dB SPL. (3) Tool names: English imperative names (de-harsh, drive the hits, level the events, fold to mono, widen the tails) become Czech infinitives, the usual Czech command form (Uložit, Normalizovat): zjemnit, saturovat údery, vyrovnat události, sloučit do mona, rozšířit doznění. English noun-phrase tool names become Czech noun phrases (náběh a tělo, remix vrstev, tvarovač napětí, tvorba smyček, délka doznívání, dozvuk na doznění, vyčištění pro export). Every command also has its verbal noun in alt (vyrovnání událostí…), so the author can switch to all-noun panel titles. (4) 'term' is lower case except proper names and abbreviations; 'short' is the UI label in Czech sentence case (only the first word capitalised) and is given only where it differs from the term or the term is long. (5) English loans (fade, take, downmix, one-shot, whoosh) appear in 'term' only where Czech sound designers really use them and the localised form is clumsy; otherwise the loan is in alt (attack, release, foley, surprisal…). (6) Adjectives for drawing modes are neuter, agreeing with an implied 'zobrazení' (překryté, zrcadlené). (7) Units and symbols are unchanged (sone, acum, asper, vacil, LUFS, dBTP, T60, BPM); ranges use an en dash; the minus sign is kept. (8) The look code itself (form:overlay,…) is treated as machine-readable and not translated. (9) Terms reserved to keep distinctions: ostrost (sharpness) / drsnost (roughness) / nepříjemnost (harshness) / obtěžování (annoyance); nástup (onset) / náběh (attack) / tranzient (transient); novost / spektrální překvapení / překvapivost; křivka (curve) ≠ vlnový průběh (waveform); pás (strip) ⊃ pruh (lane); ruchy (Foley), so 'ruch' is not used for activity; dozvuk = reverb only.",
+  "terms": {
+    "waveform": {
+      "term": "vlnový průběh",
+      "short": "Průběh",
+      "alt": [
+        "průběhová křivka",
+        "průběh signálu",
+        "waveform"
+      ],
+      "definition": "Vykreslení amplitudy zvuku v čase.",
+      "note": "Ardour cs uses 'průběhová křivka' and Audacity cs plain 'křivka'. Neither is used here because 'křivka' is reserved for analysis curves, which are drawn along the waveform. 'Časový/vlnový průběh signálu' is the textbook phrase; in speech 'waveform' or 'vlna' is common.",
+      "gender": "m"
+    },
+    "spectrogram": {
+      "term": "spektrogram",
+      "definition": "Obraz toho, jak se frekvenční obsah zvuku mění v čase: čas vodorovně, frekvence svisle, úroveň barvou.",
+      "gender": "m"
+    },
+    "mel-scale": {
+      "term": "melová stupnice",
+      "alt": [
+        "stupnice mel",
+        "melodická stupnice"
+      ],
+      "definition": "Frekvenční stupnice rozložená podle vnímané výšky tónu: zhruba lineární pod 1 kHz a logaritmická nad ním.",
+      "note": "Unit 'mel'. ČVUT speech-processing lectures also say 'melodická stupnice'.",
+      "gender": "f"
+    },
+    "playhead": {
+      "term": "ukazatel přehrávání",
+      "alt": [
+        "přehrávací hlava",
+        "playhead"
+      ],
+      "definition": "Pohyblivá čára, která označuje aktuální pozici přehrávání.",
+      "note": "Ardour cs ('ukazatel přehrávání', also 'ukazatel polohy'). Keep 'kurzor' for the edit cursor. The app name Playhead stays untranslated.",
+      "gender": "m"
+    },
+    "edit-cursor": {
+      "term": "editační kurzor",
+      "alt": [
+        "kurzor úprav",
+        "pracovní bod"
+      ],
+      "definition": "Pozice, od které začínají úpravy a přehrávání; nastavuje se kliknutím.",
+      "note": "Ardour cs translates 'edit point' as 'pracovní bod'.",
+      "gender": "m"
+    },
+    "sample-rate": {
+      "term": "vzorkovací frekvence",
+      "alt": [
+        "vzorkovací kmitočet"
+      ],
+      "definition": "Počet vzorků za sekundu u digitálního zvuku, v Hz.",
+      "note": "LMMS cs 'vzorkovací frekvence'; Audacity cs and ČSN usage 'vzorkovací kmitočet'.",
+      "gender": "f"
+    },
+    "bit-depth": {
+      "term": "bitová hloubka",
+      "definition": "Počet bitů na vzorek digitálního zvuku; určuje jeho rozlišení.",
+      "note": "Audacity cs.",
+      "gender": "f"
+    },
+    "channel": {
+      "term": "kanál",
+      "definition": "Jeden signál zvukového souboru; stereo má dva.",
+      "gender": "m"
+    },
+    "mono": {
+      "term": "mono",
+      "alt": [
+        "monofonní (adj.)"
+      ],
+      "definition": "Jeden kanál.",
+      "gender": "n"
+    },
+    "stereo": {
+      "term": "stereo",
+      "alt": [
+        "stereofonní (adj.)"
+      ],
+      "definition": "Dva kanály, levý a pravý.",
+      "gender": "n"
+    },
+    "mid-side": {
+      "term": "mid/side (M/S)",
+      "short": "M/S",
+      "alt": [
+        "střed/strana",
+        "součtový/rozdílový signál"
+      ],
+      "definition": "Stereo zapsané jako součet (mid) a rozdíl (side) kanálů.",
+      "note": "Engineers say 'M/S' or 'mid/side'; textbooks say 'signál M (součtový) a S (rozdílový)', as in 'MS stereofonie'."
+    },
+    "phase": {
+      "term": "fáze",
+      "definition": "V jakém místě své periody se vlna v daném okamžiku nachází.",
+      "gender": "f"
+    },
+    "polarity": {
+      "term": "polarita",
+      "definition": "Zda je signál v původní orientaci, nebo obrácený.",
+      "note": "Use 'obrátit polaritu' (Ardour cs) and not 'obrátit fázi' when the signal is simply inverted.",
+      "gender": "f"
+    },
+    "level": {
+      "term": "úroveň",
+      "alt": [
+        "hladina"
+      ],
+      "definition": "Jak silný je signál, obvykle v dB.",
+      "note": "'Úroveň signálu' is the audio-engineering term (also in RRTV EBU R 128 cz). 'Hladina' is the ČSN term for logarithmic acoustic quantities (hladina akustického tlaku), so use it only for dB SPL. Never 'hlasitost', which is loudness.",
+      "gender": "f"
+    },
+    "gain": {
+      "term": "zesílení",
+      "alt": [
+        "zisk",
+        "gain"
+      ],
+      "definition": "Změna úrovně, v dB.",
+      "note": "'Zesílení' is used in LMMS and Audacity cs, 'Zisk' in Ardour cs. A negative gain is still 'zesílení' (e.g. −6 dB); 'zeslabení' only in running text.",
+      "gender": "n"
+    },
+    "peak": {
+      "term": "špička",
+      "alt": [
+        "vrchol",
+        "špičková hodnota"
+      ],
+      "definition": "Největší absolutní hodnota vzorku.",
+      "note": "'Špičková úroveň' in RRTV EBU R 128 cz and in Czech metering (špičkový měřič). Audacity and Ardour cs use 'vrchol'. In this vocabulary 'vrchol' is kept for the top of an envelope or curve.",
+      "gender": "f"
+    },
+    "true-peak": {
+      "term": "skutečná špičková úroveň",
+      "short": "Skutečná špička",
+      "alt": [
+        "skutečná špička",
+        "true peak"
+      ],
+      "definition": "Špička signálu mezi vzorky, jak by ji reprodukoval D/A převodník.",
+      "note": "RRTV Czech translations of EBU R 128 and Tech 3341 ('maximální skutečná špičková úroveň'). The unit stays dBTP.",
+      "gender": "f"
+    },
+    "loudness": {
+      "term": "hlasitost",
+      "definition": "Jak hlasitě je zvuk slyšet, na rozdíl od jeho úrovně.",
+      "note": "Used in ČSN ISO 532-1, in RRTV EBU R 128 cz ('hlasitost pořadu', 'integrovaná hlasitost') and in Ardour/Audacity cs.",
+      "gender": "f"
+    },
+    "lufs": {
+      "term": "LUFS",
+      "definition": "Jednotky hlasitosti vztažené k plné škále (ITU-R BS.1770); 1 LU odpovídá 1 dB.",
+      "note": "RRTV EBU R 128 cz expands it as 'jednotka hlasitosti vztažená k celému rozsahu'."
+    },
+    "k-weighting": {
+      "term": "frekvenční váhování K",
+      "short": "Váhování K",
+      "alt": [
+        "váhový filtr K",
+        "kmitočtové vážení K"
+      ],
+      "definition": "Frekvenční váhování, které měřiče hlasitosti používají před měřením.",
+      "note": "RRTV Czech translation of EBU Tech 3341 ('frekvenční váhování'). For A/C weighting, Czech acoustics texts also write 'kmitočtové vážení' or 'váhový filtr'.",
+      "gender": "n"
+    },
+    "normalize": {
+      "term": "normalizovat",
+      "alt": [
+        "normalizace"
+      ],
+      "definition": "Nastavit špičku nebo hlasitost zvuku na cílovou hodnotu.",
+      "note": "Audacity and Ardour cs 'Normalizovat'; noun 'normalizace hlasitosti' (RRTV, Audacity)."
+    },
+    "fade": {
+      "term": "fade",
+      "alt": [
+        "postupné zesílení / postupné zeslabení",
+        "postupná změna úrovně"
+      ],
+      "definition": "Postupná změna úrovně na začátku (fade-in) nebo na konci (fade-out).",
+      "note": "Czech engineers say fade, fade-in, fade-out (pl. 'fady'). Ardour cs uses 'Postupné zesílení/zeslabení signálu', and Audacity cs 'Fade In (postupný náběh)' / 'Fade Out (do ztracena)'. 'Náběh' is avoided because it means attack here, and 'prolínání' because it means crossfade.",
+      "gender": "m"
+    },
+    "clipping": {
+      "term": "přebuzení",
+      "alt": [
+        "ořezání (clipping)",
+        "clipping"
+      ],
+      "definition": "Zkreslení, k němuž dojde, když signál překročí největší hodnotu, kterou lze uložit.",
+      "note": "Audacity cs ('Přebuzení', 'Najít přebuzení'). This is the everyday engineering word; technically the digital mechanism is 'ořezání (limitace) signálu'.",
+      "gender": "n"
+    },
+    "dc-offset": {
+      "term": "stejnosměrná složka",
+      "alt": [
+        "stejnosměrný posun",
+        "DC offset"
+      ],
+      "definition": "Stálý posun signálu od nuly.",
+      "note": "Audacity cs ('Odstranit stejnosměrnou složku'); standard electrical-engineering term.",
+      "gender": "f"
+    },
+    "noise-floor": {
+      "term": "šumové pozadí",
+      "alt": [
+        "úroveň šumu pozadí",
+        "noise floor"
+      ],
+      "definition": "Úroveň šumu v pozadí pod zvukem.",
+      "note": "Usual engineering phrase, e.g. 'šumové pozadí −90 dB'. Audacity cs 'nežádoucí hluk' is not adopted.",
+      "gender": "n"
+    },
+    "silence": {
+      "term": "ticho",
+      "definition": "Úsek bez zvuku nad úrovní šumového pozadí.",
+      "gender": "n"
+    },
+    "cut-tail": {
+      "term": "useknuté doznění",
+      "alt": [
+        "useknutý konec",
+        "useknutý ocas"
+      ],
+      "definition": "Zvuk, který skončí dřív, než jeho doznívání odezní.",
+      "note": "Uses 'doznění' for tail, as in all tail-related entries.",
+      "gender": "n"
+    },
+    "take": {
+      "term": "take",
+      "alt": [
+        "záběr",
+        "verze"
+      ],
+      "definition": "Jedna nahraná nebo vyrenderovaná verze zvuku.",
+      "note": "Czech studio usage is the loan 'take' (spoken 'tejk'). Ardour cs uses 'záběr' (film sense) or 'verze'. Keep it undeclined in UI where possible ('Take 3').",
+      "gender": "m"
+    },
+    "render": {
+      "term": "renderovat",
+      "alt": [
+        "vyrenderovat",
+        "bouncovat"
+      ],
+      "definition": "Vypočítat zpracovaný zvuk a zapsat ho jako audio.",
+      "note": "Common studio usage. Audacity cs 'Spojit' (Mix and Render) is too vague. Noun: 'render'."
+    },
+    "loop": {
+      "term": "smyčka",
+      "definition": "Zvuk, který se opakuje bez slyšitelného spoje.",
+      "gender": "f"
+    },
+    "crossfade": {
+      "term": "prolínání",
+      "alt": [
+        "prolnutí",
+        "crossfade"
+      ],
+      "definition": "Postupné zeslabení (fade-out) jednoho zvuku, které se překrývá s postupným zesílením (fade-in) jiného.",
+      "note": "Used in Audacity, Ardour and LMMS cs. 'Prolnutí' for one instance.",
+      "gender": "n"
+    },
+    "slice": {
+      "term": "rozřezat",
+      "alt": [
+        "rozsekat",
+        "slicovat"
+      ],
+      "definition": "Rozdělit zvuk na části ve zvolených bodech.",
+      "note": "Producers also say 'slicovat'/'nasekat'. One resulting part is a 'díl' or 'výřez'."
+    },
+    "time-stretch": {
+      "term": "časové roztažení",
+      "short": "Roztažení v čase",
+      "alt": [
+        "time stretch",
+        "změna délky"
+      ],
+      "definition": "Změnit délku zvuku beze změny jeho výšky.",
+      "note": "Like English 'stretch', this covers shortening too. Ardour cs has 'Protáhnutí času'; theses often keep 'time-stretching'.",
+      "gender": "n"
+    },
+    "pitch-shift": {
+      "term": "posun výšky tónu",
+      "short": "Posun výšky",
+      "alt": [
+        "transpozice",
+        "pitch shift"
+      ],
+      "definition": "Změnit výšku zvuku beze změny jeho délky.",
+      "note": "Ardour cs ('Posun výšky tónu').",
+      "gender": "m"
+    },
+    "sone": {
+      "term": "sone",
+      "alt": [
+        "son"
+      ],
+      "definition": "Jednotka slyšené hlasitosti; 1 sone je hlasitost tónu 1 kHz o hladině 40 dB SPL.",
+      "note": "ISO 532-1. Czech texts name the unit 'son' (pl. 'sony', e.g. 'Jednotka hlasitosti je son', ZČU thesis). The unit is kept as 'sone' per this vocabulary's rule.",
+      "gender": "m"
+    },
+    "sharpness": {
+      "term": "ostrost",
+      "definition": "Do jaké míry leží energie zvuku ve vysokých frekvencích, jak je slyšet; v acum.",
+      "note": "DIN 45692. Standard Czech psychoacoustic term ('hlasitost, ostrost a drsnost', Czech music-acoustics research, RIV 2006). Reserved, so 'ostrý' must not be used for harshness.",
+      "gender": "f"
+    },
+    "roughness": {
+      "term": "drsnost",
+      "alt": [
+        "hrubost"
+      ],
+      "definition": "Chraplavý vjem rychlé amplitudové modulace (asi 15–300 Hz); v asper.",
+      "note": "'Drsnost' is used in Czech psychoacoustic research on musical signals; some theses (ZČU) say 'hrubost'. Reserved, so 'drsný' must not be used for harshness.",
+      "gender": "f"
+    },
+    "fluctuation-strength": {
+      "term": "síla fluktuace",
+      "alt": [
+        "fluktuační síla",
+        "síla kolísání"
+      ],
+      "definition": "Vjem pomalé amplitudové modulace (asi 1–20 Hz, nejsilnější kolem 4 Hz); ve vacil.",
+      "note": "Both 'síla fluktuace' and 'fluktuační síla' (ZČU thesis) occur.",
+      "gender": "f"
+    },
+    "psychoacoustic-annoyance": {
+      "term": "psychoakustické obtěžování",
+      "alt": [
+        "psychoakustická nepříjemnost",
+        "index obtěžování"
+      ],
+      "definition": "Zwickerovo spojení hlasitosti, ostrosti, drsnosti a síly fluktuace do jediné hodnoty obtěžování.",
+      "note": "'Obtěžování' is the ČSN term for noise annoyance (ČSN ISO 1996-1). 'Nepříjemnost' is left for harshness, which is derived from it.",
+      "gender": "n"
+    },
+    "masking": {
+      "term": "maskování",
+      "definition": "Jev, kdy jeden zvuk ztěžuje nebo znemožňuje slyšet jiný zvuk.",
+      "gender": "n"
+    },
+    "critical-band": {
+      "term": "kritické pásmo",
+      "definition": "Frekvenční rozsah, který ucho integruje jako celek; vyjadřuje se na Barkově stupnici.",
+      "note": "Standard ('kritická pásma slyšení', 'Barkova stupnice').",
+      "gender": "n"
+    },
+    "curve": {
+      "term": "křivka",
+      "definition": "Hodnota vykreslená v čase podél vlnového průběhu.",
+      "gender": "f"
+    },
+    "overview": {
+      "term": "přehled",
+      "alt": [
+        "náhled",
+        "přehledové zobrazení"
+      ],
+      "definition": "Malý obraz celého zvuku, který slouží k orientaci v něm.",
+      "gender": "m"
+    },
+    "strip": {
+      "term": "pás",
+      "alt": [
+        "proužek",
+        "lišta",
+        "strip"
+      ],
+      "definition": "Přehled jednoho zvuku tak, jak ho kreslí Playhead: vlnový průběh, křivky a značky v jednom pásu.",
+      "note": "Chosen so that a 'pás' (strip) contains 'pruhy' (lanes), as in a road with lanes. 'Proužek' is friendlier but diminutive; 'lišta' suggests a toolbar; 'strip' is clear to DAW users but does not decline well.",
+      "gender": "m"
+    },
+    "look": {
+      "term": "vzhled",
+      "alt": [
+        "podoba",
+        "styl zobrazení",
+        "look"
+      ],
+      "definition": "Pojmenovaný způsob kreslení pásu, zapsaný jako krátký kód vrstev.",
+      "note": "'Vzhled' reads most naturally ('Vzhled: klasický', 'Kód vzhledu'), but Firefox cs calls themes 'Vzhledy'. If chosen, name colour themes 'barevný motiv' to keep look ≠ theme. 'Podoba' avoids the clash but sounds less natural in UI.",
+      "gender": "m"
+    },
+    "look-code": {
+      "term": "kód vzhledu",
+      "alt": [
+        "kód podoby",
+        "zápis vzhledu",
+        "look code"
+      ],
+      "definition": "Krátký text, který definuje vzhled, například „form:overlay,shape:mirror,lane:harshness“.",
+      "note": "Follows the choice for 'look'. The code's keys and values are not translated.",
+      "gender": "m"
+    },
+    "layer": {
+      "term": "vrstva",
+      "alt": [
+        "prvek",
+        "layer"
+      ],
+      "definition": "Jeden prvek vzhledu: vlnový průběh, spektrogram, křivka, sada značek nebo oddíly.",
+      "note": "The usual word, also used in Ardour cs for overlaid/stacked layers. The same word is used for sound layers in 'remix vrstev'; context separates them. 'Prvek' is vaguer but would avoid that overlap.",
+      "gender": "f"
+    },
+    "lane": {
+      "term": "pruh",
+      "definition": "Vodorovná část pásu, ve které je vykreslena jedna křivka.",
+      "note": "Ardour cs ('pruh automatizace' = automation lane); also 'jízdní pruh' = traffic lane.",
+      "gender": "m"
+    },
+    "overlay": {
+      "term": "překryté",
+      "short": "Přes sebe",
+      "alt": [
+        "přes sebe",
+        "v jednom pruhu",
+        "překrývající se"
+      ],
+      "definition": "Křivky kreslené do jednoho společného pruhu místo do samostatných pruhů.",
+      "note": "Ardour cs 'Překryto' (overlaid layer display). Neuter, agreeing with 'zobrazení'. 'Přes sebe' is the clearest toggle label. Distinct from 'zrcadlené' (mirrored)."
+    },
+    "mirrored": {
+      "term": "zrcadlené",
+      "short": "Zrcadlené",
+      "alt": [
+        "souměrné"
+      ],
+      "definition": "Kreslené souměrně nad a pod středovou čárou, jako vlnový průběh.",
+      "note": "Neuter, agreeing with 'zobrazení'; use 'zrcadlený průběh' etc. when agreeing with a masculine noun."
+    },
+    "baseline-form": {
+      "term": "od základny",
+      "alt": [
+        "od spodní hrany",
+        "od základní čáry"
+      ],
+      "definition": "Kreslené od spodního okraje pruhu nahoru.",
+      "note": "Adverbial phrase, used as a mode label next to 'zrcadlené' and 'překryté'."
+    },
+    "horizon-chart": {
+      "term": "horizontový graf",
+      "alt": [
+        "horizon chart"
+      ],
+      "definition": "Kompaktní graf, který křivku skládá do barevných pásem se vzrůstající intenzitou.",
+      "note": "No established Czech term found; this is a calque. Czech data-visualisation texts usually keep 'horizon chart'.",
+      "gender": "m"
+    },
+    "sculpted-waveform": {
+      "term": "tvarovaný vlnový průběh",
+      "short": "Tvarovaný průběh",
+      "alt": [
+        "modelovaný vlnový průběh",
+        "vytvarovaný průběh",
+        "sculpted waveform"
+      ],
+      "definition": "Vlnový průběh, jehož výška sleduje křivku, například vnímanou hlasitost, místo špičkové úrovně.",
+      "note": "'Tvarovaný' (shaped) is neutral and clear. 'Modelovaný' is closer to sculpting but clashes with the physical models in Workbench (model nárazu). The loan would be unusual.",
+      "gender": "m"
+    },
+    "outline": {
+      "term": "obrys",
+      "definition": "Běžný špičkový vlnový průběh nakreslený tenkou čarou za jinou vrstvou.",
+      "gender": "m"
+    },
+    "marks": {
+      "term": "značky",
+      "definition": "Rysky podél pásu u událostí, nástupů, dob nebo hranic oddílů.",
+      "note": "Ardour cs uses 'Značka' for marker. Plural noun.",
+      "gender": "f"
+    },
+    "legend": {
+      "term": "legenda",
+      "definition": "Text, který říká, co jednotlivé barvy a čáry pásu znázorňují.",
+      "gender": "f"
+    },
+    "profile": {
+      "term": "profil analýzy",
+      "alt": [
+        "rozsah analýzy"
+      ],
+      "definition": "Kolik toho Playhead analyzuje: rychlý profil (jen křivky), zvukový efekt nebo hudba.",
+      "gender": "m"
+    },
+    "descriptor": {
+      "term": "deskriptor",
+      "definition": "Číslo nebo křivka vypočtená ze zvuku, která popisuje jednu jeho vlastnost.",
+      "note": "Czech MIR usage ('zvukové deskriptory').",
+      "gender": "m"
+    },
+    "feature": {
+      "term": "příznak",
+      "alt": [
+        "rys",
+        "feature"
+      ],
+      "definition": "Deskriptor použitý jako vstup klasifikátoru nebo vyhledávání.",
+      "note": "Czech pattern-recognition term ('příznakový vektor', 'kepstrální příznaky', ČVUT).",
+      "gender": "m"
+    },
+    "activity": {
+      "term": "aktivita",
+      "alt": [
+        "dění",
+        "rušnost",
+        "activity"
+      ],
+      "definition": "Kolik se toho děje: spektrální změny a hustota událostí.",
+      "note": "'Aktivita' is clear and fits UI phrases. 'Dění' is the most idiomatic ('kolik se toho děje') but awkward as a curve name. 'Ruch' is avoided because 'ruchy' means Foley.",
+      "gender": "f"
+    },
+    "arousal": {
+      "term": "vzrušení",
+      "alt": [
+        "arousal",
+        "excitace",
+        "aktivace"
+      ],
+      "definition": "Jak vzrušující, nebo naopak zklidňující zvuk je; podle stejnojmenné psychologické dimenze.",
+      "note": "Czech psychology often keeps the loan ('valence a arousal', declined 'arousalu') or uses 'excitace'. 'Aktivace' is avoided next to 'aktivita' (activity).",
+      "gender": "n"
+    },
+    "harshness": {
+      "term": "nepříjemnost",
+      "alt": [
+        "tvrdost",
+        "drásavost",
+        "harshness"
+      ],
+      "definition": "Jak nepříjemné je zvuk poslouchat, odvozeno z psychoakustického obtěžování; není totéž co drsnost.",
+      "note": "The everyday Czech words for 'harsh' (ostrý, drsný) are taken by sharpness and roughness. 'Nepříjemnost' follows the definition and differs from 'obtěžování' (annoyance), its input. 'Tvrdost' is idiomatic in mixing but clashes with material hardness in Workbench. 'Drásavost' is expressive but close to roughness.",
+      "gender": "f"
+    },
+    "tension": {
+      "term": "napětí",
+      "definition": "Narůstání a uvolňování v čase, podle modelu hudebního napětí, který navrhla Farbood (2012).",
+      "gender": "n",
+      "note": "The surname is left uninflected with a feminine verb (modern usage), instead of 'Farboodová'."
+    },
+    "harmonic-tension": {
+      "term": "harmonické napětí",
+      "definition": "Jak daleko je harmonie od klidu, určeno z tonálního intervalového prostoru.",
+      "note": "'Tonální intervalový prostor' is a calque of tonal interval space (Bernardes et al. 2016).",
+      "gender": "n"
+    },
+    "novelty": {
+      "term": "novost",
+      "definition": "Jak moc se daný okamžik liší od toho, co mu předcházelo.",
+      "note": "Foote 2000; 'křivka novosti' for the novelty curve. Kept apart from 'spektrální překvapení' and 'překvapivost'.",
+      "gender": "f"
+    },
+    "spectral-surprise": {
+      "term": "spektrální překvapení",
+      "alt": [
+        "nečekaná změna spektra",
+        "spektrální zvrat",
+        "spectral surprise"
+      ],
+      "definition": "Změna spektra, kterou nelze vysvětlit hlasitostí.",
+      "note": "Parallels the English and stays distinct from 'novost' (novelty) and 'překvapivost' (surprisal) by word form. 'Nečekaná změna spektra' is clearer but long. 'Spektrální zvrat' is short but suggests a reversal.",
+      "gender": "n"
+    },
+    "surprisal": {
+      "term": "překvapivost",
+      "alt": [
+        "vlastní informace",
+        "informační obsah",
+        "surprisal"
+      ],
+      "definition": "Informační obsah události: čím je méně očekávaná, tím je vyšší.",
+      "note": "In Czech information theory the quantity is 'vlastní informace' (self-information); 'překvapivost' is the readable UI name. Note the pair překvapivost (surprisal) / spektrální překvapení (spectral surprise).",
+      "gender": "f"
+    },
+    "structural-change": {
+      "term": "strukturní změna",
+      "alt": [
+        "předěl",
+        "změna struktury",
+        "structural change"
+      ],
+      "definition": "Místo, kde skladba přechází do nové části, se znaménkem: nahoru tam, kde zvuk vstupuje, dolů tam, kde odeznívá nebo se přeruší.",
+      "note": "'Strukturní změna' is a literal, neutral term that suits a signed curve. 'Předěl' is idiomatic for a move to a new part but suggests a point, not a curve. 'Strukturální' is also correct. 'Vstupuje' is used for 'enters' so as not to clash with 'nástup' (onset).",
+      "gender": "f"
+    },
+    "local-pulse": {
+      "term": "lokální puls",
+      "definition": "Jak silně a pravidelně je v každém okamžiku cítit doba.",
+      "note": "Calque of Grosche and Müller's (predominant) local pulse. Avoid 'síla doby' (beat strength).",
+      "gender": "m"
+    },
+    "onset": {
+      "term": "nástup",
+      "alt": [
+        "začátek",
+        "onset"
+      ],
+      "definition": "Okamžik, kdy začíná zvuk nebo tón.",
+      "note": "Czech MIR says 'nástup (tónu)' or 'detekce nástupů', often alongside 'onset'. A moment, kept apart from 'náběh' (attack, a phase) and 'tranzient'.",
+      "gender": "m"
+    },
+    "onset-strength": {
+      "term": "síla nástupu",
+      "alt": [
+        "síla nástupů",
+        "onset strength"
+      ],
+      "definition": "Jak silně v každém okamžiku přichází nový zvuk; vrcholy odpovídají úderům.",
+      "gender": "f"
+    },
+    "event": {
+      "term": "událost",
+      "alt": [
+        "zvuková událost"
+      ],
+      "definition": "Jeden samostatný zvuk v souboru, například úder, krok nebo vrznutí, se začátkem a koncem.",
+      "gender": "f"
+    },
+    "attack": {
+      "term": "náběh",
+      "alt": [
+        "atak",
+        "attack"
+      ],
+      "definition": "První část zvuku, od jeho začátku po jeho vrchol.",
+      "note": "Czech music acoustics divides a tone into náběh, ustálená část and doznívání; LMMS and Audacity cs also use 'náběh'. Engineers often say 'attack'. A phase, kept apart from 'nástup' (onset, a moment).",
+      "gender": "m"
+    },
+    "body": {
+      "term": "tělo",
+      "alt": [
+        "ustálená část",
+        "jádro"
+      ],
+      "definition": "Trvající, často tónová část zvuku po náběhu.",
+      "note": "Engineers say 'tělo' (e.g. the body of a snare); music acoustics says 'ustálená část'.",
+      "gender": "n"
+    },
+    "decay": {
+      "term": "doznívání",
+      "alt": [
+        "útlum",
+        "pokles"
+      ],
+      "definition": "Část zvuku, během níž zvuk odeznívá.",
+      "note": "Czech music-acoustics term. Synth ADSR 'decay' is 'pokles' (LMMS cs), which is a different meaning.",
+      "gender": "n"
+    },
+    "tail": {
+      "term": "doznění",
+      "alt": [
+        "ocas",
+        "konec doznívání"
+      ],
+      "definition": "Pozdní část doznívání, včetně dozvuku.",
+      "note": "'Ocas' (as in 'ocas dozvuku') is common studio slang but sounds odd in UI. 'Doznění' is neutral and works in the tool names (rozšířit doznění, dozvuk na doznění).",
+      "gender": "n"
+    },
+    "transient": {
+      "term": "tranzient",
+      "alt": [
+        "přechodový jev",
+        "transient"
+      ],
+      "definition": "Krátká, rychlá změna úrovně a spektra, typicky při náběhu.",
+      "note": "Engineers say 'tranzient/transient' (pl. 'tranzienty'); physics and electronics say 'přechodový jev'. Ardour cs 'přechod' is not adopted (too vague).",
+      "gender": "m"
+    },
+    "beat": {
+      "term": "doba",
+      "alt": [
+        "úder",
+        "beat"
+      ],
+      "definition": "Pravidelný puls, do kterého posluchač ťuká.",
+      "note": "Ardour cs ('Takty a doby') and Czech MIR theses. 'Úder' is reserved for hits.",
+      "gender": "f"
+    },
+    "downbeat": {
+      "term": "první doba",
+      "alt": [
+        "těžká doba",
+        "downbeat"
+      ],
+      "definition": "První doba taktu.",
+      "note": "'Těžká doba' is broader (any strong beat).",
+      "gender": "f"
+    },
+    "bar": {
+      "term": "takt",
+      "definition": "Skupina dob, obvykle čtyř.",
+      "note": "Ardour cs. Not to be confused with the shape 'tyč' (bar-shape).",
+      "gender": "m"
+    },
+    "tempo": {
+      "term": "tempo",
+      "definition": "Rychlost dob, udávaná v úderech za minutu (BPM).",
+      "note": "Czech expansion of BPM: 'úderů za minutu' (Audacity cs).",
+      "gender": "n"
+    },
+    "section": {
+      "term": "oddíl",
+      "alt": [
+        "část",
+        "sekce",
+        "díl"
+      ],
+      "definition": "Část skladby, například intro nebo refrén, nalezená podle toho, kde se mění její zvuk.",
+      "note": "'Část' is too generic for a UI term; producers also say 'sekce'.",
+      "gender": "m"
+    },
+    "recurrence": {
+      "term": "rekurence",
+      "alt": [
+        "návratnost"
+      ],
+      "definition": "Jak moc se zvuk vrací do stavů, ve kterých už byl.",
+      "note": "As in 'rekurentní diagram' (recurrence plot, Marwan et al. 2007).",
+      "gender": "f"
+    },
+    "repetition-rate": {
+      "term": "frekvence opakování",
+      "definition": "Jak často se vzor opakuje, v Hz.",
+      "gender": "f"
+    },
+    "periodicity": {
+      "term": "periodicita",
+      "definition": "Jak silně je zvuk periodický (má výšku), a ne šumový.",
+      "gender": "f"
+    },
+    "phase-coherence": {
+      "term": "fázová koherence",
+      "definition": "Jak rovnoměrně postupují fáze zvuku; 1 pro ustálený tón, blízko 0 pro šum.",
+      "gender": "f"
+    },
+    "time-arrow": {
+      "term": "šipka času",
+      "alt": [
+        "časová nevratnost",
+        "směr času",
+        "time arrow"
+      ],
+      "definition": "Jak moc se zvuk změní, když se přehraje pozpátku; vysoká pro údery, které doznívají.",
+      "note": "'Šipka času' is the established Czech phrase for the physical arrow of time, so it carries the same image. 'Časová nevratnost' is the technical term (docs only, as in the source). 'Směr času' is plainer but loses the idea of a degree.",
+      "gender": "f"
+    },
+    "impulsiveness": {
+      "term": "impulzivnost",
+      "alt": [
+        "impulznost",
+        "praskavost",
+        "impulsiveness"
+      ],
+      "definition": "Jak moc se zvuk skládá z cvaknutí, prasknutí a praskotu; odvozeno ze spektrální kurtózy.",
+      "note": "ČSN ISO 1996-1 uses 'impulzivnost' for impulsive noise, so the word is established in acoustics. 'Praskavost' is vivid but covers only crackle. Avoid 'špičatost' (= kurtosis).",
+      "gender": "f"
+    },
+    "spectral-kurtosis": {
+      "term": "spektrální kurtóza",
+      "alt": [
+        "spektrální špičatost"
+      ],
+      "definition": "Statistika, která je 0 pro ustálený šum, −1 pro ustálený tón a velká pro cvaknutí.",
+      "note": "Czech machine-diagnostics usage of Antoni's spectral kurtosis; 'špičatost' is the general statistics word for kurtosis.",
+      "gender": "f"
+    },
+    "spectral-motion": {
+      "term": "pohyb spektra",
+      "alt": [
+        "spektrální pohyb",
+        "posun těžiště spektra",
+        "spectral motion"
+      ],
+      "definition": "Jak rychle se střed spektra posouvá nahoru nebo dolů, v oktávách za sekundu.",
+      "note": "'Pohyb spektra' is natural Czech. 'Spektrální pohyb' mirrors the English and the other 'spektrální' terms. 'Posun těžiště spektra' is exact but long.",
+      "gender": "m"
+    },
+    "spectral-centroid": {
+      "term": "spektrální centroid",
+      "alt": [
+        "těžiště spektra",
+        "spektrální těžiště"
+      ],
+      "definition": "Těžiště spektra; míra jasu zvuku.",
+      "note": "'Spektrální centroid' is the usual term in Czech MIR theses; 'těžiště spektra' in psychoacoustics.",
+      "gender": "m"
+    },
+    "reshaping": {
+      "term": "přetváření",
+      "alt": [
+        "změna tvaru spektra",
+        "přeskupení spektra",
+        "reshaping"
+      ],
+      "definition": "Spektrální změna, která neposouvá střed spektra, například když se spektrum rozšiřuje nebo zužuje.",
+      "note": "'Přetváření' is short and pairs with 'pohyb spektra'. 'Změna tvaru spektra' is self-explanatory but long.",
+      "gender": "n"
+    },
+    "burstiness": {
+      "term": "shlukovitost",
+      "alt": [
+        "nárazovitost",
+        "burstiness"
+      ],
+      "definition": "Zda události přicházejí pravidelně (pod 0), náhodně (0), nebo ve shlucích (nad 0).",
+      "note": "No established Czech term. Based on 'shluk' = burst (as in telecom 'shlukové chyby'); 'nárazovitost' (cf. 'nárazový provoz') is the other option.",
+      "gender": "f"
+    },
+    "temporal-entropy": {
+      "term": "časová entropie",
+      "definition": "Jak rovnoměrně je energie zvuku rozložena v čase.",
+      "gender": "f"
+    },
+    "decay-time": {
+      "term": "doba doznívání (T60)",
+      "short": "Doba doznívání",
+      "alt": [
+        "doba dozvuku (T60)"
+      ],
+      "definition": "Doba, za kterou zvuk klesne o 60 dB.",
+      "note": "For rooms the ČSN EN ISO 3382 term is 'doba dozvuku'. Here it is the sound's own decay, hence 'doznívání'.",
+      "gender": "f"
+    },
+    "damping": {
+      "term": "tlumení",
+      "alt": [
+        "útlum"
+      ],
+      "definition": "Jak rychle kmitající těleso ztrácí energii.",
+      "gender": "n"
+    },
+    "material": {
+      "term": "materiál",
+      "definition": "Z čeho je udeřený předmět vyroben, jak to zní: tlumený, sklovitý nebo kovový.",
+      "gender": "m"
+    },
+    "partial": {
+      "term": "částkový tón",
+      "alt": [
+        "parciální tón",
+        "parciála"
+      ],
+      "definition": "Jedna frekvenční složka zvuku.",
+      "note": "Czech music-acoustics term.",
+      "gender": "m"
+    },
+    "overtone": {
+      "term": "svrchní tón",
+      "alt": [
+        "alikvotní tón",
+        "vyšší částkový tón"
+      ],
+      "definition": "Částkový tón nad nejnižším.",
+      "note": "'Alikvotní tón' is the more common word but implies harmonic partials. The definition includes inharmonic ones (bells), so the neutral 'svrchní tón' is preferred (cf. 'zpěv svrchních tónů').",
+      "gender": "m"
+    },
+    "inharmonic": {
+      "term": "neharmonický",
+      "definition": "S částkovými tóny, které nejsou celočíselnými násobky základního tónu, jako u zvonů a udeřeného kovu."
+    },
+    "quality-checks": {
+      "term": "kontroly kvality",
+      "definition": "Automatické kontroly přebuzení, stejnosměrné složky, ticha a useknutých doznění.",
+      "gender": "f"
+    },
+    "self-check": {
+      "term": "samokontrola",
+      "alt": [
+        "autotest",
+        "kontrolní test",
+        "self-check"
+      ],
+      "definition": "Test, který zvuk upraví známým způsobem a ověří, že se analýza změní tak, jak má.",
+      "note": "'Samokontrola' describes what it does. 'Autotest' is familiar but suggests a hardware power-on test. Avoid 'jednotkový test' (unit test).",
+      "gender": "f"
+    },
+    "de-harsh": {
+      "term": "zjemnit",
+      "short": "Zjemnit",
+      "alt": [
+        "zmírnit nepříjemnost",
+        "zjemnění",
+        "de-harsh"
+      ],
+      "definition": "Nástroj, který stahuje rezonance jen po dobu, kdy je zvuk nepříjemný.",
+      "note": "Infinitive command. 'Zjemnit' (make gentler) is short and idiomatic but does not echo 'nepříjemnost'. 'Zmírnit nepříjemnost' is transparent but long. A de-esser stays 'de-esser' in Czech."
+    },
+    "attack-and-body": {
+      "term": "náběh a tělo",
+      "alt": [
+        "tranzienty a tělo",
+        "rozdělení náběhu a těla",
+        "attack & body"
+      ],
+      "definition": "Nástroj, který rozdělí zvuk na tranzientní a trvající část, aby je bylo možné znovu vyvážit.",
+      "note": "Noun-phrase tool title, reusing the terms for attack and body. 'Tranzienty a tělo' is closer to how engineers talk but mixes registers. Not 'tvarovač tranzientů' (transient shaper)."
+    },
+    "layer-remix": {
+      "term": "remix vrstev",
+      "alt": [
+        "přemixování vrstev",
+        "nové smíchání vrstev"
+      ],
+      "definition": "Nástroj, který rozloží zvuk na vrstvy a znovu je smíchá s novými úrovněmi.",
+      "note": "'Remix' is fully naturalised in Czech. 'Přemixování' stresses the action; 'nové smíchání' is plain but wordy.",
+      "gender": "m"
+    },
+    "tension-shaper": {
+      "term": "tvarovač napětí",
+      "alt": [
+        "tvarování napětí",
+        "napětí do automatizace",
+        "tension shaper"
+      ],
+      "definition": "Nástroj, který převádí křivku napětí na automatizaci zesílení a jasu.",
+      "note": "'Tvarovač' is the usual calque of 'shaper' (tvarovač obálky/tranzientů). 'Tvarování' is the process noun. 'Napětí do automatizace' says what it does.",
+      "gender": "m"
+    },
+    "loop-maker": {
+      "term": "tvorba smyček",
+      "alt": [
+        "tvůrce smyček",
+        "smyčkovač",
+        "loop maker"
+      ],
+      "definition": "Nástroj, který najde body smyčky tam, kde se zvuk nejlépe opakuje, a prolne je.",
+      "note": "'Tvorba smyček' reads as a tool title. 'Tvůrce smyček' is the literal agent noun. 'Smyčkovač' is playful and short but nonstandard.",
+      "gender": "f"
+    },
+    "variations": {
+      "term": "varianty",
+      "alt": [
+        "variace"
+      ],
+      "definition": "Několik mírně odlišných verzí jednoho zvuku, aby se ve hrách zabránilo opakování.",
+      "note": "'Variace' also has a musical-form meaning. Plural noun.",
+      "gender": "f"
+    },
+    "clean-up": {
+      "term": "vyčištění pro export",
+      "alt": [
+        "úprava před exportem",
+        "vyčistit pro export"
+      ],
+      "definition": "Nástroj, který před exportem zvuku opraví to, na co upozornily kontroly kvality.",
+      "note": "Noun-phrase tool title; Ardour cs uses 'Vyčistit' for clean-up. Playhead names the tool with a verb ('Clean up for export'), so the app uses the infinitive 'Vyčistit pro export', as for the other command-style tools.",
+      "gender": "n"
+    },
+    "reverb-on-tails": {
+      "term": "dozvuk na doznění",
+      "alt": [
+        "dozvuk jen z doznění",
+        "dozvuk na ocasy",
+        "reverb on the tails"
+      ],
+      "definition": "Dozvuk napájený pouze z doznívání událostí; náběhy zůstávají suché.",
+      "note": "'Dozvuk' = reverb (Audacity cs). 'Dozvuk na doznění' is compact; 'jen z doznění' states the feed more exactly; 'na ocasy' is studio slang.",
+      "gender": "m"
+    },
+    "drive-hits": {
+      "term": "saturovat údery",
+      "alt": [
+        "nabudit údery",
+        "saturace úderů",
+        "drive the hits"
+      ],
+      "definition": "Saturace použitá pouze na náběhy nebo těla událostí.",
+      "note": "Infinitive command. 'Saturovat' says exactly what happens. 'Nabudit' keeps the 'drive' image (buzení) and is idiomatic, but sounds close to 'přebuzení' (clipping)."
+    },
+    "ring-time": {
+      "term": "délka doznívání",
+      "alt": [
+        "délka znění",
+        "doznívání",
+        "ring time"
+      ],
+      "definition": "Nástroj, který prodlužuje nebo zkracuje, jak dlouho každá událost po svém vrcholu doznívá.",
+      "note": "Most natural Czech, but close to 'doba doznívání (T60)'. Choose 'délka znění' if a lexical distinction from the measured value is wanted; 'znění' also means 'wording'.",
+      "gender": "f"
+    },
+    "level-events": {
+      "term": "vyrovnat události",
+      "alt": [
+        "vyrovnání událostí",
+        "srovnat hlasitost událostí",
+        "level the events"
+      ],
+      "definition": "Nástroj, který vyrovná hlasitost událostí jedním zesílením na každou událost, aniž by měnil jejich tvar.",
+      "note": "Infinitive command, matching 'vyrovnanost' (evenness). Not 'komprimovat'. 'Srovnat hlasitost' is more explicit but longer."
+    },
+    "fold-to-mono": {
+      "term": "sloučit do mona",
+      "alt": [
+        "složit do mona",
+        "sloučení do mona",
+        "fold to mono"
+      ],
+      "definition": "Převést stereo na mono se srovnanou fází kanálů, aby se nic nevyrušilo.",
+      "note": "Infinitive command. 'Sloučit' is the natural verb; 'složit' is the literal calque of 'fold' but also means 'compose'. Keep 'sečíst do mona' for the plain sum (Audacity cs: 'Smíchání do mono')."
+    },
+    "widen-tails": {
+      "term": "rozšířit doznění",
+      "alt": [
+        "rozšíření doznění",
+        "rozšířit ocasy",
+        "widen the tails"
+      ],
+      "definition": "Vytvořit nebo rozšířit stereo jen po nábězích; náběhy zůstanou uprostřed a výsledek kompatibilní s monem.",
+      "note": "Infinitive command using 'doznění' for tails; 'ocasy' is slang."
+    },
+    "downmix": {
+      "term": "downmix",
+      "alt": [
+        "sloučení kanálů"
+      ],
+      "definition": "Převést více kanálů na méně kanálů.",
+      "note": "The loan is standard in Czech broadcast and post-production (e.g. downmix 5.1 do sterea).",
+      "gender": "m"
+    },
+    "mono-compatibility": {
+      "term": "monokompatibilita",
+      "alt": [
+        "kompatibilita s monem",
+        "mono kompatibilita"
+      ],
+      "definition": "Jak dobře stereofonní zvuk snese sečtení do mona.",
+      "gender": "f"
+    },
+    "decorrelation": {
+      "term": "dekorelace",
+      "definition": "Snížení podobnosti dvou signálů při zachování jejich spektra, za účelem rozšíření stereofonního obrazu.",
+      "gender": "f"
+    },
+    "comb-filtering": {
+      "term": "hřebenová filtrace",
+      "alt": [
+        "efekt hřebenového filtru"
+      ],
+      "definition": "Pravidelné zářezy ve spektru, když se signál sečte se svou zpožděnou kopií.",
+      "note": "'Hřebenový filtr' in ČVUT audio-processing lectures.",
+      "gender": "f"
+    },
+    "cancellation": {
+      "term": "vyrušení",
+      "alt": [
+        "fázové vyrušení",
+        "rušení v protifázi"
+      ],
+      "definition": "Ztráta úrovně při sečtení signálů s opačnou fází.",
+      "note": "Engineering usage: 'signály se v protifázi vyruší'.",
+      "gender": "n"
+    },
+    "pre-echo": {
+      "term": "předozvěna",
+      "alt": [
+        "pre-echo"
+      ],
+      "definition": "Slabé rozmazání zvuku před jeho náběhem, způsobené zpracováním po rámcích.",
+      "note": "Calque; no authoritative Czech source found, and codec literature often keeps 'pre-echo'.",
+      "gender": "f"
+    },
+    "eq": {
+      "term": "ekvalizér",
+      "short": "EQ",
+      "alt": [
+        "EQ",
+        "korekce"
+      ],
+      "definition": "Ekvalizér (EQ): filtr, který mění úroveň frekvenčních pásem.",
+      "note": "'EQ' is used as is in UI and speech; 'korekce' is the older hi-fi term.",
+      "gender": "m"
+    },
+    "dynamic-eq": {
+      "term": "dynamický ekvalizér",
+      "short": "Dynamický EQ",
+      "definition": "Ekvalizér, jehož zesílení v pásmech sleduje úroveň v jednotlivých pásmech.",
+      "gender": "m"
+    },
+    "automation": {
+      "term": "automatizace",
+      "definition": "Změny parametrů v čase, nahrané nebo nakreslené.",
+      "note": "Ardour cs.",
+      "gender": "f"
+    },
+    "compressor": {
+      "term": "kompresor",
+      "definition": "Procesor, který nad prahem stahuje hlasité pasáže v daném poměru.",
+      "gender": "m"
+    },
+    "threshold": {
+      "term": "práh",
+      "alt": [
+        "prahová hodnota"
+      ],
+      "definition": "Úroveň, nad kterou procesor začne působit.",
+      "note": "Audacity, Ardour and LMMS cs.",
+      "gender": "m"
+    },
+    "ratio": {
+      "term": "poměr",
+      "alt": [
+        "kompresní poměr"
+      ],
+      "definition": "Jak silně kompresor nad prahem snižuje úroveň.",
+      "note": "Audacity and LMMS cs.",
+      "gender": "m"
+    },
+    "attack-time": {
+      "term": "doba náběhu",
+      "short": "Náběh",
+      "alt": [
+        "attack",
+        "čas náběhu"
+      ],
+      "definition": "Jak rychle procesor zareaguje, když úroveň stoupne.",
+      "note": "Audacity cs uses 'Čas náběhu' and LMMS cs 'Náběh'. Czech engineers mostly say 'attack' (e.g. muzikus.cz), so it is offered in alt for a loan-style UI.",
+      "gender": "f"
+    },
+    "release-time": {
+      "term": "doba uvolnění",
+      "short": "Uvolnění",
+      "alt": [
+        "release",
+        "doba návratu",
+        "čas uvolnění"
+      ],
+      "definition": "Jak rychle se procesor vrátí zpět, když úroveň klesne.",
+      "note": "Audacity cs uses 'Čas uvolnění'. LMMS cs 'Doznění' belongs to envelopes and is not used here. Engineers mostly say 'release'.",
+      "gender": "f"
+    },
+    "gate": {
+      "term": "brána",
+      "alt": [
+        "šumová brána",
+        "hradlo",
+        "gate"
+      ],
+      "definition": "Procesor nebo podmínka, která se otevře jen nad prahem.",
+      "note": "Audacity and Ardour cs use 'Brána'. For the gate in loudness measurement, RRTV EBU R 128 cz uses 'hradlování' and 'hradlované měření'.",
+      "gender": "f"
+    },
+    "saturation": {
+      "term": "saturace",
+      "definition": "Měkké zkreslení, které přidává harmonické složky a zaobluje špičky.",
+      "gender": "f"
+    },
+    "pumping": {
+      "term": "pumpování",
+      "definition": "Slyšitelné stoupání a klesání pozadí způsobené kompresorem.",
+      "gender": "n"
+    },
+    "evenness": {
+      "term": "vyrovnanost",
+      "definition": "Jak podobné si jsou události hlasitostí.",
+      "gender": "f"
+    },
+    "effect-chain": {
+      "term": "řetězec efektů",
+      "definition": "Efekty použité na zvuk jeden po druhém.",
+      "gender": "m"
+    },
+    "preset": {
+      "term": "předvolba",
+      "alt": [
+        "přednastavení",
+        "preset"
+      ],
+      "definition": "Uložená sada nastavení.",
+      "note": "Ardour and LMMS cs use 'předvolba'; Audacity cs uses 'přednastavení'.",
+      "gender": "f"
+    },
+    "morph": {
+      "term": "morfing",
+      "alt": [
+        "morfování",
+        "plynulý přechod"
+      ],
+      "definition": "Postupný plynulý přechod jednoho zvuku do druhého.",
+      "note": "Avoid 'prolnutí', which means crossfade.",
+      "gender": "m"
+    },
+    "cross-synthesis": {
+      "term": "křížová syntéza",
+      "definition": "Spojení spektra jednoho zvuku s obálkou nebo buzením jiného zvuku.",
+      "gender": "f"
+    },
+    "convolution": {
+      "term": "konvoluce",
+      "definition": "Filtrování jednoho zvuku jiným zvukem, například impulzní odezvou místnosti.",
+      "gender": "f"
+    },
+    "envelope-transfer": {
+      "term": "přenos obálky",
+      "definition": "Předání obálky úrovně jednoho zvuku jinému zvuku.",
+      "gender": "m"
+    },
+    "ring-modulation": {
+      "term": "kruhová modulace",
+      "definition": "Násobení dvou signálů, při kterém vznikají součtové a rozdílové frekvence.",
+      "gender": "f"
+    },
+    "granular": {
+      "term": "granulární",
+      "definition": "Sestavený z mnoha krátkých zrn zvuku."
+    },
+    "accent": {
+      "term": "akcent",
+      "alt": [
+        "zvýraznění",
+        "důraz",
+        "accent"
+      ],
+      "definition": "Krátký přidaný zvuk umístěný do určitého okamžiku jiného zvuku, aby ho zdůraznil.",
+      "note": "'Akcent' is a familiar musical term and countable ('přidat akcent'). 'Zvýraznění' describes the effect, not the added sound. 'Důraz' is uncountable.",
+      "gender": "m"
+    },
+    "generator": {
+      "term": "generátor",
+      "definition": "Část aplikace, která vytváří nové zvuky z parametrů.",
+      "gender": "m"
+    },
+    "synth": {
+      "term": "syntezátor",
+      "alt": [
+        "synth"
+      ],
+      "definition": "Generátor zvuku sestavený z oscilátorů, šumu, obálek a filtrů.",
+      "note": "Colloquially 'synťák'; not for UI.",
+      "gender": "m"
+    },
+    "impact-model": {
+      "term": "náraz",
+      "alt": [
+        "úder",
+        "dopad",
+        "impact"
+      ],
+      "definition": "Fyzikální model udeřeného předmětu z daného materiálu a daného tvaru.",
+      "note": "'Úder' is reserved for hits (events).",
+      "gender": "m"
+    },
+    "resynthesis": {
+      "term": "resyntéza",
+      "definition": "Znovusestavení zvuku z parametrů na něm naměřených, například z jeho částkových tónů a doznívání.",
+      "gender": "f"
+    },
+    "modal": {
+      "term": "modální",
+      "definition": "Složený z rezonančních módů, z nichž každý má svou frekvenci a doznívání.",
+      "note": "As in 'modální syntéza'; acoustics also says 'vlastní módy/vidy'."
+    },
+    "texture": {
+      "term": "textura",
+      "definition": "Spojitý zvuk složený z mnoha drobných událostí, jako je déšť, oheň nebo štěrk.",
+      "gender": "f"
+    },
+    "reaction": {
+      "term": "akce a reakce",
+      "alt": [
+        "působení a odezva",
+        "akce a odezva",
+        "action & reaction"
+      ],
+      "definition": "Generátor, ve kterém akce, například pohyb předmětu nebo síla, budí zvuk média, které na ni reaguje (štěrk, voda, vzduch).",
+      "note": "Echoes Newton's 'zákon akce a reakce', which every Czech knows from school. 'Působení a odezva' sounds more technical. 'Odezva' fits 'response' but is also the word for impulse response. 'Budí' (excites) renders 'drives', as in physical models.",
+      "gender": "f"
+    },
+    "medium": {
+      "term": "médium",
+      "alt": [
+        "prostředí"
+      ],
+      "definition": "To, co reaguje na akci: štěrk, listí, voda, vzduch, jiskry nebo silové pole.",
+      "note": "'Prostředí' is the physics word for medium but also means environment or ambience.",
+      "gender": "n"
+    },
+    "drive-curve": {
+      "term": "řídicí křivka",
+      "alt": [
+        "budicí křivka",
+        "křivka řízení",
+        "drive curve"
+      ],
+      "definition": "Křivka, která v čase řídí parametry zvuku.",
+      "note": "'Drive' here means control, not overdrive, so 'řídicí' (controlling) is clearest. 'Budicí' (exciting) fits physical models but suggests saturation drive.",
+      "gender": "f"
+    },
+    "inertia": {
+      "term": "setrvačnost",
+      "definition": "Jak pomalu se reakce ustálí poté, co akce skončí.",
+      "gender": "f"
+    },
+    "foley": {
+      "term": "ruchy",
+      "alt": [
+        "foley",
+        "postsynchronní ruchy"
+      ],
+      "definition": "Běžné zvuky předvedené a nahrané synchronně s obrazem.",
+      "note": "Czech film-sound term; the Foley artist is a 'ruchař'. The English 'foley' is also used (filmvychova.cz, Rosebud). Plural noun.",
+      "gender": "m"
+    },
+    "ambience": {
+      "term": "atmosféra",
+      "alt": [
+        "atmoska",
+        "ambience",
+        "zvukové pozadí"
+      ],
+      "definition": "Zvukové pozadí určitého místa.",
+      "note": "Czech film-sound term ('atmosféry'; slang 'atmoska').",
+      "gender": "f"
+    },
+    "one-shot": {
+      "term": "one-shot",
+      "alt": [
+        "jednorázový zvuk"
+      ],
+      "definition": "Krátký zvuk přehraný jednou, například úder nebo cvaknutí v uživatelském rozhraní.",
+      "note": "Loan used by Czech sound designers and sample libraries.",
+      "gender": "m"
+    },
+    "whoosh": {
+      "term": "whoosh",
+      "alt": [
+        "svist",
+        "průlet"
+      ],
+      "definition": "Zvuk něčeho, co se rychle pohybuje kolem posluchače.",
+      "note": "Sound designers use the loan. 'Svist' is the Czech word for the sound and fits a more localised UI.",
+      "gender": "m"
+    },
+    "finishing": {
+      "term": "finalizace",
+      "alt": [
+        "dokončení",
+        "dokončovací úpravy"
+      ],
+      "definition": "Poslední kroky před exportem: formát, kanály, fade-in/fade-out a úroveň.",
+      "gender": "f"
+    },
+    "steel": {
+      "term": "ocel",
+      "gender": "f"
+    },
+    "brass": {
+      "term": "mosaz",
+      "gender": "f"
+    },
+    "aluminium": {
+      "term": "hliník",
+      "gender": "m"
+    },
+    "glass": {
+      "term": "sklo",
+      "gender": "n"
+    },
+    "ceramic": {
+      "term": "keramika",
+      "gender": "f"
+    },
+    "ice": {
+      "term": "led",
+      "gender": "m"
+    },
+    "wood": {
+      "term": "dřevo",
+      "gender": "n"
+    },
+    "plastic": {
+      "term": "plast",
+      "gender": "m"
+    },
+    "stone": {
+      "term": "kámen",
+      "gender": "m"
+    },
+    "cardboard": {
+      "term": "karton",
+      "alt": [
+        "lepenka"
+      ],
+      "note": "'Lepenka' is the technical term; 'karton' is everyday.",
+      "gender": "m"
+    },
+    "rubber": {
+      "term": "guma",
+      "alt": [
+        "pryž"
+      ],
+      "note": "'Pryž' is the technical term; 'guma' is everyday.",
+      "gender": "f"
+    },
+    "bar-shape": {
+      "term": "tyč",
+      "alt": [
+        "nosník"
+      ],
+      "definition": "Dlouhé plné těleso, například prut nebo nosník.",
+      "note": "Not to be confused with the musical bar ('takt').",
+      "gender": "f"
+    },
+    "plate": {
+      "term": "deska",
+      "definition": "Tenké ploché těleso.",
+      "gender": "f"
+    },
+    "membrane": {
+      "term": "membrána",
+      "alt": [
+        "blána"
+      ],
+      "definition": "Napjatá blána, jako na bubnu.",
+      "gender": "f"
+    },
+    "shell": {
+      "term": "skořepina",
+      "definition": "Tenké zakřivené těleso, například plechovka nebo hrnec.",
+      "gender": "f"
+    },
+    "bell": {
+      "term": "zvon",
+      "gender": "m"
+    },
+    "wire": {
+      "term": "drát",
+      "alt": [
+        "struna",
+        "drát / struna"
+      ],
+      "definition": "Tuhá struna nebo drát, který zní s mírně roztaženými (neharmonickými) částkovými tóny.",
+      "note": "'Drát' follows the English choice of 'wire'. In Workbench the impact-model shape 'Wire / string' becomes 'Drát / struna'. 'Roztažené' is the usual Czech for stretched partials (as in piano-string inharmonicity).",
+      "gender": "m"
+    },
+    "box": {
+      "term": "skříň",
+      "alt": [
+        "krabice",
+        "bedna"
+      ],
+      "definition": "Duté těleso s rovnými stěnami.",
+      "note": "'Skříň' as in 'rezonanční skříň'; 'krabice' is everyday and suggests cardboard.",
+      "gender": "f"
+    }
+  }
+}
