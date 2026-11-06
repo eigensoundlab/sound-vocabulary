@@ -305,9 +305,9 @@
   "definition": "Jak vzrušující, nebo naopak zklidňující zvuk je; podle stejnojmenné psychologické dimenze."
  },
  "harshness": {
-  "term": "nepříjemnost",
-  "short": "nepříjemnost",
-  "definition": "Jak nepříjemné je zvuk poslouchat, odvozeno z psychoakustického obtěžování; není totéž co drsnost."
+  "term": "tvrdost",
+  "short": "tvrdost",
+  "definition": "Jak nepříjemné je zvuk poslouchat; počítá se z psychoakustického obtěžování a není totéž co drsnost."
  },
  "tension": {
   "term": "napětí",
@@ -325,8 +325,8 @@
   "definition": "Jak moc se daný okamžik liší od toho, co mu předcházelo."
  },
  "spectral-surprise": {
-  "term": "spektrální překvapení",
-  "short": "spektrální překvapení",
+  "term": "nečekaná změna spektra",
+  "short": "nečekaná změna spektra",
   "definition": "Změna spektra, kterou nelze vysvětlit hlasitostí."
  },
  "surprisal": {
@@ -335,8 +335,8 @@
   "definition": "Informační obsah události: čím je méně očekávaná, tím je vyšší."
  },
  "structural-change": {
-  "term": "strukturní změna",
-  "short": "strukturní změna",
+  "term": "změna struktury",
+  "short": "změna struktury",
   "definition": "Místo, kde skladba přechází do nové části, se znaménkem: nahoru tam, kde zvuk vstupuje, dolů tam, kde odeznívá nebo se přeruší."
  },
  "local-pulse": {
@@ -430,9 +430,9 @@
   "definition": "Jak rovnoměrně postupují fáze zvuku; 1 pro ustálený tón, blízko 0 pro šum."
  },
  "time-arrow": {
-  "term": "šipka času",
-  "short": "šipka času",
-  "definition": "Jak moc se zvuk změní, když se přehraje pozpátku; vysoká pro údery, které doznívají."
+  "term": "směr času",
+  "short": "směr času",
+  "definition": "Jak moc se zvuk změní, když se přehraje pozpátku; hodnota je vysoká pro údery, které doznívají."
  },
  "impulsiveness": {
   "term": "impulzivnost",
@@ -505,14 +505,14 @@
   "definition": "Automatické kontroly přebuzení, stejnosměrné složky, ticha a useknutých doznění."
  },
  "self-check": {
-  "term": "samokontrola",
-  "short": "samokontrola",
+  "term": "autotest",
+  "short": "autotest",
   "definition": "Test, který zvuk upraví známým způsobem a ověří, že se analýza změní tak, jak má."
  },
  "de-harsh": {
   "term": "zjemnit",
   "short": "Zjemnit",
-  "definition": "Nástroj, který stahuje rezonance jen po dobu, kdy je zvuk nepříjemný."
+  "definition": "Nástroj, který stahuje rezonance jen po dobu, kdy je zvuk tvrdý."
  },
  "attack-and-body": {
   "term": "náběh a tělo",
@@ -525,8 +525,8 @@
   "definition": "Nástroj, který rozloží zvuk na vrstvy a znovu je smíchá s novými úrovněmi."
  },
  "tension-shaper": {
-  "term": "tvarovač napětí",
-  "short": "tvarovač napětí",
+  "term": "tvarování napětí",
+  "short": "tvarování napětí",
   "definition": "Nástroj, který převádí křivku napětí na automatizaci zesílení a jasu."
  },
  "loop-maker": {
@@ -550,8 +550,8 @@
   "definition": "Dozvuk napájený pouze z doznívání událostí; náběhy zůstávají suché."
  },
  "drive-hits": {
-  "term": "saturovat údery",
-  "short": "saturovat údery",
+  "term": "saturace úderů",
+  "short": "saturace úderů",
   "definition": "Saturace použitá pouze na náběhy nebo těla událostí."
  },
  "ring-time": {
@@ -560,8 +560,8 @@
   "definition": "Nástroj, který prodlužuje nebo zkracuje, jak dlouho každá událost po svém vrcholu doznívá."
  },
  "level-events": {
-  "term": "vyrovnat události",
-  "short": "vyrovnat události",
+  "term": "srovnat hlasitost událostí",
+  "short": "srovnat hlasitost událostí",
   "definition": "Nástroj, který vyrovná hlasitost událostí jedním zesílením na každou událost, aniž by měnil jejich tvar."
  },
  "fold-to-mono": {

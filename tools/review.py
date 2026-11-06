@@ -50,6 +50,8 @@ select,input[type=search],button{font:inherit;font-size:13px;color:var(--ink);ba
 input[type=search]{width:min(240px,100%)}
 button{cursor:pointer}button:hover{border-color:var(--ink3)}
 button.primary{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+a.btnlink{font-size:13px;color:var(--accent);border:1px solid var(--accent);border-radius:4px;padding:4px 8px;text-decoration:none;min-height:30px;display:inline-flex;align-items:center}
+.n{font-size:11px;color:var(--ink3);margin-left:4px}
 .count{font-size:13px;color:var(--ink3)}
 .wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;background:var(--surface)}
 table{border-collapse:collapse;width:100%;min-width:900px}
@@ -95,6 +97,7 @@ the choices for <code>tools/apply.py</code>. Pick one language under Languages t
   <span class="count" id="count"></span>
   <button type="button" id="export" class="primary">Export choices</button>
   <button type="button" id="clear">Clear choices</button>
+  <a id="send" class="btnlink" target="_blank" rel="noopener" hidden>Send my choices to the project</a>
 </div>
 <p class="hint" id="exported" hidden></p>
 <p class="hint" id="sync">Choices are kept in this browser.</p>
@@ -105,6 +108,10 @@ the choices for <code>tools/apply.py</code>. Pick one language under Languages t
 <script>
 const EN = __EN__, TR = __TR__, META = __META__;
 const LANGS = Object.keys(TR);
+const REPO = "https://github.com/eigensoundlab/sound-vocabulary";
+// tallies of the choices people sent (docs/votes.json, written by tools/tally.py); absent outside GitHub Pages
+let VOTES = null;
+fetch("votes.json").then(r => (r.ok ? r.json() : null)).then(v => { if (v && v.votes) { VOTES = v; draw(); } }).catch(() => { /* no tallies here */ });
 const KEY = "sound-vocabulary.picks";
 let picks = {};
 try { picks = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { picks = {}; }
@@ -160,6 +167,8 @@ function cell(r, l) {
     const box = el("div", "alts");
     for (const a of [e.term].concat(alts)) {
       const b = el("button", "alt", a); b.type = "button";
+      const nv = VOTES && VOTES.votes[l] && VOTES.votes[l][r.id] && VOTES.votes[l][r.id][a];
+      if (nv) { b.appendChild(el("span", "n", String(nv))); b.title = nv + (nv === 1 ? " person prefers this" : " people prefer this"); }
       b.setAttribute("aria-pressed", String((pk || e.term) === a));
       b.title = a === e.term ? "proposed term" : "use this instead";
       b.addEventListener("click", () => { picks[l] = picks[l] || {}; if (a === e.term) delete picks[l][r.id]; else picks[l][r.id] = a; save(); draw(); share(l); });
@@ -207,7 +216,12 @@ function draw() {
     body.appendChild(tr);
   }
   const chosen = LANGS.reduce((a, l) => a + Object.keys(picks[l] || {}).length, 0);
-  $("count").textContent = n + " of " + EN.length + " terms" + (chosen ? " · " + chosen + " changed" : "");
+  $("count").textContent = n + " of " + EN.length + " terms" + (chosen ? " · " + chosen + " changed" : "") + (VOTES ? " · " + VOTES.voters + " people have sent choices" : "");
+  // a prefilled GitHub issue with this browser's choices (needs a GitHub account; nothing is sent without it)
+  const mine = Object.fromEntries(LANGS.filter(l => Object.keys(picks[l] || {}).length).map(l => [l, picks[l]]));
+  const send = $("send");
+  send.hidden = !Object.keys(mine).length;
+  send.href = REPO + "/issues/new?template=term-choices.yml&title=" + encodeURIComponent("Term choices: " + Object.keys(mine).join(", ")) + "&choices=" + encodeURIComponent(JSON.stringify(mine));
 }
 for (const id of ["f-status", "f-group", "f-app", "f-lang"]) $(id).addEventListener("change", draw);
 $("f-q").addEventListener("input", draw);

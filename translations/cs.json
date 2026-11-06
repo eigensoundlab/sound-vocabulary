@@ -1,7 +1,7 @@
 {
   "_language": "cs",
   "_name": "Čeština",
-  "_notes": "Sources, in order of precedence: the Czech translations of EBU R 128 and EBU Tech 3341 published by RRTV (hlasitost, skutečná špičková úroveň, frekvenční váhování, hradlování, LUFS = jednotka hlasitosti vztažená k celému rozsahu); ČSN ISO 1996-1 (obtěžování, impulzivnost); Czech psychoacoustics and music acoustics (hlasitost/ostrost/drsnost; částkový tón, náběh, doznívání); Czech film sound (ruchy, atmosféra); the Czech localisations of Ardour, Audacity and LMMS (prolínání, práh, poměr, zesílení/zisk, předvolba, automatizace, takt/doba, pruh). Cubase, Studio One and Reaper have no official Czech UI. Conventions: (1) 'frekvence' is used throughout; ČSN and Audacity cs say 'kmitočet', which is equally correct and is given in alt where it matters. (2) level = úroveň, loudness = hlasitost; 'hladina' only for acoustic quantities such as dB SPL. (3) Tool names: English imperative names (de-harsh, drive the hits, level the events, fold to mono, widen the tails) become Czech infinitives, the usual Czech command form (Uložit, Normalizovat): zjemnit, saturovat údery, vyrovnat události, sloučit do mona, rozšířit doznění. English noun-phrase tool names become Czech noun phrases (náběh a tělo, remix vrstev, tvarovač napětí, tvorba smyček, délka doznívání, dozvuk na doznění, vyčištění pro export). Every command also has its verbal noun in alt (vyrovnání událostí…), so the author can switch to all-noun panel titles. (4) 'term' is lower case except proper names and abbreviations; 'short' is the UI label in Czech sentence case (only the first word capitalised) and is given only where it differs from the term or the term is long. (5) English loans (fade, take, downmix, one-shot, whoosh) appear in 'term' only where Czech sound designers really use them and the localised form is clumsy; otherwise the loan is in alt (attack, release, foley, surprisal…). (6) Adjectives for drawing modes are neuter, agreeing with an implied 'zobrazení' (překryté, zrcadlené). (7) Units and symbols are unchanged (sone, acum, asper, vacil, LUFS, dBTP, T60, BPM); ranges use an en dash; the minus sign is kept. (8) The look code itself (form:overlay,…) is treated as machine-readable and not translated. (9) Terms reserved to keep distinctions: ostrost (sharpness) / drsnost (roughness) / nepříjemnost (harshness) / obtěžování (annoyance); nástup (onset) / náběh (attack) / tranzient (transient); novost / spektrální překvapení / překvapivost; křivka (curve) ≠ vlnový průběh (waveform); pás (strip) ⊃ pruh (lane); ruchy (Foley), so 'ruch' is not used for activity; dozvuk = reverb only.",
+  "_notes": "Sources, in order of precedence: the Czech translations of EBU R 128 and EBU Tech 3341 published by RRTV (hlasitost, skutečná špičková úroveň, frekvenční váhování, hradlování, LUFS = jednotka hlasitosti vztažená k celému rozsahu); ČSN ISO 1996-1 (obtěžování, impulzivnost); Czech psychoacoustics and music acoustics (hlasitost/ostrost/drsnost; částkový tón, náběh, doznívání); Czech film sound (ruchy, atmosféra); the Czech localisations of Ardour, Audacity and LMMS (prolínání, práh, poměr, zesílení/zisk, předvolba, automatizace, takt/doba, pruh). Cubase, Studio One and Reaper have no official Czech UI. Conventions: (1) 'frekvence' is used throughout; ČSN and Audacity cs say 'kmitočet', which is equally correct and is given in alt where it matters. (2) level = úroveň, loudness = hlasitost; 'hladina' only for acoustic quantities such as dB SPL. (3) Tool names follow the author's choices: infinitive commands, the usual Czech command form (Uložit, Normalizovat), for zjemnit, srovnat hlasitost událostí, sloučit do mona, rozšířit doznění; noun phrases for saturace úderů, tvarování napětí, náběh a tělo, remix vrstev, tvorba smyček, délka doznívání, dozvuk na doznění, vyčištění pro export. The other form of each name is kept in alt. (4) 'term' is lower case except proper names and abbreviations; 'short' is the UI label in Czech sentence case (only the first word capitalised) and is given only where it differs from the term or the term is long. (5) English loans (fade, take, downmix, one-shot, whoosh) appear in 'term' only where Czech sound designers really use them and the localised form is clumsy; otherwise the loan is in alt (attack, release, foley, surprisal…). (6) Adjectives for drawing modes are neuter, agreeing with an implied 'zobrazení' (překryté, zrcadlené). (7) Units and symbols are unchanged (sone, acum, asper, vacil, LUFS, dBTP, T60, BPM); ranges use an en dash; the minus sign is kept. (8) The look code itself (form:overlay,…) is treated as machine-readable and not translated. (9) Terms reserved to keep distinctions: ostrost (sharpness) / drsnost (roughness) / tvrdost (harshness; physical hardness is always 'tvrdost materiálu' or 'tvrdost úderu') / obtěžování (annoyance); nástup (onset) / náběh (attack) / tranzient (transient); novost / nečekaná změna spektra / překvapivost; křivka (curve) ≠ vlnový průběh (waveform); pás (strip) ⊃ pruh (lane); ruchy (Foley), so 'ruch' is not used for activity; dozvuk = reverb only.",
   "terms": {
     "waveform": {
       "term": "vlnový průběh",
@@ -338,7 +338,7 @@
         "index obtěžování"
       ],
       "definition": "Zwickerovo spojení hlasitosti, ostrosti, drsnosti a síly fluktuace do jediné hodnoty obtěžování.",
-      "note": "'Obtěžování' is the ČSN term for noise annoyance (ČSN ISO 1996-1). 'Nepříjemnost' is left for harshness, which is derived from it.",
+      "note": "'Obtěžování' is the ČSN term for noise annoyance (ČSN ISO 1996-1). Harshness ('tvrdost') is computed from it; 'psychoakustická nepříjemnost' remains a literal alternative.",
       "gender": "n"
     },
     "masking": {
@@ -528,14 +528,14 @@
       "gender": "n"
     },
     "harshness": {
-      "term": "nepříjemnost",
+      "term": "tvrdost",
       "alt": [
-        "tvrdost",
+        "nepříjemnost",
         "drásavost",
         "harshness"
       ],
-      "definition": "Jak nepříjemné je zvuk poslouchat, odvozeno z psychoakustického obtěžování; není totéž co drsnost.",
-      "note": "The everyday Czech words for 'harsh' (ostrý, drsný) are taken by sharpness and roughness. 'Nepříjemnost' follows the definition and differs from 'obtěžování' (annoyance), its input. 'Tvrdost' is idiomatic in mixing but clashes with material hardness in Workbench. 'Drásavost' is expressive but close to roughness.",
+      "definition": "Jak nepříjemné je zvuk poslouchat; počítá se z psychoakustického obtěžování a není totéž co drsnost.",
+      "note": "Author's choice. 'Tvrdost' is the mixing word for harsh sound ('tvrdé výšky', 'tvrdý zvuk'). The everyday words ostrý and drsný are taken by sharpness and roughness, and 'obtěžování' is annoyance, the input. Because 'tvrdost' also means physical hardness, write 'tvrdost materiálu' or 'tvrdost úderu' (mallet) whenever hardness is meant, never bare 'tvrdost'. 'Nepříjemnost' follows the definition literally; 'drásavost' is expressive but close to roughness. Derived forms: harsh = tvrdý, harshness factor = faktor tvrdosti, harshness-weighted loudness = hlasitost vážená tvrdostí.",
       "gender": "f"
     },
     "tension": {
@@ -553,19 +553,19 @@
     "novelty": {
       "term": "novost",
       "definition": "Jak moc se daný okamžik liší od toho, co mu předcházelo.",
-      "note": "Foote 2000; 'křivka novosti' for the novelty curve. Kept apart from 'spektrální překvapení' and 'překvapivost'.",
+      "note": "Foote 2000; 'křivka novosti' for the novelty curve. Kept apart from 'nečekaná změna spektra' (spectral surprise) and 'překvapivost' (surprisal).",
       "gender": "f"
     },
     "spectral-surprise": {
-      "term": "spektrální překvapení",
+      "term": "nečekaná změna spektra",
       "alt": [
-        "nečekaná změna spektra",
+        "spektrální překvapení",
         "spektrální zvrat",
         "spectral surprise"
       ],
       "definition": "Změna spektra, kterou nelze vysvětlit hlasitostí.",
-      "note": "Parallels the English and stays distinct from 'novost' (novelty) and 'překvapivost' (surprisal) by word form. 'Nečekaná změna spektra' is clearer but long. 'Spektrální zvrat' is short but suggests a reversal.",
-      "gender": "n"
+      "note": "Author's choice. 'Nečekaná změna spektra' says plainly what it is and is clearly distinct from 'novost' (novelty) and 'překvapivost' (surprisal). It is 22 characters, the limit for a label. 'Spektrální překvapení' parallels the English; 'spektrální zvrat' is short but suggests a reversal.",
+      "gender": "f"
     },
     "surprisal": {
       "term": "překvapivost",
@@ -575,18 +575,18 @@
         "surprisal"
       ],
       "definition": "Informační obsah události: čím je méně očekávaná, tím je vyšší.",
-      "note": "In Czech information theory the quantity is 'vlastní informace' (self-information); 'překvapivost' is the readable UI name. Note the pair překvapivost (surprisal) / spektrální překvapení (spectral surprise).",
+      "note": "In Czech information theory the quantity is 'vlastní informace' (self-information); 'překvapivost' is the readable UI name. Kept apart from 'nečekaná změna spektra' (spectral surprise).",
       "gender": "f"
     },
     "structural-change": {
-      "term": "strukturní změna",
+      "term": "změna struktury",
       "alt": [
+        "strukturní změna",
         "předěl",
-        "změna struktury",
         "structural change"
       ],
       "definition": "Místo, kde skladba přechází do nové části, se znaménkem: nahoru tam, kde zvuk vstupuje, dolů tam, kde odeznívá nebo se přeruší.",
-      "note": "'Strukturní změna' is a literal, neutral term that suits a signed curve. 'Předěl' is idiomatic for a move to a new part but suggests a point, not a curve. 'Strukturální' is also correct. 'Vstupuje' is used for 'enters' so as not to clash with 'nástup' (onset).",
+      "note": "Author's choice. 'Změna struktury' is plain and suits a signed curve. 'Strukturní změna' is the literal adjective form; 'předěl' is idiomatic for a move to a new part but suggests a point, not a curve. 'Vstupuje' is used for 'enters' so as not to clash with 'nástup' (onset).",
       "gender": "f"
     },
     "local-pulse": {
@@ -740,15 +740,15 @@
       "gender": "f"
     },
     "time-arrow": {
-      "term": "šipka času",
+      "term": "směr času",
       "alt": [
+        "šipka času",
         "časová nevratnost",
-        "směr času",
         "time arrow"
       ],
-      "definition": "Jak moc se zvuk změní, když se přehraje pozpátku; vysoká pro údery, které doznívají.",
-      "note": "'Šipka času' is the established Czech phrase for the physical arrow of time, so it carries the same image. 'Časová nevratnost' is the technical term (docs only, as in the source). 'Směr času' is plainer but loses the idea of a degree.",
-      "gender": "f"
+      "definition": "Jak moc se zvuk změní, když se přehraje pozpátku; hodnota je vysoká pro údery, které doznívají.",
+      "note": "Author's choice. 'Směr času' is plain and clear. 'Šipka času' is the physics phrase for the arrow of time and carries the same image; 'časová nevratnost' is the technical term (docs only, as in the source).",
+      "gender": "m"
     },
     "impulsiveness": {
       "term": "impulzivnost",
@@ -870,26 +870,26 @@
       "gender": "f"
     },
     "self-check": {
-      "term": "samokontrola",
+      "term": "autotest",
       "alt": [
-        "autotest",
+        "samokontrola",
         "kontrolní test",
         "self-check"
       ],
       "definition": "Test, který zvuk upraví známým způsobem a ověří, že se analýza změní tak, jak má.",
-      "note": "'Samokontrola' describes what it does. 'Autotest' is familiar but suggests a hardware power-on test. Avoid 'jednotkový test' (unit test).",
-      "gender": "f"
+      "note": "Author's choice. 'Autotest' is familiar from devices; here it tests the analysis, not hardware. 'Samokontrola' describes it literally. Avoid 'jednotkový test' (unit test).",
+      "gender": "m"
     },
     "de-harsh": {
       "term": "zjemnit",
       "short": "Zjemnit",
       "alt": [
-        "zmírnit nepříjemnost",
+        "zmírnit tvrdost",
         "zjemnění",
         "de-harsh"
       ],
-      "definition": "Nástroj, který stahuje rezonance jen po dobu, kdy je zvuk nepříjemný.",
-      "note": "Infinitive command. 'Zjemnit' (make gentler) is short and idiomatic but does not echo 'nepříjemnost'. 'Zmírnit nepříjemnost' is transparent but long. A de-esser stays 'de-esser' in Czech."
+      "definition": "Nástroj, který stahuje rezonance jen po dobu, kdy je zvuk tvrdý.",
+      "note": "Infinitive command. 'Zjemnit' (make gentler) is short and idiomatic and is the natural opposite of 'tvrdý' (harsh). 'Zmírnit tvrdost' is transparent but long. A de-esser stays 'de-esser' in Czech."
     },
     "attack-and-body": {
       "term": "náběh a tělo",
@@ -912,15 +912,15 @@
       "gender": "m"
     },
     "tension-shaper": {
-      "term": "tvarovač napětí",
+      "term": "tvarování napětí",
       "alt": [
-        "tvarování napětí",
+        "tvarovač napětí",
         "napětí do automatizace",
         "tension shaper"
       ],
       "definition": "Nástroj, který převádí křivku napětí na automatizaci zesílení a jasu.",
-      "note": "'Tvarovač' is the usual calque of 'shaper' (tvarovač obálky/tranzientů). 'Tvarování' is the process noun. 'Napětí do automatizace' says what it does.",
-      "gender": "m"
+      "note": "Author's choice: a process noun ('Tvarování napětí'), like 'Saturace úderů'. 'Tvarovač' is the usual calque of 'shaper' (tvarovač obálky/tranzientů). 'Napětí do automatizace' says what it does.",
+      "gender": "n"
     },
     "loop-maker": {
       "term": "tvorba smyček",
@@ -949,7 +949,7 @@
         "vyčistit pro export"
       ],
       "definition": "Nástroj, který před exportem zvuku opraví to, na co upozornily kontroly kvality.",
-      "note": "Noun-phrase tool title; Ardour cs uses 'Vyčistit' for clean-up. Playhead names the tool with a verb ('Clean up for export'), so the app uses the infinitive 'Vyčistit pro export', as for the other command-style tools.",
+      "note": "Noun-phrase tool title; Ardour cs uses 'Vyčistit' for clean-up. Playhead names the tool with a verb ('Clean up for export'), so the app uses the infinitive 'Vyčistit pro export'.",
       "gender": "n"
     },
     "reverb-on-tails": {
@@ -964,14 +964,15 @@
       "gender": "m"
     },
     "drive-hits": {
-      "term": "saturovat údery",
+      "term": "saturace úderů",
       "alt": [
+        "saturovat údery",
         "nabudit údery",
-        "saturace úderů",
         "drive the hits"
       ],
       "definition": "Saturace použitá pouze na náběhy nebo těla událostí.",
-      "note": "Infinitive command. 'Saturovat' says exactly what happens. 'Nabudit' keeps the 'drive' image (buzení) and is idiomatic, but sounds close to 'přebuzení' (clipping)."
+      "note": "Author's choice: a noun-phrase tool title ('Saturace úderů'), like 'Tvarování napětí'. 'Saturovat údery' is the infinitive form of the same name. 'Nabudit' keeps the 'drive' image (buzení) and is idiomatic, but sounds close to 'přebuzení' (clipping).",
+      "gender": "f"
     },
     "ring-time": {
       "term": "délka doznívání",
@@ -985,14 +986,14 @@
       "gender": "f"
     },
     "level-events": {
-      "term": "vyrovnat události",
+      "term": "srovnat hlasitost událostí",
       "alt": [
+        "vyrovnat události",
         "vyrovnání událostí",
-        "srovnat hlasitost událostí",
         "level the events"
       ],
       "definition": "Nástroj, který vyrovná hlasitost událostí jedním zesílením na každou událost, aniž by měnil jejich tvar.",
-      "note": "Infinitive command, matching 'vyrovnanost' (evenness). Not 'komprimovat'. 'Srovnat hlasitost' is more explicit but longer."
+      "note": "Author's choice: an infinitive command that says what is levelled. At 26 characters it is long for a button; there is no shorter label yet. 'Vyrovnat události' is shorter and matches 'vyrovnanost' (evenness). Not 'komprimovat'."
     },
     "fold-to-mono": {
       "term": "sloučit do mona",

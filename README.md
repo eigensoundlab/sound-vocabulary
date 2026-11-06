@@ -12,6 +12,19 @@ introduce (a *look*, *spectral surprise*, *widen the tails*), or terms a languag
 **[Review sheet](docs/review.html)**: every term in English and each language side by side; the coined terms with
 their alternatives to choose from.
 
+## Choosing terms together
+
+The review sheet is also how speakers of a language say which terms they prefer. On GitHub Pages
+(`https://eigensoundlab.github.io/sound-vocabulary/`, from the `docs` folder) anyone can click the alternatives they
+prefer and **Send my choices to the project**: that opens a prefilled GitHub issue (the *Term choices* form), with room
+for whether the language is theirs, their field and why. A workflow (`.github/workflows/tally.yml`, `tools/tally.py`)
+counts the choices into `docs/votes.json` after every such issue, one vote per account and term (its latest), and the
+sheet shows the counts next to each alternative. Votes are advice: each language's maintainer decides, with the
+standards and the field's usage in mind, and records why in the term's note.
+
+Setup, once: **Settings > Pages > Deploy from a branch > main, /docs**, and **Settings > Actions > General > Workflow
+permissions > Read and write**.
+
 ## Files
 
 | File | What it is |
@@ -40,6 +53,7 @@ python3 tools/check.py translations/*.json   # every id present, coined terms wi
 python3 tools/review.py                      # docs/review.html
 python3 tools/apply.py decisions.json        # apply the choices exported from the review sheet
 python3 tools/export.py                      # dist/: glossary.tbx, glossary-<lang>.csv, terms-<lang>.json
+python3 tools/tally.py                       # docs/votes.json from the "Term choices" issues (needs the GitHub CLI)
 ```
 
 `glossary.tbx` is a TBX-Basic termbase (ISO 30042) for CAT tools (Trados, memoQ, OmegaT) and Weblate;

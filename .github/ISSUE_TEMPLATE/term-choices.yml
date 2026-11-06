@@ -1,0 +1,42 @@
+name: Term choices
+description: The terms you prefer in your language, sent from the review sheet
+title: "Term choices"
+labels: ["term-choices"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. The review sheet has filled in your choices below. They are advice for the language's maintainer,
+        who decides with the standards and the field's usage in mind; the tallies are shown on the review sheet.
+  - type: textarea
+    id: choices
+    attributes:
+      label: Choices (filled in by the review sheet; please leave as it is)
+      render: json
+    validations:
+      required: true
+  - type: dropdown
+    id: native
+    attributes:
+      label: Is this your native language?
+      options:
+        - "Yes"
+        - "No, but I work in it"
+        - "No"
+  - type: dropdown
+    id: field
+    attributes:
+      label: Your field
+      options:
+        - Sound design
+        - Game audio
+        - Music production or mixing
+        - Mastering
+        - Acoustics or audio research
+        - Translation or localisation
+        - Other
+  - type: textarea
+    id: why
+    attributes:
+      label: Why (optional)
+      description: Where you have seen or used these terms (a manual, a standard, a studio, a school), or a better term.

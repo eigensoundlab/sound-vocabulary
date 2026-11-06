@@ -6,7 +6,7 @@ timbre	barva zvuku	Playhead: row.s1.desc, row.n7.desc, row.n8.desc, lab.timbreSy
 bar line	taktová čára	Playhead: row.d4.desc, cmp.marks.downbeats, lib.mark.downbeats, lib.look.overview.desc, lib.look.hits.desc	Music-notation term; drawn at downbeats.
 thumbnail	náhled	Playhead: ui.thumb*, row.d3.name, row.d5.name, aria.thumb, sec.library.desc	Usual Czech UI word; 'miniatura' also used. Distinct from overview = přehled.
 loop seam	šev smyčky	Playhead: row.x7.desc, check.seamJump, check.seamChange, lib.tool.loop.param.xfadeMs	'Šev' for the joint where the loop wraps; 'spoj' is used in the vocabulary definition of loop. 'Místo napojení' for 'wrap'.
-hit	úder	Playhead: guide, row.n9.desc, lib.curve.onsetStrength, lib.look.*, lib.tool.tailverb.desc, lib.tool.drive.name	Reserved for hits; beat = doba, impact (model) = náraz. Also used in drive-hits = saturovat údery.
+hit	úder	Playhead: guide, row.n9.desc, lib.curve.onsetStrength, lib.look.*, lib.tool.tailverb.desc, lib.tool.drive.name	Reserved for hits; beat = doba, impact (model) = náraz. Also used in drive-hits = saturace úderů.
 riser	riser	Playhead: guide.c2.mislead, row.n4.desc	Loan used by Czech producers (pl. risery); no Czech equivalent in use.
 sweep	přeladění	Playhead: row.x2.desc, row.n4.desc, obj.Y.sustained	Gliding tone or filter sweep. Producers also say 'sweep'; 'glissando' only for pitched instruments.
 grain	zrno	Playhead: note.sfx.2, lab.grains, lib.tool.vars.desc, lib.tool.vars.param.grains	As in granular synthesis (zrna); matches granular = granulární.
@@ -20,12 +20,12 @@ beat tracker	sledování dob	Playhead: row.r2.name, note.builtin.text, note.rhyt
 kernel	jádro	Playhead: note.rhythm.4, lab.kernelPm	Checkerboard kernel of the novelty function.
 chroma	chromagram	Playhead: row.c6.desc, row.s1.desc	'Chroma vektor' / 'chromagram' in Czech MIR theses.
 headroom	rezerva (headroom)	Playhead: check.noHeadroom	Engineers also say 'headroom'; 'rezerva' is the plain Czech word.
-match loudness	sladit hlasitost	Playhead: bench.match, note.effects.4, lib.tool.*.param.match	Chosen so it does not clash with level the events = vyrovnat události and evenness = vyrovnanost.
+match loudness	sladit hlasitost	Playhead: bench.match, note.effects.4, lib.tool.*.param.match	Chosen so it does not clash with level the events = srovnat hlasitost událostí and evenness = vyrovnanost.
 drum fill	(bubenický) přechod	Playhead: guide.c1.mislead, guide.c2.reveal	Czech drummers' term for a fill.
 pad (synth)	plocha	Playhead: guide.c1.mislead	Czech synth jargon ('smyčcová plocha'); 'pad' is also heard.
 hi-hat; kick	hi-hat; kopák	Playhead: note.rhythm.1, guide.c4.mislead	Common studio jargon (pl. hi-haty, kopáky).
 suspension; resolution	průtah; rozvedení	Playhead: guide.c6.reveal	Czech harmony terms.
-drive (parameter)	buzení	Playhead: lib.tool.drive.param.driveDb	Amount of saturation drive; related to přebuzení, so the tool name uses 'saturovat' instead.
+drive (parameter)	buzení	Playhead: lib.tool.drive.param.driveDb	Amount of saturation drive; related to přebuzení, so the tool name uses 'saturace' instead.
 zero crossing	průchod nulou	Playhead: lib.tool.loop.desc	Standard signal-processing term.
 equal-power (crossfade)	s konstantním výkonem	Playhead: lib.tool.loop.desc	As in 'prolínání s konstantním výkonem'.
 decorrelator; velvet noise	dekorelátor; velvet noise	Playhead: lib.tool.widen.desc	'Velvet noise' is kept in English in Czech DSP texts; calque 'sametový šum' not established.
