@@ -174,3 +174,59 @@ shell	material	common	shell		A thin curved body, such as a can or pot.			workben
 bell	material	standard	bell					workbench
 wire	material	standard	wire		A stiff string or wire that rings with slightly stretched (inharmonic) partials.			workbench
 box	material	common	box		A hollow body with flat sides.			workbench
+track	daw	standard	track		A row of a DAW session that holds clips on the timeline and has its own mixer channel.	lane (a band inside a strip); channel (one signal of a sound file)		playhead workbench
+folder-track	daw	standard	folder track	folder	A track that holds other tracks: it sums their sound and can show them as one.	group (a mixer group or VCA)		playhead
+clip	daw	standard	clip		One piece of audio or MIDI on a track, placed at a point in time.	event (here a sound event the analysis finds; Cubase calls clips events); region (here a named span of time; Logic calls clips regions); item (REAPER's word, fine in REAPER-only texts)		playhead workbench
+session	daw	standard	session		All of one piece of DAW work: its tracks, clips, routing and settings; also called a project.			playhead workbench
+timeline	daw	standard	timeline		The time axis of a session, along which clips are placed.			playhead workbench
+marker	daw	standard	marker		A named point in time stored in a session or a sound file (a cue in a WAV file).	marks (the ticks Playhead draws on a strip; a marker is what an editor stores)		playhead workbench
+region	daw	standard	region		A named span of time with a start and an end, stored in a session or a sound file.			playhead workbench
+snap	daw	standard	snap		Making a clip or an edit jump to the nearest grid line, marker, clip edge or onset while it is moved.			playhead workbench
+mute	daw	standard	mute		Silencing a track without removing it; the button is often labelled M.			playhead
+solo	daw	standard	solo		Hearing only the soloed tracks; the button is often labelled S.			playhead
+fader	daw	standard	fader		The level control of a mixer channel.			playhead workbench
+pan	daw	standard	pan		Where a sound sits between left and right; also the control that sets it.			playhead workbench
+bus	daw	standard	bus		A mixer channel that sums the signals sent to it, so they can be processed together (a drum bus, a reverb bus).			playhead workbench
+master-bus	daw	standard	master bus	master	The bus everything is summed into before the output: what is rendered as the mix.			playhead workbench
+send	daw	standard	send		A copy of a track's signal sent to a bus at its own level, while the track keeps playing.			playhead workbench
+insert	daw	standard	insert		An effect in a channel's own signal path, which all of the signal passes through.			playhead workbench
+routing	daw	standard	routing		How signals travel between tracks, buses, sends and outputs.			playhead workbench
+mix	daw	standard	mix		The sum of all tracks as it is heard; also the work of balancing them.			playhead workbench
+stem	daw	standard	stem		A submix of related tracks (drums, dialogue, music) rendered to its own file, so the parts can be mixed or delivered separately.			playhead workbench
+zero-crossing	daw	standard	zero crossing		A point where the waveform crosses zero; cuts and loop points made there do not click.			playhead workbench
+headroom	mixing	standard	headroom		The distance in dB between the highest level a signal reaches and the level where it would clip.			playhead workbench
+dynamic-range	mixing	standard	dynamic range		The span in dB between a sound's loud and quiet parts, or between the highest level a system takes and its noise floor.	loudness range (a loudness measure, in LU)		playhead workbench
+loudness-range	mixing	standard	loudness range	LRA	How much the loudness of a programme varies, in LU: the span between the 10th and 95th percentile of its short-term loudness.	dynamic range (a level measure, in dB)	EBU Tech 3342	playhead
+integrated-loudness	mixing	standard	integrated loudness		The loudness of a whole programme, with silence and quiet passages gated out, in LUFS.		ITU-R BS.1770; EBU R 128	playhead workbench
+short-term-loudness	mixing	standard	short-term loudness		Loudness over a sliding 3 s window, in LUFS.		EBU Tech 3341	playhead
+momentary-loudness	mixing	standard	momentary loudness		Loudness over a sliding 400 ms window, in LUFS.		EBU Tech 3341	playhead
+loudness-target	mixing	standard	loudness target		The integrated loudness a programme is delivered or played at, such as −23 LUFS for EBU R 128 broadcast or about −14 LUFS on streaming services.		EBU R 128	playhead workbench
+loudness-matching	mixing	common	loudness matching	match loudness	Bringing two versions to the same loudness before comparing them, so that the louder one does not seem better only because it is louder.			playhead workbench
+ab-comparison	mixing	standard	A/B comparison	A/B	Switching between two versions, ideally at matched loudness, to hear which is better.			playhead workbench
+reference-track	mixing	standard	reference track	reference	A finished recording played for comparison while mixing or mastering.			playhead workbench
+crest-factor	mixing	standard	crest factor		The ratio of peak to RMS level, in dB: high for punchy, dynamic sound, low for dense, compressed sound.			playhead workbench
+rms-level	mixing	standard	RMS level	RMS	The root mean square of a signal over a window: its average power, as a level.			playhead workbench
+stereo-width	mixing	standard	stereo width	width	How different the two channels are, from mono (not at all) to wide.			playhead workbench
+envelope	mixing	standard	envelope		How a quantity, usually level, changes over the course of a sound; also a drawn curve that controls a parameter.			playhead workbench
+frequency-band	mixing	standard	frequency band	band	A range of frequencies measured or processed together: an EQ band, a critical band, a mel band.			playhead workbench
+high-pass-filter	mixing	standard	high-pass filter	high-pass	A filter that passes the frequencies above its cutoff and attenuates those below.	low-cut (the same filter; use one term)		playhead workbench
+low-pass-filter	mixing	standard	low-pass filter	low-pass	A filter that passes the frequencies below its cutoff and attenuates those above.	high-cut (the same filter; use one term)		playhead workbench
+limiter	mixing	standard	limiter		A compressor with a very high ratio and a fast attack that keeps the level below a ceiling.			playhead workbench
+multiband-compressor	mixing	standard	multiband compressor	multiband	A compressor that works on several frequency bands separately.			playhead workbench
+transient-shaper	mixing	standard	transient shaper		A processor that raises or lowers the attack and the sustain of sounds independently of their level.			playhead workbench
+sidechain	mixing	standard	sidechain		A second input through which another signal controls a processor, as when music is turned down under dialogue.			playhead workbench
+ducking	mixing	standard	ducking		Turning one sound down automatically while another plays, usually with a sidechained compressor.			playhead workbench
+reverb	mixing	standard	reverb		The dense reflections of a sound in a space, or an effect that imitates them.			playhead workbench
+delay	mixing	standard	delay		An effect that plays the sound again after a set time, often repeating and fading (echo).			playhead workbench
+dither	mixing	standard	dither		Low-level noise added when the bit depth is reduced, so that the rounding error becomes noise instead of distortion.			playhead workbench
+mastering	mixing	standard	mastering		The last stage before release: the final EQ, dynamics and loudness of a mix, and checks for the delivery format.			playhead workbench
+drop	dj	common	drop		The moment in a dance track when the full beat and bass come in, usually after a build-up or a breakdown.	drop for a fall in level (Playhead says fall or break)		playhead
+build-up	dj	common	build-up		A passage that raises tension towards a drop: rising pitch, filter sweeps, faster rolls, a riser.			playhead
+breakdown	dj	common	breakdown		A passage where the beat and bass fall away, leaving pads, chords or vocals.			playhead
+riser	dj	common	riser		A sound that rises in pitch, brightness or level to lead into a drop or a transition.			playhead workbench
+sweep	dj	standard	sweep		A glide through a range of frequencies: a tone or noise whose pitch or brightness moves, or a filter swept across the spectrum.			playhead workbench
+cue-point	dj	standard	cue point	cue	A stored position in a track that a DJ or a player jumps to or starts from.			playhead
+beatgrid	dj	common	beatgrid		The beats and bars of a track as a grid, used to sync, loop and jump in time.			playhead
+beatmatching	dj	standard	beatmatching		Bringing two tracks to the same tempo with their beats aligned.			playhead
+phrase	dj	standard	phrase		A run of bars, usually 8, 16 or 32 in dance music, that forms one musical unit; DJs mix at phrase boundaries.			playhead
+key	dj	standard	key		The tonal centre and scale of a piece, such as A minor; DJs mix tracks in compatible keys (harmonic mixing).			playhead

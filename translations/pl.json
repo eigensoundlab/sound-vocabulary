@@ -1127,6 +1127,368 @@
       "definition": "Puste w środku ciało o płaskich ściankach.",
       "note": "As in „pudło rezonansowe”.",
       "gender": "n"
+    },
+    "track": {
+      "term": "ścieżka",
+      "definition": "Wiersz projektu DAW, który mieści klipy na osi czasu i ma własny kanał miksera.",
+      "note": "Ardour, Audacity and LMMS pl 'ścieżka'. Not 'tor' (a band inside a strip) or 'kanał' (one signal of a sound file).",
+      "gender": "f"
+    },
+    "folder-track": {
+      "term": "ścieżka folderu",
+      "short": "Folder",
+      "alt": ["folder", "ścieżka-folder"],
+      "definition": "Ścieżka, która zawiera inne ścieżki: sumuje ich dźwięk i może pokazać je jako całość.",
+      "note": "REAPER and Cubase say 'folder track'; Polish users say 'folder'. Playhead: 'Ścieżki w folderze'.",
+      "gender": "f"
+    },
+    "clip": {
+      "term": "klip",
+      "alt": ["region", "element"],
+      "definition": "Fragment audio lub MIDI na ścieżce, umieszczony w określonym miejscu osi czasu.",
+      "note": "Here 'zdarzenie' is a sound event and 'region' a named span of time (Ardour pl and Logic call clips regions).",
+      "gender": "m"
+    },
+    "session": {
+      "term": "projekt",
+      "alt": ["sesja"],
+      "definition": "Cała praca nad jednym utworem w DAW: ścieżki, klipy, routing i ustawienia.",
+      "note": "Polish users say 'projekt'; Ardour pl 'sesja'.",
+      "gender": "m"
+    },
+    "timeline": {
+      "term": "oś czasu",
+      "definition": "Oś czasu projektu, wzdłuż której umieszcza się klipy.",
+      "gender": "f"
+    },
+    "marker": {
+      "term": "marker",
+      "alt": ["znacznik czasu"],
+      "definition": "Nazwany punkt w czasie zapisany w projekcie lub pliku dźwiękowym (cue w pliku WAV).",
+      "note": "Studio loan. Not 'znacznik': 'znaczniki' are the marks Playhead draws on a strip.",
+      "gender": "m"
+    },
+    "region": {
+      "term": "region",
+      "alt": ["zakres", "obszar"],
+      "definition": "Nazwany odcinek czasu z początkiem i końcem, zapisany w projekcie lub pliku dźwiękowym.",
+      "note": "REAPER usage. Ardour pl and Logic call clips 'regiony'; here a region is a span of time.",
+      "gender": "m"
+    },
+    "snap": {
+      "term": "przyciąganie",
+      "alt": ["snap"],
+      "definition": "Przeskok przesuwanego klipu lub cięcia do najbliższej linii siatki, markera, krawędzi klipu lub początku dźwięku.",
+      "note": "Playhead: 'Przyciągaj do początków'.",
+      "gender": "n"
+    },
+    "mute": {
+      "term": "wyciszenie",
+      "short": "Wycisz",
+      "alt": ["mute"],
+      "definition": "Wyciszenie ścieżki bez jej usuwania; przycisk często ma literę M.",
+      "note": "Buttons 'Wycisz' or M.",
+      "gender": "n"
+    },
+    "solo": {
+      "term": "solo",
+      "definition": "Odsłuch tylko ścieżek w trybie solo; przycisk często ma literę S.",
+      "gender": "n"
+    },
+    "fader": {
+      "term": "suwak",
+      "alt": ["fader", "tłumik"],
+      "definition": "Regulator poziomu kanału miksera.",
+      "note": "Studio speech 'suwak' or 'fader'.",
+      "gender": "m"
+    },
+    "pan": {
+      "term": "panorama",
+      "alt": ["pan", "panoramowanie"],
+      "definition": "Miejsce dźwięku między lewą a prawą stroną; także regulator, który je ustawia.",
+      "note": "Studio term (panorama, f.; panoramowanie in LMMS pl). 'Pan' is heard as a knob label only.",
+      "gender": "f"
+    },
+    "bus": {
+      "term": "szyna",
+      "alt": ["bus", "grupa"],
+      "definition": "Kanał miksera, który sumuje wysłane do niego sygnały, aby można je było przetwarzać razem (szyna perkusji, szyna pogłosu).",
+      "note": "Ardour pl 'szyna'; studio speech also 'bus'.",
+      "gender": "f"
+    },
+    "master-bus": {
+      "term": "szyna główna",
+      "short": "Master",
+      "alt": ["master", "suma"],
+      "definition": "Szyna, do której przed wyjściem sumuje się wszystko: to, co renderuje się jako miks.",
+      "gender": "f"
+    },
+    "send": {
+      "term": "wysyłka",
+      "alt": ["send", "wysyłka aux"],
+      "definition": "Kopia sygnału ścieżki wysłana do szyny z własnym poziomem, podczas gdy ścieżka gra dalej.",
+      "gender": "f"
+    },
+    "insert": {
+      "term": "insert",
+      "alt": ["efekt insertowy", "wpięcie"],
+      "definition": "Efekt wpięty w drogę sygnału kanału, przez który przechodzi cały sygnał.",
+      "note": "Studio loan.",
+      "gender": "m"
+    },
+    "routing": {
+      "term": "routing",
+      "alt": ["trasowanie", "przekierowanie sygnałów"],
+      "definition": "Sposób, w jaki sygnały biegną między ścieżkami, szynami, wysyłkami i wyjściami.",
+      "gender": "m"
+    },
+    "mix": {
+      "term": "miks",
+      "definition": "Suma wszystkich ścieżek tak, jak brzmi; także praca nad ich zrównoważeniem.",
+      "note": "Playhead: 'miks folderu'.",
+      "gender": "m"
+    },
+    "stem": {
+      "term": "stem",
+      "alt": ["submiks"],
+      "definition": "Submiks powiązanych ścieżek (perkusja, dialogi, muzyka) wyrenderowany do osobnego pliku, aby części można było miksować lub dostarczyć osobno.",
+      "note": "Loan used in post-production and game audio (pl. stemy).",
+      "gender": "m"
+    },
+    "zero-crossing": {
+      "term": "przejście przez zero",
+      "definition": "Punkt, w którym przebieg przecina zero; cięcia i punkty pętli zrobione tam nie trzaskają.",
+      "note": "Standard signal-processing term.",
+      "gender": "n"
+    },
+    "headroom": {
+      "term": "zapas dynamiki",
+      "alt": ["headroom", "zapas"],
+      "definition": "Odległość w dB między najwyższym poziomem, jaki osiąga sygnał, a poziomem, przy którym nastąpiłoby przesterowanie.",
+      "note": "Studio usage; 'headroom' loan also heard (Playhead: 'brak zapasu').",
+      "gender": "m"
+    },
+    "dynamic-range": {
+      "term": "zakres dynamiki",
+      "definition": "Rozpiętość w dB między głośnymi a cichymi częściami dźwięku albo między najwyższym poziomem, jaki przyjmie system, a jego poziomem szumu tła.",
+      "note": "A level measure in dB; the loudness range (zakres głośności, LRA) is a loudness measure in LU.",
+      "gender": "m"
+    },
+    "loudness-range": {
+      "term": "zakres głośności",
+      "short": "LRA",
+      "definition": "Jak bardzo zmienia się głośność programu, w LU: rozpiętość między 10. a 95. percentylem jego głośności krótkookresowej.",
+      "note": "EBU Tech 3342; Ardour pl 'Zakres głośności'.",
+      "gender": "m"
+    },
+    "integrated-loudness": {
+      "term": "głośność zintegrowana",
+      "definition": "Głośność całego programu z pominięciem ciszy i cichych fragmentów (bramkowanie), w LUFS.",
+      "note": "EBU R 128.",
+      "gender": "f"
+    },
+    "short-term-loudness": {
+      "term": "głośność krótkookresowa",
+      "definition": "Głośność w przesuwnym oknie 3 s, w LUFS.",
+      "note": "EBU Tech 3341.",
+      "gender": "f"
+    },
+    "momentary-loudness": {
+      "term": "głośność chwilowa",
+      "definition": "Głośność w przesuwnym oknie 400 ms, w LUFS.",
+      "note": "EBU Tech 3341.",
+      "gender": "f"
+    },
+    "loudness-target": {
+      "term": "docelowa głośność",
+      "definition": "Głośność zintegrowana, z jaką program jest dostarczany lub odtwarzany, np. −23 LUFS według EBU R 128 w nadawaniu lub ok. −14 LUFS w serwisach streamingowych.",
+      "gender": "f"
+    },
+    "loudness-matching": {
+      "term": "dopasowanie głośności",
+      "short": "Dopasuj głośność",
+      "definition": "Doprowadzenie dwóch wersji do tej samej głośności przed porównaniem, aby głośniejsza nie wydawała się lepsza tylko dlatego, że jest głośniejsza.",
+      "note": "As in Playhead ('Dopasuj głośność'); level the events is a different tool.",
+      "gender": "n"
+    },
+    "ab-comparison": {
+      "term": "porównanie A/B",
+      "short": "A/B",
+      "definition": "Przełączanie między dwiema wersjami, najlepiej przy dopasowanej głośności, aby usłyszeć, która jest lepsza.",
+      "gender": "n"
+    },
+    "reference-track": {
+      "term": "utwór referencyjny",
+      "short": "Referencja",
+      "alt": ["nagranie referencyjne", "referencja"],
+      "definition": "Gotowe nagranie odtwarzane dla porównania podczas miksu lub masteringu.",
+      "gender": "m"
+    },
+    "crest-factor": {
+      "term": "współczynnik szczytu",
+      "alt": ["crest factor"],
+      "definition": "Stosunek poziomu szczytowego do poziomu RMS, w dB: wysoki dla dźwięku z uderzeniem i dynamicznego, niski dla gęstego, skompresowanego.",
+      "gender": "m"
+    },
+    "rms-level": {
+      "term": "poziom RMS",
+      "short": "RMS",
+      "alt": ["wartość skuteczna"],
+      "definition": "Średnia kwadratowa sygnału w oknie: jego średnia moc wyrażona jako poziom.",
+      "gender": "m"
+    },
+    "stereo-width": {
+      "term": "szerokość bazy stereo",
+      "short": "Szerokość",
+      "alt": ["szerokość stereo"],
+      "definition": "Jak bardzo różnią się oba kanały, od mono (wcale) po szeroki dźwięk.",
+      "note": "Plain 'szerokość' on controls (LMMS pl). Matches widen the tails = poszerz ogony.",
+      "gender": "f"
+    },
+    "envelope": {
+      "term": "obwiednia",
+      "definition": "Jak w przebiegu dźwięku zmienia się jakaś wielkość, zwykle poziom; także narysowana krzywa sterująca parametrem.",
+      "note": "Standard (obwiednia, f.): Audacity pl 'Obwiednia', LMMS pl. Level envelope = obwiednia poziomu (envelope transfer).",
+      "gender": "f"
+    },
+    "frequency-band": {
+      "term": "pasmo częstotliwości",
+      "short": "Pasmo",
+      "definition": "Zakres częstotliwości mierzony lub przetwarzany razem: pasmo korektora, pasmo krytyczne, pasmo melowe.",
+      "gender": "n"
+    },
+    "high-pass-filter": {
+      "term": "filtr górnoprzepustowy",
+      "short": "Górnoprzepustowy",
+      "alt": ["high-pass", "low-cut"],
+      "definition": "Filtr, który przepuszcza częstotliwości powyżej częstotliwości granicznej i tłumi te poniżej.",
+      "note": "Standard Polish electronics term.",
+      "gender": "m"
+    },
+    "low-pass-filter": {
+      "term": "filtr dolnoprzepustowy",
+      "short": "Dolnoprzepustowy",
+      "alt": ["low-pass", "high-cut"],
+      "definition": "Filtr, który przepuszcza częstotliwości poniżej częstotliwości granicznej i tłumi te powyżej.",
+      "note": "Standard Polish electronics term.",
+      "gender": "m"
+    },
+    "limiter": {
+      "term": "limiter",
+      "alt": ["ogranicznik"],
+      "definition": "Kompresor o bardzo wysokim stosunku i szybkim ataku, który utrzymuje poziom poniżej pułapu.",
+      "gender": "m"
+    },
+    "multiband-compressor": {
+      "term": "kompresor wielopasmowy",
+      "short": "Wielopasmowy",
+      "definition": "Kompresor, który działa osobno w kilku pasmach częstotliwości.",
+      "gender": "m"
+    },
+    "transient-shaper": {
+      "term": "procesor transjentów",
+      "alt": ["transient shaper", "kształtowanie transjentów"],
+      "definition": "Procesor, który niezależnie od poziomu podnosi lub obniża atak i wybrzmienie dźwięków.",
+      "note": "Transient = transjent in this vocabulary.",
+      "gender": "m"
+    },
+    "sidechain": {
+      "term": "sidechain",
+      "alt": ["wejście sterujące", "kluczowanie"],
+      "definition": "Drugie wejście, przez które inny sygnał steruje procesorem, np. gdy muzyka jest ściszana pod dialogiem.",
+      "gender": "m"
+    },
+    "ducking": {
+      "term": "ducking",
+      "alt": ["automatyczne ściszanie"],
+      "definition": "Automatyczne ściszanie jednego dźwięku, gdy gra inny, zwykle kompresorem z sidechainem.",
+      "gender": "m"
+    },
+    "reverb": {
+      "term": "pogłos",
+      "alt": ["reverb"],
+      "definition": "Gęste odbicia dźwięku w pomieszczeniu albo efekt, który je naśladuje.",
+      "note": "As in reverb on the tails = pogłos na ogonach.",
+      "gender": "m"
+    },
+    "delay": {
+      "term": "delay",
+      "alt": ["opóźnienie", "echo"],
+      "definition": "Efekt, który odtwarza dźwięk ponownie po ustawionym czasie, często powtarzając go i wygaszając (echo).",
+      "gender": "m"
+    },
+    "dither": {
+      "term": "dither",
+      "alt": ["dithering"],
+      "definition": "Szum o niskim poziomie dodawany przy zmniejszaniu głębi bitowej, aby błąd zaokrąglenia stał się szumem zamiast zniekształceniem.",
+      "gender": "m"
+    },
+    "mastering": {
+      "term": "mastering",
+      "definition": "Ostatni etap przed wydaniem: końcowa korekcja, dynamika i głośność miksu oraz kontrole pod kątem formatu dostawy.",
+      "gender": "m"
+    },
+    "drop": {
+      "term": "drop",
+      "definition": "Moment w utworze tanecznym, w którym wchodzi pełny bit i bas, zwykle po build-upie lub breakdownie.",
+      "note": "Playhead never uses 'drop' for a fall in level.",
+      "gender": "m"
+    },
+    "build-up": {
+      "term": "build-up",
+      "alt": ["narastanie", "budowanie napięcia"],
+      "definition": "Fragment, który podnosi napięcie przed dropem: rosnąca wysokość, ślizgi filtra, coraz szybsze werble, riser.",
+      "gender": "m"
+    },
+    "breakdown": {
+      "term": "breakdown",
+      "alt": ["przełamanie", "zejście"],
+      "definition": "Fragment, w którym bit i bas ustępują, a zostają plamy, akordy lub wokal.",
+      "note": "Not 'wyciszenie' (= mute).",
+      "gender": "m"
+    },
+    "riser": {
+      "term": "riser",
+      "definition": "Dźwięk, który rośnie wysokością, jasnością lub poziomem i prowadzi do dropu lub przejścia.",
+      "note": "Producer loan (pl. risery); no Polish word in use.",
+      "gender": "m"
+    },
+    "sweep": {
+      "term": "ślizg",
+      "alt": ["sweep", "przemiatanie"],
+      "definition": "Przejście przez zakres częstotliwości: ton lub szum, którego wysokość lub jasność się przesuwa, albo filtr przesuwany przez widmo.",
+      "note": "Native word for a pitch or brightness glide (ślizg, m.); studio speech also says 'sweep'.",
+      "gender": "m"
+    },
+    "cue-point": {
+      "term": "punkt cue",
+      "short": "Cue",
+      "alt": ["cue"],
+      "definition": "Zapisane miejsce w utworze, do którego DJ lub odtwarzacz przeskakuje albo od którego zaczyna.",
+      "gender": "m"
+    },
+    "beatgrid": {
+      "term": "siatka miar",
+      "alt": ["beatgrid"],
+      "definition": "Miary i takty utworu w postaci siatki, do synchronizacji, zapętlania i skoków w czasie.",
+      "note": "Beat = miara in this vocabulary; Playhead: 'siatka miar'. DJ software keeps 'beatgrid'.",
+      "gender": "f"
+    },
+    "beatmatching": {
+      "term": "beatmatching",
+      "alt": ["synchronizacja miar"],
+      "definition": "Doprowadzenie dwóch utworów do tego samego tempa z wyrównanymi miarami.",
+      "gender": "m"
+    },
+    "phrase": {
+      "term": "fraza",
+      "definition": "Ciąg taktów, w muzyce tanecznej zwykle 8, 16 lub 32, tworzący jedną całość muzyczną; DJ-e miksują na granicach fraz.",
+      "gender": "f"
+    },
+    "key": {
+      "term": "tonacja",
+      "definition": "Centrum tonalne i skala utworu, np. a-moll; DJ-e miksują utwory w zgodnych tonacjach (miksowanie harmoniczne).",
+      "gender": "f"
     }
   }
 }

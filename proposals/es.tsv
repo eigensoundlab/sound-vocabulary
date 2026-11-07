@@ -1,19 +1,13 @@
 english	spanish	where used	note
-envelope	envolvente	Playhead: row.x4.name, row.x4.desc, row.n2.desc, row.n6.desc, note.approx.2, note.rhythm.1, cmp.sculpt.title, lib.look.sculpted.desc, lib.tool.hpss.desc	Standard (la envolvente, f.), as in Audacity es ('Envolvente') and ADSR texts; level envelope = envolvente de nivel.
-pan	panorama	Playhead: row.x6.desc, lab.pan	Formal studio term ('control de panorama'); 'paneo' is the everyday word in Spain and Latin America and is fine in speech.
-stereo width	anchura (estéreo)	Playhead: row.x6.desc, lab.maxWidth, lib.tool.widen.param.width	'anchura' on controls, 'anchura estéreo' / 'amplitud estéreo' in text; Audacity es uses 'Ancho de estéreo'. Matches widen-tails = ensanchar las colas.
 timbre	timbre	Playhead: row.s1.desc, row.n7.desc, row.n8.desc, lab.timbreSymbols	Standard Spanish; adjective 'tímbrico' (símbolos tímbricos).
 bar line	línea de compás	Playhead: cmp.marks.downbeats, lib.mark.downbeats, row.d4.desc, lib.look.overview.desc, lib.look.hits.desc	Music-notation term ('barra de compás' / 'línea divisoria' also used). Marks drawn at downbeats (primer tiempo).
 thumbnail	miniatura	Playhead: ui.thumb*, row.d3.name, row.d5.name, aria.thumb, sec.library.desc	Standard UI word (Microsoft/Apple es).
 asset	recurso	Playhead: ui.cls, ui.scale.asset, row.d3.name, row.x7.name, guide.c1.reveal, row.r1.desc, lib.tool.cleanup.desc	Microsoft es 'recurso'; Spanish game developers often keep 'asset' (Unity es keeps 'Assets'). Alternative: 'asset'.
 loop seam	empalme (del bucle)	Playhead: check.seamJump, check.seamChange, row.x7.desc, lib.tool.loop.desc, lib.tool.loop.param.xfadeMs	'empalme' = splice, the usual editing word; 'unión' is a plainer alternative. 'Loop wraps cleanly' = 'El bucle cierra sin saltos'.
 hit	golpe	Playhead: lib.curve.onsetStrength, lib.look.character.desc, lib.look.surprise.name, lib.look.hits.*, lib.tool.drive.name, lib.tool.tailverb.desc	Used for the drive-hits tool ('Saturar los golpes') and onset strength ('fuerza de inicio (golpes)'). 'impacto' is the physical impact (impact model).
-riser	riser	Playhead: guide.c2.mislead, row.n4.desc	Loan used by Spanish sound designers and EDM producers; no Spanish equivalent in use ('subida' is the section of a track).
-sweep	barrido	Playhead: row.x2.desc, row.n4.desc, obj.Y.sustained	Standard ('barrido de frecuencia').
 grain	grano	Playhead: lab.grains.*, note.sfx.2, lib.tool.vars.desc, lib.tool.vars.param.grains	As in granular synthesis ('síntesis granular', 'granos').
 beat tracker	seguidor de pulso	Playhead: row.r2.name, note.builtin.text, note.rhythm.5	Follows beat = pulso; MIR Spanish 'seguimiento del pulso' (beat tracking).
 F-measure	medida F	Playhead: sec.rhythm.desc, lab.fTitle, lab.agreesR3.title	Information-retrieval Spanish; precision/recall = precisión/exhaustividad.
-headroom	margen (headroom)	Playhead: check.noHeadroom	'margen dinámico' / 'margen de seguridad' in text; the loan 'headroom' is very common in studios.
 brightness	brillo	Playhead: row.x3.name, note.sfx.2, lib.tool.tension.desc, lib.tool.tension.param.bright, lab.noStablePitchBrightness	Standard; also used for the reverb 'Tone' control (Hz), to avoid 'tono' = pitch.
 chroma	croma	Playhead: row.c6.desc, row.s1.desc	MIR Spanish ('croma', 'cromagrama').
 kernel (novelty)	núcleo	Playhead: note.rhythm.4, lab.kernelPm	'kernel' also used in Spanish technical texts.
@@ -21,7 +15,6 @@ probe suite	batería de sondas	Playhead: note.builtin.text, note.builtin.loadPro
 noisiness	ruidosidad	Playhead: guide.c3.mislead, row.c3.desc	MIR descriptor name; plain alternative 'carácter ruidoso'.
 swell	crescendo	Playhead: row.n6.desc, lab.arrow.swell	Musical term for a sound that grows; loan 'swell' is rare in Spanish.
 pluck	punteo	Playhead: row.n6.desc	Plucked-string attack; 'pulsado' also possible.
-zero crossing	cruce por cero	Playhead: lib.tool.loop.desc	Standard DSP Spanish.
 equal-power (crossfade)	de potencia constante	Playhead: lib.tool.loop.desc	Standard for equal-power crossfades ('fundido cruzado de potencia constante').
 punchy	con pegada	Playhead: lib.tool.tailverb.desc, lib.tool.widen.desc	Studio usage in Spain and Latin America ('pegada', 'contundente').
 dynamic profile	perfil dinámico	Playhead: note.sfx.3, lab.evTitle, profile.*	Peeters & Deruty; values estable, impulsivo, ascendente, descendente (agree with 'perfil', m).

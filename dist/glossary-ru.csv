@@ -174,3 +174,59 @@ shell,оболочка,"A thin curved body, such as a can or pot.",,common,
 bell,колокол,,,standard,
 wire,струна,A stiff string or wire that rings with slightly stretched (inharmonic) partials.,В физике колебаний — «струна»; «проволока» называет скорее материал.,standard,проволока
 box,ящик,A hollow body with flat sides.,,common,коробка; короб
+track,трек,A row of a DAW session that holds clips on the timeline and has its own mixer channel.,"В русских DAW-текстах — «трек». «Дорожка» в этом словаре — lane (полоса внутри ленты), а «канал» — один сигнал звукового файла.",standard,дорожка
+folder track,трек папки,A track that holds other tracks: it sums their sound and can show them as one.,В REAPER и Cubase — folder track; пользователи говорят «папка». Playhead: «Треки в папке».,standard,трек-папка; папка
+clip,клип,"One piece of audio or MIDI on a track, placed at a point in time.","«Событие» здесь — звуковое событие (в Cubase так называют клипы), «регион» — именованный отрезок времени (в Logic так называют клипы).",standard,элемент; регион; фрагмент
+session,проект,"All of one piece of DAW work: its tracks, clips, routing and settings; also called a project.",,standard,сессия
+timeline,временная шкала,"The time axis of a session, along which clips are placed.",,standard,таймлайн
+marker,маркер,A named point in time stored in a session or a sound file (a cue in a WAV file).,"Не «метка»: метки — отметки, которые Playhead рисует на ленте.",standard,
+region,регион,"A named span of time with a start and an end, stored in a session or a sound file.",Так в REAPER. В Logic регион — это клип.,standard,область; диапазон
+snap,привязка,"Making a clip or an edit jump to the nearest grid line, marker, clip edge or onset while it is moved.",Playhead: «Привязка к онсетам».,standard,прилипание; snap
+mute,заглушение,Silencing a track without removing it; the button is often labelled M.,Кнопки — «Заглушить» или M; в студийной речи — «мьют».,standard,отключение звука; мьют
+solo,соло,Hearing only the soloed tracks; the button is often labelled S.,,standard,
+fader,фейдер,The level control of a mixer channel.,,standard,ползунок
+pan,панорама,Where a sound sits between left and right; also the control that sets it.,"Студийная норма; регулятор — «панорама», жаргон «пан».",standard,пан
+bus,шина,"A mixer channel that sums the signals sent to it, so they can be processed together (a drum bus, a reverb bus).",,standard,группа; bus
+master bus,мастер-шина,The bus everything is summed into before the output: what is rendered as the mix.,,standard,мастер; сумма
+send,посыл,"A copy of a track's signal sent to a bus at its own level, while the track keeps playing.",,standard,send; aux-посыл
+insert,инсерт,"An effect in a channel's own signal path, which all of the signal passes through.",,standard,вставной эффект; разрыв
+routing,маршрутизация,"How signals travel between tracks, buses, sends and outputs.",,standard,роутинг; коммутация
+mix,микс,The sum of all tracks as it is heard; also the work of balancing them.,"«Сведение» — процесс, «микс» — результат. Playhead: «микс папки».",standard,сведение
+stem,стем,"A submix of related tracks (drums, dialogue, music) rendered to its own file, so the parts can be mixed or delivered separately.",,standard,субмикс; подгруппа
+zero crossing,переход через ноль,A point where the waveform crosses zero; cuts and loop points made there do not click.,,standard,
+headroom,запас по уровню,The distance in dB between the highest level a signal reaches and the level where it would clip.,Как в Playhead («нет запаса по уровню»).,standard,хедрум
+dynamic range,динамический диапазон,"The span in dB between a sound's loud and quiet parts, or between the highest level a system takes and its noise floor.",Мера уровня в dB; диапазон громкости (LRA) — мера громкости в LU.,standard,
+loudness range,диапазон громкости,"How much the loudness of a programme varies, in LU: the span between the 10th and 95th percentile of its short-term loudness.",EBU Tech 3342; в Playhead — «Диапазон громкости».,standard,
+integrated loudness,интегральная громкость,"The loudness of a whole programme, with silence and quiet passages gated out, in LUFS.",EBU R 128.,standard,интегрированная громкость
+short-term loudness,кратковременная громкость,"Loudness over a sliding 3 s window, in LUFS.",EBU Tech 3341.,standard,
+momentary loudness,мгновенная громкость,"Loudness over a sliding 400 ms window, in LUFS.",EBU Tech 3341.,standard,
+loudness target,целевая громкость,"The integrated loudness a programme is delivered or played at, such as −23 LUFS for EBU R 128 broadcast or about −14 LUFS on streaming services.",,standard,
+loudness matching,подгонка громкости,"Bringing two versions to the same loudness before comparing them, so that the louder one does not seem better only because it is louder.",Как в Playhead («Подогнать громкость»); не «выровнять громкость» — так назван инструмент level the events.,common,
+A/B comparison,A/B-сравнение,"Switching between two versions, ideally at matched loudness, to hear which is better.",,standard,
+reference track,референсный трек,A finished recording played for comparison while mixing or mastering.,,standard,референс; эталонная запись
+crest factor,пик-фактор,"The ratio of peak to RMS level, in dB: high for punchy, dynamic sound, low for dense, compressed sound.",«Пик-фактор» — термин электротехники; в студии говорят и «крест-фактор».,standard,крест-фактор
+RMS level,уровень RMS,"The root mean square of a signal over a window: its average power, as a level.",,standard,среднеквадратичный уровень
+stereo width,ширина стереобазы,"How different the two channels are, from mono (not at all) to wide.",На регуляторах просто «ширина».,standard,стереоширина
+envelope,огибающая,"How a quantity, usually level, changes over the course of a sound; also a drawn curve that controls a parameter.","Стандартный термин (ADSR-огибающая, огибающая уровня).",standard,
+frequency band,частотная полоса,"A range of frequencies measured or processed together: an EQ band, a critical band, a mel band.",,standard,
+high-pass filter,фильтр верхних частот,A filter that passes the frequencies above its cutoff and attenuates those below.,Стандартный радиотехнический термин (ФВЧ).,standard,high-pass; срез низов
+low-pass filter,фильтр нижних частот,A filter that passes the frequencies below its cutoff and attenuates those above.,Стандартный радиотехнический термин (ФНЧ).,standard,low-pass; срез верхов
+limiter,лимитер,A compressor with a very high ratio and a fast attack that keeps the level below a ceiling.,,standard,ограничитель
+multiband compressor,многополосный компрессор,A compressor that works on several frequency bands separately.,,standard,
+transient shaper,транзиент-шейпер,A processor that raises or lowers the attack and the sustain of sounds independently of their level.,,standard,формирователь транзиентов
+sidechain,сайдчейн,"A second input through which another signal controls a processor, as when music is turned down under dialogue.",,standard,управляющий вход; боковая цепь
+ducking,дакинг,"Turning one sound down automatically while another plays, usually with a sidechained compressor.",,standard,автоматическое приглушение
+reverb,реверб,"The dense reflections of a sound in a space, or an effect that imitates them.",«Реверберация» — физическое явление; эффект в студии — «реверб» (как в инструменте reverb on the tails — «реверб на хвостах»).,standard,реверберация
+delay,дилей,"An effect that plays the sound again after a set time, often repeating and fading (echo).",,standard,задержка; эхо
+dither,дизеринг,"Low-level noise added when the bit depth is reduced, so that the rounding error becomes noise instead of distortion.",,standard,дитер
+mastering,мастеринг,"The last stage before release: the final EQ, dynamics and loudness of a mix, and checks for the delivery format.",,standard,
+drop,дроп,"The moment in a dance track when the full beat and bass come in, usually after a build-up or a breakdown.",Playhead не называет «дропом» падение уровня.,common,
+build-up,билдап,"A passage that raises tension towards a drop: rising pitch, filter sweeps, faster rolls, a riser.",,common,нарастание; подводка
+breakdown,брейкдаун,"A passage where the beat and bass fall away, leaving pads, chords or vocals.",,common,затишье
+riser,райзер,"A sound that rises in pitch, brightness or level to lead into a drop or a transition.",Жаргон саунд-дизайна и EDM; описательно — «нарастающий эффект».,common,
+sweep,свип,"A glide through a range of frequencies: a tone or noise whose pitch or brightness moves, or a filter swept across the spectrum.",Жаргон; как слово Шеффера (Y) тоже «свип».,standard,глиссандо по спектру; развёртка
+cue point,кью-точка,A stored position in a track that a DJ or a player jumps to or starts from.,,standard,точка cue; cue
+beatgrid,сетка долей,"The beats and bars of a track as a grid, used to sync, loop and jump in time.",Доля = beat в этом словаре; в DJ-программах — «битгрид». Playhead: «сетка долей».,common,битгрид
+beatmatching,битматчинг,Bringing two tracks to the same tempo with their beats aligned.,,standard,сведение по долям
+phrase,фраза,"A run of bars, usually 8, 16 or 32 in dance music, that forms one musical unit; DJs mix at phrase boundaries.",,standard,
+key,тональность,"The tonal centre and scale of a piece, such as A minor; DJs mix tracks in compatible keys (harmonic mixing).",,standard,

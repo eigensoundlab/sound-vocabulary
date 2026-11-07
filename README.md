@@ -5,9 +5,13 @@ Polish, Russian and Spanish. It is the shared termbase of [Playhead](https://git
 [SFX Workbench](https://github.com/eigensoundlab/SFXWorkbench), and of later apps and documentation, so that a term
 means the same thing in every app, every language and every paper.
 
-175 terms in six groups: core (34), psychoacoustics (7), analysis (61), tools (31), Workbench (24) and materials and
-shapes (18). 109 are standard terms, 38 are common usage and 28 are coined: new names for things Playhead and Workbench
-introduce (a *look*, *spectral surprise*, *widen the tails*), or terms a language has no settled word for.
+231 terms in nine groups: core (34), psychoacoustics (7), analysis (61), tools (31), Workbench (24), materials and
+shapes (18), DAW and session (20: track, folder track, clip, bus, send, mute, solo, snap, marker, region, stem and
+more), mixing and mastering (26: headroom, loudness range, integrated and short-term loudness, loudness target, crest
+factor, sidechain, ducking, limiter, dither and more) and DJ and dance music (10: drop, build-up, breakdown, riser,
+cue point, beatgrid, phrase, key and more). 159 are standard terms, 44 are common usage and 28 are coined: new names
+for things Playhead and Workbench introduce (a *look*, *spectral surprise*, *widen the tails*), or terms a language
+has no settled word for.
 
 **[Review sheet](docs/review.html)**: every term in English and each language side by side; the coined terms with
 their alternatives to choose from.

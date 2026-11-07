@@ -174,3 +174,59 @@ shell,powłoka,"A thin curved body, such as a can or pot.",Mechanics term („te
 bell,dzwon,,,standard,dzwonek
 wire,struna,A stiff string or wire that rings with slightly stretched (inharmonic) partials.,Polish names a vibrating stretched element „struna” (piano strings are steel wire); „drut” is the material. In Workbench the impact-model shape „Wire / string” is „Drut / struna”.,standard,drut
 box,pudło,A hollow body with flat sides.,As in „pudło rezonansowe”.,common,skrzynka
+track,ścieżka,A row of a DAW session that holds clips on the timeline and has its own mixer channel.,"Ardour, Audacity and LMMS pl 'ścieżka'. Not 'tor' (a band inside a strip) or 'kanał' (one signal of a sound file).",standard,
+folder track,ścieżka folderu,A track that holds other tracks: it sums their sound and can show them as one.,REAPER and Cubase say 'folder track'; Polish users say 'folder'. Playhead: 'Ścieżki w folderze'.,standard,folder; ścieżka-folder
+clip,klip,"One piece of audio or MIDI on a track, placed at a point in time.",Here 'zdarzenie' is a sound event and 'region' a named span of time (Ardour pl and Logic call clips regions).,standard,region; element
+session,projekt,"All of one piece of DAW work: its tracks, clips, routing and settings; also called a project.",Polish users say 'projekt'; Ardour pl 'sesja'.,standard,sesja
+timeline,oś czasu,"The time axis of a session, along which clips are placed.",,standard,
+marker,marker,A named point in time stored in a session or a sound file (a cue in a WAV file).,Studio loan. Not 'znacznik': 'znaczniki' are the marks Playhead draws on a strip.,standard,znacznik czasu
+region,region,"A named span of time with a start and an end, stored in a session or a sound file.",REAPER usage. Ardour pl and Logic call clips 'regiony'; here a region is a span of time.,standard,zakres; obszar
+snap,przyciąganie,"Making a clip or an edit jump to the nearest grid line, marker, clip edge or onset while it is moved.",Playhead: 'Przyciągaj do początków'.,standard,snap
+mute,wyciszenie,Silencing a track without removing it; the button is often labelled M.,Buttons 'Wycisz' or M.,standard,mute
+solo,solo,Hearing only the soloed tracks; the button is often labelled S.,,standard,
+fader,suwak,The level control of a mixer channel.,Studio speech 'suwak' or 'fader'.,standard,fader; tłumik
+pan,panorama,Where a sound sits between left and right; also the control that sets it.,"Studio term (panorama, f.; panoramowanie in LMMS pl). 'Pan' is heard as a knob label only.",standard,pan; panoramowanie
+bus,szyna,"A mixer channel that sums the signals sent to it, so they can be processed together (a drum bus, a reverb bus).",Ardour pl 'szyna'; studio speech also 'bus'.,standard,bus; grupa
+master bus,szyna główna,The bus everything is summed into before the output: what is rendered as the mix.,,standard,master; suma
+send,wysyłka,"A copy of a track's signal sent to a bus at its own level, while the track keeps playing.",,standard,send; wysyłka aux
+insert,insert,"An effect in a channel's own signal path, which all of the signal passes through.",Studio loan.,standard,efekt insertowy; wpięcie
+routing,routing,"How signals travel between tracks, buses, sends and outputs.",,standard,trasowanie; przekierowanie sygnałów
+mix,miks,The sum of all tracks as it is heard; also the work of balancing them.,Playhead: 'miks folderu'.,standard,
+stem,stem,"A submix of related tracks (drums, dialogue, music) rendered to its own file, so the parts can be mixed or delivered separately.",Loan used in post-production and game audio (pl. stemy).,standard,submiks
+zero crossing,przejście przez zero,A point where the waveform crosses zero; cuts and loop points made there do not click.,Standard signal-processing term.,standard,
+headroom,zapas dynamiki,The distance in dB between the highest level a signal reaches and the level where it would clip.,Studio usage; 'headroom' loan also heard (Playhead: 'brak zapasu').,standard,headroom; zapas
+dynamic range,zakres dynamiki,"The span in dB between a sound's loud and quiet parts, or between the highest level a system takes and its noise floor.","A level measure in dB; the loudness range (zakres głośności, LRA) is a loudness measure in LU.",standard,
+loudness range,zakres głośności,"How much the loudness of a programme varies, in LU: the span between the 10th and 95th percentile of its short-term loudness.",EBU Tech 3342; Ardour pl 'Zakres głośności'.,standard,
+integrated loudness,głośność zintegrowana,"The loudness of a whole programme, with silence and quiet passages gated out, in LUFS.",EBU R 128.,standard,
+short-term loudness,głośność krótkookresowa,"Loudness over a sliding 3 s window, in LUFS.",EBU Tech 3341.,standard,
+momentary loudness,głośność chwilowa,"Loudness over a sliding 400 ms window, in LUFS.",EBU Tech 3341.,standard,
+loudness target,docelowa głośność,"The integrated loudness a programme is delivered or played at, such as −23 LUFS for EBU R 128 broadcast or about −14 LUFS on streaming services.",,standard,
+loudness matching,dopasowanie głośności,"Bringing two versions to the same loudness before comparing them, so that the louder one does not seem better only because it is louder.",As in Playhead ('Dopasuj głośność'); level the events is a different tool.,common,
+A/B comparison,porównanie A/B,"Switching between two versions, ideally at matched loudness, to hear which is better.",,standard,
+reference track,utwór referencyjny,A finished recording played for comparison while mixing or mastering.,,standard,nagranie referencyjne; referencja
+crest factor,współczynnik szczytu,"The ratio of peak to RMS level, in dB: high for punchy, dynamic sound, low for dense, compressed sound.",,standard,crest factor
+RMS level,poziom RMS,"The root mean square of a signal over a window: its average power, as a level.",,standard,wartość skuteczna
+stereo width,szerokość bazy stereo,"How different the two channels are, from mono (not at all) to wide.",Plain 'szerokość' on controls (LMMS pl). Matches widen the tails = poszerz ogony.,standard,szerokość stereo
+envelope,obwiednia,"How a quantity, usually level, changes over the course of a sound; also a drawn curve that controls a parameter.","Standard (obwiednia, f.): Audacity pl 'Obwiednia', LMMS pl. Level envelope = obwiednia poziomu (envelope transfer).",standard,
+frequency band,pasmo częstotliwości,"A range of frequencies measured or processed together: an EQ band, a critical band, a mel band.",,standard,
+high-pass filter,filtr górnoprzepustowy,A filter that passes the frequencies above its cutoff and attenuates those below.,Standard Polish electronics term.,standard,high-pass; low-cut
+low-pass filter,filtr dolnoprzepustowy,A filter that passes the frequencies below its cutoff and attenuates those above.,Standard Polish electronics term.,standard,low-pass; high-cut
+limiter,limiter,A compressor with a very high ratio and a fast attack that keeps the level below a ceiling.,,standard,ogranicznik
+multiband compressor,kompresor wielopasmowy,A compressor that works on several frequency bands separately.,,standard,
+transient shaper,procesor transjentów,A processor that raises or lowers the attack and the sustain of sounds independently of their level.,Transient = transjent in this vocabulary.,standard,transient shaper; kształtowanie transjentów
+sidechain,sidechain,"A second input through which another signal controls a processor, as when music is turned down under dialogue.",,standard,wejście sterujące; kluczowanie
+ducking,ducking,"Turning one sound down automatically while another plays, usually with a sidechained compressor.",,standard,automatyczne ściszanie
+reverb,pogłos,"The dense reflections of a sound in a space, or an effect that imitates them.",As in reverb on the tails = pogłos na ogonach.,standard,reverb
+delay,delay,"An effect that plays the sound again after a set time, often repeating and fading (echo).",,standard,opóźnienie; echo
+dither,dither,"Low-level noise added when the bit depth is reduced, so that the rounding error becomes noise instead of distortion.",,standard,dithering
+mastering,mastering,"The last stage before release: the final EQ, dynamics and loudness of a mix, and checks for the delivery format.",,standard,
+drop,drop,"The moment in a dance track when the full beat and bass come in, usually after a build-up or a breakdown.",Playhead never uses 'drop' for a fall in level.,common,
+build-up,build-up,"A passage that raises tension towards a drop: rising pitch, filter sweeps, faster rolls, a riser.",,common,narastanie; budowanie napięcia
+breakdown,breakdown,"A passage where the beat and bass fall away, leaving pads, chords or vocals.",Not 'wyciszenie' (= mute).,common,przełamanie; zejście
+riser,riser,"A sound that rises in pitch, brightness or level to lead into a drop or a transition.",Producer loan (pl. risery); no Polish word in use.,common,
+sweep,ślizg,"A glide through a range of frequencies: a tone or noise whose pitch or brightness moves, or a filter swept across the spectrum.","Native word for a pitch or brightness glide (ślizg, m.); studio speech also says 'sweep'.",standard,sweep; przemiatanie
+cue point,punkt cue,A stored position in a track that a DJ or a player jumps to or starts from.,,standard,cue
+beatgrid,siatka miar,"The beats and bars of a track as a grid, used to sync, loop and jump in time.",Beat = miara in this vocabulary; Playhead: 'siatka miar'. DJ software keeps 'beatgrid'.,common,beatgrid
+beatmatching,beatmatching,Bringing two tracks to the same tempo with their beats aligned.,,standard,synchronizacja miar
+phrase,fraza,"A run of bars, usually 8, 16 or 32 in dance music, that forms one musical unit; DJs mix at phrase boundaries.",,standard,
+key,tonacja,"The tonal centre and scale of a piece, such as A minor; DJs mix tracks in compatible keys (harmonic mixing).",,standard,

@@ -5665,4 +5665,1813 @@
 <termSec><term>короб</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
 </langSec>
 </conceptEntry>
+<conceptEntry id="track">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A row of a DAW session that holds clips on the timeline and has its own mixer channel.</descrip>
+<termSec><term>track</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+<termSec><term>lane</term><termNote type="administrativeStatus">deprecatedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Řádek projektu v DAW, který nese klipy na časové ose a má vlastní kanál v mixážním pultu.</descrip>
+<termSec><term>stopa</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Ardour, Audacity and LMMS cs 'stopa'. Not 'pruh' (= lane, a band inside a strip) or 'kanál' (one signal of a sound file).</note></termSec>
+<termSec><term>track</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Eine Zeile eines DAW-Projekts, die Clips auf der Zeitachse trägt und einen eigenen Mischpultkanal hat.</descrip>
+<termSec><term>Spur</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Cubase, Logic and Ableton de 'Spur'. Not 'Lane' (a band inside a strip) or 'Kanal' (one signal of a sound file).</note></termSec>
+<termSec><term>Track</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Una fila de un proyecto de DAW que contiene clips en la línea de tiempo y tiene su propio canal en el mezclador.</descrip>
+<termSec><term>pista</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Cubase, Logic and Ableton es 'pista'. Not 'carril' (a band inside a strip) or 'canal' (one signal of a sound file).</note></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Wiersz projektu DAW, który mieści klipy na osi czasu i ma własny kanał miksera.</descrip>
+<termSec><term>ścieżka</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Ardour, Audacity and LMMS pl 'ścieżka'. Not 'tor' (a band inside a strip) or 'kanał' (one signal of a sound file).</note></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Строка проекта DAW, на которой лежат клипы на временной шкале; у неё свой канал микшера.</descrip>
+<termSec><term>трек</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>В русских DAW-текстах — «трек». «Дорожка» в этом словаре — lane (полоса внутри ленты), а «канал» — один сигнал звукового файла.</note></termSec>
+<termSec><term>дорожка</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="folder-track">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A track that holds other tracks: it sums their sound and can show them as one.</descrip>
+<termSec><term>folder track</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+<termSec><term>group</term><termNote type="administrativeStatus">deprecatedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Stopa, která obsahuje jiné stopy: sčítá jejich zvuk a umí je ukázat jako celek.</descrip>
+<termSec><term>stopa složky</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>REAPER and Cubase say 'folder track'; Czech users say 'složka'. 'Skupina' stays for mixer groups. Playhead: 'Stopy ve složce'.</note></termSec>
+<termSec><term>složka</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>složková stopa</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Eine Spur, die andere Spuren enthält: Sie summiert deren Klang und kann sie als Ganzes zeigen.</descrip>
+<termSec><term>Ordnerspur</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Cubase de 'Ordnerspur'; REAPER users say 'Ordner'; Logic de 'Spurstapel' (track stack). Playhead: 'Spuren in einem Ordner'.</note></termSec>
+<termSec><term>Ordner</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Spurstapel</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Una pista que contiene otras pistas: suma su sonido y puede mostrarlas como un conjunto.</descrip>
+<termSec><term>pista de carpeta</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Cubase es 'pista de carpeta'; REAPER users say 'carpeta'. Playhead: 'Pistas en una carpeta'.</note></termSec>
+<termSec><term>carpeta</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Ścieżka, która zawiera inne ścieżki: sumuje ich dźwięk i może pokazać je jako całość.</descrip>
+<termSec><term>ścieżka folderu</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>REAPER and Cubase say 'folder track'; Polish users say 'folder'. Playhead: 'Ścieżki w folderze'.</note></termSec>
+<termSec><term>folder</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>ścieżka-folder</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Трек, который содержит другие треки: суммирует их звук и может показать их как целое.</descrip>
+<termSec><term>трек папки</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>В REAPER и Cubase — folder track; пользователи говорят «папка». Playhead: «Треки в папке».</note></termSec>
+<termSec><term>трек-папка</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>папка</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="clip">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">One piece of audio or MIDI on a track, placed at a point in time.</descrip>
+<termSec><term>clip</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+<termSec><term>event</term><termNote type="administrativeStatus">deprecatedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Kus zvuku nebo MIDI na stopě, umístěný v určitém místě časové osy.</descrip>
+<termSec><term>klip</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Studio usage. Not 'událost' (= a sound event in this vocabulary, though Cubase calls clips events) or 'oblast' (= region, a named span of time; Logic calls clips regions).</note></termSec>
+<termSec><term>položka</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>region</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Ein Stück Audio oder MIDI auf einer Spur, an einer Stelle der Zeitachse platziert.</descrip>
+<termSec><term>Clip</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Ableton and Studio One de 'Clip'; Cubase 'Event', REAPER 'Item', Logic 'Region'. Here 'Ereignis' is a sound event and 'Region' a named span of time.</note></termSec>
+<termSec><term>Event</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Item</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Region</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Un fragmento de audio o MIDI en una pista, colocado en un punto de la línea de tiempo.</descrip>
+<termSec><term>clip</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Ableton es 'clip'; Cubase 'evento', Logic 'región'. Here 'evento' is a sound event and 'región' a named span of time.</note></termSec>
+<termSec><term>evento</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>región</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>ítem</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Fragment audio lub MIDI na ścieżce, umieszczony w określonym miejscu osi czasu.</descrip>
+<termSec><term>klip</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Here 'zdarzenie' is a sound event and 'region' a named span of time (Ardour pl and Logic call clips regions).</note></termSec>
+<termSec><term>region</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>element</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Фрагмент аудио или MIDI на треке, помещённый в определённое место временной шкалы.</descrip>
+<termSec><term>клип</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>«Событие» здесь — звуковое событие (в Cubase так называют клипы), «регион» — именованный отрезок времени (в Logic так называют клипы).</note></termSec>
+<termSec><term>элемент</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>регион</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>фрагмент</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="session">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">All of one piece of DAW work: its tracks, clips, routing and settings; also called a project.</descrip>
+<termSec><term>session</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Celá práce na jednom díle v DAW: stopy, klipy, směrování a nastavení.</descrip>
+<termSec><term>projekt</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Czech users say 'projekt'; Ardour cs uses 'relace' for its sessions.</note></termSec>
+<termSec><term>relace</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>session</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Alles zu einer Arbeit in der DAW: Spuren, Clips, Routing und Einstellungen.</descrip>
+<termSec><term>Projekt</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote></termSec>
+<termSec><term>Session</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Todo el trabajo de una pieza en el DAW: pistas, clips, enrutamiento y ajustes.</descrip>
+<termSec><term>proyecto</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>sesión</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Cała praca nad jednym utworem w DAW: ścieżki, klipy, routing i ustawienia.</descrip>
+<termSec><term>projekt</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Polish users say 'projekt'; Ardour pl 'sesja'.</note></termSec>
+<termSec><term>sesja</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Вся работа над одной вещью в DAW: треки, клипы, маршрутизация и настройки.</descrip>
+<termSec><term>проект</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>сессия</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="timeline">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">The time axis of a session, along which clips are placed.</descrip>
+<termSec><term>timeline</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Osa času projektu, podél které se kladou klipy.</descrip>
+<termSec><term>časová osa</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Die Zeitachse eines Projekts, entlang der die Clips liegen.</descrip>
+<termSec><term>Zeitachse</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+<termSec><term>Timeline</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Zeitlineal</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">El eje temporal de un proyecto, a lo largo del cual se colocan los clips.</descrip>
+<termSec><term>línea de tiempo</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Oś czasu projektu, wzdłuż której umieszcza się klipy.</descrip>
+<termSec><term>oś czasu</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Ось времени проекта, вдоль которой размещаются клипы.</descrip>
+<termSec><term>временная шкала</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+<termSec><term>таймлайн</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="marker">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A named point in time stored in a session or a sound file (a cue in a WAV file).</descrip>
+<termSec><term>marker</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+<termSec><term>marks</term><termNote type="administrativeStatus">deprecatedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Pojmenované místo v čase uložené v projektu nebo ve zvukovém souboru (cue ve WAV).</descrip>
+<termSec><term>marker</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Studio loan. Not 'značka': 'značky' are the marks Playhead draws on a strip.</note></termSec>
+<termSec><term>značka v čase</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>zarážka</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Ein benannter Zeitpunkt, gespeichert in einem Projekt oder einer Audiodatei (ein Cue in einer WAV-Datei).</descrip>
+<termSec><term>Marker</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Not 'Markierung': 'Markierungen' are the marks Playhead draws on a strip.</note></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Un punto con nombre en el tiempo, guardado en un proyecto o un archivo de sonido (un cue en un archivo WAV).</descrip>
+<termSec><term>marcador</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Not 'marca': 'marcas' are the marks Playhead draws on a strip.</note></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Nazwany punkt w czasie zapisany w projekcie lub pliku dźwiękowym (cue w pliku WAV).</descrip>
+<termSec><term>marker</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Studio loan. Not 'znacznik': 'znaczniki' are the marks Playhead draws on a strip.</note></termSec>
+<termSec><term>znacznik czasu</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Именованная точка во времени, сохранённая в проекте или звуковом файле (cue в WAV-файле).</descrip>
+<termSec><term>маркер</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Не «метка»: метки — отметки, которые Playhead рисует на ленте.</note></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="region">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A named span of time with a start and an end, stored in a session or a sound file.</descrip>
+<termSec><term>region</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Pojmenovaný úsek času se začátkem a koncem, uložený v projektu nebo ve zvukovém souboru.</descrip>
+<termSec><term>oblast</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>REAPER users also say 'region'. In Logic a region is a clip (klip).</note></termSec>
+<termSec><term>region</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>úsek</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Ein benannter Zeitabschnitt mit Anfang und Ende, gespeichert in einem Projekt oder einer Audiodatei.</descrip>
+<termSec><term>Region</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>REAPER and WaveLab 'Region'. In Logic a Region is a clip.</note></termSec>
+<termSec><term>Bereich</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Un tramo de tiempo con nombre, con inicio y final, guardado en un proyecto o un archivo de sonido.</descrip>
+<termSec><term>región</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>REAPER es 'región'. In Logic a 'región' is a clip.</note></termSec>
+<termSec><term>rango</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Nazwany odcinek czasu z początkiem i końcem, zapisany w projekcie lub pliku dźwiękowym.</descrip>
+<termSec><term>region</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>REAPER usage. Ardour pl and Logic call clips 'regiony'; here a region is a span of time.</note></termSec>
+<termSec><term>zakres</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>obszar</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Именованный отрезок времени с началом и концом, сохранённый в проекте или звуковом файле.</descrip>
+<termSec><term>регион</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Так в REAPER. В Logic регион — это клип.</note></termSec>
+<termSec><term>область</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>диапазон</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="snap">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">Making a clip or an edit jump to the nearest grid line, marker, clip edge or onset while it is moved.</descrip>
+<termSec><term>snap</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Přeskok posouvaného klipu nebo střihu na nejbližší čáru mřížky, marker, okraj klipu nebo nástup.</descrip>
+<termSec><term>přichytávání</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote><note>Playhead: 'Přichytávat k nástupům'.</note></termSec>
+<termSec><term>přichycení</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>snap</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Ein verschobener Clip oder Schnitt springt auf die nächste Rasterlinie, den nächsten Marker, Clip-Rand oder Onset.</descrip>
+<termSec><term>Einrasten</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote><note>Logic de 'Einrasten'. Playhead: 'An Onsets einrasten'.</note></termSec>
+<termSec><term>Snap</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Raster</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Hacer que un clip o un corte salte, al moverlo, a la línea de cuadrícula, el marcador, el borde de clip o el inicio más cercano.</descrip>
+<termSec><term>ajuste</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Cubase es 'Ajustar'. Playhead: 'Ajustar a los inicios'.</note></termSec>
+<termSec><term>ajustar a la cuadrícula</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>imán</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>snap</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Przeskok przesuwanego klipu lub cięcia do najbliższej linii siatki, markera, krawędzi klipu lub początku dźwięku.</descrip>
+<termSec><term>przyciąganie</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote><note>Playhead: 'Przyciągaj do początków'.</note></termSec>
+<termSec><term>snap</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Перескок перемещаемого клипа или монтажной точки к ближайшей линии сетки, маркеру, краю клипа или онсету.</descrip>
+<termSec><term>привязка</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Playhead: «Привязка к онсетам».</note></termSec>
+<termSec><term>прилипание</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>snap</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="mute">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">Silencing a track without removing it; the button is often labelled M.</descrip>
+<termSec><term>mute</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Umlčení stopy bez jejího odstranění; tlačítko bývá označené M.</descrip>
+<termSec><term>ztlumení</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote><note>Buttons 'Ztlumit' or M (Ardour cs).</note></termSec>
+<termSec><term>mute</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Eine Spur wird stummgeschaltet, ohne sie zu entfernen; die Taste heißt oft M.</descrip>
+<termSec><term>Stummschaltung</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Buttons 'Stumm' or M.</note></termSec>
+<termSec><term>Mute</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Silenciar una pista sin quitarla; el botón suele llevar una M.</descrip>
+<termSec><term>mute</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Studio Spanish says 'mute' (and 'mutear'); buttons 'Silenciar' or M. Not 'silencio', which is silence in this vocabulary.</note></termSec>
+<termSec><term>silenciar</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>enmudecer</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Wyciszenie ścieżki bez jej usuwania; przycisk często ma literę M.</descrip>
+<termSec><term>wyciszenie</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote><note>Buttons 'Wycisz' or M.</note></termSec>
+<termSec><term>mute</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Отключение звука трека без его удаления; кнопку часто обозначают буквой M.</descrip>
+<termSec><term>заглушение</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote><note>Кнопки — «Заглушить» или M; в студийной речи — «мьют».</note></termSec>
+<termSec><term>отключение звука</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>мьют</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="solo">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">Hearing only the soloed tracks; the button is often labelled S.</descrip>
+<termSec><term>solo</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Poslech pouze sólovaných stop; tlačítko bývá označené S.</descrip>
+<termSec><term>sólo</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Nur die solo geschalteten Spuren sind zu hören; die Taste heißt oft S.</descrip>
+<termSec><term>Solo</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Escuchar solo las pistas en solo; el botón suele llevar una S.</descrip>
+<termSec><term>solo</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Odsłuch tylko ścieżek w trybie solo; przycisk często ma literę S.</descrip>
+<termSec><term>solo</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Прослушивание только треков в режиме соло; кнопку часто обозначают буквой S.</descrip>
+<termSec><term>соло</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="fader">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">The level control of a mixer channel.</descrip>
+<termSec><term>fader</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Regulátor úrovně kanálu v mixážním pultu.</descrip>
+<termSec><term>fader</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Studio loan; 'tahový regulátor' in technical texts.</note></termSec>
+<termSec><term>tahový regulátor</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Der Pegelregler eines Mischpultkanals.</descrip>
+<termSec><term>Fader</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>Schieberegler</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">El control de nivel de un canal del mezclador.</descrip>
+<termSec><term>fader</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>deslizador</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>atenuador</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Regulator poziomu kanału miksera.</descrip>
+<termSec><term>suwak</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Studio speech 'suwak' or 'fader'.</note></termSec>
+<termSec><term>fader</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>tłumik</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Регулятор уровня канала микшера.</descrip>
+<termSec><term>фейдер</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>ползунок</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="pan">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">Where a sound sits between left and right; also the control that sets it.</descrip>
+<termSec><term>pan</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Místo zvuku mezi levou a pravou stranou; také regulátor, který ho nastavuje.</descrip>
+<termSec><term>panorama</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote><note>Studio usage ('panorama', panoramovací regulátor); 'pan' is also heard on controls.</note></termSec>
+<termSec><term>pan</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Wo ein Klang zwischen links und rechts steht; auch der Regler dafür.</descrip>
+<termSec><term>Panorama</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote><note>Standard studio term (das Panorama; Panoramaregler). 'Pan' is also heard as a control label.</note></termSec>
+<termSec><term>Pan</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Dónde se sitúa un sonido entre izquierda y derecha; también el control que lo ajusta.</descrip>
+<termSec><term>panorama</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Formal studio term ('control de panorama'); 'paneo' is the everyday word in Spain and Latin America.</note></termSec>
+<termSec><term>paneo</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>pan</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Miejsce dźwięku między lewą a prawą stroną; także regulator, który je ustawia.</descrip>
+<termSec><term>panorama</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Studio term (panorama, f.; panoramowanie in LMMS pl). 'Pan' is heard as a knob label only.</note></termSec>
+<termSec><term>pan</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>panoramowanie</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Положение звука между левым и правым каналом; также регулятор, который его задаёт.</descrip>
+<termSec><term>панорама</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Студийная норма; регулятор — «панорама», жаргон «пан».</note></termSec>
+<termSec><term>пан</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="bus">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A mixer channel that sums the signals sent to it, so they can be processed together (a drum bus, a reverb bus).</descrip>
+<termSec><term>bus</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Kanál mixážního pultu, který sčítá signály do něj poslané, aby se daly zpracovat společně (sběrnice bicích, sběrnice dozvuku).</descrip>
+<termSec><term>sběrnice</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Ardour cs 'sběrnice'; studio speech also 'bus' or 'skupina'.</note></termSec>
+<termSec><term>bus</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>skupina</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Ein Mischpultkanal, der die zu ihm geschickten Signale summiert, damit sie gemeinsam bearbeitet werden (Drum-Bus, Hall-Bus).</descrip>
+<termSec><term>Bus</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>Gruppe</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Subgruppe</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Un canal del mezclador que suma las señales que se le envían, para procesarlas juntas (bus de batería, bus de reverberación).</descrip>
+<termSec><term>bus</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>grupo</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>subgrupo</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Kanał miksera, który sumuje wysłane do niego sygnały, aby można je było przetwarzać razem (szyna perkusji, szyna pogłosu).</descrip>
+<termSec><term>szyna</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Ardour pl 'szyna'; studio speech also 'bus'.</note></termSec>
+<termSec><term>bus</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>grupa</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Канал микшера, который суммирует посланные в него сигналы, чтобы обрабатывать их вместе (шина барабанов, шина реверба).</descrip>
+<termSec><term>шина</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+<termSec><term>группа</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>bus</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="master-bus">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">The bus everything is summed into before the output: what is rendered as the mix.</descrip>
+<termSec><term>master bus</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Sběrnice, do které se před výstupem sčítá vše: to, co se renderuje jako mix.</descrip>
+<termSec><term>hlavní sběrnice</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Engineers say 'master'.</note></termSec>
+<termSec><term>master</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>součtová sběrnice</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Der Bus, in den vor dem Ausgang alles summiert wird: das, was als Mix gerendert wird.</descrip>
+<termSec><term>Master-Bus</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>'Summe' is classic German studio usage.</note></termSec>
+<termSec><term>Summe</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Stereosumme</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">El bus en el que se suma todo antes de la salida: lo que se renderiza como mezcla.</descrip>
+<termSec><term>bus máster</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>bus principal</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>salida máster</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Szyna, do której przed wyjściem sumuje się wszystko: to, co renderuje się jako miks.</descrip>
+<termSec><term>szyna główna</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+<termSec><term>master</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>suma</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Шина, в которую перед выходом суммируется всё: то, что рендерится как микс.</descrip>
+<termSec><term>мастер-шина</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+<termSec><term>мастер</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>сумма</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="send">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A copy of a track's signal sent to a bus at its own level, while the track keeps playing.</descrip>
+<termSec><term>send</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Kopie signálu stopy poslaná do sběrnice s vlastní úrovní, zatímco stopa hraje dál.</descrip>
+<termSec><term>send</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Studio loan (pl. sendy); 'odbočka' and 'aux' are also heard.</note></termSec>
+<termSec><term>odbočka</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>aux</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Eine Kopie des Spursignals, mit eigenem Pegel an einen Bus geschickt, während die Spur weiterspielt.</descrip>
+<termSec><term>Send</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>Aux-Send</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Effektweg</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Una copia de la señal de una pista enviada a un bus con su propio nivel, mientras la pista sigue sonando.</descrip>
+<termSec><term>envío</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Cubase and Logic es 'envío'.</note></termSec>
+<termSec><term>send</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>envío auxiliar</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Kopia sygnału ścieżki wysłana do szyny z własnym poziomem, podczas gdy ścieżka gra dalej.</descrip>
+<termSec><term>wysyłka</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+<termSec><term>send</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>wysyłka aux</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Копия сигнала трека, отправленная в шину со своим уровнем, пока трек продолжает звучать.</descrip>
+<termSec><term>посыл</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>send</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>aux-посыл</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="insert">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">An effect in a channel's own signal path, which all of the signal passes through.</descrip>
+<termSec><term>insert</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Efekt přímo v cestě signálu kanálu, kterou prochází celý signál.</descrip>
+<termSec><term>insert</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Studio loan; 'vložený efekt' in running text.</note></termSec>
+<termSec><term>vložený efekt</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Ein Effekt im eigenen Signalweg eines Kanals, durch den das ganze Signal läuft.</descrip>
+<termSec><term>Insert</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>Insert-Effekt</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Einschleifpunkt</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Un efecto en la propia ruta de señal de un canal, por el que pasa toda la señal.</descrip>
+<termSec><term>inserción</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Cubase es 'inserciones'; studios say 'insert'.</note></termSec>
+<termSec><term>insert</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>efecto de inserción</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Efekt wpięty w drogę sygnału kanału, przez który przechodzi cały sygnał.</descrip>
+<termSec><term>insert</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Studio loan.</note></termSec>
+<termSec><term>efekt insertowy</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>wpięcie</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Эффект в собственном тракте канала, через который проходит весь сигнал.</descrip>
+<termSec><term>инсерт</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>вставной эффект</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>разрыв</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="routing">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">How signals travel between tracks, buses, sends and outputs.</descrip>
+<termSec><term>routing</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Jak signály putují mezi stopami, sběrnicemi, sendy a výstupy.</descrip>
+<termSec><term>směrování</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote></termSec>
+<termSec><term>routing</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Wie Signale zwischen Spuren, Bussen, Sends und Ausgängen laufen.</descrip>
+<termSec><term>Routing</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote></termSec>
+<termSec><term>Signalführung</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Cómo viajan las señales entre pistas, buses, envíos y salidas.</descrip>
+<termSec><term>enrutamiento</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>ruteo</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>routing</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Sposób, w jaki sygnały biegną między ścieżkami, szynami, wysyłkami i wyjściami.</descrip>
+<termSec><term>routing</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>trasowanie</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>przekierowanie sygnałów</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Как сигналы идут между треками, шинами, посылами и выходами.</descrip>
+<termSec><term>маршрутизация</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+<termSec><term>роутинг</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>коммутация</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="mix">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">The sum of all tracks as it is heard; also the work of balancing them.</descrip>
+<termSec><term>mix</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Součet všech stop tak, jak zní; také práce na jejich vyvážení.</descrip>
+<termSec><term>mix</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>'Mixáž' is the work, 'mix' its result. Playhead: 'mix složky'.</note></termSec>
+<termSec><term>mixáž</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Die Summe aller Spuren, wie sie klingt; auch die Arbeit, sie auszubalancieren.</descrip>
+<termSec><term>Mix</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Playhead: 'Ordner-Mix'.</note></termSec>
+<termSec><term>Mischung</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Abmischung</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">La suma de todas las pistas tal como suena; también el trabajo de equilibrarlas.</descrip>
+<termSec><term>mezcla</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Playhead: 'mezcla de la carpeta'.</note></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Suma wszystkich ścieżek tak, jak brzmi; także praca nad ich zrównoważeniem.</descrip>
+<termSec><term>miks</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Playhead: 'miks folderu'.</note></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Сумма всех треков, как она звучит; также работа по их балансировке.</descrip>
+<termSec><term>микс</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>«Сведение» — процесс, «микс» — результат. Playhead: «микс папки».</note></termSec>
+<termSec><term>сведение</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="stem">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A submix of related tracks (drums, dialogue, music) rendered to its own file, so the parts can be mixed or delivered separately.</descrip>
+<termSec><term>stem</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Submix příbuzných stop (bicí, dialog, hudba) vyrenderovaný do vlastního souboru, aby se části daly míchat nebo dodat zvlášť.</descrip>
+<termSec><term>stem</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Loan used in Czech post-production (pl. stemy).</note></termSec>
+<termSec><term>submix</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>podskupina</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Ein Submix zusammengehöriger Spuren (Drums, Dialog, Musik), in eine eigene Datei gerendert, damit die Teile getrennt gemischt oder geliefert werden können.</descrip>
+<termSec><term>Stem</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Loan (der Stem, pl. Stems).</note></termSec>
+<termSec><term>Submix</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Subgruppe</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Una submezcla de pistas relacionadas (batería, diálogo, música) renderizada en su propio archivo, para mezclar o entregar las partes por separado.</descrip>
+<termSec><term>stem</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Loan in post-production and game audio (los stems).</note></termSec>
+<termSec><term>submezcla</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Submiks powiązanych ścieżek (perkusja, dialogi, muzyka) wyrenderowany do osobnego pliku, aby części można było miksować lub dostarczyć osobno.</descrip>
+<termSec><term>stem</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Loan used in post-production and game audio (pl. stemy).</note></termSec>
+<termSec><term>submiks</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Субмикс родственных треков (барабаны, диалог, музыка), отрендеренный в отдельный файл, чтобы части можно было сводить или сдавать по отдельности.</descrip>
+<termSec><term>стем</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>субмикс</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>подгруппа</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="zero-crossing">
+<descrip type="subjectField">daw</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A point where the waveform crosses zero; cuts and loop points made there do not click.</descrip>
+<termSec><term>zero crossing</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Bod, ve kterém vlnový průběh protíná nulu; střihy a body smyčky v něm necvakají.</descrip>
+<termSec><term>průchod nulou</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Standard signal-processing term.</note></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Eine Stelle, an der die Wellenform die Null kreuzt; Schnitte und Loop-Punkte dort knacken nicht.</descrip>
+<termSec><term>Nulldurchgang</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Un punto donde la forma de onda cruza el cero; los cortes y puntos de bucle hechos ahí no producen clics.</descrip>
+<termSec><term>cruce por cero</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Standard DSP Spanish.</note></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Punkt, w którym przebieg przecina zero; cięcia i punkty pętli zrobione tam nie trzaskają.</descrip>
+<termSec><term>przejście przez zero</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote><note>Standard signal-processing term.</note></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Точка, где форма волны пересекает ноль; склейки и точки лупа в ней не щёлкают.</descrip>
+<termSec><term>переход через ноль</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="headroom">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">The distance in dB between the highest level a signal reaches and the level where it would clip.</descrip>
+<termSec><term>headroom</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Odstup v dB mezi nejvyšší úrovní, které signál dosáhne, a úrovní, při které by došlo k přebuzení.</descrip>
+<termSec><term>rezerva</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Engineers also say 'headroom'; 'rezerva' is the plain Czech word (Playhead: 'bez rezervy').</note></termSec>
+<termSec><term>headroom</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>rezerva vybuzení</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Der Abstand in dB zwischen dem höchsten Pegel, den ein Signal erreicht, und dem Pegel, bei dem es clippen würde.</descrip>
+<termSec><term>Headroom</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Studio loan (der Headroom); 'Aussteuerungsreserve' in broadcast texts.</note></termSec>
+<termSec><term>Aussteuerungsreserve</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">La distancia en dB entre el nivel más alto que alcanza una señal y el nivel en el que haría clipping.</descrip>
+<termSec><term>margen</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>'margen dinámico' / 'margen de seguridad' in text; the loan 'headroom' is very common in studios (Playhead: 'sin margen').</note></termSec>
+<termSec><term>headroom</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>margen dinámico</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Odległość w dB między najwyższym poziomem, jaki osiąga sygnał, a poziomem, przy którym nastąpiłoby przesterowanie.</descrip>
+<termSec><term>zapas dynamiki</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Studio usage; 'headroom' loan also heard (Playhead: 'brak zapasu').</note></termSec>
+<termSec><term>headroom</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>zapas</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Расстояние в dB между самым высоким уровнем сигнала и уровнем, при котором начнётся клиппинг.</descrip>
+<termSec><term>запас по уровню</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Как в Playhead («нет запаса по уровню»).</note></termSec>
+<termSec><term>хедрум</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="dynamic-range">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">The span in dB between a sound's loud and quiet parts, or between the highest level a system takes and its noise floor.</descrip>
+<termSec><term>dynamic range</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+<termSec><term>loudness range</term><termNote type="administrativeStatus">deprecatedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Rozpětí v dB mezi hlasitými a tichými částmi zvuku, nebo mezi nejvyšší úrovní, kterou systém snese, a jeho šumovým pozadím.</descrip>
+<termSec><term>dynamický rozsah</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>A level measure in dB; loudness range (rozsah hlasitosti, LRA) is a loudness measure in LU.</note></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Die Spanne in dB zwischen lauten und leisen Teilen eines Klangs, oder zwischen dem höchsten Pegel, den ein System verträgt, und seinem Grundrauschen.</descrip>
+<termSec><term>Dynamikumfang</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>A level measure in dB; the loudness range (Lautheitsbereich, LRA) is a loudness measure in LU.</note></termSec>
+<termSec><term>Dynamikbereich</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">El margen en dB entre las partes fuertes y suaves de un sonido, o entre el nivel más alto que admite un sistema y su ruido de fondo.</descrip>
+<termSec><term>rango dinámico</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>A level measure in dB; the loudness range (rango de sonoridad, LRA) is a loudness measure in LU.</note></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Rozpiętość w dB między głośnymi a cichymi częściami dźwięku albo między najwyższym poziomem, jaki przyjmie system, a jego poziomem szumu tła.</descrip>
+<termSec><term>zakres dynamiki</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>A level measure in dB; the loudness range (zakres głośności, LRA) is a loudness measure in LU.</note></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Размах в dB между громкими и тихими частями звука или между наибольшим уровнем, который выдерживает система, и её уровнем фонового шума.</descrip>
+<termSec><term>динамический диапазон</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Мера уровня в dB; диапазон громкости (LRA) — мера громкости в LU.</note></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="loudness-range">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">How much the loudness of a programme varies, in LU: the span between the 10th and 95th percentile of its short-term loudness.</descrip>
+<termSec><term>loudness range</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+<termSec><term>dynamic range</term><termNote type="administrativeStatus">deprecatedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Jak moc se mění hlasitost programu, v LU: rozpětí mezi 10. a 95. percentilem krátkodobé hlasitosti.</descrip>
+<termSec><term>rozsah hlasitosti</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>EBU Tech 3342 (LRA); Playhead 'Rozsah hlasitosti'.</note></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Wie stark die Lautheit eines Programms schwankt, in LU: die Spanne zwischen dem 10. und dem 95. Perzentil der Kurzzeit-Lautheit.</descrip>
+<termSec><term>Lautheitsbereich</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>EBU Tech 3342; German broadcast usage, e.g. ZDF 2022 spec: 'Lautheitsbereich („Loudness Range“, LRA)'.</note></termSec>
+<termSec><term>Loudness Range</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Cuánto varía la sonoridad de un programa, en LU: el margen entre los percentiles 10 y 95 de su sonoridad a corto plazo.</descrip>
+<termSec><term>rango de sonoridad</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>EBU Tech 3342; Playhead 'Rango de sonoridad'.</note></termSec>
+<termSec><term>rango de loudness</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Jak bardzo zmienia się głośność programu, w LU: rozpiętość między 10. a 95. percentylem jego głośności krótkookresowej.</descrip>
+<termSec><term>zakres głośności</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>EBU Tech 3342; Ardour pl 'Zakres głośności'.</note></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Насколько меняется громкость программы, в LU: размах между 10-м и 95-м процентилями её кратковременной громкости.</descrip>
+<termSec><term>диапазон громкости</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>EBU Tech 3342; в Playhead — «Диапазон громкости».</note></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="integrated-loudness">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">The loudness of a whole programme, with silence and quiet passages gated out, in LUFS.</descrip>
+<termSec><term>integrated loudness</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Hlasitost celého programu s odhradlovaným tichem a tichými pasážemi, v LUFS.</descrip>
+<termSec><term>integrovaná hlasitost</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>EBU R 128 as translated by RRTV.</note></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Die Lautheit eines ganzen Programms, ohne Stille und leise Passagen (Gating), in LUFS.</descrip>
+<termSec><term>integrierte Lautheit</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>EBU R 128; 'Programmlautheit' in ARD/ZDF specifications.</note></termSec>
+<termSec><term>Programmlautheit</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">La sonoridad de un programa entero, sin el silencio ni los pasajes suaves (con compuerta), en LUFS.</descrip>
+<termSec><term>sonoridad integrada</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>EBU R 128.</note></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Głośność całego programu z pominięciem ciszy i cichych fragmentów (bramkowanie), w LUFS.</descrip>
+<termSec><term>głośność zintegrowana</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>EBU R 128.</note></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Громкость всей программы без тишины и тихих мест (со стробированием), в LUFS.</descrip>
+<termSec><term>интегральная громкость</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>EBU R 128.</note></termSec>
+<termSec><term>интегрированная громкость</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="short-term-loudness">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">Loudness over a sliding 3 s window, in LUFS.</descrip>
+<termSec><term>short-term loudness</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Hlasitost v klouzavém okně 3 s, v LUFS.</descrip>
+<termSec><term>krátkodobá hlasitost</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>EBU Tech 3341.</note></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Lautheit über ein gleitendes Fenster von 3 s, in LUFS.</descrip>
+<termSec><term>Kurzzeit-Lautheit</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>EBU Tech 3341.</note></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Sonoridad en una ventana deslizante de 3 s, en LUFS.</descrip>
+<termSec><term>sonoridad a corto plazo</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>EBU Tech 3341.</note></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Głośność w przesuwnym oknie 3 s, w LUFS.</descrip>
+<termSec><term>głośność krótkookresowa</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>EBU Tech 3341.</note></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Громкость в скользящем окне 3 с, в LUFS.</descrip>
+<termSec><term>кратковременная громкость</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>EBU Tech 3341.</note></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="momentary-loudness">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">Loudness over a sliding 400 ms window, in LUFS.</descrip>
+<termSec><term>momentary loudness</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Hlasitost v klouzavém okně 400 ms, v LUFS.</descrip>
+<termSec><term>okamžitá hlasitost</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>EBU Tech 3341.</note></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Lautheit über ein gleitendes Fenster von 400 ms, in LUFS.</descrip>
+<termSec><term>momentane Lautheit</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>EBU Tech 3341.</note></termSec>
+<termSec><term>Momentan-Lautheit</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Sonoridad en una ventana deslizante de 400 ms, en LUFS.</descrip>
+<termSec><term>sonoridad momentánea</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>EBU Tech 3341.</note></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Głośność w przesuwnym oknie 400 ms, w LUFS.</descrip>
+<termSec><term>głośność chwilowa</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>EBU Tech 3341.</note></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Громкость в скользящем окне 400 мс, в LUFS.</descrip>
+<termSec><term>мгновенная громкость</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>EBU Tech 3341.</note></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="loudness-target">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">The integrated loudness a programme is delivered or played at, such as −23 LUFS for EBU R 128 broadcast or about −14 LUFS on streaming services.</descrip>
+<termSec><term>loudness target</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Integrovaná hlasitost, na které se program dodává nebo přehrává, například −23 LUFS podle EBU R 128 ve vysílání nebo zhruba −14 LUFS na streamovacích službách.</descrip>
+<termSec><term>cílová hlasitost</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Die integrierte Lautheit, mit der ein Programm geliefert oder abgespielt wird, etwa −23 LUFS nach EBU R 128 im Rundfunk oder etwa −14 LUFS bei Streamingdiensten.</descrip>
+<termSec><term>Ziellautheit</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+<termSec><term>Loudness-Target</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Zielwert</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">La sonoridad integrada a la que se entrega o reproduce un programa, como −23 LUFS según EBU R 128 en radiodifusión o unos −14 LUFS en plataformas de streaming.</descrip>
+<termSec><term>sonoridad objetivo</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Głośność zintegrowana, z jaką program jest dostarczany lub odtwarzany, np. −23 LUFS według EBU R 128 w nadawaniu lub ok. −14 LUFS w serwisach streamingowych.</descrip>
+<termSec><term>docelowa głośność</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Интегральная громкость, с которой программу сдают или воспроизводят, например −23 LUFS по EBU R 128 в вещании или около −14 LUFS на стриминговых сервисах.</descrip>
+<termSec><term>целевая громкость</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="loudness-matching">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">Bringing two versions to the same loudness before comparing them, so that the louder one does not seem better only because it is louder.</descrip>
+<termSec><term>loudness matching</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Uvedení dvou verzí na stejnou hlasitost před porovnáním, aby hlasitější nezněla lépe jen proto, že je hlasitější.</descrip>
+<termSec><term>sladění hlasitosti</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote><note>As in Playhead ('Sladit hlasitost'); does not clash with level the events = srovnat hlasitost událostí.</note></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Zwei Versionen vor dem Vergleich auf dieselbe Lautheit bringen, damit die lautere nicht nur deshalb besser wirkt, weil sie lauter ist.</descrip>
+<termSec><term>Lautheitsangleichung</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>As in Playhead ('Lautheit angleichen').</note></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Llevar dos versiones a la misma sonoridad antes de compararlas, para que la más fuerte no parezca mejor solo por sonar más fuerte.</descrip>
+<termSec><term>igualación de sonoridad</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>As in Playhead ('Igualar sonoridad').</note></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Doprowadzenie dwóch wersji do tej samej głośności przed porównaniem, aby głośniejsza nie wydawała się lepsza tylko dlatego, że jest głośniejsza.</descrip>
+<termSec><term>dopasowanie głośności</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote><note>As in Playhead ('Dopasuj głośność'); level the events is a different tool.</note></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Приведение двух версий к одинаковой громкости перед сравнением, чтобы более громкая не казалась лучше только потому, что громче.</descrip>
+<termSec><term>подгонка громкости</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Как в Playhead («Подогнать громкость»); не «выровнять громкость» — так назван инструмент level the events.</note></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="ab-comparison">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">Switching between two versions, ideally at matched loudness, to hear which is better.</descrip>
+<termSec><term>A/B comparison</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Přepínání mezi dvěma verzemi, nejlépe se sladěnou hlasitostí, aby bylo slyšet, která je lepší.</descrip>
+<termSec><term>A/B porovnání</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Zwischen zwei Versionen umschalten, am besten bei gleicher Lautheit, um zu hören, welche besser ist.</descrip>
+<termSec><term>A/B-Vergleich</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Alternar entre dos versiones, idealmente con la sonoridad igualada, para oír cuál es mejor.</descrip>
+<termSec><term>comparación A/B</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Przełączanie między dwiema wersjami, najlepiej przy dopasowanej głośności, aby usłyszeć, która jest lepsza.</descrip>
+<termSec><term>porównanie A/B</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Переключение между двумя версиями, лучше при одинаковой громкости, чтобы услышать, какая лучше.</descrip>
+<termSec><term>A/B-сравнение</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="reference-track">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A finished recording played for comparison while mixing or mastering.</descrip>
+<termSec><term>reference track</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Hotová nahrávka, která se při mixu nebo masteringu pouští pro srovnání.</descrip>
+<termSec><term>referenční nahrávka</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+<termSec><term>reference</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>referenční skladba</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Eine fertige Aufnahme, die beim Mischen oder Mastern zum Vergleich gehört wird.</descrip>
+<termSec><term>Referenztrack</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>Referenzaufnahme</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Referenzmix</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Una grabación terminada que se escucha para comparar al mezclar o masterizar.</descrip>
+<termSec><term>pista de referencia</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+<termSec><term>tema de referencia</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Gotowe nagranie odtwarzane dla porównania podczas miksu lub masteringu.</descrip>
+<termSec><term>utwór referencyjny</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>nagranie referencyjne</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>referencja</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Готовая запись, которую слушают для сравнения при сведении или мастеринге.</descrip>
+<termSec><term>референсный трек</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>референс</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>эталонная запись</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="crest-factor">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">The ratio of peak to RMS level, in dB: high for punchy, dynamic sound, low for dense, compressed sound.</descrip>
+<termSec><term>crest factor</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Poměr špičkové a efektivní (RMS) úrovně, v dB: vysoký u úderného, dynamického zvuku, nízký u hutného, komprimovaného.</descrip>
+<termSec><term>činitel výkyvu</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>'Činitel výkyvu' is the Czech electrical-engineering term; studios say 'crest faktor'.</note></termSec>
+<termSec><term>crest faktor</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>vrcholový činitel</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Das Verhältnis von Spitzen- zu RMS-Pegel, in dB: hoch bei knackigem, dynamischem Klang, niedrig bei dichtem, komprimiertem.</descrip>
+<termSec><term>Crestfaktor</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>'Scheitelfaktor' in electrical engineering (DIN).</note></termSec>
+<termSec><term>Scheitelfaktor</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">La relación entre el nivel de pico y el nivel RMS, en dB: alta en sonidos con pegada y dinámicos, baja en sonidos densos y comprimidos.</descrip>
+<termSec><term>factor de cresta</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Stosunek poziomu szczytowego do poziomu RMS, w dB: wysoki dla dźwięku z uderzeniem i dynamicznego, niski dla gęstego, skompresowanego.</descrip>
+<termSec><term>współczynnik szczytu</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>crest factor</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Отношение пикового уровня к уровню RMS, в dB: высокое у упругого, динамичного звука, низкое у плотного, сжатого.</descrip>
+<termSec><term>пик-фактор</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>«Пик-фактор» — термин электротехники; в студии говорят и «крест-фактор».</note></termSec>
+<termSec><term>крест-фактор</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="rms-level">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">The root mean square of a signal over a window: its average power, as a level.</descrip>
+<termSec><term>RMS level</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Odmocnina ze střední hodnoty kvadrátu signálu v okně: jeho průměrný výkon vyjádřený jako úroveň.</descrip>
+<termSec><term>efektivní úroveň</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>'Efektivní hodnota' is the standard Czech for RMS.</note></termSec>
+<termSec><term>úroveň RMS</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Der quadratische Mittelwert eines Signals über ein Fenster: seine mittlere Leistung als Pegel.</descrip>
+<termSec><term>RMS-Pegel</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>Effektivwert</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">La raíz cuadrática media de una señal en una ventana: su potencia media expresada como nivel.</descrip>
+<termSec><term>nivel RMS</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>valor eficaz</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Średnia kwadratowa sygnału w oknie: jego średnia moc wyrażona jako poziom.</descrip>
+<termSec><term>poziom RMS</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>wartość skuteczna</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Среднеквадратичное значение сигнала в окне: его средняя мощность, выраженная как уровень.</descrip>
+<termSec><term>уровень RMS</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>среднеквадратичный уровень</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="stereo-width">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">How different the two channels are, from mono (not at all) to wide.</descrip>
+<termSec><term>stereo width</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Jak moc se oba kanály liší, od mona (vůbec) po široký zvuk.</descrip>
+<termSec><term>šířka stereofonní báze</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>'Šířka' on controls; matches widen the tails = rozšířit doznění.</note></termSec>
+<termSec><term>stereo šířka</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Wie verschieden die beiden Kanäle sind, von Mono (gar nicht) bis breit.</descrip>
+<termSec><term>Stereobreite</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+<termSec><term>Basisbreite</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Cuánto difieren los dos canales, desde mono (nada) hasta amplio.</descrip>
+<termSec><term>anchura estéreo</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>'anchura' on controls; Audacity es uses 'Ancho de estéreo'. Matches widen the tails = ensanchar las colas.</note></termSec>
+<termSec><term>amplitud estéreo</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Jak bardzo różnią się oba kanały, od mono (wcale) po szeroki dźwięk.</descrip>
+<termSec><term>szerokość bazy stereo</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Plain 'szerokość' on controls (LMMS pl). Matches widen the tails = poszerz ogony.</note></termSec>
+<termSec><term>szerokość stereo</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Насколько различаются два канала, от моно (никак) до широкого звука.</descrip>
+<termSec><term>ширина стереобазы</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>На регуляторах просто «ширина».</note></termSec>
+<termSec><term>стереоширина</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="envelope">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">How a quantity, usually level, changes over the course of a sound; also a drawn curve that controls a parameter.</descrip>
+<termSec><term>envelope</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Jak se v průběhu zvuku mění nějaká veličina, obvykle úroveň; také nakreslená křivka, která řídí parametr.</descrip>
+<termSec><term>obálka</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Standard (Audacity and LMMS cs 'Obálka'). Level envelope = obálka úrovně (as in envelope transfer).</note></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Wie sich eine Größe, meist der Pegel, im Verlauf eines Klangs ändert; auch eine gezeichnete Kurve, die einen Parameter steuert.</descrip>
+<termSec><term>Hüllkurve</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Standard German (die Hüllkurve), as in all German synths and DAWs; level envelope = Pegelhüllkurve (envelope transfer).</note></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Cómo cambia una magnitud, normalmente el nivel, a lo largo de un sonido; también una curva dibujada que controla un parámetro.</descrip>
+<termSec><term>envolvente</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Standard (la envolvente), as in Audacity es; level envelope = envolvente de nivel.</note></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Jak w przebiegu dźwięku zmienia się jakaś wielkość, zwykle poziom; także narysowana krzywa sterująca parametrem.</descrip>
+<termSec><term>obwiednia</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Standard (obwiednia, f.): Audacity pl 'Obwiednia', LMMS pl. Level envelope = obwiednia poziomu (envelope transfer).</note></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Как в ходе звука меняется какая-либо величина, обычно уровень; также нарисованная кривая, управляющая параметром.</descrip>
+<termSec><term>огибающая</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Стандартный термин (ADSR-огибающая, огибающая уровня).</note></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="frequency-band">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A range of frequencies measured or processed together: an EQ band, a critical band, a mel band.</descrip>
+<termSec><term>frequency band</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Rozsah frekvencí měřený nebo zpracovávaný společně: pásmo ekvalizéru, kritické pásmo, melové pásmo.</descrip>
+<termSec><term>frekvenční pásmo</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Ein Frequenzbereich, der gemeinsam gemessen oder bearbeitet wird: ein EQ-Band, eine Frequenzgruppe, ein Mel-Band.</descrip>
+<termSec><term>Frequenzband</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote><note>A critical band is a Frequenzgruppe (this vocabulary).</note></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Un rango de frecuencias que se mide o procesa en conjunto: una banda de ecualizador, una banda crítica, una banda mel.</descrip>
+<termSec><term>banda de frecuencia</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Zakres częstotliwości mierzony lub przetwarzany razem: pasmo korektora, pasmo krytyczne, pasmo melowe.</descrip>
+<termSec><term>pasmo częstotliwości</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Диапазон частот, который измеряют или обрабатывают вместе: полоса эквалайзера, критическая полоса, мел-полоса.</descrip>
+<termSec><term>частотная полоса</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="high-pass-filter">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A filter that passes the frequencies above its cutoff and attenuates those below.</descrip>
+<termSec><term>high-pass filter</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+<termSec><term>low-cut</term><termNote type="administrativeStatus">deprecatedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Filtr, který propouští frekvence nad mezní frekvencí a tlumí frekvence pod ní.</descrip>
+<termSec><term>horní propust</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Standard Czech electronics term (Audacity cs).</note></termSec>
+<termSec><term>filtr typu horní propust</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>low-cut</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Ein Filter, das die Frequenzen oberhalb seiner Grenzfrequenz durchlässt und die darunter absenkt.</descrip>
+<termSec><term>Hochpassfilter</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote></termSec>
+<termSec><term>Low-Cut</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Trittschallfilter</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Un filtro que deja pasar las frecuencias por encima de su frecuencia de corte y atenúa las de debajo.</descrip>
+<termSec><term>filtro paso alto</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Spain 'paso alto'; Latin America 'pasa altos'.</note></termSec>
+<termSec><term>filtro pasa altos</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>low-cut</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Filtr, który przepuszcza częstotliwości powyżej częstotliwości granicznej i tłumi te poniżej.</descrip>
+<termSec><term>filtr górnoprzepustowy</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Standard Polish electronics term.</note></termSec>
+<termSec><term>high-pass</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>low-cut</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Фильтр, который пропускает частоты выше частоты среза и ослабляет частоты ниже неё.</descrip>
+<termSec><term>фильтр верхних частот</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Стандартный радиотехнический термин (ФВЧ).</note></termSec>
+<termSec><term>high-pass</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>срез низов</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="low-pass-filter">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A filter that passes the frequencies below its cutoff and attenuates those above.</descrip>
+<termSec><term>low-pass filter</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+<termSec><term>high-cut</term><termNote type="administrativeStatus">deprecatedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Filtr, který propouští frekvence pod mezní frekvencí a tlumí frekvence nad ní.</descrip>
+<termSec><term>dolní propust</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Standard Czech electronics term (Audacity cs).</note></termSec>
+<termSec><term>filtr typu dolní propust</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>high-cut</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Ein Filter, das die Frequenzen unterhalb seiner Grenzfrequenz durchlässt und die darüber absenkt.</descrip>
+<termSec><term>Tiefpassfilter</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote></termSec>
+<termSec><term>High-Cut</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Un filtro que deja pasar las frecuencias por debajo de su frecuencia de corte y atenúa las de encima.</descrip>
+<termSec><term>filtro paso bajo</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Spain 'paso bajo'; Latin America 'pasa bajos'.</note></termSec>
+<termSec><term>filtro pasa bajos</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>high-cut</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Filtr, który przepuszcza częstotliwości poniżej częstotliwości granicznej i tłumi te powyżej.</descrip>
+<termSec><term>filtr dolnoprzepustowy</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Standard Polish electronics term.</note></termSec>
+<termSec><term>low-pass</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>high-cut</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Фильтр, который пропускает частоты ниже частоты среза и ослабляет частоты выше неё.</descrip>
+<termSec><term>фильтр нижних частот</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Стандартный радиотехнический термин (ФНЧ).</note></termSec>
+<termSec><term>low-pass</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>срез верхов</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="limiter">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A compressor with a very high ratio and a fast attack that keeps the level below a ceiling.</descrip>
+<termSec><term>limiter</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Kompresor s velmi vysokým poměrem a rychlým náběhem, který drží úroveň pod stropem.</descrip>
+<termSec><term>limiter</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Studio loan; 'omezovač' in technical texts.</note></termSec>
+<termSec><term>omezovač</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Ein Kompressor mit sehr hoher Ratio und schneller Attack, der den Pegel unter einer Obergrenze hält.</descrip>
+<termSec><term>Limiter</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>Begrenzer</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Un compresor con una ratio muy alta y un ataque rápido que mantiene el nivel por debajo de un techo.</descrip>
+<termSec><term>limitador</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Kompresor o bardzo wysokim stosunku i szybkim ataku, który utrzymuje poziom poniżej pułapu.</descrip>
+<termSec><term>limiter</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>ogranicznik</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Компрессор с очень большой степенью сжатия и быстрой атакой, который держит уровень ниже потолка.</descrip>
+<termSec><term>лимитер</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>ограничитель</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="multiband-compressor">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A compressor that works on several frequency bands separately.</descrip>
+<termSec><term>multiband compressor</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Kompresor, který pracuje zvlášť v několika frekvenčních pásmech.</descrip>
+<termSec><term>vícepásmový kompresor</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Ein Kompressor, der in mehreren Frequenzbändern getrennt arbeitet.</descrip>
+<termSec><term>Multiband-Kompressor</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>Mehrband-Kompressor</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Un compresor que actúa por separado en varias bandas de frecuencia.</descrip>
+<termSec><term>compresor multibanda</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Kompresor, który działa osobno w kilku pasmach częstotliwości.</descrip>
+<termSec><term>kompresor wielopasmowy</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Компрессор, который работает отдельно в нескольких частотных полосах.</descrip>
+<termSec><term>многополосный компрессор</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="transient-shaper">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A processor that raises or lowers the attack and the sustain of sounds independently of their level.</descrip>
+<termSec><term>transient shaper</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Procesor, který nezávisle na úrovni zesiluje nebo zeslabuje náběh a vydržení zvuků.</descrip>
+<termSec><term>tvarovač tranzientů</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>transient shaper</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Ein Prozessor, der Attack und Sustain von Klängen unabhängig von ihrem Pegel anhebt oder absenkt.</descrip>
+<termSec><term>Transient-Designer</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>'Transient Designer' (SPL) became the generic German studio word.</note></termSec>
+<termSec><term>Transientenformer</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Transient Shaper</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Un procesador que sube o baja el ataque y el sostenido de los sonidos, independientemente de su nivel.</descrip>
+<termSec><term>modelador de transitorios</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>transient shaper</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>diseñador de transitorios</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Procesor, który niezależnie od poziomu podnosi lub obniża atak i wybrzmienie dźwięków.</descrip>
+<termSec><term>procesor transjentów</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Transient = transjent in this vocabulary.</note></termSec>
+<termSec><term>transient shaper</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>kształtowanie transjentów</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Процессор, который независимо от уровня усиливает или ослабляет атаку и сустейн звуков.</descrip>
+<termSec><term>транзиент-шейпер</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>формирователь транзиентов</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="sidechain">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A second input through which another signal controls a processor, as when music is turned down under dialogue.</descrip>
+<termSec><term>sidechain</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Druhý vstup, kterým procesor řídí jiný signál, například když se hudba stahuje pod dialogem.</descrip>
+<termSec><term>sidechain</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Studio loan; 'řídicí vstup' in running text.</note></termSec>
+<termSec><term>řídicí vstup</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>postranní řetězec</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Ein zweiter Eingang, über den ein anderes Signal einen Prozessor steuert, etwa wenn Musik unter Dialog abgesenkt wird.</descrip>
+<termSec><term>Sidechain</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+<termSec><term>Steuereingang</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Seitenkette</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Una segunda entrada con la que otra señal controla un procesador, como cuando la música baja bajo el diálogo.</descrip>
+<termSec><term>sidechain</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>cadena lateral</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>entrada de control</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Drugie wejście, przez które inny sygnał steruje procesorem, np. gdy muzyka jest ściszana pod dialogiem.</descrip>
+<termSec><term>sidechain</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>wejście sterujące</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>kluczowanie</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Второй вход, через который другой сигнал управляет процессором, например когда музыка приглушается под диалогом.</descrip>
+<termSec><term>сайдчейн</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>управляющий вход</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>боковая цепь</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="ducking">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">Turning one sound down automatically while another plays, usually with a sidechained compressor.</descrip>
+<termSec><term>ducking</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Automatické stažení jednoho zvuku, když hraje jiný, obvykle kompresorem řízeným přes sidechain.</descrip>
+<termSec><term>ducking</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>automatické stahování</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Ein Klang wird automatisch abgesenkt, solange ein anderer spielt, meist durch einen Kompressor mit Sidechain.</descrip>
+<termSec><term>Ducking</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote></termSec>
+<termSec><term>automatische Absenkung</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Bajar un sonido automáticamente mientras suena otro, normalmente con un compresor con sidechain.</descrip>
+<termSec><term>ducking</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>atenuación automática</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Automatyczne ściszanie jednego dźwięku, gdy gra inny, zwykle kompresorem z sidechainem.</descrip>
+<termSec><term>ducking</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>automatyczne ściszanie</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Автоматическое приглушение одного звука, пока звучит другой, обычно компрессором с сайдчейном.</descrip>
+<termSec><term>дакинг</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>автоматическое приглушение</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="reverb">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">The dense reflections of a sound in a space, or an effect that imitates them.</descrip>
+<termSec><term>reverb</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Husté odrazy zvuku v prostoru, nebo efekt, který je napodobuje.</descrip>
+<termSec><term>dozvuk</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>As in reverb on the tails = dozvuk na doznění.</note></termSec>
+<termSec><term>reverb</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Die dichten Reflexionen eines Klangs in einem Raum, oder ein Effekt, der sie nachbildet.</descrip>
+<termSec><term>Hall</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>As in reverb on the tails = Hall auf die Ausklänge.</note></termSec>
+<termSec><term>Nachhall</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Reverb</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Las reflexiones densas de un sonido en un espacio, o un efecto que las imita.</descrip>
+<termSec><term>reverberación</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>As in reverb on the tails = reverberación en las colas.</note></termSec>
+<termSec><term>reverb</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Gęste odbicia dźwięku w pomieszczeniu albo efekt, który je naśladuje.</descrip>
+<termSec><term>pogłos</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>As in reverb on the tails = pogłos na ogonach.</note></termSec>
+<termSec><term>reverb</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Плотные отражения звука в помещении или эффект, который их имитирует.</descrip>
+<termSec><term>реверб</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>«Реверберация» — физическое явление; эффект в студии — «реверб» (как в инструменте reverb on the tails — «реверб на хвостах»).</note></termSec>
+<termSec><term>реверберация</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="delay">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">An effect that plays the sound again after a set time, often repeating and fading (echo).</descrip>
+<termSec><term>delay</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Efekt, který zvuk po nastavené době přehraje znovu, často opakovaně a slábnoucí (ozvěna).</descrip>
+<termSec><term>delay</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Studio loan; 'zpožďovací linka' in technical texts.</note></termSec>
+<termSec><term>zpoždění</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>ozvěna</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Ein Effekt, der den Klang nach einer eingestellten Zeit erneut abspielt, oft wiederholt und abklingend (Echo).</descrip>
+<termSec><term>Delay</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote></termSec>
+<termSec><term>Echo</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Verzögerung</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Un efecto que vuelve a reproducir el sonido tras un tiempo fijado, a menudo repitiéndose y apagándose (eco).</descrip>
+<termSec><term>delay</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>retardo</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>eco</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Efekt, który odtwarza dźwięk ponownie po ustawionym czasie, często powtarzając go i wygaszając (echo).</descrip>
+<termSec><term>delay</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>opóźnienie</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>echo</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Эффект, который повторяет звук через заданное время, часто многократно и с затуханием (эхо).</descrip>
+<termSec><term>дилей</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>задержка</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>эхо</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="dither">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">Low-level noise added when the bit depth is reduced, so that the rounding error becomes noise instead of distortion.</descrip>
+<termSec><term>dither</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Šum nízké úrovně přidaný při snižování bitové hloubky, aby se chyba zaokrouhlení změnila v šum místo zkreslení.</descrip>
+<termSec><term>dither</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>dithering</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>rozptylový šum</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Rauschen mit niedrigem Pegel, das beim Verringern der Bittiefe hinzugefügt wird, damit der Rundungsfehler zu Rauschen statt zu Verzerrung wird.</descrip>
+<termSec><term>Dither</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote></termSec>
+<termSec><term>Dithering</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Ruido de bajo nivel que se añade al reducir la profundidad de bits, para que el error de redondeo se convierta en ruido en lugar de distorsión.</descrip>
+<termSec><term>dither</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>tramado</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>dithering</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Szum o niskim poziomie dodawany przy zmniejszaniu głębi bitowej, aby błąd zaokrąglenia stał się szumem zamiast zniekształceniem.</descrip>
+<termSec><term>dither</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>dithering</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Шум низкого уровня, добавляемый при уменьшении разрядности, чтобы ошибка округления стала шумом, а не искажением.</descrip>
+<termSec><term>дизеринг</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>дитер</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="mastering">
+<descrip type="subjectField">mixing</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">The last stage before release: the final EQ, dynamics and loudness of a mix, and checks for the delivery format.</descrip>
+<termSec><term>mastering</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Poslední fáze před vydáním: konečný ekvalizér, dynamika a hlasitost mixu a kontroly pro formát dodání.</descrip>
+<termSec><term>mastering</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Der letzte Schritt vor der Veröffentlichung: abschließende EQ-, Dynamik- und Lautheitsbearbeitung eines Mixes und Prüfungen für das Lieferformat.</descrip>
+<termSec><term>Mastering</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">La última etapa antes de publicar: la ecualización, la dinámica y la sonoridad finales de una mezcla, y las comprobaciones para el formato de entrega.</descrip>
+<termSec><term>masterización</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+<termSec><term>mastering</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Ostatni etap przed wydaniem: końcowa korekcja, dynamika i głośność miksu oraz kontrole pod kątem formatu dostawy.</descrip>
+<termSec><term>mastering</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Последний этап перед выпуском: окончательные эквализация, динамика и громкость микса и проверки под формат сдачи.</descrip>
+<termSec><term>мастеринг</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="drop">
+<descrip type="subjectField">dj</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">The moment in a dance track when the full beat and bass come in, usually after a build-up or a breakdown.</descrip>
+<termSec><term>drop</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+<termSec><term>drop for a fall in level</term><termNote type="administrativeStatus">deprecatedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Okamžik v taneční skladbě, kdy nastoupí plný beat a basa, obvykle po build-upu nebo breakdownu.</descrip>
+<termSec><term>drop</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Loan in Czech dance music. Playhead never uses 'drop' for a fall in level.</note></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Der Moment in einem Dance-Track, in dem voller Beat und Bass einsetzen, meist nach einem Build-up oder Breakdown.</descrip>
+<termSec><term>Drop</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Playhead never uses 'Drop' for a fall in level.</note></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">El momento de un tema de baile en que entran el ritmo completo y el bajo, normalmente tras un build-up o un breakdown.</descrip>
+<termSec><term>drop</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Playhead never uses 'drop' for a fall in level.</note></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Moment w utworze tanecznym, w którym wchodzi pełny bit i bas, zwykle po build-upie lub breakdownie.</descrip>
+<termSec><term>drop</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Playhead never uses 'drop' for a fall in level.</note></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Момент в танцевальном треке, когда вступают полный бит и бас, обычно после билдапа или брейкдауна.</descrip>
+<termSec><term>дроп</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Playhead не называет «дропом» падение уровня.</note></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="build-up">
+<descrip type="subjectField">dj</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A passage that raises tension towards a drop: rising pitch, filter sweeps, faster rolls, a riser.</descrip>
+<termSec><term>build-up</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Pasáž, která stupňuje napětí k dropu: stoupající výška, přeladění filtru, zrychlující víry, riser.</descrip>
+<termSec><term>build-up</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Not 'náběh' (= attack).</note></termSec>
+<termSec><term>gradace</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>stupňování</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Eine Passage, die die Spannung zum Drop hin steigert: steigende Tonhöhe, Filter-Sweeps, schnellere Wirbel, ein Riser.</descrip>
+<termSec><term>Build-up</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>Aufbau</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Steigerung</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Un pasaje que aumenta la tensión hacia el drop: tono que sube, barridos de filtro, redobles más rápidos, un riser.</descrip>
+<termSec><term>build-up</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>'subida' is the everyday word for this section.</note></termSec>
+<termSec><term>subida</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>crescendo</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Fragment, który podnosi napięcie przed dropem: rosnąca wysokość, ślizgi filtra, coraz szybsze werble, riser.</descrip>
+<termSec><term>build-up</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>narastanie</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>budowanie napięcia</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Отрезок, который нагнетает напряжение перед дропом: растущая высота, свипы фильтра, ускоряющиеся дроби, райзер.</descrip>
+<termSec><term>билдап</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>нарастание</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>подводка</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="breakdown">
+<descrip type="subjectField">dj</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A passage where the beat and bass fall away, leaving pads, chords or vocals.</descrip>
+<termSec><term>breakdown</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Pasáž, ve které ustoupí beat a basa a zůstanou plochy, akordy nebo zpěv.</descrip>
+<termSec><term>breakdown</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>zklidnění</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Eine Passage, in der Beat und Bass wegfallen und Flächen, Akkorde oder Gesang bleiben.</descrip>
+<termSec><term>Breakdown</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Un pasaje en el que el ritmo y el bajo desaparecen y quedan pads, acordes o voces.</descrip>
+<termSec><term>breakdown</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>corte</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>bajón</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Fragment, w którym bit i bas ustępują, a zostają plamy, akordy lub wokal.</descrip>
+<termSec><term>breakdown</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Not 'wyciszenie' (= mute).</note></termSec>
+<termSec><term>przełamanie</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>zejście</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Отрезок, где бит и бас уходят и остаются пэды, аккорды или вокал.</descrip>
+<termSec><term>брейкдаун</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>затишье</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="riser">
+<descrip type="subjectField">dj</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A sound that rises in pitch, brightness or level to lead into a drop or a transition.</descrip>
+<termSec><term>riser</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Zvuk, který stoupá výškou, jasem nebo úrovní a vede do dropu nebo přechodu.</descrip>
+<termSec><term>riser</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Loan used by Czech producers (pl. risery); no Czech equivalent in use.</note></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Ein Klang, der in Tonhöhe, Helligkeit oder Pegel ansteigt und in einen Drop oder Übergang führt.</descrip>
+<termSec><term>Riser</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Sound-design and EDM loan (der Riser); no established German word.</note></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Un sonido que sube en tono, brillo o nivel para llevar a un drop o a una transición.</descrip>
+<termSec><term>riser</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Loan used by Spanish sound designers and EDM producers; no Spanish equivalent in use.</note></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Dźwięk, który rośnie wysokością, jasnością lub poziomem i prowadzi do dropu lub przejścia.</descrip>
+<termSec><term>riser</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Producer loan (pl. risery); no Polish word in use.</note></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Звук, который растёт по высоте, яркости или уровню и подводит к дропу или переходу.</descrip>
+<termSec><term>райзер</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Жаргон саунд-дизайна и EDM; описательно — «нарастающий эффект».</note></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="sweep">
+<descrip type="subjectField">dj</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A glide through a range of frequencies: a tone or noise whose pitch or brightness moves, or a filter swept across the spectrum.</descrip>
+<termSec><term>sweep</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Přejezd rozsahem frekvencí: tón nebo šum, jehož výška nebo jas se posouvá, nebo filtr přeladěný přes spektrum.</descrip>
+<termSec><term>přeladění</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote><note>Producers also say 'sweep'; 'glissando' only for pitched instruments.</note></termSec>
+<termSec><term>sweep</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Ein Gleiten durch einen Frequenzbereich: ein Ton oder Rauschen, dessen Tonhöhe oder Helligkeit wandert, oder ein Filter, das durch das Spektrum fährt.</descrip>
+<termSec><term>Sweep</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Loan (der Sweep); the measurement sense is 'Gleitsinus'.</note></termSec>
+<termSec><term>Gleitsinus</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>Filterfahrt</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Un recorrido por un rango de frecuencias: un tono o ruido cuyo tono o brillo se desplaza, o un filtro que barre el espectro.</descrip>
+<termSec><term>barrido</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Standard ('barrido de frecuencia').</note></termSec>
+<termSec><term>sweep</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Przejście przez zakres częstotliwości: ton lub szum, którego wysokość lub jasność się przesuwa, albo filtr przesuwany przez widmo.</descrip>
+<termSec><term>ślizg</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Native word for a pitch or brightness glide (ślizg, m.); studio speech also says 'sweep'.</note></termSec>
+<termSec><term>sweep</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>przemiatanie</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Проход по диапазону частот: тон или шум, у которого смещается высота или яркость, или фильтр, проходящий по спектру.</descrip>
+<termSec><term>свип</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote><note>Жаргон; как слово Шеффера (Y) тоже «свип».</note></termSec>
+<termSec><term>глиссандо по спектру</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>развёртка</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="cue-point">
+<descrip type="subjectField">dj</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A stored position in a track that a DJ or a player jumps to or starts from.</descrip>
+<termSec><term>cue point</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Uložené místo ve skladbě, na které DJ nebo přehrávač skočí nebo odkud začíná.</descrip>
+<termSec><term>cue bod</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>cue</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>bod cue</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Eine gespeicherte Stelle in einem Track, zu der ein DJ oder Player springt oder an der er startet.</descrip>
+<termSec><term>Cue-Punkt</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Una posición guardada en un tema a la que un DJ o un reproductor salta o desde la que empieza.</descrip>
+<termSec><term>punto de cue</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>punto cue</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Zapisane miejsce w utworze, do którego DJ lub odtwarzacz przeskakuje albo od którego zaczyna.</descrip>
+<termSec><term>punkt cue</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>cue</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Сохранённое место в треке, к которому DJ или плеер переходит или с которого начинает.</descrip>
+<termSec><term>кью-точка</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+<termSec><term>точка cue</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>cue</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="beatgrid">
+<descrip type="subjectField">dj</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">The beats and bars of a track as a grid, used to sync, loop and jump in time.</descrip>
+<termSec><term>beatgrid</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Doby a takty skladby jako mřížka, podle které se synchronizuje, smyčkuje a skáče v čase.</descrip>
+<termSec><term>mřížka dob</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Playhead: 'mřížka dob'. DJ software keeps 'beatgrid'.</note></termSec>
+<termSec><term>beatgrid</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Die Beats und Takte eines Tracks als Raster, zum Synchronisieren, Loopen und Springen.</descrip>
+<termSec><term>Beatgrid</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote><note>As in German DJ software and Playhead; 'Beat-Raster' in running text where a German word reads better.</note></termSec>
+<termSec><term>Beat-Raster</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Los pulsos y compases de un tema como una rejilla, para sincronizar, hacer bucles y saltar en el tiempo.</descrip>
+<termSec><term>rejilla de pulsos</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Beat = pulso in this vocabulary; DJ software keeps 'beatgrid'. Playhead: 'rejilla de pulsos'.</note></termSec>
+<termSec><term>beatgrid</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>cuadrícula de pulsos</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Miary i takty utworu w postaci siatki, do synchronizacji, zapętlania i skoków w czasie.</descrip>
+<termSec><term>siatka miar</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Beat = miara in this vocabulary; Playhead: 'siatka miar'. DJ software keeps 'beatgrid'.</note></termSec>
+<termSec><term>beatgrid</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Доли и такты трека в виде сетки, по которой синхронизируют, зацикливают и переходят во времени.</descrip>
+<termSec><term>сетка долей</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote><note>Доля = beat в этом словаре; в DJ-программах — «битгрид». Playhead: «сетка долей».</note></termSec>
+<termSec><term>битгрид</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="beatmatching">
+<descrip type="subjectField">dj</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">Bringing two tracks to the same tempo with their beats aligned.</descrip>
+<termSec><term>beatmatching</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Uvedení dvou skladeb na stejné tempo se sladěnými dobami.</descrip>
+<termSec><term>beatmatching</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>sesouhlasení dob</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+<termSec><term>srovnání tempa</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Zwei Tracks auf dasselbe Tempo bringen, mit übereinanderliegenden Beats.</descrip>
+<termSec><term>Beatmatching</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">neuter</termNote></termSec>
+<termSec><term>Beatangleichung</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Poner dos temas al mismo tempo con sus pulsos alineados.</descrip>
+<termSec><term>beatmatching</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>sincronización de pulsos</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Doprowadzenie dwóch utworów do tego samego tempa z wyrównanymi miarami.</descrip>
+<termSec><term>beatmatching</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>synchronizacja miar</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Приведение двух треков к одному темпу с совпадающими долями.</descrip>
+<termSec><term>битматчинг</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">masculine</termNote></termSec>
+<termSec><term>сведение по долям</term><termNote type="administrativeStatus">admittedTerm-admn-sts</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="phrase">
+<descrip type="subjectField">dj</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">A run of bars, usually 8, 16 or 32 in dance music, that forms one musical unit; DJs mix at phrase boundaries.</descrip>
+<termSec><term>phrase</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Řada taktů, v taneční hudbě obvykle 8, 16 nebo 32, tvořící jeden hudební celek; DJové míchají na hranicích frází.</descrip>
+<termSec><term>fráze</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Eine Folge von Takten, in Dance-Musik meist 8, 16 oder 32, die eine musikalische Einheit bildet; DJs mischen an Phrasengrenzen.</descrip>
+<termSec><term>Phrase</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">Una serie de compases, normalmente 8, 16 o 32 en la música de baile, que forma una unidad musical; los DJ mezclan en los límites de frase.</descrip>
+<termSec><term>frase</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Ciąg taktów, w muzyce tanecznej zwykle 8, 16 lub 32, tworzący jedną całość muzyczną; DJ-e miksują na granicach fraz.</descrip>
+<termSec><term>fraza</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Ряд тактов, в танцевальной музыке обычно 8, 16 или 32, образующий одну музыкальную единицу; DJ сводят на границах фраз.</descrip>
+<termSec><term>фраза</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+</conceptEntry>
+<conceptEntry id="key">
+<descrip type="subjectField">dj</descrip>
+<langSec xml:lang="en">
+<descrip type="definition">The tonal centre and scale of a piece, such as A minor; DJs mix tracks in compatible keys (harmonic mixing).</descrip>
+<termSec><term>key</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote></termSec>
+</langSec>
+<langSec xml:lang="cs">
+<descrip type="definition">Tónové centrum a stupnice skladby, například a moll; DJové míchají skladby v kompatibilních tóninách (harmonický mix).</descrip>
+<termSec><term>tónina</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+<langSec xml:lang="de">
+<descrip type="definition">Grundton und Tonleiter eines Stücks, etwa a-Moll; DJs mischen Tracks in passenden Tonarten (Harmonic Mixing).</descrip>
+<termSec><term>Tonart</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+<langSec xml:lang="es">
+<descrip type="definition">El centro tonal y la escala de una pieza, como la menor; los DJ mezclan temas en tonalidades compatibles (mezcla armónica).</descrip>
+<termSec><term>tonalidad</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+<langSec xml:lang="pl">
+<descrip type="definition">Centrum tonalne i skala utworu, np. a-moll; DJ-e miksują utwory w zgodnych tonacjach (miksowanie harmoniczne).</descrip>
+<termSec><term>tonacja</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+<langSec xml:lang="ru">
+<descrip type="definition">Тональный центр и лад произведения, например ля минор; DJ сводят треки в совместимых тональностях (гармоническое сведение).</descrip>
+<termSec><term>тональность</term><termNote type="administrativeStatus">preferredTerm-admn-sts</termNote><termNote type="grammaticalGender">feminine</termNote></termSec>
+</langSec>
+</conceptEntry>
 </body></text></tbx>

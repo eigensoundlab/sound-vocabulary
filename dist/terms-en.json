@@ -861,5 +861,285 @@
   "term": "box",
   "short": "box",
   "definition": "A hollow body with flat sides."
+ },
+ "track": {
+  "term": "track",
+  "short": "track",
+  "definition": "A row of a DAW session that holds clips on the timeline and has its own mixer channel."
+ },
+ "folder-track": {
+  "term": "folder track",
+  "short": "folder",
+  "definition": "A track that holds other tracks: it sums their sound and can show them as one."
+ },
+ "clip": {
+  "term": "clip",
+  "short": "clip",
+  "definition": "One piece of audio or MIDI on a track, placed at a point in time."
+ },
+ "session": {
+  "term": "session",
+  "short": "session",
+  "definition": "All of one piece of DAW work: its tracks, clips, routing and settings; also called a project."
+ },
+ "timeline": {
+  "term": "timeline",
+  "short": "timeline",
+  "definition": "The time axis of a session, along which clips are placed."
+ },
+ "marker": {
+  "term": "marker",
+  "short": "marker",
+  "definition": "A named point in time stored in a session or a sound file (a cue in a WAV file)."
+ },
+ "region": {
+  "term": "region",
+  "short": "region",
+  "definition": "A named span of time with a start and an end, stored in a session or a sound file."
+ },
+ "snap": {
+  "term": "snap",
+  "short": "snap",
+  "definition": "Making a clip or an edit jump to the nearest grid line, marker, clip edge or onset while it is moved."
+ },
+ "mute": {
+  "term": "mute",
+  "short": "mute",
+  "definition": "Silencing a track without removing it; the button is often labelled M."
+ },
+ "solo": {
+  "term": "solo",
+  "short": "solo",
+  "definition": "Hearing only the soloed tracks; the button is often labelled S."
+ },
+ "fader": {
+  "term": "fader",
+  "short": "fader",
+  "definition": "The level control of a mixer channel."
+ },
+ "pan": {
+  "term": "pan",
+  "short": "pan",
+  "definition": "Where a sound sits between left and right; also the control that sets it."
+ },
+ "bus": {
+  "term": "bus",
+  "short": "bus",
+  "definition": "A mixer channel that sums the signals sent to it, so they can be processed together (a drum bus, a reverb bus)."
+ },
+ "master-bus": {
+  "term": "master bus",
+  "short": "master",
+  "definition": "The bus everything is summed into before the output: what is rendered as the mix."
+ },
+ "send": {
+  "term": "send",
+  "short": "send",
+  "definition": "A copy of a track's signal sent to a bus at its own level, while the track keeps playing."
+ },
+ "insert": {
+  "term": "insert",
+  "short": "insert",
+  "definition": "An effect in a channel's own signal path, which all of the signal passes through."
+ },
+ "routing": {
+  "term": "routing",
+  "short": "routing",
+  "definition": "How signals travel between tracks, buses, sends and outputs."
+ },
+ "mix": {
+  "term": "mix",
+  "short": "mix",
+  "definition": "The sum of all tracks as it is heard; also the work of balancing them."
+ },
+ "stem": {
+  "term": "stem",
+  "short": "stem",
+  "definition": "A submix of related tracks (drums, dialogue, music) rendered to its own file, so the parts can be mixed or delivered separately."
+ },
+ "zero-crossing": {
+  "term": "zero crossing",
+  "short": "zero crossing",
+  "definition": "A point where the waveform crosses zero; cuts and loop points made there do not click."
+ },
+ "headroom": {
+  "term": "headroom",
+  "short": "headroom",
+  "definition": "The distance in dB between the highest level a signal reaches and the level where it would clip."
+ },
+ "dynamic-range": {
+  "term": "dynamic range",
+  "short": "dynamic range",
+  "definition": "The span in dB between a sound's loud and quiet parts, or between the highest level a system takes and its noise floor."
+ },
+ "loudness-range": {
+  "term": "loudness range",
+  "short": "LRA",
+  "definition": "How much the loudness of a programme varies, in LU: the span between the 10th and 95th percentile of its short-term loudness."
+ },
+ "integrated-loudness": {
+  "term": "integrated loudness",
+  "short": "integrated loudness",
+  "definition": "The loudness of a whole programme, with silence and quiet passages gated out, in LUFS."
+ },
+ "short-term-loudness": {
+  "term": "short-term loudness",
+  "short": "short-term loudness",
+  "definition": "Loudness over a sliding 3 s window, in LUFS."
+ },
+ "momentary-loudness": {
+  "term": "momentary loudness",
+  "short": "momentary loudness",
+  "definition": "Loudness over a sliding 400 ms window, in LUFS."
+ },
+ "loudness-target": {
+  "term": "loudness target",
+  "short": "loudness target",
+  "definition": "The integrated loudness a programme is delivered or played at, such as −23 LUFS for EBU R 128 broadcast or about −14 LUFS on streaming services."
+ },
+ "loudness-matching": {
+  "term": "loudness matching",
+  "short": "match loudness",
+  "definition": "Bringing two versions to the same loudness before comparing them, so that the louder one does not seem better only because it is louder."
+ },
+ "ab-comparison": {
+  "term": "A/B comparison",
+  "short": "A/B",
+  "definition": "Switching between two versions, ideally at matched loudness, to hear which is better."
+ },
+ "reference-track": {
+  "term": "reference track",
+  "short": "reference",
+  "definition": "A finished recording played for comparison while mixing or mastering."
+ },
+ "crest-factor": {
+  "term": "crest factor",
+  "short": "crest factor",
+  "definition": "The ratio of peak to RMS level, in dB: high for punchy, dynamic sound, low for dense, compressed sound."
+ },
+ "rms-level": {
+  "term": "RMS level",
+  "short": "RMS",
+  "definition": "The root mean square of a signal over a window: its average power, as a level."
+ },
+ "stereo-width": {
+  "term": "stereo width",
+  "short": "width",
+  "definition": "How different the two channels are, from mono (not at all) to wide."
+ },
+ "envelope": {
+  "term": "envelope",
+  "short": "envelope",
+  "definition": "How a quantity, usually level, changes over the course of a sound; also a drawn curve that controls a parameter."
+ },
+ "frequency-band": {
+  "term": "frequency band",
+  "short": "band",
+  "definition": "A range of frequencies measured or processed together: an EQ band, a critical band, a mel band."
+ },
+ "high-pass-filter": {
+  "term": "high-pass filter",
+  "short": "high-pass",
+  "definition": "A filter that passes the frequencies above its cutoff and attenuates those below."
+ },
+ "low-pass-filter": {
+  "term": "low-pass filter",
+  "short": "low-pass",
+  "definition": "A filter that passes the frequencies below its cutoff and attenuates those above."
+ },
+ "limiter": {
+  "term": "limiter",
+  "short": "limiter",
+  "definition": "A compressor with a very high ratio and a fast attack that keeps the level below a ceiling."
+ },
+ "multiband-compressor": {
+  "term": "multiband compressor",
+  "short": "multiband",
+  "definition": "A compressor that works on several frequency bands separately."
+ },
+ "transient-shaper": {
+  "term": "transient shaper",
+  "short": "transient shaper",
+  "definition": "A processor that raises or lowers the attack and the sustain of sounds independently of their level."
+ },
+ "sidechain": {
+  "term": "sidechain",
+  "short": "sidechain",
+  "definition": "A second input through which another signal controls a processor, as when music is turned down under dialogue."
+ },
+ "ducking": {
+  "term": "ducking",
+  "short": "ducking",
+  "definition": "Turning one sound down automatically while another plays, usually with a sidechained compressor."
+ },
+ "reverb": {
+  "term": "reverb",
+  "short": "reverb",
+  "definition": "The dense reflections of a sound in a space, or an effect that imitates them."
+ },
+ "delay": {
+  "term": "delay",
+  "short": "delay",
+  "definition": "An effect that plays the sound again after a set time, often repeating and fading (echo)."
+ },
+ "dither": {
+  "term": "dither",
+  "short": "dither",
+  "definition": "Low-level noise added when the bit depth is reduced, so that the rounding error becomes noise instead of distortion."
+ },
+ "mastering": {
+  "term": "mastering",
+  "short": "mastering",
+  "definition": "The last stage before release: the final EQ, dynamics and loudness of a mix, and checks for the delivery format."
+ },
+ "drop": {
+  "term": "drop",
+  "short": "drop",
+  "definition": "The moment in a dance track when the full beat and bass come in, usually after a build-up or a breakdown."
+ },
+ "build-up": {
+  "term": "build-up",
+  "short": "build-up",
+  "definition": "A passage that raises tension towards a drop: rising pitch, filter sweeps, faster rolls, a riser."
+ },
+ "breakdown": {
+  "term": "breakdown",
+  "short": "breakdown",
+  "definition": "A passage where the beat and bass fall away, leaving pads, chords or vocals."
+ },
+ "riser": {
+  "term": "riser",
+  "short": "riser",
+  "definition": "A sound that rises in pitch, brightness or level to lead into a drop or a transition."
+ },
+ "sweep": {
+  "term": "sweep",
+  "short": "sweep",
+  "definition": "A glide through a range of frequencies: a tone or noise whose pitch or brightness moves, or a filter swept across the spectrum."
+ },
+ "cue-point": {
+  "term": "cue point",
+  "short": "cue",
+  "definition": "A stored position in a track that a DJ or a player jumps to or starts from."
+ },
+ "beatgrid": {
+  "term": "beatgrid",
+  "short": "beatgrid",
+  "definition": "The beats and bars of a track as a grid, used to sync, loop and jump in time."
+ },
+ "beatmatching": {
+  "term": "beatmatching",
+  "short": "beatmatching",
+  "definition": "Bringing two tracks to the same tempo with their beats aligned."
+ },
+ "phrase": {
+  "term": "phrase",
+  "short": "phrase",
+  "definition": "A run of bars, usually 8, 16 or 32 in dance music, that forms one musical unit; DJs mix at phrase boundaries."
+ },
+ "key": {
+  "term": "key",
+  "short": "key",
+  "definition": "The tonal centre and scale of a piece, such as A minor; DJs mix tracks in compatible keys (harmonic mixing)."
  }
 }

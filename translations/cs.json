@@ -1448,6 +1448,469 @@
       "definition": "Duté těleso s rovnými stěnami.",
       "note": "'Skříň' as in 'rezonanční skříň'; 'krabice' is everyday and suggests cardboard.",
       "gender": "f"
+    },
+    "track": {
+      "term": "stopa",
+      "alt": [
+        "track"
+      ],
+      "definition": "Řádek projektu v DAW, který nese klipy na časové ose a má vlastní kanál v mixážním pultu.",
+      "note": "Ardour, Audacity and LMMS cs 'stopa'. Not 'pruh' (= lane, a band inside a strip) or 'kanál' (one signal of a sound file).",
+      "gender": "f"
+    },
+    "folder-track": {
+      "term": "stopa složky",
+      "short": "Složka",
+      "alt": [
+        "složka",
+        "složková stopa"
+      ],
+      "definition": "Stopa, která obsahuje jiné stopy: sčítá jejich zvuk a umí je ukázat jako celek.",
+      "note": "REAPER and Cubase say 'folder track'; Czech users say 'složka'. 'Skupina' stays for mixer groups. Playhead: 'Stopy ve složce'.",
+      "gender": "f"
+    },
+    "clip": {
+      "term": "klip",
+      "alt": [
+        "položka",
+        "region"
+      ],
+      "definition": "Kus zvuku nebo MIDI na stopě, umístěný v určitém místě časové osy.",
+      "note": "Studio usage. Not 'událost' (= a sound event in this vocabulary, though Cubase calls clips events) or 'oblast' (= region, a named span of time; Logic calls clips regions).",
+      "gender": "m"
+    },
+    "session": {
+      "term": "projekt",
+      "alt": [
+        "relace",
+        "session"
+      ],
+      "definition": "Celá práce na jednom díle v DAW: stopy, klipy, směrování a nastavení.",
+      "note": "Czech users say 'projekt'; Ardour cs uses 'relace' for its sessions.",
+      "gender": "m"
+    },
+    "timeline": {
+      "term": "časová osa",
+      "definition": "Osa času projektu, podél které se kladou klipy.",
+      "gender": "f"
+    },
+    "marker": {
+      "term": "marker",
+      "alt": [
+        "značka v čase",
+        "zarážka"
+      ],
+      "definition": "Pojmenované místo v čase uložené v projektu nebo ve zvukovém souboru (cue ve WAV).",
+      "note": "Studio loan. Not 'značka': 'značky' are the marks Playhead draws on a strip.",
+      "gender": "m"
+    },
+    "region": {
+      "term": "oblast",
+      "alt": [
+        "region",
+        "úsek"
+      ],
+      "definition": "Pojmenovaný úsek času se začátkem a koncem, uložený v projektu nebo ve zvukovém souboru.",
+      "note": "REAPER users also say 'region'. In Logic a region is a clip (klip).",
+      "gender": "f"
+    },
+    "snap": {
+      "term": "přichytávání",
+      "alt": [
+        "přichycení",
+        "snap"
+      ],
+      "definition": "Přeskok posouvaného klipu nebo střihu na nejbližší čáru mřížky, marker, okraj klipu nebo nástup.",
+      "note": "Playhead: 'Přichytávat k nástupům'.",
+      "gender": "n"
+    },
+    "mute": {
+      "term": "ztlumení",
+      "short": "Ztlumit",
+      "alt": [
+        "mute"
+      ],
+      "definition": "Umlčení stopy bez jejího odstranění; tlačítko bývá označené M.",
+      "note": "Buttons 'Ztlumit' or M (Ardour cs).",
+      "gender": "n"
+    },
+    "solo": {
+      "term": "sólo",
+      "definition": "Poslech pouze sólovaných stop; tlačítko bývá označené S.",
+      "gender": "n"
+    },
+    "fader": {
+      "term": "fader",
+      "alt": [
+        "tahový regulátor"
+      ],
+      "definition": "Regulátor úrovně kanálu v mixážním pultu.",
+      "note": "Studio loan; 'tahový regulátor' in technical texts.",
+      "gender": "m"
+    },
+    "pan": {
+      "term": "panorama",
+      "alt": [
+        "pan"
+      ],
+      "definition": "Místo zvuku mezi levou a pravou stranou; také regulátor, který ho nastavuje.",
+      "note": "Studio usage ('panorama', panoramovací regulátor); 'pan' is also heard on controls.",
+      "gender": "n"
+    },
+    "bus": {
+      "term": "sběrnice",
+      "alt": [
+        "bus",
+        "skupina"
+      ],
+      "definition": "Kanál mixážního pultu, který sčítá signály do něj poslané, aby se daly zpracovat společně (sběrnice bicích, sběrnice dozvuku).",
+      "note": "Ardour cs 'sběrnice'; studio speech also 'bus' or 'skupina'.",
+      "gender": "f"
+    },
+    "master-bus": {
+      "term": "hlavní sběrnice",
+      "short": "Master",
+      "alt": [
+        "master",
+        "součtová sběrnice"
+      ],
+      "definition": "Sběrnice, do které se před výstupem sčítá vše: to, co se renderuje jako mix.",
+      "note": "Engineers say 'master'.",
+      "gender": "f"
+    },
+    "send": {
+      "term": "send",
+      "alt": [
+        "odbočka",
+        "aux"
+      ],
+      "definition": "Kopie signálu stopy poslaná do sběrnice s vlastní úrovní, zatímco stopa hraje dál.",
+      "note": "Studio loan (pl. sendy); 'odbočka' and 'aux' are also heard.",
+      "gender": "m"
+    },
+    "insert": {
+      "term": "insert",
+      "alt": [
+        "vložený efekt"
+      ],
+      "definition": "Efekt přímo v cestě signálu kanálu, kterou prochází celý signál.",
+      "note": "Studio loan; 'vložený efekt' in running text.",
+      "gender": "m"
+    },
+    "routing": {
+      "term": "směrování",
+      "alt": [
+        "routing"
+      ],
+      "definition": "Jak signály putují mezi stopami, sběrnicemi, sendy a výstupy.",
+      "gender": "n"
+    },
+    "mix": {
+      "term": "mix",
+      "alt": [
+        "mixáž"
+      ],
+      "definition": "Součet všech stop tak, jak zní; také práce na jejich vyvážení.",
+      "note": "'Mixáž' is the work, 'mix' its result. Playhead: 'mix složky'.",
+      "gender": "m"
+    },
+    "stem": {
+      "term": "stem",
+      "alt": [
+        "submix",
+        "podskupina"
+      ],
+      "definition": "Submix příbuzných stop (bicí, dialog, hudba) vyrenderovaný do vlastního souboru, aby se části daly míchat nebo dodat zvlášť.",
+      "note": "Loan used in Czech post-production (pl. stemy).",
+      "gender": "m"
+    },
+    "zero-crossing": {
+      "term": "průchod nulou",
+      "definition": "Bod, ve kterém vlnový průběh protíná nulu; střihy a body smyčky v něm necvakají.",
+      "note": "Standard signal-processing term.",
+      "gender": "m"
+    },
+    "headroom": {
+      "term": "rezerva",
+      "alt": [
+        "headroom",
+        "rezerva vybuzení"
+      ],
+      "definition": "Odstup v dB mezi nejvyšší úrovní, které signál dosáhne, a úrovní, při které by došlo k přebuzení.",
+      "note": "Engineers also say 'headroom'; 'rezerva' is the plain Czech word (Playhead: 'bez rezervy').",
+      "gender": "f"
+    },
+    "dynamic-range": {
+      "term": "dynamický rozsah",
+      "definition": "Rozpětí v dB mezi hlasitými a tichými částmi zvuku, nebo mezi nejvyšší úrovní, kterou systém snese, a jeho šumovým pozadím.",
+      "note": "A level measure in dB; loudness range (rozsah hlasitosti, LRA) is a loudness measure in LU.",
+      "gender": "m"
+    },
+    "loudness-range": {
+      "term": "rozsah hlasitosti",
+      "short": "LRA",
+      "definition": "Jak moc se mění hlasitost programu, v LU: rozpětí mezi 10. a 95. percentilem krátkodobé hlasitosti.",
+      "note": "EBU Tech 3342 (LRA); Playhead 'Rozsah hlasitosti'.",
+      "gender": "m"
+    },
+    "integrated-loudness": {
+      "term": "integrovaná hlasitost",
+      "definition": "Hlasitost celého programu s odhradlovaným tichem a tichými pasážemi, v LUFS.",
+      "note": "EBU R 128 as translated by RRTV.",
+      "gender": "f"
+    },
+    "short-term-loudness": {
+      "term": "krátkodobá hlasitost",
+      "definition": "Hlasitost v klouzavém okně 3 s, v LUFS.",
+      "note": "EBU Tech 3341.",
+      "gender": "f"
+    },
+    "momentary-loudness": {
+      "term": "okamžitá hlasitost",
+      "definition": "Hlasitost v klouzavém okně 400 ms, v LUFS.",
+      "note": "EBU Tech 3341.",
+      "gender": "f"
+    },
+    "loudness-target": {
+      "term": "cílová hlasitost",
+      "definition": "Integrovaná hlasitost, na které se program dodává nebo přehrává, například −23 LUFS podle EBU R 128 ve vysílání nebo zhruba −14 LUFS na streamovacích službách.",
+      "gender": "f"
+    },
+    "loudness-matching": {
+      "term": "sladění hlasitosti",
+      "short": "Sladit hlasitost",
+      "definition": "Uvedení dvou verzí na stejnou hlasitost před porovnáním, aby hlasitější nezněla lépe jen proto, že je hlasitější.",
+      "note": "As in Playhead ('Sladit hlasitost'); does not clash with level the events = srovnat hlasitost událostí.",
+      "gender": "n"
+    },
+    "ab-comparison": {
+      "term": "A/B porovnání",
+      "short": "A/B",
+      "definition": "Přepínání mezi dvěma verzemi, nejlépe se sladěnou hlasitostí, aby bylo slyšet, která je lepší.",
+      "gender": "n"
+    },
+    "reference-track": {
+      "term": "referenční nahrávka",
+      "short": "Reference",
+      "alt": [
+        "reference",
+        "referenční skladba"
+      ],
+      "definition": "Hotová nahrávka, která se při mixu nebo masteringu pouští pro srovnání.",
+      "gender": "f"
+    },
+    "crest-factor": {
+      "term": "činitel výkyvu",
+      "alt": [
+        "crest faktor",
+        "vrcholový činitel"
+      ],
+      "definition": "Poměr špičkové a efektivní (RMS) úrovně, v dB: vysoký u úderného, dynamického zvuku, nízký u hutného, komprimovaného.",
+      "note": "'Činitel výkyvu' is the Czech electrical-engineering term; studios say 'crest faktor'.",
+      "gender": "m"
+    },
+    "rms-level": {
+      "term": "efektivní úroveň",
+      "short": "RMS",
+      "alt": [
+        "úroveň RMS"
+      ],
+      "definition": "Odmocnina ze střední hodnoty kvadrátu signálu v okně: jeho průměrný výkon vyjádřený jako úroveň.",
+      "note": "'Efektivní hodnota' is the standard Czech for RMS.",
+      "gender": "f"
+    },
+    "stereo-width": {
+      "term": "šířka stereofonní báze",
+      "short": "Šířka",
+      "alt": [
+        "stereo šířka"
+      ],
+      "definition": "Jak moc se oba kanály liší, od mona (vůbec) po široký zvuk.",
+      "note": "'Šířka' on controls; matches widen the tails = rozšířit doznění.",
+      "gender": "f"
+    },
+    "envelope": {
+      "term": "obálka",
+      "definition": "Jak se v průběhu zvuku mění nějaká veličina, obvykle úroveň; také nakreslená křivka, která řídí parametr.",
+      "note": "Standard (Audacity and LMMS cs 'Obálka'). Level envelope = obálka úrovně (as in envelope transfer).",
+      "gender": "f"
+    },
+    "frequency-band": {
+      "term": "frekvenční pásmo",
+      "short": "Pásmo",
+      "definition": "Rozsah frekvencí měřený nebo zpracovávaný společně: pásmo ekvalizéru, kritické pásmo, melové pásmo.",
+      "gender": "n"
+    },
+    "high-pass-filter": {
+      "term": "horní propust",
+      "alt": [
+        "filtr typu horní propust",
+        "low-cut"
+      ],
+      "definition": "Filtr, který propouští frekvence nad mezní frekvencí a tlumí frekvence pod ní.",
+      "note": "Standard Czech electronics term (Audacity cs).",
+      "gender": "f"
+    },
+    "low-pass-filter": {
+      "term": "dolní propust",
+      "alt": [
+        "filtr typu dolní propust",
+        "high-cut"
+      ],
+      "definition": "Filtr, který propouští frekvence pod mezní frekvencí a tlumí frekvence nad ní.",
+      "note": "Standard Czech electronics term (Audacity cs).",
+      "gender": "f"
+    },
+    "limiter": {
+      "term": "limiter",
+      "alt": [
+        "omezovač"
+      ],
+      "definition": "Kompresor s velmi vysokým poměrem a rychlým náběhem, který drží úroveň pod stropem.",
+      "note": "Studio loan; 'omezovač' in technical texts.",
+      "gender": "m"
+    },
+    "multiband-compressor": {
+      "term": "vícepásmový kompresor",
+      "short": "Vícepásmový",
+      "definition": "Kompresor, který pracuje zvlášť v několika frekvenčních pásmech.",
+      "gender": "m"
+    },
+    "transient-shaper": {
+      "term": "tvarovač tranzientů",
+      "alt": [
+        "transient shaper"
+      ],
+      "definition": "Procesor, který nezávisle na úrovni zesiluje nebo zeslabuje náběh a vydržení zvuků.",
+      "gender": "m"
+    },
+    "sidechain": {
+      "term": "sidechain",
+      "alt": [
+        "řídicí vstup",
+        "postranní řetězec"
+      ],
+      "definition": "Druhý vstup, kterým procesor řídí jiný signál, například když se hudba stahuje pod dialogem.",
+      "note": "Studio loan; 'řídicí vstup' in running text.",
+      "gender": "m"
+    },
+    "ducking": {
+      "term": "ducking",
+      "alt": [
+        "automatické stahování"
+      ],
+      "definition": "Automatické stažení jednoho zvuku, když hraje jiný, obvykle kompresorem řízeným přes sidechain.",
+      "gender": "m"
+    },
+    "reverb": {
+      "term": "dozvuk",
+      "alt": [
+        "reverb"
+      ],
+      "definition": "Husté odrazy zvuku v prostoru, nebo efekt, který je napodobuje.",
+      "note": "As in reverb on the tails = dozvuk na doznění.",
+      "gender": "m"
+    },
+    "delay": {
+      "term": "delay",
+      "alt": [
+        "zpoždění",
+        "ozvěna"
+      ],
+      "definition": "Efekt, který zvuk po nastavené době přehraje znovu, často opakovaně a slábnoucí (ozvěna).",
+      "note": "Studio loan; 'zpožďovací linka' in technical texts.",
+      "gender": "m"
+    },
+    "dither": {
+      "term": "dither",
+      "alt": [
+        "dithering",
+        "rozptylový šum"
+      ],
+      "definition": "Šum nízké úrovně přidaný při snižování bitové hloubky, aby se chyba zaokrouhlení změnila v šum místo zkreslení.",
+      "gender": "m"
+    },
+    "mastering": {
+      "term": "mastering",
+      "definition": "Poslední fáze před vydáním: konečný ekvalizér, dynamika a hlasitost mixu a kontroly pro formát dodání.",
+      "gender": "m"
+    },
+    "drop": {
+      "term": "drop",
+      "definition": "Okamžik v taneční skladbě, kdy nastoupí plný beat a basa, obvykle po build-upu nebo breakdownu.",
+      "note": "Loan in Czech dance music. Playhead never uses 'drop' for a fall in level.",
+      "gender": "m"
+    },
+    "build-up": {
+      "term": "build-up",
+      "alt": [
+        "gradace",
+        "stupňování"
+      ],
+      "definition": "Pasáž, která stupňuje napětí k dropu: stoupající výška, přeladění filtru, zrychlující víry, riser.",
+      "note": "Not 'náběh' (= attack).",
+      "gender": "m"
+    },
+    "breakdown": {
+      "term": "breakdown",
+      "alt": [
+        "zklidnění"
+      ],
+      "definition": "Pasáž, ve které ustoupí beat a basa a zůstanou plochy, akordy nebo zpěv.",
+      "gender": "m"
+    },
+    "riser": {
+      "term": "riser",
+      "definition": "Zvuk, který stoupá výškou, jasem nebo úrovní a vede do dropu nebo přechodu.",
+      "note": "Loan used by Czech producers (pl. risery); no Czech equivalent in use.",
+      "gender": "m"
+    },
+    "sweep": {
+      "term": "přeladění",
+      "alt": [
+        "sweep"
+      ],
+      "definition": "Přejezd rozsahem frekvencí: tón nebo šum, jehož výška nebo jas se posouvá, nebo filtr přeladěný přes spektrum.",
+      "note": "Producers also say 'sweep'; 'glissando' only for pitched instruments.",
+      "gender": "n"
+    },
+    "cue-point": {
+      "term": "cue bod",
+      "short": "Cue",
+      "alt": [
+        "cue",
+        "bod cue"
+      ],
+      "definition": "Uložené místo ve skladbě, na které DJ nebo přehrávač skočí nebo odkud začíná.",
+      "gender": "m"
+    },
+    "beatgrid": {
+      "term": "mřížka dob",
+      "alt": [
+        "beatgrid"
+      ],
+      "definition": "Doby a takty skladby jako mřížka, podle které se synchronizuje, smyčkuje a skáče v čase.",
+      "note": "Playhead: 'mřížka dob'. DJ software keeps 'beatgrid'.",
+      "gender": "f"
+    },
+    "beatmatching": {
+      "term": "beatmatching",
+      "alt": [
+        "sesouhlasení dob",
+        "srovnání tempa"
+      ],
+      "definition": "Uvedení dvou skladeb na stejné tempo se sladěnými dobami.",
+      "gender": "m"
+    },
+    "phrase": {
+      "term": "fráze",
+      "definition": "Řada taktů, v taneční hudbě obvykle 8, 16 nebo 32, tvořící jeden hudební celek; DJové míchají na hranicích frází.",
+      "gender": "f"
+    },
+    "key": {
+      "term": "tónina",
+      "definition": "Tónové centrum a stupnice skladby, například a moll; DJové míchají skladby v kompatibilních tóninách (harmonický mix).",
+      "gender": "f"
     }
   }
 }

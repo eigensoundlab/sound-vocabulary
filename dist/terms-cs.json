@@ -861,5 +861,285 @@
   "term": "skříň",
   "short": "skříň",
   "definition": "Duté těleso s rovnými stěnami."
+ },
+ "track": {
+  "term": "stopa",
+  "short": "stopa",
+  "definition": "Řádek projektu v DAW, který nese klipy na časové ose a má vlastní kanál v mixážním pultu."
+ },
+ "folder-track": {
+  "term": "stopa složky",
+  "short": "Složka",
+  "definition": "Stopa, která obsahuje jiné stopy: sčítá jejich zvuk a umí je ukázat jako celek."
+ },
+ "clip": {
+  "term": "klip",
+  "short": "klip",
+  "definition": "Kus zvuku nebo MIDI na stopě, umístěný v určitém místě časové osy."
+ },
+ "session": {
+  "term": "projekt",
+  "short": "projekt",
+  "definition": "Celá práce na jednom díle v DAW: stopy, klipy, směrování a nastavení."
+ },
+ "timeline": {
+  "term": "časová osa",
+  "short": "časová osa",
+  "definition": "Osa času projektu, podél které se kladou klipy."
+ },
+ "marker": {
+  "term": "marker",
+  "short": "marker",
+  "definition": "Pojmenované místo v čase uložené v projektu nebo ve zvukovém souboru (cue ve WAV)."
+ },
+ "region": {
+  "term": "oblast",
+  "short": "oblast",
+  "definition": "Pojmenovaný úsek času se začátkem a koncem, uložený v projektu nebo ve zvukovém souboru."
+ },
+ "snap": {
+  "term": "přichytávání",
+  "short": "přichytávání",
+  "definition": "Přeskok posouvaného klipu nebo střihu na nejbližší čáru mřížky, marker, okraj klipu nebo nástup."
+ },
+ "mute": {
+  "term": "ztlumení",
+  "short": "Ztlumit",
+  "definition": "Umlčení stopy bez jejího odstranění; tlačítko bývá označené M."
+ },
+ "solo": {
+  "term": "sólo",
+  "short": "sólo",
+  "definition": "Poslech pouze sólovaných stop; tlačítko bývá označené S."
+ },
+ "fader": {
+  "term": "fader",
+  "short": "fader",
+  "definition": "Regulátor úrovně kanálu v mixážním pultu."
+ },
+ "pan": {
+  "term": "panorama",
+  "short": "panorama",
+  "definition": "Místo zvuku mezi levou a pravou stranou; také regulátor, který ho nastavuje."
+ },
+ "bus": {
+  "term": "sběrnice",
+  "short": "sběrnice",
+  "definition": "Kanál mixážního pultu, který sčítá signály do něj poslané, aby se daly zpracovat společně (sběrnice bicích, sběrnice dozvuku)."
+ },
+ "master-bus": {
+  "term": "hlavní sběrnice",
+  "short": "Master",
+  "definition": "Sběrnice, do které se před výstupem sčítá vše: to, co se renderuje jako mix."
+ },
+ "send": {
+  "term": "send",
+  "short": "send",
+  "definition": "Kopie signálu stopy poslaná do sběrnice s vlastní úrovní, zatímco stopa hraje dál."
+ },
+ "insert": {
+  "term": "insert",
+  "short": "insert",
+  "definition": "Efekt přímo v cestě signálu kanálu, kterou prochází celý signál."
+ },
+ "routing": {
+  "term": "směrování",
+  "short": "směrování",
+  "definition": "Jak signály putují mezi stopami, sběrnicemi, sendy a výstupy."
+ },
+ "mix": {
+  "term": "mix",
+  "short": "mix",
+  "definition": "Součet všech stop tak, jak zní; také práce na jejich vyvážení."
+ },
+ "stem": {
+  "term": "stem",
+  "short": "stem",
+  "definition": "Submix příbuzných stop (bicí, dialog, hudba) vyrenderovaný do vlastního souboru, aby se části daly míchat nebo dodat zvlášť."
+ },
+ "zero-crossing": {
+  "term": "průchod nulou",
+  "short": "průchod nulou",
+  "definition": "Bod, ve kterém vlnový průběh protíná nulu; střihy a body smyčky v něm necvakají."
+ },
+ "headroom": {
+  "term": "rezerva",
+  "short": "rezerva",
+  "definition": "Odstup v dB mezi nejvyšší úrovní, které signál dosáhne, a úrovní, při které by došlo k přebuzení."
+ },
+ "dynamic-range": {
+  "term": "dynamický rozsah",
+  "short": "dynamický rozsah",
+  "definition": "Rozpětí v dB mezi hlasitými a tichými částmi zvuku, nebo mezi nejvyšší úrovní, kterou systém snese, a jeho šumovým pozadím."
+ },
+ "loudness-range": {
+  "term": "rozsah hlasitosti",
+  "short": "LRA",
+  "definition": "Jak moc se mění hlasitost programu, v LU: rozpětí mezi 10. a 95. percentilem krátkodobé hlasitosti."
+ },
+ "integrated-loudness": {
+  "term": "integrovaná hlasitost",
+  "short": "integrovaná hlasitost",
+  "definition": "Hlasitost celého programu s odhradlovaným tichem a tichými pasážemi, v LUFS."
+ },
+ "short-term-loudness": {
+  "term": "krátkodobá hlasitost",
+  "short": "krátkodobá hlasitost",
+  "definition": "Hlasitost v klouzavém okně 3 s, v LUFS."
+ },
+ "momentary-loudness": {
+  "term": "okamžitá hlasitost",
+  "short": "okamžitá hlasitost",
+  "definition": "Hlasitost v klouzavém okně 400 ms, v LUFS."
+ },
+ "loudness-target": {
+  "term": "cílová hlasitost",
+  "short": "cílová hlasitost",
+  "definition": "Integrovaná hlasitost, na které se program dodává nebo přehrává, například −23 LUFS podle EBU R 128 ve vysílání nebo zhruba −14 LUFS na streamovacích službách."
+ },
+ "loudness-matching": {
+  "term": "sladění hlasitosti",
+  "short": "Sladit hlasitost",
+  "definition": "Uvedení dvou verzí na stejnou hlasitost před porovnáním, aby hlasitější nezněla lépe jen proto, že je hlasitější."
+ },
+ "ab-comparison": {
+  "term": "A/B porovnání",
+  "short": "A/B",
+  "definition": "Přepínání mezi dvěma verzemi, nejlépe se sladěnou hlasitostí, aby bylo slyšet, která je lepší."
+ },
+ "reference-track": {
+  "term": "referenční nahrávka",
+  "short": "Reference",
+  "definition": "Hotová nahrávka, která se při mixu nebo masteringu pouští pro srovnání."
+ },
+ "crest-factor": {
+  "term": "činitel výkyvu",
+  "short": "činitel výkyvu",
+  "definition": "Poměr špičkové a efektivní (RMS) úrovně, v dB: vysoký u úderného, dynamického zvuku, nízký u hutného, komprimovaného."
+ },
+ "rms-level": {
+  "term": "efektivní úroveň",
+  "short": "RMS",
+  "definition": "Odmocnina ze střední hodnoty kvadrátu signálu v okně: jeho průměrný výkon vyjádřený jako úroveň."
+ },
+ "stereo-width": {
+  "term": "šířka stereofonní báze",
+  "short": "Šířka",
+  "definition": "Jak moc se oba kanály liší, od mona (vůbec) po široký zvuk."
+ },
+ "envelope": {
+  "term": "obálka",
+  "short": "obálka",
+  "definition": "Jak se v průběhu zvuku mění nějaká veličina, obvykle úroveň; také nakreslená křivka, která řídí parametr."
+ },
+ "frequency-band": {
+  "term": "frekvenční pásmo",
+  "short": "Pásmo",
+  "definition": "Rozsah frekvencí měřený nebo zpracovávaný společně: pásmo ekvalizéru, kritické pásmo, melové pásmo."
+ },
+ "high-pass-filter": {
+  "term": "horní propust",
+  "short": "horní propust",
+  "definition": "Filtr, který propouští frekvence nad mezní frekvencí a tlumí frekvence pod ní."
+ },
+ "low-pass-filter": {
+  "term": "dolní propust",
+  "short": "dolní propust",
+  "definition": "Filtr, který propouští frekvence pod mezní frekvencí a tlumí frekvence nad ní."
+ },
+ "limiter": {
+  "term": "limiter",
+  "short": "limiter",
+  "definition": "Kompresor s velmi vysokým poměrem a rychlým náběhem, který drží úroveň pod stropem."
+ },
+ "multiband-compressor": {
+  "term": "vícepásmový kompresor",
+  "short": "Vícepásmový",
+  "definition": "Kompresor, který pracuje zvlášť v několika frekvenčních pásmech."
+ },
+ "transient-shaper": {
+  "term": "tvarovač tranzientů",
+  "short": "tvarovač tranzientů",
+  "definition": "Procesor, který nezávisle na úrovni zesiluje nebo zeslabuje náběh a vydržení zvuků."
+ },
+ "sidechain": {
+  "term": "sidechain",
+  "short": "sidechain",
+  "definition": "Druhý vstup, kterým procesor řídí jiný signál, například když se hudba stahuje pod dialogem."
+ },
+ "ducking": {
+  "term": "ducking",
+  "short": "ducking",
+  "definition": "Automatické stažení jednoho zvuku, když hraje jiný, obvykle kompresorem řízeným přes sidechain."
+ },
+ "reverb": {
+  "term": "dozvuk",
+  "short": "dozvuk",
+  "definition": "Husté odrazy zvuku v prostoru, nebo efekt, který je napodobuje."
+ },
+ "delay": {
+  "term": "delay",
+  "short": "delay",
+  "definition": "Efekt, který zvuk po nastavené době přehraje znovu, často opakovaně a slábnoucí (ozvěna)."
+ },
+ "dither": {
+  "term": "dither",
+  "short": "dither",
+  "definition": "Šum nízké úrovně přidaný při snižování bitové hloubky, aby se chyba zaokrouhlení změnila v šum místo zkreslení."
+ },
+ "mastering": {
+  "term": "mastering",
+  "short": "mastering",
+  "definition": "Poslední fáze před vydáním: konečný ekvalizér, dynamika a hlasitost mixu a kontroly pro formát dodání."
+ },
+ "drop": {
+  "term": "drop",
+  "short": "drop",
+  "definition": "Okamžik v taneční skladbě, kdy nastoupí plný beat a basa, obvykle po build-upu nebo breakdownu."
+ },
+ "build-up": {
+  "term": "build-up",
+  "short": "build-up",
+  "definition": "Pasáž, která stupňuje napětí k dropu: stoupající výška, přeladění filtru, zrychlující víry, riser."
+ },
+ "breakdown": {
+  "term": "breakdown",
+  "short": "breakdown",
+  "definition": "Pasáž, ve které ustoupí beat a basa a zůstanou plochy, akordy nebo zpěv."
+ },
+ "riser": {
+  "term": "riser",
+  "short": "riser",
+  "definition": "Zvuk, který stoupá výškou, jasem nebo úrovní a vede do dropu nebo přechodu."
+ },
+ "sweep": {
+  "term": "přeladění",
+  "short": "přeladění",
+  "definition": "Přejezd rozsahem frekvencí: tón nebo šum, jehož výška nebo jas se posouvá, nebo filtr přeladěný přes spektrum."
+ },
+ "cue-point": {
+  "term": "cue bod",
+  "short": "Cue",
+  "definition": "Uložené místo ve skladbě, na které DJ nebo přehrávač skočí nebo odkud začíná."
+ },
+ "beatgrid": {
+  "term": "mřížka dob",
+  "short": "mřížka dob",
+  "definition": "Doby a takty skladby jako mřížka, podle které se synchronizuje, smyčkuje a skáče v čase."
+ },
+ "beatmatching": {
+  "term": "beatmatching",
+  "short": "beatmatching",
+  "definition": "Uvedení dvou skladeb na stejné tempo se sladěnými dobami."
+ },
+ "phrase": {
+  "term": "fráze",
+  "short": "fráze",
+  "definition": "Řada taktů, v taneční hudbě obvykle 8, 16 nebo 32, tvořící jeden hudební celek; DJové míchají na hranicích frází."
+ },
+ "key": {
+  "term": "tónina",
+  "short": "tónina",
+  "definition": "Tónové centrum a stupnice skladby, například a moll; DJové míchají skladby v kompatibilních tóninách (harmonický mix)."
  }
 }

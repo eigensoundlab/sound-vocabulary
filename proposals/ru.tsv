@@ -1,22 +1,13 @@
 english	russian	where used	note
-envelope	огибающая	Playhead: note.approx.2, note.rhythm.1, row.x4.name, row.n2.desc, row.n6.desc, cmp.sculpt.title, lib.look.sculpted.desc, lib.tool.hpss.desc	Стандартный термин (ADSR-огибающая, огибающая уровня). Используется и в vocabulary-определениях envelope-transfer.
-pan	панорама	Playhead: row.x6.desc, lab.pan	Студийная норма; регулятор — «панорама», жаргон «пан».
-stereo width	ширина (стереобазы)	Playhead: note.rhythm.2, row.x6.desc, lab.maxWidth, lib.tool.widen.param.width	На регуляторах просто «ширина»; в тексте — «ширина стереобазы».
 timbre	тембр	Playhead: row.s1.desc, row.n7.desc, row.n8.desc, lab.timbreSymbols.one, lab.timbreSymbols.few, lab.timbreSymbols.many, lab.timbreSymbols.other, lib.tool.tailverb.param.toneHz	Стандартный термин музыкальной акустики. В Playhead tone control тоже переведён как «Тембр» (tailverb.param.toneHz) — это обычное русское название регулятора.
 bar line	тактовая черта	Playhead: row.d4.desc, cmp.marks.downbeats, lib.look.overview.desc, lib.look.hits.desc, lib.mark.downbeats	Нотный термин; связан с bar = такт.
 thumbnail	миниатюра	Playhead: ui.thumb, ui.thumb.d5, ui.thumb.d3, sec.library.desc, row.d3.name, row.d5.name, aria.thumb	Как в русских интерфейсах Windows и браузеров.
 loop seam	стык лупа	Playhead: row.x7.desc, check.seamJump, check.seamChange, lib.tool.loop.desc, lib.tool.loop.param.xfadeMs	Глагол wrap — «замыкаться» («луп замыкается чисто»).
 hit	удар	Playhead: sec.desc.desc, row.n6.desc, row.n9.desc, lab.arrow.impact, obj.N.impulse, obj.X.impulse, lib.curve.onsetStrength, lib.look.character.desc, lib.look.surprise.name, lib.look.hits.name …	Совпадает с impact (генератор «удар») — см. note в vocabulary для impact-model.
-riser	райзер	Playhead: guide.c2.mislead, row.n4.desc	Жаргон саунд-дизайна и EDM; описательно — «нарастающий эффект».
-sweep	свип	Playhead: row.x2.desc, row.n4.desc, obj.Y.sustained	Жаргон; описательно — «глиссандо по спектру». Как слово Шеффера (Y, sustained) тоже «свип».
 grain	гранула	Playhead: note.sfx.2, guide.c2.mislead, lab.grains.one, lab.grains.few, lab.grains.many, lab.grains.other, lib.tool.vars.desc, lib.tool.vars.param.grains	Как в «гранулярный синтез»; реже «зерно».
 asset	ассет	Playhead: ui.cls, ui.thumb.d3, guide.c1.reveal, row.d3.auto, row.r1.desc, row.d3.name, bench.need.tension	Принятое в русском геймдеве слово (Unity Asset Store). В «Asset checks» не используется: там vocabulary-термин «проверки качества».
 asset class	класс ассета	Playhead: ui.cls, row.d3.auto, bench.need.tension	В предложения вставляется в именительном падеже: «для класса «{cls}»».
-headroom	запас по уровню	Playhead: check.noHeadroom	
-zero crossing	переход через ноль	Playhead: lib.tool.loop.desc	
 harshness factor	коэффициент жёсткости	Playhead: note.effects.2, row.d2.desc, d3.sfx, metric.harshness	Следует за harshness = жёсткость.
-loudness range	диапазон громкости	Playhead: metric.lra	LRA, EBU Tech 3342.
-match loudness	подогнать громкость	Playhead: note.effects.4, bench.match, lib.tool.deharsh.param.match, lib.tool.hpss.param.match, lib.tool.drive.param.match, lib.tool.level.param.match	Не «выровнять громкость»: так назван инструмент level the events.
 F-measure / precision / recall	F-мера / точность / полнота	Playhead: sec.rhythm.desc, lab.fTitle, lab.agreesR3.title	Термины русского машинного обучения.
 tick (drawn mark)	засечка	Playhead: row.c7.desc, row.x4.desc, row.d2.desc, row.d5.desc, row.d4.desc, d3.rhythmic, d3.orchestral, d3.ambience	В отличие от marks = метки (vocabulary): засечка — сам нарисованный штрих.
 chroma	хрома	Playhead: row.c6.desc, row.s1.desc	Как в русской MIR-литературе (хрома-признаки).

@@ -861,5 +861,285 @@
   "term": "caja",
   "short": "caja",
   "definition": "Un cuerpo hueco con caras planas."
+ },
+ "track": {
+  "term": "pista",
+  "short": "pista",
+  "definition": "Una fila de un proyecto de DAW que contiene clips en la línea de tiempo y tiene su propio canal en el mezclador."
+ },
+ "folder-track": {
+  "term": "pista de carpeta",
+  "short": "Carpeta",
+  "definition": "Una pista que contiene otras pistas: suma su sonido y puede mostrarlas como un conjunto."
+ },
+ "clip": {
+  "term": "clip",
+  "short": "clip",
+  "definition": "Un fragmento de audio o MIDI en una pista, colocado en un punto de la línea de tiempo."
+ },
+ "session": {
+  "term": "proyecto",
+  "short": "proyecto",
+  "definition": "Todo el trabajo de una pieza en el DAW: pistas, clips, enrutamiento y ajustes."
+ },
+ "timeline": {
+  "term": "línea de tiempo",
+  "short": "línea de tiempo",
+  "definition": "El eje temporal de un proyecto, a lo largo del cual se colocan los clips."
+ },
+ "marker": {
+  "term": "marcador",
+  "short": "marcador",
+  "definition": "Un punto con nombre en el tiempo, guardado en un proyecto o un archivo de sonido (un cue en un archivo WAV)."
+ },
+ "region": {
+  "term": "región",
+  "short": "región",
+  "definition": "Un tramo de tiempo con nombre, con inicio y final, guardado en un proyecto o un archivo de sonido."
+ },
+ "snap": {
+  "term": "ajuste",
+  "short": "ajuste",
+  "definition": "Hacer que un clip o un corte salte, al moverlo, a la línea de cuadrícula, el marcador, el borde de clip o el inicio más cercano."
+ },
+ "mute": {
+  "term": "mute",
+  "short": "Silenciar",
+  "definition": "Silenciar una pista sin quitarla; el botón suele llevar una M."
+ },
+ "solo": {
+  "term": "solo",
+  "short": "solo",
+  "definition": "Escuchar solo las pistas en solo; el botón suele llevar una S."
+ },
+ "fader": {
+  "term": "fader",
+  "short": "fader",
+  "definition": "El control de nivel de un canal del mezclador."
+ },
+ "pan": {
+  "term": "panorama",
+  "short": "panorama",
+  "definition": "Dónde se sitúa un sonido entre izquierda y derecha; también el control que lo ajusta."
+ },
+ "bus": {
+  "term": "bus",
+  "short": "bus",
+  "definition": "Un canal del mezclador que suma las señales que se le envían, para procesarlas juntas (bus de batería, bus de reverberación)."
+ },
+ "master-bus": {
+  "term": "bus máster",
+  "short": "Máster",
+  "definition": "El bus en el que se suma todo antes de la salida: lo que se renderiza como mezcla."
+ },
+ "send": {
+  "term": "envío",
+  "short": "envío",
+  "definition": "Una copia de la señal de una pista enviada a un bus con su propio nivel, mientras la pista sigue sonando."
+ },
+ "insert": {
+  "term": "inserción",
+  "short": "inserción",
+  "definition": "Un efecto en la propia ruta de señal de un canal, por el que pasa toda la señal."
+ },
+ "routing": {
+  "term": "enrutamiento",
+  "short": "enrutamiento",
+  "definition": "Cómo viajan las señales entre pistas, buses, envíos y salidas."
+ },
+ "mix": {
+  "term": "mezcla",
+  "short": "mezcla",
+  "definition": "La suma de todas las pistas tal como suena; también el trabajo de equilibrarlas."
+ },
+ "stem": {
+  "term": "stem",
+  "short": "stem",
+  "definition": "Una submezcla de pistas relacionadas (batería, diálogo, música) renderizada en su propio archivo, para mezclar o entregar las partes por separado."
+ },
+ "zero-crossing": {
+  "term": "cruce por cero",
+  "short": "cruce por cero",
+  "definition": "Un punto donde la forma de onda cruza el cero; los cortes y puntos de bucle hechos ahí no producen clics."
+ },
+ "headroom": {
+  "term": "margen",
+  "short": "margen",
+  "definition": "La distancia en dB entre el nivel más alto que alcanza una señal y el nivel en el que haría clipping."
+ },
+ "dynamic-range": {
+  "term": "rango dinámico",
+  "short": "rango dinámico",
+  "definition": "El margen en dB entre las partes fuertes y suaves de un sonido, o entre el nivel más alto que admite un sistema y su ruido de fondo."
+ },
+ "loudness-range": {
+  "term": "rango de sonoridad",
+  "short": "LRA",
+  "definition": "Cuánto varía la sonoridad de un programa, en LU: el margen entre los percentiles 10 y 95 de su sonoridad a corto plazo."
+ },
+ "integrated-loudness": {
+  "term": "sonoridad integrada",
+  "short": "sonoridad integrada",
+  "definition": "La sonoridad de un programa entero, sin el silencio ni los pasajes suaves (con compuerta), en LUFS."
+ },
+ "short-term-loudness": {
+  "term": "sonoridad a corto plazo",
+  "short": "sonoridad a corto plazo",
+  "definition": "Sonoridad en una ventana deslizante de 3 s, en LUFS."
+ },
+ "momentary-loudness": {
+  "term": "sonoridad momentánea",
+  "short": "sonoridad momentánea",
+  "definition": "Sonoridad en una ventana deslizante de 400 ms, en LUFS."
+ },
+ "loudness-target": {
+  "term": "sonoridad objetivo",
+  "short": "sonoridad objetivo",
+  "definition": "La sonoridad integrada a la que se entrega o reproduce un programa, como −23 LUFS según EBU R 128 en radiodifusión o unos −14 LUFS en plataformas de streaming."
+ },
+ "loudness-matching": {
+  "term": "igualación de sonoridad",
+  "short": "Igualar sonoridad",
+  "definition": "Llevar dos versiones a la misma sonoridad antes de compararlas, para que la más fuerte no parezca mejor solo por sonar más fuerte."
+ },
+ "ab-comparison": {
+  "term": "comparación A/B",
+  "short": "A/B",
+  "definition": "Alternar entre dos versiones, idealmente con la sonoridad igualada, para oír cuál es mejor."
+ },
+ "reference-track": {
+  "term": "pista de referencia",
+  "short": "Referencia",
+  "definition": "Una grabación terminada que se escucha para comparar al mezclar o masterizar."
+ },
+ "crest-factor": {
+  "term": "factor de cresta",
+  "short": "factor de cresta",
+  "definition": "La relación entre el nivel de pico y el nivel RMS, en dB: alta en sonidos con pegada y dinámicos, baja en sonidos densos y comprimidos."
+ },
+ "rms-level": {
+  "term": "nivel RMS",
+  "short": "RMS",
+  "definition": "La raíz cuadrática media de una señal en una ventana: su potencia media expresada como nivel."
+ },
+ "stereo-width": {
+  "term": "anchura estéreo",
+  "short": "Anchura",
+  "definition": "Cuánto difieren los dos canales, desde mono (nada) hasta amplio."
+ },
+ "envelope": {
+  "term": "envolvente",
+  "short": "envolvente",
+  "definition": "Cómo cambia una magnitud, normalmente el nivel, a lo largo de un sonido; también una curva dibujada que controla un parámetro."
+ },
+ "frequency-band": {
+  "term": "banda de frecuencia",
+  "short": "Banda",
+  "definition": "Un rango de frecuencias que se mide o procesa en conjunto: una banda de ecualizador, una banda crítica, una banda mel."
+ },
+ "high-pass-filter": {
+  "term": "filtro paso alto",
+  "short": "Paso alto",
+  "definition": "Un filtro que deja pasar las frecuencias por encima de su frecuencia de corte y atenúa las de debajo."
+ },
+ "low-pass-filter": {
+  "term": "filtro paso bajo",
+  "short": "Paso bajo",
+  "definition": "Un filtro que deja pasar las frecuencias por debajo de su frecuencia de corte y atenúa las de encima."
+ },
+ "limiter": {
+  "term": "limitador",
+  "short": "limitador",
+  "definition": "Un compresor con una ratio muy alta y un ataque rápido que mantiene el nivel por debajo de un techo."
+ },
+ "multiband-compressor": {
+  "term": "compresor multibanda",
+  "short": "Multibanda",
+  "definition": "Un compresor que actúa por separado en varias bandas de frecuencia."
+ },
+ "transient-shaper": {
+  "term": "modelador de transitorios",
+  "short": "modelador de transitorios",
+  "definition": "Un procesador que sube o baja el ataque y el sostenido de los sonidos, independientemente de su nivel."
+ },
+ "sidechain": {
+  "term": "sidechain",
+  "short": "sidechain",
+  "definition": "Una segunda entrada con la que otra señal controla un procesador, como cuando la música baja bajo el diálogo."
+ },
+ "ducking": {
+  "term": "ducking",
+  "short": "ducking",
+  "definition": "Bajar un sonido automáticamente mientras suena otro, normalmente con un compresor con sidechain."
+ },
+ "reverb": {
+  "term": "reverberación",
+  "short": "Reverb",
+  "definition": "Las reflexiones densas de un sonido en un espacio, o un efecto que las imita."
+ },
+ "delay": {
+  "term": "delay",
+  "short": "delay",
+  "definition": "Un efecto que vuelve a reproducir el sonido tras un tiempo fijado, a menudo repitiéndose y apagándose (eco)."
+ },
+ "dither": {
+  "term": "dither",
+  "short": "dither",
+  "definition": "Ruido de bajo nivel que se añade al reducir la profundidad de bits, para que el error de redondeo se convierta en ruido en lugar de distorsión."
+ },
+ "mastering": {
+  "term": "masterización",
+  "short": "masterización",
+  "definition": "La última etapa antes de publicar: la ecualización, la dinámica y la sonoridad finales de una mezcla, y las comprobaciones para el formato de entrega."
+ },
+ "drop": {
+  "term": "drop",
+  "short": "drop",
+  "definition": "El momento de un tema de baile en que entran el ritmo completo y el bajo, normalmente tras un build-up o un breakdown."
+ },
+ "build-up": {
+  "term": "build-up",
+  "short": "build-up",
+  "definition": "Un pasaje que aumenta la tensión hacia el drop: tono que sube, barridos de filtro, redobles más rápidos, un riser."
+ },
+ "breakdown": {
+  "term": "breakdown",
+  "short": "breakdown",
+  "definition": "Un pasaje en el que el ritmo y el bajo desaparecen y quedan pads, acordes o voces."
+ },
+ "riser": {
+  "term": "riser",
+  "short": "riser",
+  "definition": "Un sonido que sube en tono, brillo o nivel para llevar a un drop o a una transición."
+ },
+ "sweep": {
+  "term": "barrido",
+  "short": "barrido",
+  "definition": "Un recorrido por un rango de frecuencias: un tono o ruido cuyo tono o brillo se desplaza, o un filtro que barre el espectro."
+ },
+ "cue-point": {
+  "term": "punto de cue",
+  "short": "Cue",
+  "definition": "Una posición guardada en un tema a la que un DJ o un reproductor salta o desde la que empieza."
+ },
+ "beatgrid": {
+  "term": "rejilla de pulsos",
+  "short": "rejilla de pulsos",
+  "definition": "Los pulsos y compases de un tema como una rejilla, para sincronizar, hacer bucles y saltar en el tiempo."
+ },
+ "beatmatching": {
+  "term": "beatmatching",
+  "short": "beatmatching",
+  "definition": "Poner dos temas al mismo tempo con sus pulsos alineados."
+ },
+ "phrase": {
+  "term": "frase",
+  "short": "frase",
+  "definition": "Una serie de compases, normalmente 8, 16 o 32 en la música de baile, que forma una unidad musical; los DJ mezclan en los límites de frase."
+ },
+ "key": {
+  "term": "tonalidad",
+  "short": "tonalidad",
+  "definition": "El centro tonal y la escala de una pieza, como la menor; los DJ mezclan temas en tonalidades compatibles (mezcla armónica)."
  }
 }

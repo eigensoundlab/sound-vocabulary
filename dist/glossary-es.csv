@@ -174,3 +174,59 @@ shell,cáscara,"A thin curved body, such as a can or pot.",Structural mechanics 
 bell,campana,,,standard,
 wire,cuerda,A stiff string or wire that rings with slightly stretched (inharmonic) partials.,Workbench's 'Wire / string' shape: 'cuerda' is the physics term ('cuerda vibrante') and covers metal strings and wires; 'alambre' keeps the metal-wire image and suits a combined label 'Cuerda / alambre'. 'parciales estirados' as in piano 'afinación estirada'.,standard,alambre
 box,caja,A hollow body with flat sides.,,common,
+track,pista,A row of a DAW session that holds clips on the timeline and has its own mixer channel.,"Cubase, Logic and Ableton es 'pista'. Not 'carril' (a band inside a strip) or 'canal' (one signal of a sound file).",standard,
+folder track,pista de carpeta,A track that holds other tracks: it sums their sound and can show them as one.,Cubase es 'pista de carpeta'; REAPER users say 'carpeta'. Playhead: 'Pistas en una carpeta'.,standard,carpeta
+clip,clip,"One piece of audio or MIDI on a track, placed at a point in time.","Ableton es 'clip'; Cubase 'evento', Logic 'región'. Here 'evento' is a sound event and 'región' a named span of time.",standard,evento; región; ítem
+session,proyecto,"All of one piece of DAW work: its tracks, clips, routing and settings; also called a project.",,standard,sesión
+timeline,línea de tiempo,"The time axis of a session, along which clips are placed.",,standard,
+marker,marcador,A named point in time stored in a session or a sound file (a cue in a WAV file).,Not 'marca': 'marcas' are the marks Playhead draws on a strip.,standard,
+region,región,"A named span of time with a start and an end, stored in a session or a sound file.",REAPER es 'región'. In Logic a 'región' is a clip.,standard,rango
+snap,ajuste,"Making a clip or an edit jump to the nearest grid line, marker, clip edge or onset while it is moved.",Cubase es 'Ajustar'. Playhead: 'Ajustar a los inicios'.,standard,ajustar a la cuadrícula; imán; snap
+mute,mute,Silencing a track without removing it; the button is often labelled M.,"Studio Spanish says 'mute' (and 'mutear'); buttons 'Silenciar' or M. Not 'silencio', which is silence in this vocabulary.",standard,silenciar; enmudecer
+solo,solo,Hearing only the soloed tracks; the button is often labelled S.,,standard,
+fader,fader,The level control of a mixer channel.,,standard,deslizador; atenuador
+pan,panorama,Where a sound sits between left and right; also the control that sets it.,Formal studio term ('control de panorama'); 'paneo' is the everyday word in Spain and Latin America.,standard,paneo; pan
+bus,bus,"A mixer channel that sums the signals sent to it, so they can be processed together (a drum bus, a reverb bus).",,standard,grupo; subgrupo
+master bus,bus máster,The bus everything is summed into before the output: what is rendered as the mix.,,standard,bus principal; salida máster
+send,envío,"A copy of a track's signal sent to a bus at its own level, while the track keeps playing.",Cubase and Logic es 'envío'.,standard,send; envío auxiliar
+insert,inserción,"An effect in a channel's own signal path, which all of the signal passes through.",Cubase es 'inserciones'; studios say 'insert'.,standard,insert; efecto de inserción
+routing,enrutamiento,"How signals travel between tracks, buses, sends and outputs.",,standard,ruteo; routing
+mix,mezcla,The sum of all tracks as it is heard; also the work of balancing them.,Playhead: 'mezcla de la carpeta'.,standard,
+stem,stem,"A submix of related tracks (drums, dialogue, music) rendered to its own file, so the parts can be mixed or delivered separately.",Loan in post-production and game audio (los stems).,standard,submezcla
+zero crossing,cruce por cero,A point where the waveform crosses zero; cuts and loop points made there do not click.,Standard DSP Spanish.,standard,
+headroom,margen,The distance in dB between the highest level a signal reaches and the level where it would clip.,'margen dinámico' / 'margen de seguridad' in text; the loan 'headroom' is very common in studios (Playhead: 'sin margen').,standard,headroom; margen dinámico
+dynamic range,rango dinámico,"The span in dB between a sound's loud and quiet parts, or between the highest level a system takes and its noise floor.","A level measure in dB; the loudness range (rango de sonoridad, LRA) is a loudness measure in LU.",standard,
+loudness range,rango de sonoridad,"How much the loudness of a programme varies, in LU: the span between the 10th and 95th percentile of its short-term loudness.",EBU Tech 3342; Playhead 'Rango de sonoridad'.,standard,rango de loudness
+integrated loudness,sonoridad integrada,"The loudness of a whole programme, with silence and quiet passages gated out, in LUFS.",EBU R 128.,standard,
+short-term loudness,sonoridad a corto plazo,"Loudness over a sliding 3 s window, in LUFS.",EBU Tech 3341.,standard,
+momentary loudness,sonoridad momentánea,"Loudness over a sliding 400 ms window, in LUFS.",EBU Tech 3341.,standard,
+loudness target,sonoridad objetivo,"The integrated loudness a programme is delivered or played at, such as −23 LUFS for EBU R 128 broadcast or about −14 LUFS on streaming services.",,standard,
+loudness matching,igualación de sonoridad,"Bringing two versions to the same loudness before comparing them, so that the louder one does not seem better only because it is louder.",As in Playhead ('Igualar sonoridad').,common,
+A/B comparison,comparación A/B,"Switching between two versions, ideally at matched loudness, to hear which is better.",,standard,
+reference track,pista de referencia,A finished recording played for comparison while mixing or mastering.,,standard,tema de referencia
+crest factor,factor de cresta,"The ratio of peak to RMS level, in dB: high for punchy, dynamic sound, low for dense, compressed sound.",,standard,
+RMS level,nivel RMS,"The root mean square of a signal over a window: its average power, as a level.",,standard,valor eficaz
+stereo width,anchura estéreo,"How different the two channels are, from mono (not at all) to wide.",'anchura' on controls; Audacity es uses 'Ancho de estéreo'. Matches widen the tails = ensanchar las colas.,standard,amplitud estéreo
+envelope,envolvente,"How a quantity, usually level, changes over the course of a sound; also a drawn curve that controls a parameter.","Standard (la envolvente), as in Audacity es; level envelope = envolvente de nivel.",standard,
+frequency band,banda de frecuencia,"A range of frequencies measured or processed together: an EQ band, a critical band, a mel band.",,standard,
+high-pass filter,filtro paso alto,A filter that passes the frequencies above its cutoff and attenuates those below.,Spain 'paso alto'; Latin America 'pasa altos'.,standard,filtro pasa altos; low-cut
+low-pass filter,filtro paso bajo,A filter that passes the frequencies below its cutoff and attenuates those above.,Spain 'paso bajo'; Latin America 'pasa bajos'.,standard,filtro pasa bajos; high-cut
+limiter,limitador,A compressor with a very high ratio and a fast attack that keeps the level below a ceiling.,,standard,
+multiband compressor,compresor multibanda,A compressor that works on several frequency bands separately.,,standard,
+transient shaper,modelador de transitorios,A processor that raises or lowers the attack and the sustain of sounds independently of their level.,,standard,transient shaper; diseñador de transitorios
+sidechain,sidechain,"A second input through which another signal controls a processor, as when music is turned down under dialogue.",,standard,cadena lateral; entrada de control
+ducking,ducking,"Turning one sound down automatically while another plays, usually with a sidechained compressor.",,standard,atenuación automática
+reverb,reverberación,"The dense reflections of a sound in a space, or an effect that imitates them.",As in reverb on the tails = reverberación en las colas.,standard,reverb
+delay,delay,"An effect that plays the sound again after a set time, often repeating and fading (echo).",,standard,retardo; eco
+dither,dither,"Low-level noise added when the bit depth is reduced, so that the rounding error becomes noise instead of distortion.",,standard,tramado; dithering
+mastering,masterización,"The last stage before release: the final EQ, dynamics and loudness of a mix, and checks for the delivery format.",,standard,mastering
+drop,drop,"The moment in a dance track when the full beat and bass come in, usually after a build-up or a breakdown.",Playhead never uses 'drop' for a fall in level.,common,
+build-up,build-up,"A passage that raises tension towards a drop: rising pitch, filter sweeps, faster rolls, a riser.",'subida' is the everyday word for this section.,common,subida; crescendo
+breakdown,breakdown,"A passage where the beat and bass fall away, leaving pads, chords or vocals.",,common,corte; bajón
+riser,riser,"A sound that rises in pitch, brightness or level to lead into a drop or a transition.",Loan used by Spanish sound designers and EDM producers; no Spanish equivalent in use.,common,
+sweep,barrido,"A glide through a range of frequencies: a tone or noise whose pitch or brightness moves, or a filter swept across the spectrum.",Standard ('barrido de frecuencia').,standard,sweep
+cue point,punto de cue,A stored position in a track that a DJ or a player jumps to or starts from.,,standard,punto cue
+beatgrid,rejilla de pulsos,"The beats and bars of a track as a grid, used to sync, loop and jump in time.",Beat = pulso in this vocabulary; DJ software keeps 'beatgrid'. Playhead: 'rejilla de pulsos'.,common,beatgrid; cuadrícula de pulsos
+beatmatching,beatmatching,Bringing two tracks to the same tempo with their beats aligned.,,standard,sincronización de pulsos
+phrase,frase,"A run of bars, usually 8, 16 or 32 in dance music, that forms one musical unit; DJs mix at phrase boundaries.",,standard,
+key,tonalidad,"The tonal centre and scale of a piece, such as A minor; DJs mix tracks in compatible keys (harmonic mixing).",,standard,

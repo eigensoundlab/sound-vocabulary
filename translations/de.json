@@ -1095,6 +1095,368 @@
       "alt": ["Kiste", "Box"],
       "definition": "Ein Hohlkörper mit flachen Seiten.",
       "gender": "m"
+    },
+    "track": {
+      "term": "Spur",
+      "alt": ["Track"],
+      "definition": "Eine Zeile eines DAW-Projekts, die Clips auf der Zeitachse trägt und einen eigenen Mischpultkanal hat.",
+      "note": "Cubase, Logic and Ableton de 'Spur'. Not 'Lane' (a band inside a strip) or 'Kanal' (one signal of a sound file).",
+      "gender": "f"
+    },
+    "folder-track": {
+      "term": "Ordnerspur",
+      "short": "Ordner",
+      "alt": ["Ordner", "Spurstapel"],
+      "definition": "Eine Spur, die andere Spuren enthält: Sie summiert deren Klang und kann sie als Ganzes zeigen.",
+      "note": "Cubase de 'Ordnerspur'; REAPER users say 'Ordner'; Logic de 'Spurstapel' (track stack). Playhead: 'Spuren in einem Ordner'.",
+      "gender": "f"
+    },
+    "clip": {
+      "term": "Clip",
+      "alt": ["Event", "Item", "Region"],
+      "definition": "Ein Stück Audio oder MIDI auf einer Spur, an einer Stelle der Zeitachse platziert.",
+      "note": "Ableton and Studio One de 'Clip'; Cubase 'Event', REAPER 'Item', Logic 'Region'. Here 'Ereignis' is a sound event and 'Region' a named span of time.",
+      "gender": "m"
+    },
+    "session": {
+      "term": "Projekt",
+      "alt": ["Session"],
+      "definition": "Alles zu einer Arbeit in der DAW: Spuren, Clips, Routing und Einstellungen.",
+      "gender": "n"
+    },
+    "timeline": {
+      "term": "Zeitachse",
+      "alt": ["Timeline", "Zeitlineal"],
+      "definition": "Die Zeitachse eines Projekts, entlang der die Clips liegen.",
+      "gender": "f"
+    },
+    "marker": {
+      "term": "Marker",
+      "definition": "Ein benannter Zeitpunkt, gespeichert in einem Projekt oder einer Audiodatei (ein Cue in einer WAV-Datei).",
+      "note": "Not 'Markierung': 'Markierungen' are the marks Playhead draws on a strip.",
+      "gender": "m"
+    },
+    "region": {
+      "term": "Region",
+      "alt": ["Bereich"],
+      "definition": "Ein benannter Zeitabschnitt mit Anfang und Ende, gespeichert in einem Projekt oder einer Audiodatei.",
+      "note": "REAPER and WaveLab 'Region'. In Logic a Region is a clip.",
+      "gender": "f"
+    },
+    "snap": {
+      "term": "Einrasten",
+      "alt": ["Snap", "Raster"],
+      "definition": "Ein verschobener Clip oder Schnitt springt auf die nächste Rasterlinie, den nächsten Marker, Clip-Rand oder Onset.",
+      "note": "Logic de 'Einrasten'. Playhead: 'An Onsets einrasten'.",
+      "gender": "n"
+    },
+    "mute": {
+      "term": "Stummschaltung",
+      "short": "Stumm",
+      "alt": ["Mute"],
+      "definition": "Eine Spur wird stummgeschaltet, ohne sie zu entfernen; die Taste heißt oft M.",
+      "note": "Buttons 'Stumm' or M.",
+      "gender": "f"
+    },
+    "solo": {
+      "term": "Solo",
+      "definition": "Nur die solo geschalteten Spuren sind zu hören; die Taste heißt oft S.",
+      "gender": "n"
+    },
+    "fader": {
+      "term": "Fader",
+      "alt": ["Schieberegler"],
+      "definition": "Der Pegelregler eines Mischpultkanals.",
+      "gender": "m"
+    },
+    "pan": {
+      "term": "Panorama",
+      "alt": ["Pan"],
+      "definition": "Wo ein Klang zwischen links und rechts steht; auch der Regler dafür.",
+      "note": "Standard studio term (das Panorama; Panoramaregler). 'Pan' is also heard as a control label.",
+      "gender": "n"
+    },
+    "bus": {
+      "term": "Bus",
+      "alt": ["Gruppe", "Subgruppe"],
+      "definition": "Ein Mischpultkanal, der die zu ihm geschickten Signale summiert, damit sie gemeinsam bearbeitet werden (Drum-Bus, Hall-Bus).",
+      "gender": "m"
+    },
+    "master-bus": {
+      "term": "Master-Bus",
+      "short": "Master",
+      "alt": ["Summe", "Stereosumme"],
+      "definition": "Der Bus, in den vor dem Ausgang alles summiert wird: das, was als Mix gerendert wird.",
+      "note": "'Summe' is classic German studio usage.",
+      "gender": "m"
+    },
+    "send": {
+      "term": "Send",
+      "alt": ["Aux-Send", "Effektweg"],
+      "definition": "Eine Kopie des Spursignals, mit eigenem Pegel an einen Bus geschickt, während die Spur weiterspielt.",
+      "gender": "m"
+    },
+    "insert": {
+      "term": "Insert",
+      "alt": ["Insert-Effekt", "Einschleifpunkt"],
+      "definition": "Ein Effekt im eigenen Signalweg eines Kanals, durch den das ganze Signal läuft.",
+      "gender": "m"
+    },
+    "routing": {
+      "term": "Routing",
+      "alt": ["Signalführung"],
+      "definition": "Wie Signale zwischen Spuren, Bussen, Sends und Ausgängen laufen.",
+      "gender": "n"
+    },
+    "mix": {
+      "term": "Mix",
+      "alt": ["Mischung", "Abmischung"],
+      "definition": "Die Summe aller Spuren, wie sie klingt; auch die Arbeit, sie auszubalancieren.",
+      "note": "Playhead: 'Ordner-Mix'.",
+      "gender": "m"
+    },
+    "stem": {
+      "term": "Stem",
+      "alt": ["Submix", "Subgruppe"],
+      "definition": "Ein Submix zusammengehöriger Spuren (Drums, Dialog, Musik), in eine eigene Datei gerendert, damit die Teile getrennt gemischt oder geliefert werden können.",
+      "note": "Loan (der Stem, pl. Stems).",
+      "gender": "m"
+    },
+    "zero-crossing": {
+      "term": "Nulldurchgang",
+      "definition": "Eine Stelle, an der die Wellenform die Null kreuzt; Schnitte und Loop-Punkte dort knacken nicht.",
+      "gender": "m"
+    },
+    "headroom": {
+      "term": "Headroom",
+      "alt": ["Aussteuerungsreserve"],
+      "definition": "Der Abstand in dB zwischen dem höchsten Pegel, den ein Signal erreicht, und dem Pegel, bei dem es clippen würde.",
+      "note": "Studio loan (der Headroom); 'Aussteuerungsreserve' in broadcast texts.",
+      "gender": "m"
+    },
+    "dynamic-range": {
+      "term": "Dynamikumfang",
+      "alt": ["Dynamikbereich"],
+      "definition": "Die Spanne in dB zwischen lauten und leisen Teilen eines Klangs, oder zwischen dem höchsten Pegel, den ein System verträgt, und seinem Grundrauschen.",
+      "note": "A level measure in dB; the loudness range (Lautheitsbereich, LRA) is a loudness measure in LU.",
+      "gender": "m"
+    },
+    "loudness-range": {
+      "term": "Lautheitsbereich",
+      "short": "LRA",
+      "alt": ["Loudness Range"],
+      "definition": "Wie stark die Lautheit eines Programms schwankt, in LU: die Spanne zwischen dem 10. und dem 95. Perzentil der Kurzzeit-Lautheit.",
+      "note": "EBU Tech 3342; German broadcast usage, e.g. ZDF 2022 spec: 'Lautheitsbereich („Loudness Range“, LRA)'.",
+      "gender": "m"
+    },
+    "integrated-loudness": {
+      "term": "integrierte Lautheit",
+      "alt": ["Programmlautheit"],
+      "definition": "Die Lautheit eines ganzen Programms, ohne Stille und leise Passagen (Gating), in LUFS.",
+      "note": "EBU R 128; 'Programmlautheit' in ARD/ZDF specifications.",
+      "gender": "f"
+    },
+    "short-term-loudness": {
+      "term": "Kurzzeit-Lautheit",
+      "definition": "Lautheit über ein gleitendes Fenster von 3 s, in LUFS.",
+      "note": "EBU Tech 3341.",
+      "gender": "f"
+    },
+    "momentary-loudness": {
+      "term": "momentane Lautheit",
+      "alt": ["Momentan-Lautheit"],
+      "definition": "Lautheit über ein gleitendes Fenster von 400 ms, in LUFS.",
+      "note": "EBU Tech 3341.",
+      "gender": "f"
+    },
+    "loudness-target": {
+      "term": "Ziellautheit",
+      "alt": ["Loudness-Target", "Zielwert"],
+      "definition": "Die integrierte Lautheit, mit der ein Programm geliefert oder abgespielt wird, etwa −23 LUFS nach EBU R 128 im Rundfunk oder etwa −14 LUFS bei Streamingdiensten.",
+      "gender": "f"
+    },
+    "loudness-matching": {
+      "term": "Lautheitsangleichung",
+      "short": "Lautheit angleichen",
+      "definition": "Zwei Versionen vor dem Vergleich auf dieselbe Lautheit bringen, damit die lautere nicht nur deshalb besser wirkt, weil sie lauter ist.",
+      "note": "As in Playhead ('Lautheit angleichen').",
+      "gender": "f"
+    },
+    "ab-comparison": {
+      "term": "A/B-Vergleich",
+      "short": "A/B",
+      "definition": "Zwischen zwei Versionen umschalten, am besten bei gleicher Lautheit, um zu hören, welche besser ist.",
+      "gender": "m"
+    },
+    "reference-track": {
+      "term": "Referenztrack",
+      "short": "Referenz",
+      "alt": ["Referenzaufnahme", "Referenzmix"],
+      "definition": "Eine fertige Aufnahme, die beim Mischen oder Mastern zum Vergleich gehört wird.",
+      "gender": "m"
+    },
+    "crest-factor": {
+      "term": "Crestfaktor",
+      "alt": ["Scheitelfaktor"],
+      "definition": "Das Verhältnis von Spitzen- zu RMS-Pegel, in dB: hoch bei knackigem, dynamischem Klang, niedrig bei dichtem, komprimiertem.",
+      "note": "'Scheitelfaktor' in electrical engineering (DIN).",
+      "gender": "m"
+    },
+    "rms-level": {
+      "term": "RMS-Pegel",
+      "short": "RMS",
+      "alt": ["Effektivwert"],
+      "definition": "Der quadratische Mittelwert eines Signals über ein Fenster: seine mittlere Leistung als Pegel.",
+      "gender": "m"
+    },
+    "stereo-width": {
+      "term": "Stereobreite",
+      "short": "Breite",
+      "alt": ["Basisbreite"],
+      "definition": "Wie verschieden die beiden Kanäle sind, von Mono (gar nicht) bis breit.",
+      "gender": "f"
+    },
+    "envelope": {
+      "term": "Hüllkurve",
+      "definition": "Wie sich eine Größe, meist der Pegel, im Verlauf eines Klangs ändert; auch eine gezeichnete Kurve, die einen Parameter steuert.",
+      "note": "Standard German (die Hüllkurve), as in all German synths and DAWs; level envelope = Pegelhüllkurve (envelope transfer).",
+      "gender": "f"
+    },
+    "frequency-band": {
+      "term": "Frequenzband",
+      "short": "Band",
+      "definition": "Ein Frequenzbereich, der gemeinsam gemessen oder bearbeitet wird: ein EQ-Band, eine Frequenzgruppe, ein Mel-Band.",
+      "note": "A critical band is a Frequenzgruppe (this vocabulary).",
+      "gender": "n"
+    },
+    "high-pass-filter": {
+      "term": "Hochpassfilter",
+      "short": "Hochpass",
+      "alt": ["Low-Cut", "Trittschallfilter"],
+      "definition": "Ein Filter, das die Frequenzen oberhalb seiner Grenzfrequenz durchlässt und die darunter absenkt.",
+      "gender": "n"
+    },
+    "low-pass-filter": {
+      "term": "Tiefpassfilter",
+      "short": "Tiefpass",
+      "alt": ["High-Cut"],
+      "definition": "Ein Filter, das die Frequenzen unterhalb seiner Grenzfrequenz durchlässt und die darüber absenkt.",
+      "gender": "n"
+    },
+    "limiter": {
+      "term": "Limiter",
+      "alt": ["Begrenzer"],
+      "definition": "Ein Kompressor mit sehr hoher Ratio und schneller Attack, der den Pegel unter einer Obergrenze hält.",
+      "gender": "m"
+    },
+    "multiband-compressor": {
+      "term": "Multiband-Kompressor",
+      "short": "Multiband",
+      "alt": ["Mehrband-Kompressor"],
+      "definition": "Ein Kompressor, der in mehreren Frequenzbändern getrennt arbeitet.",
+      "gender": "m"
+    },
+    "transient-shaper": {
+      "term": "Transient-Designer",
+      "alt": ["Transientenformer", "Transient Shaper"],
+      "definition": "Ein Prozessor, der Attack und Sustain von Klängen unabhängig von ihrem Pegel anhebt oder absenkt.",
+      "note": "'Transient Designer' (SPL) became the generic German studio word.",
+      "gender": "m"
+    },
+    "sidechain": {
+      "term": "Sidechain",
+      "alt": ["Steuereingang", "Seitenkette"],
+      "definition": "Ein zweiter Eingang, über den ein anderes Signal einen Prozessor steuert, etwa wenn Musik unter Dialog abgesenkt wird.",
+      "gender": "f"
+    },
+    "ducking": {
+      "term": "Ducking",
+      "alt": ["automatische Absenkung"],
+      "definition": "Ein Klang wird automatisch abgesenkt, solange ein anderer spielt, meist durch einen Kompressor mit Sidechain.",
+      "gender": "n"
+    },
+    "reverb": {
+      "term": "Hall",
+      "alt": ["Nachhall", "Reverb"],
+      "definition": "Die dichten Reflexionen eines Klangs in einem Raum, oder ein Effekt, der sie nachbildet.",
+      "note": "As in reverb on the tails = Hall auf die Ausklänge.",
+      "gender": "m"
+    },
+    "delay": {
+      "term": "Delay",
+      "alt": ["Echo", "Verzögerung"],
+      "definition": "Ein Effekt, der den Klang nach einer eingestellten Zeit erneut abspielt, oft wiederholt und abklingend (Echo).",
+      "gender": "n"
+    },
+    "dither": {
+      "term": "Dither",
+      "alt": ["Dithering"],
+      "definition": "Rauschen mit niedrigem Pegel, das beim Verringern der Bittiefe hinzugefügt wird, damit der Rundungsfehler zu Rauschen statt zu Verzerrung wird.",
+      "gender": "n"
+    },
+    "mastering": {
+      "term": "Mastering",
+      "definition": "Der letzte Schritt vor der Veröffentlichung: abschließende EQ-, Dynamik- und Lautheitsbearbeitung eines Mixes und Prüfungen für das Lieferformat.",
+      "gender": "n"
+    },
+    "drop": {
+      "term": "Drop",
+      "definition": "Der Moment in einem Dance-Track, in dem voller Beat und Bass einsetzen, meist nach einem Build-up oder Breakdown.",
+      "note": "Playhead never uses 'Drop' for a fall in level.",
+      "gender": "m"
+    },
+    "build-up": {
+      "term": "Build-up",
+      "alt": ["Aufbau", "Steigerung"],
+      "definition": "Eine Passage, die die Spannung zum Drop hin steigert: steigende Tonhöhe, Filter-Sweeps, schnellere Wirbel, ein Riser.",
+      "gender": "m"
+    },
+    "breakdown": {
+      "term": "Breakdown",
+      "definition": "Eine Passage, in der Beat und Bass wegfallen und Flächen, Akkorde oder Gesang bleiben.",
+      "gender": "m"
+    },
+    "riser": {
+      "term": "Riser",
+      "definition": "Ein Klang, der in Tonhöhe, Helligkeit oder Pegel ansteigt und in einen Drop oder Übergang führt.",
+      "note": "Sound-design and EDM loan (der Riser); no established German word.",
+      "gender": "m"
+    },
+    "sweep": {
+      "term": "Sweep",
+      "alt": ["Gleitsinus", "Filterfahrt"],
+      "definition": "Ein Gleiten durch einen Frequenzbereich: ein Ton oder Rauschen, dessen Tonhöhe oder Helligkeit wandert, oder ein Filter, das durch das Spektrum fährt.",
+      "note": "Loan (der Sweep); the measurement sense is 'Gleitsinus'.",
+      "gender": "m"
+    },
+    "cue-point": {
+      "term": "Cue-Punkt",
+      "short": "Cue",
+      "definition": "Eine gespeicherte Stelle in einem Track, zu der ein DJ oder Player springt oder an der er startet.",
+      "gender": "m"
+    },
+    "beatgrid": {
+      "term": "Beatgrid",
+      "alt": ["Beat-Raster"],
+      "definition": "Die Beats und Takte eines Tracks als Raster, zum Synchronisieren, Loopen und Springen.",
+      "note": "As in German DJ software and Playhead; 'Beat-Raster' in running text where a German word reads better.",
+      "gender": "n"
+    },
+    "beatmatching": {
+      "term": "Beatmatching",
+      "alt": ["Beatangleichung"],
+      "definition": "Zwei Tracks auf dasselbe Tempo bringen, mit übereinanderliegenden Beats.",
+      "gender": "n"
+    },
+    "phrase": {
+      "term": "Phrase",
+      "definition": "Eine Folge von Takten, in Dance-Musik meist 8, 16 oder 32, die eine musikalische Einheit bildet; DJs mischen an Phrasengrenzen.",
+      "gender": "f"
+    },
+    "key": {
+      "term": "Tonart",
+      "definition": "Grundton und Tonleiter eines Stücks, etwa a-Moll; DJs mischen Tracks in passenden Tonarten (Harmonic Mixing).",
+      "gender": "f"
     }
   }
 }

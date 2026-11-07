@@ -174,3 +174,59 @@ shell,Schale,"A thin curved body, such as a can or pot.",,common,
 bell,Glocke,,,standard,
 wire,Draht,A stiff string or wire that rings with slightly stretched (inharmonic) partials.,"Literal 'Draht' keeps the object-like naming of the shape list; physically a tensioned string is modelled, so choose 'Saite' if non-metal strings are meant.",standard,Saite
 box,Kasten,A hollow body with flat sides.,,common,Kiste; Box
+track,Spur,A row of a DAW session that holds clips on the timeline and has its own mixer channel.,"Cubase, Logic and Ableton de 'Spur'. Not 'Lane' (a band inside a strip) or 'Kanal' (one signal of a sound file).",standard,Track
+folder track,Ordnerspur,A track that holds other tracks: it sums their sound and can show them as one.,Cubase de 'Ordnerspur'; REAPER users say 'Ordner'; Logic de 'Spurstapel' (track stack). Playhead: 'Spuren in einem Ordner'.,standard,Ordner; Spurstapel
+clip,Clip,"One piece of audio or MIDI on a track, placed at a point in time.","Ableton and Studio One de 'Clip'; Cubase 'Event', REAPER 'Item', Logic 'Region'. Here 'Ereignis' is a sound event and 'Region' a named span of time.",standard,Event; Item; Region
+session,Projekt,"All of one piece of DAW work: its tracks, clips, routing and settings; also called a project.",,standard,Session
+timeline,Zeitachse,"The time axis of a session, along which clips are placed.",,standard,Timeline; Zeitlineal
+marker,Marker,A named point in time stored in a session or a sound file (a cue in a WAV file).,Not 'Markierung': 'Markierungen' are the marks Playhead draws on a strip.,standard,
+region,Region,"A named span of time with a start and an end, stored in a session or a sound file.",REAPER and WaveLab 'Region'. In Logic a Region is a clip.,standard,Bereich
+snap,Einrasten,"Making a clip or an edit jump to the nearest grid line, marker, clip edge or onset while it is moved.",Logic de 'Einrasten'. Playhead: 'An Onsets einrasten'.,standard,Snap; Raster
+mute,Stummschaltung,Silencing a track without removing it; the button is often labelled M.,Buttons 'Stumm' or M.,standard,Mute
+solo,Solo,Hearing only the soloed tracks; the button is often labelled S.,,standard,
+fader,Fader,The level control of a mixer channel.,,standard,Schieberegler
+pan,Panorama,Where a sound sits between left and right; also the control that sets it.,Standard studio term (das Panorama; Panoramaregler). 'Pan' is also heard as a control label.,standard,Pan
+bus,Bus,"A mixer channel that sums the signals sent to it, so they can be processed together (a drum bus, a reverb bus).",,standard,Gruppe; Subgruppe
+master bus,Master-Bus,The bus everything is summed into before the output: what is rendered as the mix.,'Summe' is classic German studio usage.,standard,Summe; Stereosumme
+send,Send,"A copy of a track's signal sent to a bus at its own level, while the track keeps playing.",,standard,Aux-Send; Effektweg
+insert,Insert,"An effect in a channel's own signal path, which all of the signal passes through.",,standard,Insert-Effekt; Einschleifpunkt
+routing,Routing,"How signals travel between tracks, buses, sends and outputs.",,standard,Signalführung
+mix,Mix,The sum of all tracks as it is heard; also the work of balancing them.,Playhead: 'Ordner-Mix'.,standard,Mischung; Abmischung
+stem,Stem,"A submix of related tracks (drums, dialogue, music) rendered to its own file, so the parts can be mixed or delivered separately.","Loan (der Stem, pl. Stems).",standard,Submix; Subgruppe
+zero crossing,Nulldurchgang,A point where the waveform crosses zero; cuts and loop points made there do not click.,,standard,
+headroom,Headroom,The distance in dB between the highest level a signal reaches and the level where it would clip.,Studio loan (der Headroom); 'Aussteuerungsreserve' in broadcast texts.,standard,Aussteuerungsreserve
+dynamic range,Dynamikumfang,"The span in dB between a sound's loud and quiet parts, or between the highest level a system takes and its noise floor.","A level measure in dB; the loudness range (Lautheitsbereich, LRA) is a loudness measure in LU.",standard,Dynamikbereich
+loudness range,Lautheitsbereich,"How much the loudness of a programme varies, in LU: the span between the 10th and 95th percentile of its short-term loudness.","EBU Tech 3342; German broadcast usage, e.g. ZDF 2022 spec: 'Lautheitsbereich („Loudness Range“, LRA)'.",standard,Loudness Range
+integrated loudness,integrierte Lautheit,"The loudness of a whole programme, with silence and quiet passages gated out, in LUFS.",EBU R 128; 'Programmlautheit' in ARD/ZDF specifications.,standard,Programmlautheit
+short-term loudness,Kurzzeit-Lautheit,"Loudness over a sliding 3 s window, in LUFS.",EBU Tech 3341.,standard,
+momentary loudness,momentane Lautheit,"Loudness over a sliding 400 ms window, in LUFS.",EBU Tech 3341.,standard,Momentan-Lautheit
+loudness target,Ziellautheit,"The integrated loudness a programme is delivered or played at, such as −23 LUFS for EBU R 128 broadcast or about −14 LUFS on streaming services.",,standard,Loudness-Target; Zielwert
+loudness matching,Lautheitsangleichung,"Bringing two versions to the same loudness before comparing them, so that the louder one does not seem better only because it is louder.",As in Playhead ('Lautheit angleichen').,common,
+A/B comparison,A/B-Vergleich,"Switching between two versions, ideally at matched loudness, to hear which is better.",,standard,
+reference track,Referenztrack,A finished recording played for comparison while mixing or mastering.,,standard,Referenzaufnahme; Referenzmix
+crest factor,Crestfaktor,"The ratio of peak to RMS level, in dB: high for punchy, dynamic sound, low for dense, compressed sound.",'Scheitelfaktor' in electrical engineering (DIN).,standard,Scheitelfaktor
+RMS level,RMS-Pegel,"The root mean square of a signal over a window: its average power, as a level.",,standard,Effektivwert
+stereo width,Stereobreite,"How different the two channels are, from mono (not at all) to wide.",,standard,Basisbreite
+envelope,Hüllkurve,"How a quantity, usually level, changes over the course of a sound; also a drawn curve that controls a parameter.","Standard German (die Hüllkurve), as in all German synths and DAWs; level envelope = Pegelhüllkurve (envelope transfer).",standard,
+frequency band,Frequenzband,"A range of frequencies measured or processed together: an EQ band, a critical band, a mel band.",A critical band is a Frequenzgruppe (this vocabulary).,standard,
+high-pass filter,Hochpassfilter,A filter that passes the frequencies above its cutoff and attenuates those below.,,standard,Low-Cut; Trittschallfilter
+low-pass filter,Tiefpassfilter,A filter that passes the frequencies below its cutoff and attenuates those above.,,standard,High-Cut
+limiter,Limiter,A compressor with a very high ratio and a fast attack that keeps the level below a ceiling.,,standard,Begrenzer
+multiband compressor,Multiband-Kompressor,A compressor that works on several frequency bands separately.,,standard,Mehrband-Kompressor
+transient shaper,Transient-Designer,A processor that raises or lowers the attack and the sustain of sounds independently of their level.,'Transient Designer' (SPL) became the generic German studio word.,standard,Transientenformer; Transient Shaper
+sidechain,Sidechain,"A second input through which another signal controls a processor, as when music is turned down under dialogue.",,standard,Steuereingang; Seitenkette
+ducking,Ducking,"Turning one sound down automatically while another plays, usually with a sidechained compressor.",,standard,automatische Absenkung
+reverb,Hall,"The dense reflections of a sound in a space, or an effect that imitates them.",As in reverb on the tails = Hall auf die Ausklänge.,standard,Nachhall; Reverb
+delay,Delay,"An effect that plays the sound again after a set time, often repeating and fading (echo).",,standard,Echo; Verzögerung
+dither,Dither,"Low-level noise added when the bit depth is reduced, so that the rounding error becomes noise instead of distortion.",,standard,Dithering
+mastering,Mastering,"The last stage before release: the final EQ, dynamics and loudness of a mix, and checks for the delivery format.",,standard,
+drop,Drop,"The moment in a dance track when the full beat and bass come in, usually after a build-up or a breakdown.",Playhead never uses 'Drop' for a fall in level.,common,
+build-up,Build-up,"A passage that raises tension towards a drop: rising pitch, filter sweeps, faster rolls, a riser.",,common,Aufbau; Steigerung
+breakdown,Breakdown,"A passage where the beat and bass fall away, leaving pads, chords or vocals.",,common,
+riser,Riser,"A sound that rises in pitch, brightness or level to lead into a drop or a transition.",Sound-design and EDM loan (der Riser); no established German word.,common,
+sweep,Sweep,"A glide through a range of frequencies: a tone or noise whose pitch or brightness moves, or a filter swept across the spectrum.",Loan (der Sweep); the measurement sense is 'Gleitsinus'.,standard,Gleitsinus; Filterfahrt
+cue point,Cue-Punkt,A stored position in a track that a DJ or a player jumps to or starts from.,,standard,
+beatgrid,Beatgrid,"The beats and bars of a track as a grid, used to sync, loop and jump in time.",As in German DJ software and Playhead; 'Beat-Raster' in running text where a German word reads better.,common,Beat-Raster
+beatmatching,Beatmatching,Bringing two tracks to the same tempo with their beats aligned.,,standard,Beatangleichung
+phrase,Phrase,"A run of bars, usually 8, 16 or 32 in dance music, that forms one musical unit; DJs mix at phrase boundaries.",,standard,
+key,Tonart,"The tonal centre and scale of a piece, such as A minor; DJs mix tracks in compatible keys (harmonic mixing).",,standard,

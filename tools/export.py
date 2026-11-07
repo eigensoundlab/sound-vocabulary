@@ -64,7 +64,7 @@ def main():
 
     for l, t in tr.items():
         with open(os.path.join(out, f"glossary-{l}.csv"), "w", encoding="utf-8", newline="") as f:
-            w = csv.writer(f)
+            w = csv.writer(f, lineterminator="\n")     # plain newlines, so patches of the glossaries apply everywhere
             w.writerow(["term", "translation", "definition", "note", "status", "alternatives"])
             for r in en:
                 e = t.get(r["id"])

@@ -861,5 +861,285 @@
   "term": "Kasten",
   "short": "Kasten",
   "definition": "Ein Hohlkörper mit flachen Seiten."
+ },
+ "track": {
+  "term": "Spur",
+  "short": "Spur",
+  "definition": "Eine Zeile eines DAW-Projekts, die Clips auf der Zeitachse trägt und einen eigenen Mischpultkanal hat."
+ },
+ "folder-track": {
+  "term": "Ordnerspur",
+  "short": "Ordner",
+  "definition": "Eine Spur, die andere Spuren enthält: Sie summiert deren Klang und kann sie als Ganzes zeigen."
+ },
+ "clip": {
+  "term": "Clip",
+  "short": "Clip",
+  "definition": "Ein Stück Audio oder MIDI auf einer Spur, an einer Stelle der Zeitachse platziert."
+ },
+ "session": {
+  "term": "Projekt",
+  "short": "Projekt",
+  "definition": "Alles zu einer Arbeit in der DAW: Spuren, Clips, Routing und Einstellungen."
+ },
+ "timeline": {
+  "term": "Zeitachse",
+  "short": "Zeitachse",
+  "definition": "Die Zeitachse eines Projekts, entlang der die Clips liegen."
+ },
+ "marker": {
+  "term": "Marker",
+  "short": "Marker",
+  "definition": "Ein benannter Zeitpunkt, gespeichert in einem Projekt oder einer Audiodatei (ein Cue in einer WAV-Datei)."
+ },
+ "region": {
+  "term": "Region",
+  "short": "Region",
+  "definition": "Ein benannter Zeitabschnitt mit Anfang und Ende, gespeichert in einem Projekt oder einer Audiodatei."
+ },
+ "snap": {
+  "term": "Einrasten",
+  "short": "Einrasten",
+  "definition": "Ein verschobener Clip oder Schnitt springt auf die nächste Rasterlinie, den nächsten Marker, Clip-Rand oder Onset."
+ },
+ "mute": {
+  "term": "Stummschaltung",
+  "short": "Stumm",
+  "definition": "Eine Spur wird stummgeschaltet, ohne sie zu entfernen; die Taste heißt oft M."
+ },
+ "solo": {
+  "term": "Solo",
+  "short": "Solo",
+  "definition": "Nur die solo geschalteten Spuren sind zu hören; die Taste heißt oft S."
+ },
+ "fader": {
+  "term": "Fader",
+  "short": "Fader",
+  "definition": "Der Pegelregler eines Mischpultkanals."
+ },
+ "pan": {
+  "term": "Panorama",
+  "short": "Panorama",
+  "definition": "Wo ein Klang zwischen links und rechts steht; auch der Regler dafür."
+ },
+ "bus": {
+  "term": "Bus",
+  "short": "Bus",
+  "definition": "Ein Mischpultkanal, der die zu ihm geschickten Signale summiert, damit sie gemeinsam bearbeitet werden (Drum-Bus, Hall-Bus)."
+ },
+ "master-bus": {
+  "term": "Master-Bus",
+  "short": "Master",
+  "definition": "Der Bus, in den vor dem Ausgang alles summiert wird: das, was als Mix gerendert wird."
+ },
+ "send": {
+  "term": "Send",
+  "short": "Send",
+  "definition": "Eine Kopie des Spursignals, mit eigenem Pegel an einen Bus geschickt, während die Spur weiterspielt."
+ },
+ "insert": {
+  "term": "Insert",
+  "short": "Insert",
+  "definition": "Ein Effekt im eigenen Signalweg eines Kanals, durch den das ganze Signal läuft."
+ },
+ "routing": {
+  "term": "Routing",
+  "short": "Routing",
+  "definition": "Wie Signale zwischen Spuren, Bussen, Sends und Ausgängen laufen."
+ },
+ "mix": {
+  "term": "Mix",
+  "short": "Mix",
+  "definition": "Die Summe aller Spuren, wie sie klingt; auch die Arbeit, sie auszubalancieren."
+ },
+ "stem": {
+  "term": "Stem",
+  "short": "Stem",
+  "definition": "Ein Submix zusammengehöriger Spuren (Drums, Dialog, Musik), in eine eigene Datei gerendert, damit die Teile getrennt gemischt oder geliefert werden können."
+ },
+ "zero-crossing": {
+  "term": "Nulldurchgang",
+  "short": "Nulldurchgang",
+  "definition": "Eine Stelle, an der die Wellenform die Null kreuzt; Schnitte und Loop-Punkte dort knacken nicht."
+ },
+ "headroom": {
+  "term": "Headroom",
+  "short": "Headroom",
+  "definition": "Der Abstand in dB zwischen dem höchsten Pegel, den ein Signal erreicht, und dem Pegel, bei dem es clippen würde."
+ },
+ "dynamic-range": {
+  "term": "Dynamikumfang",
+  "short": "Dynamikumfang",
+  "definition": "Die Spanne in dB zwischen lauten und leisen Teilen eines Klangs, oder zwischen dem höchsten Pegel, den ein System verträgt, und seinem Grundrauschen."
+ },
+ "loudness-range": {
+  "term": "Lautheitsbereich",
+  "short": "LRA",
+  "definition": "Wie stark die Lautheit eines Programms schwankt, in LU: die Spanne zwischen dem 10. und dem 95. Perzentil der Kurzzeit-Lautheit."
+ },
+ "integrated-loudness": {
+  "term": "integrierte Lautheit",
+  "short": "integrierte Lautheit",
+  "definition": "Die Lautheit eines ganzen Programms, ohne Stille und leise Passagen (Gating), in LUFS."
+ },
+ "short-term-loudness": {
+  "term": "Kurzzeit-Lautheit",
+  "short": "Kurzzeit-Lautheit",
+  "definition": "Lautheit über ein gleitendes Fenster von 3 s, in LUFS."
+ },
+ "momentary-loudness": {
+  "term": "momentane Lautheit",
+  "short": "momentane Lautheit",
+  "definition": "Lautheit über ein gleitendes Fenster von 400 ms, in LUFS."
+ },
+ "loudness-target": {
+  "term": "Ziellautheit",
+  "short": "Ziellautheit",
+  "definition": "Die integrierte Lautheit, mit der ein Programm geliefert oder abgespielt wird, etwa −23 LUFS nach EBU R 128 im Rundfunk oder etwa −14 LUFS bei Streamingdiensten."
+ },
+ "loudness-matching": {
+  "term": "Lautheitsangleichung",
+  "short": "Lautheit angleichen",
+  "definition": "Zwei Versionen vor dem Vergleich auf dieselbe Lautheit bringen, damit die lautere nicht nur deshalb besser wirkt, weil sie lauter ist."
+ },
+ "ab-comparison": {
+  "term": "A/B-Vergleich",
+  "short": "A/B",
+  "definition": "Zwischen zwei Versionen umschalten, am besten bei gleicher Lautheit, um zu hören, welche besser ist."
+ },
+ "reference-track": {
+  "term": "Referenztrack",
+  "short": "Referenz",
+  "definition": "Eine fertige Aufnahme, die beim Mischen oder Mastern zum Vergleich gehört wird."
+ },
+ "crest-factor": {
+  "term": "Crestfaktor",
+  "short": "Crestfaktor",
+  "definition": "Das Verhältnis von Spitzen- zu RMS-Pegel, in dB: hoch bei knackigem, dynamischem Klang, niedrig bei dichtem, komprimiertem."
+ },
+ "rms-level": {
+  "term": "RMS-Pegel",
+  "short": "RMS",
+  "definition": "Der quadratische Mittelwert eines Signals über ein Fenster: seine mittlere Leistung als Pegel."
+ },
+ "stereo-width": {
+  "term": "Stereobreite",
+  "short": "Breite",
+  "definition": "Wie verschieden die beiden Kanäle sind, von Mono (gar nicht) bis breit."
+ },
+ "envelope": {
+  "term": "Hüllkurve",
+  "short": "Hüllkurve",
+  "definition": "Wie sich eine Größe, meist der Pegel, im Verlauf eines Klangs ändert; auch eine gezeichnete Kurve, die einen Parameter steuert."
+ },
+ "frequency-band": {
+  "term": "Frequenzband",
+  "short": "Band",
+  "definition": "Ein Frequenzbereich, der gemeinsam gemessen oder bearbeitet wird: ein EQ-Band, eine Frequenzgruppe, ein Mel-Band."
+ },
+ "high-pass-filter": {
+  "term": "Hochpassfilter",
+  "short": "Hochpass",
+  "definition": "Ein Filter, das die Frequenzen oberhalb seiner Grenzfrequenz durchlässt und die darunter absenkt."
+ },
+ "low-pass-filter": {
+  "term": "Tiefpassfilter",
+  "short": "Tiefpass",
+  "definition": "Ein Filter, das die Frequenzen unterhalb seiner Grenzfrequenz durchlässt und die darüber absenkt."
+ },
+ "limiter": {
+  "term": "Limiter",
+  "short": "Limiter",
+  "definition": "Ein Kompressor mit sehr hoher Ratio und schneller Attack, der den Pegel unter einer Obergrenze hält."
+ },
+ "multiband-compressor": {
+  "term": "Multiband-Kompressor",
+  "short": "Multiband",
+  "definition": "Ein Kompressor, der in mehreren Frequenzbändern getrennt arbeitet."
+ },
+ "transient-shaper": {
+  "term": "Transient-Designer",
+  "short": "Transient-Designer",
+  "definition": "Ein Prozessor, der Attack und Sustain von Klängen unabhängig von ihrem Pegel anhebt oder absenkt."
+ },
+ "sidechain": {
+  "term": "Sidechain",
+  "short": "Sidechain",
+  "definition": "Ein zweiter Eingang, über den ein anderes Signal einen Prozessor steuert, etwa wenn Musik unter Dialog abgesenkt wird."
+ },
+ "ducking": {
+  "term": "Ducking",
+  "short": "Ducking",
+  "definition": "Ein Klang wird automatisch abgesenkt, solange ein anderer spielt, meist durch einen Kompressor mit Sidechain."
+ },
+ "reverb": {
+  "term": "Hall",
+  "short": "Hall",
+  "definition": "Die dichten Reflexionen eines Klangs in einem Raum, oder ein Effekt, der sie nachbildet."
+ },
+ "delay": {
+  "term": "Delay",
+  "short": "Delay",
+  "definition": "Ein Effekt, der den Klang nach einer eingestellten Zeit erneut abspielt, oft wiederholt und abklingend (Echo)."
+ },
+ "dither": {
+  "term": "Dither",
+  "short": "Dither",
+  "definition": "Rauschen mit niedrigem Pegel, das beim Verringern der Bittiefe hinzugefügt wird, damit der Rundungsfehler zu Rauschen statt zu Verzerrung wird."
+ },
+ "mastering": {
+  "term": "Mastering",
+  "short": "Mastering",
+  "definition": "Der letzte Schritt vor der Veröffentlichung: abschließende EQ-, Dynamik- und Lautheitsbearbeitung eines Mixes und Prüfungen für das Lieferformat."
+ },
+ "drop": {
+  "term": "Drop",
+  "short": "Drop",
+  "definition": "Der Moment in einem Dance-Track, in dem voller Beat und Bass einsetzen, meist nach einem Build-up oder Breakdown."
+ },
+ "build-up": {
+  "term": "Build-up",
+  "short": "Build-up",
+  "definition": "Eine Passage, die die Spannung zum Drop hin steigert: steigende Tonhöhe, Filter-Sweeps, schnellere Wirbel, ein Riser."
+ },
+ "breakdown": {
+  "term": "Breakdown",
+  "short": "Breakdown",
+  "definition": "Eine Passage, in der Beat und Bass wegfallen und Flächen, Akkorde oder Gesang bleiben."
+ },
+ "riser": {
+  "term": "Riser",
+  "short": "Riser",
+  "definition": "Ein Klang, der in Tonhöhe, Helligkeit oder Pegel ansteigt und in einen Drop oder Übergang führt."
+ },
+ "sweep": {
+  "term": "Sweep",
+  "short": "Sweep",
+  "definition": "Ein Gleiten durch einen Frequenzbereich: ein Ton oder Rauschen, dessen Tonhöhe oder Helligkeit wandert, oder ein Filter, das durch das Spektrum fährt."
+ },
+ "cue-point": {
+  "term": "Cue-Punkt",
+  "short": "Cue",
+  "definition": "Eine gespeicherte Stelle in einem Track, zu der ein DJ oder Player springt oder an der er startet."
+ },
+ "beatgrid": {
+  "term": "Beatgrid",
+  "short": "Beatgrid",
+  "definition": "Die Beats und Takte eines Tracks als Raster, zum Synchronisieren, Loopen und Springen."
+ },
+ "beatmatching": {
+  "term": "Beatmatching",
+  "short": "Beatmatching",
+  "definition": "Zwei Tracks auf dasselbe Tempo bringen, mit übereinanderliegenden Beats."
+ },
+ "phrase": {
+  "term": "Phrase",
+  "short": "Phrase",
+  "definition": "Eine Folge von Takten, in Dance-Musik meist 8, 16 oder 32, die eine musikalische Einheit bildet; DJs mischen an Phrasengrenzen."
+ },
+ "key": {
+  "term": "Tonart",
+  "short": "Tonart",
+  "definition": "Grundton und Tonleiter eines Stücks, etwa a-Moll; DJs mischen Tracks in passenden Tonarten (Harmonic Mixing)."
  }
 }

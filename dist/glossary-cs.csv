@@ -174,3 +174,59 @@ shell,skořepina,"A thin curved body, such as a can or pot.",,common,
 bell,zvon,,,standard,
 wire,drát,A stiff string or wire that rings with slightly stretched (inharmonic) partials.,'Drát' follows the English choice of 'wire'. In Workbench the impact-model shape 'Wire / string' becomes 'Drát / struna'. 'Roztažené' is the usual Czech for stretched partials (as in piano-string inharmonicity).,standard,struna; drát / struna
 box,skříň,A hollow body with flat sides.,'Skříň' as in 'rezonanční skříň'; 'krabice' is everyday and suggests cardboard.,common,krabice; bedna
+track,stopa,A row of a DAW session that holds clips on the timeline and has its own mixer channel.,"Ardour, Audacity and LMMS cs 'stopa'. Not 'pruh' (= lane, a band inside a strip) or 'kanál' (one signal of a sound file).",standard,track
+folder track,stopa složky,A track that holds other tracks: it sums their sound and can show them as one.,REAPER and Cubase say 'folder track'; Czech users say 'složka'. 'Skupina' stays for mixer groups. Playhead: 'Stopy ve složce'.,standard,složka; složková stopa
+clip,klip,"One piece of audio or MIDI on a track, placed at a point in time.","Studio usage. Not 'událost' (= a sound event in this vocabulary, though Cubase calls clips events) or 'oblast' (= region, a named span of time; Logic calls clips regions).",standard,položka; region
+session,projekt,"All of one piece of DAW work: its tracks, clips, routing and settings; also called a project.",Czech users say 'projekt'; Ardour cs uses 'relace' for its sessions.,standard,relace; session
+timeline,časová osa,"The time axis of a session, along which clips are placed.",,standard,
+marker,marker,A named point in time stored in a session or a sound file (a cue in a WAV file).,Studio loan. Not 'značka': 'značky' are the marks Playhead draws on a strip.,standard,značka v čase; zarážka
+region,oblast,"A named span of time with a start and an end, stored in a session or a sound file.",REAPER users also say 'region'. In Logic a region is a clip (klip).,standard,region; úsek
+snap,přichytávání,"Making a clip or an edit jump to the nearest grid line, marker, clip edge or onset while it is moved.",Playhead: 'Přichytávat k nástupům'.,standard,přichycení; snap
+mute,ztlumení,Silencing a track without removing it; the button is often labelled M.,Buttons 'Ztlumit' or M (Ardour cs).,standard,mute
+solo,sólo,Hearing only the soloed tracks; the button is often labelled S.,,standard,
+fader,fader,The level control of a mixer channel.,Studio loan; 'tahový regulátor' in technical texts.,standard,tahový regulátor
+pan,panorama,Where a sound sits between left and right; also the control that sets it.,"Studio usage ('panorama', panoramovací regulátor); 'pan' is also heard on controls.",standard,pan
+bus,sběrnice,"A mixer channel that sums the signals sent to it, so they can be processed together (a drum bus, a reverb bus).",Ardour cs 'sběrnice'; studio speech also 'bus' or 'skupina'.,standard,bus; skupina
+master bus,hlavní sběrnice,The bus everything is summed into before the output: what is rendered as the mix.,Engineers say 'master'.,standard,master; součtová sběrnice
+send,send,"A copy of a track's signal sent to a bus at its own level, while the track keeps playing.",Studio loan (pl. sendy); 'odbočka' and 'aux' are also heard.,standard,odbočka; aux
+insert,insert,"An effect in a channel's own signal path, which all of the signal passes through.",Studio loan; 'vložený efekt' in running text.,standard,vložený efekt
+routing,směrování,"How signals travel between tracks, buses, sends and outputs.",,standard,routing
+mix,mix,The sum of all tracks as it is heard; also the work of balancing them.,"'Mixáž' is the work, 'mix' its result. Playhead: 'mix složky'.",standard,mixáž
+stem,stem,"A submix of related tracks (drums, dialogue, music) rendered to its own file, so the parts can be mixed or delivered separately.",Loan used in Czech post-production (pl. stemy).,standard,submix; podskupina
+zero crossing,průchod nulou,A point where the waveform crosses zero; cuts and loop points made there do not click.,Standard signal-processing term.,standard,
+headroom,rezerva,The distance in dB between the highest level a signal reaches and the level where it would clip.,Engineers also say 'headroom'; 'rezerva' is the plain Czech word (Playhead: 'bez rezervy').,standard,headroom; rezerva vybuzení
+dynamic range,dynamický rozsah,"The span in dB between a sound's loud and quiet parts, or between the highest level a system takes and its noise floor.","A level measure in dB; loudness range (rozsah hlasitosti, LRA) is a loudness measure in LU.",standard,
+loudness range,rozsah hlasitosti,"How much the loudness of a programme varies, in LU: the span between the 10th and 95th percentile of its short-term loudness.",EBU Tech 3342 (LRA); Playhead 'Rozsah hlasitosti'.,standard,
+integrated loudness,integrovaná hlasitost,"The loudness of a whole programme, with silence and quiet passages gated out, in LUFS.",EBU R 128 as translated by RRTV.,standard,
+short-term loudness,krátkodobá hlasitost,"Loudness over a sliding 3 s window, in LUFS.",EBU Tech 3341.,standard,
+momentary loudness,okamžitá hlasitost,"Loudness over a sliding 400 ms window, in LUFS.",EBU Tech 3341.,standard,
+loudness target,cílová hlasitost,"The integrated loudness a programme is delivered or played at, such as −23 LUFS for EBU R 128 broadcast or about −14 LUFS on streaming services.",,standard,
+loudness matching,sladění hlasitosti,"Bringing two versions to the same loudness before comparing them, so that the louder one does not seem better only because it is louder.",As in Playhead ('Sladit hlasitost'); does not clash with level the events = srovnat hlasitost událostí.,common,
+A/B comparison,A/B porovnání,"Switching between two versions, ideally at matched loudness, to hear which is better.",,standard,
+reference track,referenční nahrávka,A finished recording played for comparison while mixing or mastering.,,standard,reference; referenční skladba
+crest factor,činitel výkyvu,"The ratio of peak to RMS level, in dB: high for punchy, dynamic sound, low for dense, compressed sound.",'Činitel výkyvu' is the Czech electrical-engineering term; studios say 'crest faktor'.,standard,crest faktor; vrcholový činitel
+RMS level,efektivní úroveň,"The root mean square of a signal over a window: its average power, as a level.",'Efektivní hodnota' is the standard Czech for RMS.,standard,úroveň RMS
+stereo width,šířka stereofonní báze,"How different the two channels are, from mono (not at all) to wide.",'Šířka' on controls; matches widen the tails = rozšířit doznění.,standard,stereo šířka
+envelope,obálka,"How a quantity, usually level, changes over the course of a sound; also a drawn curve that controls a parameter.",Standard (Audacity and LMMS cs 'Obálka'). Level envelope = obálka úrovně (as in envelope transfer).,standard,
+frequency band,frekvenční pásmo,"A range of frequencies measured or processed together: an EQ band, a critical band, a mel band.",,standard,
+high-pass filter,horní propust,A filter that passes the frequencies above its cutoff and attenuates those below.,Standard Czech electronics term (Audacity cs).,standard,filtr typu horní propust; low-cut
+low-pass filter,dolní propust,A filter that passes the frequencies below its cutoff and attenuates those above.,Standard Czech electronics term (Audacity cs).,standard,filtr typu dolní propust; high-cut
+limiter,limiter,A compressor with a very high ratio and a fast attack that keeps the level below a ceiling.,Studio loan; 'omezovač' in technical texts.,standard,omezovač
+multiband compressor,vícepásmový kompresor,A compressor that works on several frequency bands separately.,,standard,
+transient shaper,tvarovač tranzientů,A processor that raises or lowers the attack and the sustain of sounds independently of their level.,,standard,transient shaper
+sidechain,sidechain,"A second input through which another signal controls a processor, as when music is turned down under dialogue.",Studio loan; 'řídicí vstup' in running text.,standard,řídicí vstup; postranní řetězec
+ducking,ducking,"Turning one sound down automatically while another plays, usually with a sidechained compressor.",,standard,automatické stahování
+reverb,dozvuk,"The dense reflections of a sound in a space, or an effect that imitates them.",As in reverb on the tails = dozvuk na doznění.,standard,reverb
+delay,delay,"An effect that plays the sound again after a set time, often repeating and fading (echo).",Studio loan; 'zpožďovací linka' in technical texts.,standard,zpoždění; ozvěna
+dither,dither,"Low-level noise added when the bit depth is reduced, so that the rounding error becomes noise instead of distortion.",,standard,dithering; rozptylový šum
+mastering,mastering,"The last stage before release: the final EQ, dynamics and loudness of a mix, and checks for the delivery format.",,standard,
+drop,drop,"The moment in a dance track when the full beat and bass come in, usually after a build-up or a breakdown.",Loan in Czech dance music. Playhead never uses 'drop' for a fall in level.,common,
+build-up,build-up,"A passage that raises tension towards a drop: rising pitch, filter sweeps, faster rolls, a riser.",Not 'náběh' (= attack).,common,gradace; stupňování
+breakdown,breakdown,"A passage where the beat and bass fall away, leaving pads, chords or vocals.",,common,zklidnění
+riser,riser,"A sound that rises in pitch, brightness or level to lead into a drop or a transition.",Loan used by Czech producers (pl. risery); no Czech equivalent in use.,common,
+sweep,přeladění,"A glide through a range of frequencies: a tone or noise whose pitch or brightness moves, or a filter swept across the spectrum.",Producers also say 'sweep'; 'glissando' only for pitched instruments.,standard,sweep
+cue point,cue bod,A stored position in a track that a DJ or a player jumps to or starts from.,,standard,cue; bod cue
+beatgrid,mřížka dob,"The beats and bars of a track as a grid, used to sync, loop and jump in time.",Playhead: 'mřížka dob'. DJ software keeps 'beatgrid'.,common,beatgrid
+beatmatching,beatmatching,Bringing two tracks to the same tempo with their beats aligned.,,standard,sesouhlasení dob; srovnání tempa
+phrase,fráze,"A run of bars, usually 8, 16 or 32 in dance music, that forms one musical unit; DJs mix at phrase boundaries.",,standard,
+key,tónina,"The tonal centre and scale of a piece, such as A minor; DJs mix tracks in compatible keys (harmonic mixing).",,standard,

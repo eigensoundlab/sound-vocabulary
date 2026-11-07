@@ -1,19 +1,13 @@
 english	polish	where used	note
-envelope	obwiednia	Playhead: row.x4.name, row.x4.desc, row.n2.desc, row.n6.desc, note.approx.2, note.rhythm.1, cmp.sculpt.title, lib.look.sculpted.desc, lib.tool.hpss.desc	Standard (obwiednia, f.): Audacity pl „Obwiednia”, Polish Wikipedia „Obwiednia dźwięku”, LMMS pl. Level envelope = obwiednia poziomu (envelope-transfer).
-pan	panorama	Playhead: row.x6.desc, lab.pan	Studio term (panorama, f.; panoramowanie in LMMS pl). „Pan” is heard as a knob label only.
-stereo width	szerokość (stereo)	Playhead: row.x6.desc, lab.maxWidth, lib.tool.widen.param.width	Plain „szerokość” on controls (LMMS pl „Szerokość”); „szerokość bazy stereo” in docs. Matches widen-tails = poszerz ogony.
 timbre	barwa	Playhead: row.s1.desc, row.n7.desc, row.n8.desc, lab.timbreSymbols.*	Standard Polish acoustics (barwa dźwięku, f.). Keep „Timbre Toolbox” as a name. Also used for the reverb „Tone” control (lib.tool.tailverb.param.toneHz = Barwa).
 bar line	kreska taktowa	Playhead: row.d4.desc, cmp.marks.downbeats, lib.mark.downbeats, lib.look.overview.desc, lib.look.hits.desc	Music-notation term (kreska taktowa, f.); keeps „takt” for bar and avoids „pasek”, which is the strip.
 thumbnail	miniatura	Playhead: ui.thumb, ui.thumb.*, row.d3.name, row.d5.name, sec.library.desc, aria.thumb	Standard Polish UI word (miniatura, f.).
 loop seam	szew pętli	Playhead: row.x7.desc, check.seamJump, check.seamChange, lib.tool.loop.param.xfadeMs	„Szew” (m.) is the idiomatic image for an audible join (vocabulary loop: „bez słyszalnego szwu”); the wrap point = łączenie.
 hit	uderzenie	Playhead: lib.curve.onsetStrength, lib.look.character.desc, lib.look.surprise.name, lib.look.hits.*, lib.tool.drive.name, lib.tool.tailverb.desc, obj.N.impulse, obj.X.impulse	Reserved for hits (events); this is why beat = miara. Impact model in Workbench = model uderzenia.
-riser	riser	Playhead: guide.c2.mislead, row.n4.desc	Producer loan (pl. risery); no Polish word in use. Describe as „narastający efekt przejściowy” on first use in docs if needed.
-sweep	ślizg	Playhead: obj.Y.sustained, row.x2.desc, row.n4.desc	Native word for a pitch or brightness glide (ślizg, m.), pairs with Y = „ślizgające się”. Studio speech also says „sweep”.
 grain	ziarno	Playhead: lab.grains.*, note.sfx.2, lib.tool.vars.desc, lib.tool.vars.param.grains	Standard in granular synthesis (Polish Wikipedia „Synteza granularna”; LMMS pl „Wielkość ziarna”).
 asset	zasób	Playhead: ui.cls, ui.scale.asset, row.d3.name, row.r1.desc, guide.c1.reveal, bench.need.tension	Polish UI word (zasób, m.; asset class = klasa zasobu). Game-dev speech says „asset”, which declines awkwardly.
 pulse clarity	wyrazistość pulsu	Playhead: row.r4.name, row.r3.desc, lab.name.r4, matrix.r4	Pairs with local pulse = puls lokalny.
 harshness factor	współczynnik nieprzyjemności	Playhead: row.d2.desc, d3.sfx, metric.harshness, note.effects.2	Follows harshness = nieprzyjemność; table head shortened to „Wsp. nieprzyjemności”.
-loudness range	zakres głośności	Playhead: metric.lra	EBU R 128 LRA; Ardour pl „Zakres głośności”.
 integrated loudness	głośność zintegrowana	Playhead: note.effects.4	Ardour pl has „Głośność uśredniona”; KRRiT speaks of „uśredniony poziom głośności”. Either is understood; I chose the BS.1770 calque.
 F-measure	wynik F	Playhead: sec.rhythm.desc, lab.fTitle, lab.agreesR3.title, lab.beatsF, lab.downbeatsF	Polish ML says „miara F” too, but „miara” is the beat here, so „wynik F” (F-score). Precision/recall = precyzja/czułość.
 measure (a metric)	wskaźnik	Playhead: sec.desc.desc, status.descriptors, bench.measure	Again to keep „miara” for the beat.
@@ -27,6 +21,4 @@ effects bench	stanowisko efektów	Playhead: sec.bench.title, ui.intro	„Stanowi
 look composer	edytor stylu	Playhead: cmp.noApi, ui.thumb.compose	Follows look = styl; „kompozytor” would read as a person.
 section title „Today” (current inspector waveform)	Dziś	Playhead: sec.today.title, ui.thumb.unity	Short label; the description says „to, co dziś rysuje inspektor Unity”.
 stage (attack, body, tail)	etap	Playhead: row.x4.desc	English says „phase”; Polish „faza” is reserved for signal phase, so „etap”.
-zero crossing	przejście przez zero	Playhead: lib.tool.loop.desc	Standard signal-processing term.
-headroom	zapas (dynamiki)	Playhead: check.noHeadroom	Studio usage; „headroom” loan also heard.
 drum fill / kick / hats	przejście perkusyjne / stopa / hi-haty	Playhead: guide.c1.mislead, guide.c2.reveal, note.rhythm.1, guide.c4.mislead	Drummers' Polish. „Przejście” here is a drum fill, unrelated to fade = przejście; context separates them.

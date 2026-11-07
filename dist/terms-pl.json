@@ -861,5 +861,285 @@
   "term": "pudło",
   "short": "pudło",
   "definition": "Puste w środku ciało o płaskich ściankach."
+ },
+ "track": {
+  "term": "ścieżka",
+  "short": "ścieżka",
+  "definition": "Wiersz projektu DAW, który mieści klipy na osi czasu i ma własny kanał miksera."
+ },
+ "folder-track": {
+  "term": "ścieżka folderu",
+  "short": "Folder",
+  "definition": "Ścieżka, która zawiera inne ścieżki: sumuje ich dźwięk i może pokazać je jako całość."
+ },
+ "clip": {
+  "term": "klip",
+  "short": "klip",
+  "definition": "Fragment audio lub MIDI na ścieżce, umieszczony w określonym miejscu osi czasu."
+ },
+ "session": {
+  "term": "projekt",
+  "short": "projekt",
+  "definition": "Cała praca nad jednym utworem w DAW: ścieżki, klipy, routing i ustawienia."
+ },
+ "timeline": {
+  "term": "oś czasu",
+  "short": "oś czasu",
+  "definition": "Oś czasu projektu, wzdłuż której umieszcza się klipy."
+ },
+ "marker": {
+  "term": "marker",
+  "short": "marker",
+  "definition": "Nazwany punkt w czasie zapisany w projekcie lub pliku dźwiękowym (cue w pliku WAV)."
+ },
+ "region": {
+  "term": "region",
+  "short": "region",
+  "definition": "Nazwany odcinek czasu z początkiem i końcem, zapisany w projekcie lub pliku dźwiękowym."
+ },
+ "snap": {
+  "term": "przyciąganie",
+  "short": "przyciąganie",
+  "definition": "Przeskok przesuwanego klipu lub cięcia do najbliższej linii siatki, markera, krawędzi klipu lub początku dźwięku."
+ },
+ "mute": {
+  "term": "wyciszenie",
+  "short": "Wycisz",
+  "definition": "Wyciszenie ścieżki bez jej usuwania; przycisk często ma literę M."
+ },
+ "solo": {
+  "term": "solo",
+  "short": "solo",
+  "definition": "Odsłuch tylko ścieżek w trybie solo; przycisk często ma literę S."
+ },
+ "fader": {
+  "term": "suwak",
+  "short": "suwak",
+  "definition": "Regulator poziomu kanału miksera."
+ },
+ "pan": {
+  "term": "panorama",
+  "short": "panorama",
+  "definition": "Miejsce dźwięku między lewą a prawą stroną; także regulator, który je ustawia."
+ },
+ "bus": {
+  "term": "szyna",
+  "short": "szyna",
+  "definition": "Kanał miksera, który sumuje wysłane do niego sygnały, aby można je było przetwarzać razem (szyna perkusji, szyna pogłosu)."
+ },
+ "master-bus": {
+  "term": "szyna główna",
+  "short": "Master",
+  "definition": "Szyna, do której przed wyjściem sumuje się wszystko: to, co renderuje się jako miks."
+ },
+ "send": {
+  "term": "wysyłka",
+  "short": "wysyłka",
+  "definition": "Kopia sygnału ścieżki wysłana do szyny z własnym poziomem, podczas gdy ścieżka gra dalej."
+ },
+ "insert": {
+  "term": "insert",
+  "short": "insert",
+  "definition": "Efekt wpięty w drogę sygnału kanału, przez który przechodzi cały sygnał."
+ },
+ "routing": {
+  "term": "routing",
+  "short": "routing",
+  "definition": "Sposób, w jaki sygnały biegną między ścieżkami, szynami, wysyłkami i wyjściami."
+ },
+ "mix": {
+  "term": "miks",
+  "short": "miks",
+  "definition": "Suma wszystkich ścieżek tak, jak brzmi; także praca nad ich zrównoważeniem."
+ },
+ "stem": {
+  "term": "stem",
+  "short": "stem",
+  "definition": "Submiks powiązanych ścieżek (perkusja, dialogi, muzyka) wyrenderowany do osobnego pliku, aby części można było miksować lub dostarczyć osobno."
+ },
+ "zero-crossing": {
+  "term": "przejście przez zero",
+  "short": "przejście przez zero",
+  "definition": "Punkt, w którym przebieg przecina zero; cięcia i punkty pętli zrobione tam nie trzaskają."
+ },
+ "headroom": {
+  "term": "zapas dynamiki",
+  "short": "zapas dynamiki",
+  "definition": "Odległość w dB między najwyższym poziomem, jaki osiąga sygnał, a poziomem, przy którym nastąpiłoby przesterowanie."
+ },
+ "dynamic-range": {
+  "term": "zakres dynamiki",
+  "short": "zakres dynamiki",
+  "definition": "Rozpiętość w dB między głośnymi a cichymi częściami dźwięku albo między najwyższym poziomem, jaki przyjmie system, a jego poziomem szumu tła."
+ },
+ "loudness-range": {
+  "term": "zakres głośności",
+  "short": "LRA",
+  "definition": "Jak bardzo zmienia się głośność programu, w LU: rozpiętość między 10. a 95. percentylem jego głośności krótkookresowej."
+ },
+ "integrated-loudness": {
+  "term": "głośność zintegrowana",
+  "short": "głośność zintegrowana",
+  "definition": "Głośność całego programu z pominięciem ciszy i cichych fragmentów (bramkowanie), w LUFS."
+ },
+ "short-term-loudness": {
+  "term": "głośność krótkookresowa",
+  "short": "głośność krótkookresowa",
+  "definition": "Głośność w przesuwnym oknie 3 s, w LUFS."
+ },
+ "momentary-loudness": {
+  "term": "głośność chwilowa",
+  "short": "głośność chwilowa",
+  "definition": "Głośność w przesuwnym oknie 400 ms, w LUFS."
+ },
+ "loudness-target": {
+  "term": "docelowa głośność",
+  "short": "docelowa głośność",
+  "definition": "Głośność zintegrowana, z jaką program jest dostarczany lub odtwarzany, np. −23 LUFS według EBU R 128 w nadawaniu lub ok. −14 LUFS w serwisach streamingowych."
+ },
+ "loudness-matching": {
+  "term": "dopasowanie głośności",
+  "short": "Dopasuj głośność",
+  "definition": "Doprowadzenie dwóch wersji do tej samej głośności przed porównaniem, aby głośniejsza nie wydawała się lepsza tylko dlatego, że jest głośniejsza."
+ },
+ "ab-comparison": {
+  "term": "porównanie A/B",
+  "short": "A/B",
+  "definition": "Przełączanie między dwiema wersjami, najlepiej przy dopasowanej głośności, aby usłyszeć, która jest lepsza."
+ },
+ "reference-track": {
+  "term": "utwór referencyjny",
+  "short": "Referencja",
+  "definition": "Gotowe nagranie odtwarzane dla porównania podczas miksu lub masteringu."
+ },
+ "crest-factor": {
+  "term": "współczynnik szczytu",
+  "short": "współczynnik szczytu",
+  "definition": "Stosunek poziomu szczytowego do poziomu RMS, w dB: wysoki dla dźwięku z uderzeniem i dynamicznego, niski dla gęstego, skompresowanego."
+ },
+ "rms-level": {
+  "term": "poziom RMS",
+  "short": "RMS",
+  "definition": "Średnia kwadratowa sygnału w oknie: jego średnia moc wyrażona jako poziom."
+ },
+ "stereo-width": {
+  "term": "szerokość bazy stereo",
+  "short": "Szerokość",
+  "definition": "Jak bardzo różnią się oba kanały, od mono (wcale) po szeroki dźwięk."
+ },
+ "envelope": {
+  "term": "obwiednia",
+  "short": "obwiednia",
+  "definition": "Jak w przebiegu dźwięku zmienia się jakaś wielkość, zwykle poziom; także narysowana krzywa sterująca parametrem."
+ },
+ "frequency-band": {
+  "term": "pasmo częstotliwości",
+  "short": "Pasmo",
+  "definition": "Zakres częstotliwości mierzony lub przetwarzany razem: pasmo korektora, pasmo krytyczne, pasmo melowe."
+ },
+ "high-pass-filter": {
+  "term": "filtr górnoprzepustowy",
+  "short": "Górnoprzepustowy",
+  "definition": "Filtr, który przepuszcza częstotliwości powyżej częstotliwości granicznej i tłumi te poniżej."
+ },
+ "low-pass-filter": {
+  "term": "filtr dolnoprzepustowy",
+  "short": "Dolnoprzepustowy",
+  "definition": "Filtr, który przepuszcza częstotliwości poniżej częstotliwości granicznej i tłumi te powyżej."
+ },
+ "limiter": {
+  "term": "limiter",
+  "short": "limiter",
+  "definition": "Kompresor o bardzo wysokim stosunku i szybkim ataku, który utrzymuje poziom poniżej pułapu."
+ },
+ "multiband-compressor": {
+  "term": "kompresor wielopasmowy",
+  "short": "Wielopasmowy",
+  "definition": "Kompresor, który działa osobno w kilku pasmach częstotliwości."
+ },
+ "transient-shaper": {
+  "term": "procesor transjentów",
+  "short": "procesor transjentów",
+  "definition": "Procesor, który niezależnie od poziomu podnosi lub obniża atak i wybrzmienie dźwięków."
+ },
+ "sidechain": {
+  "term": "sidechain",
+  "short": "sidechain",
+  "definition": "Drugie wejście, przez które inny sygnał steruje procesorem, np. gdy muzyka jest ściszana pod dialogiem."
+ },
+ "ducking": {
+  "term": "ducking",
+  "short": "ducking",
+  "definition": "Automatyczne ściszanie jednego dźwięku, gdy gra inny, zwykle kompresorem z sidechainem."
+ },
+ "reverb": {
+  "term": "pogłos",
+  "short": "pogłos",
+  "definition": "Gęste odbicia dźwięku w pomieszczeniu albo efekt, który je naśladuje."
+ },
+ "delay": {
+  "term": "delay",
+  "short": "delay",
+  "definition": "Efekt, który odtwarza dźwięk ponownie po ustawionym czasie, często powtarzając go i wygaszając (echo)."
+ },
+ "dither": {
+  "term": "dither",
+  "short": "dither",
+  "definition": "Szum o niskim poziomie dodawany przy zmniejszaniu głębi bitowej, aby błąd zaokrąglenia stał się szumem zamiast zniekształceniem."
+ },
+ "mastering": {
+  "term": "mastering",
+  "short": "mastering",
+  "definition": "Ostatni etap przed wydaniem: końcowa korekcja, dynamika i głośność miksu oraz kontrole pod kątem formatu dostawy."
+ },
+ "drop": {
+  "term": "drop",
+  "short": "drop",
+  "definition": "Moment w utworze tanecznym, w którym wchodzi pełny bit i bas, zwykle po build-upie lub breakdownie."
+ },
+ "build-up": {
+  "term": "build-up",
+  "short": "build-up",
+  "definition": "Fragment, który podnosi napięcie przed dropem: rosnąca wysokość, ślizgi filtra, coraz szybsze werble, riser."
+ },
+ "breakdown": {
+  "term": "breakdown",
+  "short": "breakdown",
+  "definition": "Fragment, w którym bit i bas ustępują, a zostają plamy, akordy lub wokal."
+ },
+ "riser": {
+  "term": "riser",
+  "short": "riser",
+  "definition": "Dźwięk, który rośnie wysokością, jasnością lub poziomem i prowadzi do dropu lub przejścia."
+ },
+ "sweep": {
+  "term": "ślizg",
+  "short": "ślizg",
+  "definition": "Przejście przez zakres częstotliwości: ton lub szum, którego wysokość lub jasność się przesuwa, albo filtr przesuwany przez widmo."
+ },
+ "cue-point": {
+  "term": "punkt cue",
+  "short": "Cue",
+  "definition": "Zapisane miejsce w utworze, do którego DJ lub odtwarzacz przeskakuje albo od którego zaczyna."
+ },
+ "beatgrid": {
+  "term": "siatka miar",
+  "short": "siatka miar",
+  "definition": "Miary i takty utworu w postaci siatki, do synchronizacji, zapętlania i skoków w czasie."
+ },
+ "beatmatching": {
+  "term": "beatmatching",
+  "short": "beatmatching",
+  "definition": "Doprowadzenie dwóch utworów do tego samego tempa z wyrównanymi miarami."
+ },
+ "phrase": {
+  "term": "fraza",
+  "short": "fraza",
+  "definition": "Ciąg taktów, w muzyce tanecznej zwykle 8, 16 lub 32, tworzący jedną całość muzyczną; DJ-e miksują na granicach fraz."
+ },
+ "key": {
+  "term": "tonacja",
+  "short": "tonacja",
+  "definition": "Centrum tonalne i skala utworu, np. a-moll; DJ-e miksują utwory w zgodnych tonacjach (miksowanie harmoniczne)."
  }
 }
